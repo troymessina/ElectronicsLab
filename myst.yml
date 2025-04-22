@@ -1,0 +1,83 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  toc:
+    - file: ./chapters/00preface.md
+    - title: Part 1 - Mechanics
+      children:
+        - file: ./chapters/01Introduction.md
+        - file: ./chapters/02ModelAndExperiment.md
+        - file: ./chapters/03Vectors.md
+        - file: ./chapters/04NewMomentumAndCM.md
+        - file: ./chapters/05NewtonsLaws.md
+        - file: ./chapters/06ApplyingNewtonsLaws.md
+        - file: ./chapters/07WorkEnergy.md
+        - file: ./chapters/08PotentialECons.md
+        - file: ./chapters/09Gravity.md
+        - file: ./chapters/10RotationalDynamics.md
+        - file: ./chapters/11AngularMomentumRolling.md
+    - title: Part 2 - Oscillations, Waves, Fluids, Electricity, & Magnetism
+      children:
+        - file: ./chapters/12SimpleHarmonicMotion.md
+        - file: ./chapters/13Waves.md
+        - file: ./chapters/14FluidMechanics.md
+        - file: ./chapters/15ChargesFields.md
+        - file: ./chapters/16Gauss.md
+        - file: ./chapters/17ElectricPotential.md
+        - file: ./chapters/18Current.md
+        - file: ./chapters/19Circuits.md
+        - file: ./chapters/20MagneticForce.md
+        - file: ./chapters/21MagneticSource.md
+        - file: ./chapters/22Induction.md
+        - file: ./chapters/23SpecialRelativity.md
+    - title: Appendices      
+      children:
+        - file: ./chapters/24Calculus.md
+        - file: ./chapters/25VisualPython.md
+        - file: ./chapters/26Labs.md
+  id: 
+  title: Modeling with Physics
+  description: Interactive Introductory Calculus-Based Physics Textbook
+  keywords: [Introductory Physics]
+  authors: [Troy Messina]
+  #github: https://github.com/troymessina/
+  numbering:
+    headings: true
+  exclude: 
+#    - figures/**
+    - trinket/**
+  exports:
+    - format: typst
+      id: typstpdf
+      template: https://github.com/rowanc1/typst-book.git
+      articles:
+        - ./chapters/00preface.md
+        - ./chapters/01Introduction.md
+        - ./chapters/02ModelAndExperiment.md
+        - ./chapters/03Vectors.md
+#        - ./chapters/04NewMomentumAndCM.md
+#        - ./chapters/15ChargesFields.md
+      output: ./exports/ModelingWithPhysics.pdf
+#  downloads:
+#    - file: ./exports/ModelingWithPhysics.pdf
+#    - id: typstpdf
+#      title: Modeling With Physics
+site:
+  template: book-theme 
+  title: Modeling with Physics
+  options:
+    logo: ./chapters/figures/primary_rgb.png
+    logo_dark: ./chapters/figures/primary_white.png
+    logo_text: Modeling with Physics
+    favicon : ./chapters/figures/favicon.ico
+    comments:
+        hypothesis: true
+        utterances: true
+  nav: []
+  #actions:
+  #  - title: Learn More
+  #    url: https://mystmd.org/guide
+  domains: []
+#html:
+  
+  
