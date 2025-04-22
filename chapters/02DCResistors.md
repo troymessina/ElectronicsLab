@@ -8,8 +8,8 @@ numbering:
 (chap:resistors)=
 # Overview
 :::{hint} Learning Objectives
-* Understand the Scientific Method.
-* Define the scope of Physics.
-* Understand the difference between theory and model.
-* Have a sense of how a physicist thinks.
+* Understand DC circuits and Ohm's Law.
+* Understand the role of resistance in circuits.
+* Understand methods of measuring current and voltage.
+* Demonstrate the ability to draw, construct, and analyze resistor circuits.
 :::
