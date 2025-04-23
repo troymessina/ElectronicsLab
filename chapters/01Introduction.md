@@ -83,16 +83,15 @@ Various breadboard sizes.
 ### Electronics connectors
 We will use a variety of connections when building circuits and interfacing them with test and measurement equipment. In [](#fig:intro:connections) are shown [(a) banana](#bananaconnector), [(b) alligator](#alligatorconnector), [(c) test clip](#testclipconnector), [(d) test probe](#testprobeconnector) and [(e) BNC](#bncconnector) connectors.
 ```
+:label: fig:intro:connections
+:width: 20%
+:align: center
+:alt: Various breadboard sizes.
 ../figures/ch1_introduction/banana.jpg
 ../figures/ch1_introduction/alligator.jpg
 ../figures/ch1_introduction/testclip.jpg
 ../figures/ch1_introduction/probe.jpg
 ../figures/ch1_introduction/BNC.jpg
-:label: fig:intro:oscope
-:width: 20%
-:align: center
-:alt: Various breadboard sizes.
-Various breadboard sizes.
 ```
 
 :::{figure}
