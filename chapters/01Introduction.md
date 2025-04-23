@@ -82,15 +82,20 @@ Various breadboard sizes.
 
 ### Electronics connectors
 We will use a variety of connections when building circuits and interfacing them with test and measurement equipment. In [](#fig:intro:connections) are shown [(a) banana](#bananaconnector), [(b) alligator](#alligatorconnector), [(c) test clip](#testclipconnector), [(d) test probe](#testprobeconnector) and [(e) BNC](#bncconnector) connectors.
-:::
+:::{figure}
 :label: fig:intro:connections
-:width: 20%
-:align: left
-<img src="../figures/ch1_introduction/banana.jpg" alt="banana connector" width="200">
-<img src="../figures/ch1_introduction/alligator.jpg" alt="alligator connector" width="200">
-<img src="../figures/ch1_introduction/testclip.jpg" alt="test clip connector" width="200">
-<img src="../figures/ch1_introduction/probe.jpg" alt="test probe connector" width="200">
-<img src="../figures/ch1_introduction/BNC.jpg" alt="BNC connector" width="200">
+:align: center
+
+(bananaconnector)=
+![banana connnectors](../figures/ch1_introduction/banana.jpg){width=100px}
+(alligatorconnector)=
+![alligator connnectors](../figures/ch1_introduction/alligator.jpg){width=100px}
+(testclipconnector)=
+![test clip](../figures/ch1_introduction/testclip.jpg){width=100px}
+(testprobeconnector)=
+![test probe connnectors](../figures/ch1_introduction/probe.jpg){width=100px}
+(bncconnector)=
+![BNC connnectors](../figures/ch1_introduction/BNC.jpg){width=100px}
 
 Various electrical connectors - (a) banana, (b) alligator, (c) test clip, (d) test probe, and (e) BNC.
 :::
