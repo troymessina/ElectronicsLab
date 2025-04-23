@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 4
 ---
-(chap:oscilloscopes)=
+(chap:oscopes)=
 # Overview
 :::{hint} Learning Objectives
 * Students will demonstrate proficiency in the observation, analysis, and interpretation of experimental data, including the role that uncertainty plays in interpreting experimental results.
