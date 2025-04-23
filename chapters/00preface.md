@@ -9,7 +9,12 @@
 
 This is an **open-access** textbook for introductory electronics lab courses. Anyone that complies with the license is welcome to modify and use this work for their own use, and we hope that you will choose to contribute.  We hope that you may find it useful, and we are interested to know if you are using it!
 
-This book is a remix of various electronics lab manuals I have found online. Anyone is welcome to compile their own version including or excluding chapters.  
+This book is a remix of various electronics lab manuals I have found online. For example, inspiration was drawn from
+* Radio Shack Electronics Workbooks
+* The Physics 115 Electronics and Instrumentation Lab Manual by Dr. William DeGraffenreid at Sacramento State University
+* Physics 4802  Laboratory Physics I Electronic Lab by Guido Mueller and Andrew Rinzler at the University of Florida
+* Physics 338K Electronic Techniques by Dr. Alex deLozanne at the University of Texas at Austin
+Anyone is welcome to compile their own version including or excluding chapters.  
 
 This version of the textbook is also open-access and can be found at https://github.com/troymessina/ElectronicsLab. The following chapters are included in the textbook:
 

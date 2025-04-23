@@ -8,7 +8,7 @@ numbering:
 (chap:introduction)=
 ## Introduction
 Electronics play a crucial role in modern laboratories across all sciences — physics, chemistry, biology, and geology — enabling precise measurement of variables like temperature, light, magnetic fields, and more through common transducers. This course is a broad introduction to the electronic tools and techniques widely used today. Rather than making you an expert, this set of experimental activities aims to build your familiarity with practical devices like op amps, data acquisition, and specialized ICs. You'll also gain hands-on experience designing simple circuits and creating computer-controlled data systems. 
-```{figure} ../figures/ch0_introduction/electronicsLabAI.png
+```{figure} ../figures/ch1_introduction/electronicsLabAI.png
 :label: fig:intro:electronicslab
 :width: 60%
 :align: center
