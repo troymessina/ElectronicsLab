@@ -1,6 +1,6 @@
 # Electronics Lab
 
-```figure ./figures/ch0_preface/ai_electronics_lab.png
+```figure https://github.com/troymessina/ElectronicsLab/blob/e5d77c306c1a2ff755dc86a2608d9ba47b6a845e/figures/ch0_preface/ai_electronics_lab.png
 :label: fig:oscopes:signalgen
 :width: 60%
 :align: center
