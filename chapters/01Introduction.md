@@ -34,25 +34,48 @@ Even when high voltage is not involved, using grounding straps is a good habit�
 We will normally use handheld and benchtop instruments. We will use handheld digital multimeters (DMM) in this course. most likely the ExTech MN36 seen in [](#fig:intro:dmm). 
 ```{figure} ../figures/ch1_introduction/ExtechMN36.jpg
 :label: fig:intro:dmm
-:width: 60%
+:width: 40%
 :align: center
 :alt: ExTech MN36 digital multimeter.
 ExTech MN36 digital multimeter.
 ```
-The FeelTech FS3200 signal generator shown in [](#fig:intro:siggen) will be used to create time-dependent (AC) electronic signals.
+### Power Supplies
+We will generally use the built-in power supplies that are on the ELVIS workstation or
+on the powered breadboards. So far, these supplies have proven to be rather stable
+sources of DC power. The ELVIS workstations have five supplies built into it: +5 V,
++15 V, -15 V, and variable positive and negative voltages. The powered breadboards
+have +5 V, +15 V, and -15 V sources. Additionally we have other fixed and variable
+sources available if needed.
+
+### Function Generators
+We will use FeelTech FS3200 signal generators shown in [](#fig:intro:siggen) to produce the AC signals that we will use in this course. They have dual outputs that can be independently controlled, and can produce sinusoidal, square, triangle, and many other signals with frequencies up to 25 MHz. It can be programmed to produce a certain signal without turning the signal on. It has the capability of producing user-defined waveforms also.
 ```{figure} ../figures/ch3_oscopes/FeelTech.jpg
 :label: fig:intro:siggen
-:width: 60%
+:width: 80%
 :align: center
 :alt: The FeelTech FS3200 signal generator.
 The FeelTech FS3200 signal generator.
 ```
-The Tektronix 1102BEDU oscilloscope shown in [](#fig:intro:oscope) will be used to measure time-dependent (AC) electronic signals.
+### Oscilloscope
+The most widely used instrument in the lab is probably the oscilloscope. In this lab, we will be using the Tektronix Model Tektronix 1102BEDU. This is a fairly advanced analog oscilloscope with a number of useful features, including a built in period/frequency readout, cursoring capability, FFT, and file saving. While the exact operation of oscilloscopes varies widely, the most important elements of
+the front end are basically unchanged. Basic operation is discussed in class.
+The Tektronix 1102BEDU oscilloscope is shown in [](#fig:intro:oscope).
 ```{figure} ../figures/ch3_oscopes/Tektronix.jpg
 :label: fig:intro:oscope
-:width: 60%
+:width: 80%
 :align: center
 :alt: The Tektronix 1102BEDU oscilloscope.
 The Tektronix 1102BEDU oscilloscope.
 ```
 
+### Breadboards
+The most convenient way to design and troubleshoot a new circuit is to first design it on a
+“breadboard”. Breadboards can be of the stand-alone variety, have built in power
+supplies (we have a large collection of these that might be useful for your projects), or
+may be bundled with additional stuff for easy access (like our ELVIS stations and the
+Protoboards that preceded them). All are handy because circuits can be wired up without
+the use of soldering irons, or wire wrapping tools. Be careful not to use wires that are too
+thick for the board. Forcing oversized wire into the board may permanently bend the
+spring contacts: leading to poor connections, no connections, or even possible short
+circuits to other rows.
+We will discuss how to use the board in class.
