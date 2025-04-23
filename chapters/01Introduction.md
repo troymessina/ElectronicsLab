@@ -72,10 +72,32 @@ The Tektronix 1102BEDU oscilloscope.
 ### Breadboards
 A very convenient way to design and troubleshoot a new circuit is to first design it on a breadboard. Breadboards can be of the stand-alone variety, have built in power supplies, or may be bundled with additional stuff for easy access. All are handy because circuits can be wired up without the use of soldering irons, or wire wrapping tools. Be careful not to use wires that are too
 thick for the board. Forcing oversized wire into the board may permanently bend the spring contacts: leading to poor connections, no connections, or even possible short circuits to other rows. We will discuss how to use the board in class.
-```{figure} ../figures/ch1_introduction/Breadboard_Sizes.png
+```{figure} ../figures/ch1_introduction/Breadboard-Sizes.png
 :label: fig:intro:oscope
 :width: 80%
 :align: center
 :alt: Various breadboard sizes.
 Various breadboard sizes.
 ```
+
+### Electronics connectors
+We will use a variety of connections when building circuits and interfacing them with test and measurement equipment. In [](#fig:intro:connections) are shown [](#bananaconnector), [](#alligatorconnector), [](#testclipconnector), [](#testprobeconnector) and [](#bncconnector).
+:::{figure}
+:label: fig:intro:connections
+:align: left
+
+(bananaconnector)=
+![banana connectors](../figures/ch1_introduction/banana.jpg)
+(alligatorconnector)=
+![alligator connnectors](../figures/ch1_introduction/alligator.jpg)
+(testclipconnector)=
+![test clip](../figures/ch1_introduction/testclip.jpg)
+(testprobeconnector)=
+![test probe connnectors](../figures/ch1_introduction/probe.jpg)
+(bncconnector)=
+![BNC connnectors](../figures/ch1_introduction/BNC.jpg)
+
+Various electrical connectors - (a) banana, (b) alligator, (c) test clip, (d) test probe, and (e) BNC.
+:::
+## Circuit Elements and Cables
+Throughout the lab
