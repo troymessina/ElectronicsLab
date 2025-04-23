@@ -3,7 +3,7 @@ title: Chapter 2 - DC Resistor Circuits
 numbering:
   headings:
   heading_1:
-    start: 3
+    start: 2
 ---
 (chap:resistors)=
 # Overview
