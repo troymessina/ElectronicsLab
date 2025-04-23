@@ -31,7 +31,7 @@ Even when high voltage is not involved, using grounding straps is a good habit�
 ## Measurement Instruments
 
 ### Multimeters
-We will normally use handheld and benchtop instruments. We will use handheld digital multimeters (DMM) in this course. most likely the ExTech MN36 seen in [](#fig:intro:dmm). 
+We will use handheld and benchtop instruments. We will use handheld digital multimeters (DMM) in this course. most likely the ExTech MN36 seen in [](#fig:intro:dmm). 
 ```{figure} ../figures/ch1_introduction/ExtechMN36.jpg
 :label: fig:intro:dmm
 :width: 40%
@@ -40,13 +40,14 @@ We will normally use handheld and benchtop instruments. We will use handheld dig
 ExTech MN36 digital multimeter.
 ```
 ### Power Supplies
-We will generally use the built-in power supplies that are on the ELVIS workstation or
-on the powered breadboards. So far, these supplies have proven to be rather stable
-sources of DC power. The ELVIS workstations have five supplies built into it: +5 V,
-+15 V, -15 V, and variable positive and negative voltages. The powered breadboards
-have +5 V, +15 V, and -15 V sources. Additionally we have other fixed and variable
-sources available if needed.
-
+We will use the Elenco XP800 AC/DC power supplies shown in [](#fig:intro:power). We may periodically use other sources of power. However, these Elenco supplies have proven to be stable, workhorse (we are in Kentucky)sources of DC power. 
+```{figure} ../figures/ch1_introduction/ElencoPS.jpg
+:label: fig:intro:power
+:width: 40%
+:align: center
+:alt: Elenco XP800 AC/DC variable power supply.
+Elenco XP800 AC/DC variable power supply.
+```
 ### Function Generators
 We will use FeelTech FS3200 signal generators shown in [](#fig:intro:siggen) to produce the AC signals that we will use in this course. They have dual outputs that can be independently controlled, and can produce sinusoidal, square, triangle, and many other signals with frequencies up to 25 MHz. It can be programmed to produce a certain signal without turning the signal on. It has the capability of producing user-defined waveforms also.
 ```{figure} ../figures/ch3_oscopes/FeelTech.jpg
@@ -69,13 +70,12 @@ The Tektronix 1102BEDU oscilloscope.
 ```
 
 ### Breadboards
-The most convenient way to design and troubleshoot a new circuit is to first design it on a
-“breadboard”. Breadboards can be of the stand-alone variety, have built in power
-supplies (we have a large collection of these that might be useful for your projects), or
-may be bundled with additional stuff for easy access (like our ELVIS stations and the
-Protoboards that preceded them). All are handy because circuits can be wired up without
-the use of soldering irons, or wire wrapping tools. Be careful not to use wires that are too
-thick for the board. Forcing oversized wire into the board may permanently bend the
-spring contacts: leading to poor connections, no connections, or even possible short
-circuits to other rows.
-We will discuss how to use the board in class.
+A very convenient way to design and troubleshoot a new circuit is to first design it on a breadboard. Breadboards can be of the stand-alone variety, have built in power supplies, or may be bundled with additional stuff for easy access. All are handy because circuits can be wired up without the use of soldering irons, or wire wrapping tools. Be careful not to use wires that are too
+thick for the board. Forcing oversized wire into the board may permanently bend the spring contacts: leading to poor connections, no connections, or even possible short circuits to other rows. We will discuss how to use the board in class.
+```{figure} ../figures/ch1_introduction/Breadboard_Sizes.png
+:label: fig:intro:oscope
+:width: 80%
+:align: center
+:alt: Various breadboard sizes.
+Various breadboard sizes.
+```
