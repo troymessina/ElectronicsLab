@@ -123,7 +123,17 @@ plt.plot([1, 2, 3], [1, 2, 3], 'go-', label='line 1', linewidth=2)
 ```
 
 ```{code-cell} python
-:tags: []
+import numpy as np
+import matplotlib.pyplot as plt
+
+m=2
+b=0.1
+x=np.linspace(0,10,11)
+y= m*x+be
+plt.plot(x, y)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
 print("Testing python interaction!")
 ```
 
