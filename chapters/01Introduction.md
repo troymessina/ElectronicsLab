@@ -82,26 +82,22 @@ Various breadboard sizes.
 
 ### Electronics connectors
 We will use a variety of connections when building circuits and interfacing them with test and measurement equipment. In [](#fig:intro:connections) are shown [(a) banana](#bananaconnector), [(b) alligator](#alligatorconnector), [(c) test clip](#testclipconnector), [(d) test probe](#testprobeconnector) and [(e) BNC](#bncconnector) connectors.
-:::{figure}
+:::
 :label: fig:intro:connections
 :width: 20%
 :align: left
 
 (bananaconnector)=
 <img src="../figures/ch1_introduction/banana.jpg" alt="banana connector" width="200">
-(alligatorconnector)=
-![alligator connnectors](../figures/ch1_introduction/alligator.jpg)
-(testclipconnector)=
-![test clip](../figures/ch1_introduction/testclip.jpg)
-(testprobeconnector)=
-![test probe connnectors](../figures/ch1_introduction/probe.jpg)
-(bncconnector)=
-![BNC connnectors](../figures/ch1_introduction/BNC.jpg){width=200px}
+<img src="../figures/ch1_introduction/alligator.jpg" alt="alligator connector" width="200">
+<img src="../figures/ch1_introduction/testclip.jpg" alt="test clip connector" width="200">
+<img src="../figures/ch1_introduction/probe.jpg" alt="test probe connector" width="200">
+<img src="../figures/ch1_introduction/BNC.jpg" alt="BNC connector" width="200">
 
 Various electrical connectors - (a) banana, (b) alligator, (c) test clip, (d) test probe, and (e) BNC.
 :::
 ## Circuit Elements and Cables
-Throughout this book, you will encounter circuit elements drawn using circuit diagram symbols.
+Throughout this book, you will encounter circuit schematic elements drawn using circuit diagram symbols. Many of these symbols are shown in [](#fig:intro:symbols). There will be reminders throughout the book what the symbols represent as they are introduced in experiments.
 ```{figure} ../figures/ch1_introduction/Electrical-Schematic-Symbols.png
 :label: fig:intro:symbols
 :width: 100%
