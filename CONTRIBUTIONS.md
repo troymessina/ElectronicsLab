@@ -1,5 +1,5 @@
 
-# Contributing to Hands-On Advanced Physics Laboratory
+# Contributing to Electronics Lab
 
 Thank you for your interest in contributing to our physics laboratory textbook! This guide will help you understand our contribution process and standards.
 

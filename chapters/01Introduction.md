@@ -88,15 +88,15 @@ We will use a variety of connections when building circuits and interfacing them
 :align: left
 
 (bananaconnector)=
-![banana connectors](../figures/ch1_introduction/banana.jpg)
+![banana connectors](../figures/ch1_introduction/banana.jpg){width=15%}
 (alligatorconnector)=
-![alligator connnectors](../figures/ch1_introduction/alligator.jpg)
+![alligator connnectors](../figures/ch1_introduction/alligator.jpg){width=15%}
 (testclipconnector)=
-![test clip](../figures/ch1_introduction/testclip.jpg)
+![test clip](../figures/ch1_introduction/testclip.jpg){width=15%}
 (testprobeconnector)=
-![test probe connnectors](../figures/ch1_introduction/probe.jpg)
+![test probe connnectors](../figures/ch1_introduction/probe.jpg){width=15%}
 (bncconnector)=
-![BNC connnectors](../figures/ch1_introduction/BNC.jpg)
+![BNC connnectors](../figures/ch1_introduction/BNC.jpg){width=15%}
 
 Various electrical connectors - (a) banana, (b) alligator, (c) test clip, (d) test probe, and (e) BNC.
 :::
