@@ -1,6 +1,6 @@
 # Electronics Lab
 
-```figure ../figures/ch0_preface/ai_electronics_lab.png
+```figure ./figures/ch0_preface/ai_electronics_lab.png
 :label: fig:oscopes:signalgen
 :width: 60%
 :align: center

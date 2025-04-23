@@ -9,13 +9,14 @@ This is an **open-access** textbook for introductory electronics lab courses. An
 ![License](https://badgen.net/badge/license/CC-BY-SA-4.0/green)
 
 
-This book is a remix of various electronics lab manuals I have found online. Anyone is welcome to compile their own version including or excluding chapters. The original open-access files are found at https://github.com/OSTP/PhysicsArtofModelling/tex/. 
+This book is a remix of various electronics lab manuals I have found online. Anyone is welcome to compile their own version including or excluding chapters.  
 
 This version of the textbook is also open-access and can be found at https://github.com/troymessina/PhysicsArtOfModeling. The following chapters are included in the textbook:
 
-1. [Preface](https://troymessina.github.io/ElectronicsLab/preface)
-2. [Introduction](https://troymessina.github.io/ElectronicsLab/introduction)
-3. [DC Resistor Circuits](https://troymessina.github.io/ElectronicsLab/resistors)
+0. [Preface](https://troymessina.curve.space/ElectronicsLab/preface)
+1. [Introduction](https://troymessina.github.io/ElectronicsLab/introduction)
+2. [DC Resistor Circuits](https://troymessina.github.io/ElectronicsLab/resistors)
+3. [Oscilloscopes and Signal Generators](#
 
 ## 🚀 Getting Started
 
