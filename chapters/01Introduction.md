@@ -43,7 +43,7 @@ ExTech MN36 digital multimeter.
 We will use the Elenco XP800 AC/DC power supplies shown in [](#fig:intro:power). We may periodically use other sources of power. However, these Elenco supplies have proven to be stable, workhorse (we are in Kentucky)sources of DC power. 
 ```{figure} ../figures/ch1_introduction/ElencoPS.jpg
 :label: fig:intro:power
-:width: 40%
+:width: 80%
 :align: center
 :alt: Elenco XP800 AC/DC variable power supply.
 Elenco XP800 AC/DC variable power supply.
@@ -81,7 +81,7 @@ Various breadboard sizes.
 ```
 
 ### Electronics connectors
-We will use a variety of connections when building circuits and interfacing them with test and measurement equipment. In [](#fig:intro:connections) are shown [](#bananaconnector), [](#alligatorconnector), [](#testclipconnector), [](#testprobeconnector) and [](#bncconnector).
+We will use a variety of connections when building circuits and interfacing them with test and measurement equipment. In [](#fig:intro:connections) are shown [(a) banana](#bananaconnector), [(b) alligator](#alligatorconnector), [(c) test clip](#testclipconnector), [(d) test probe](#testprobeconnector) and [(e) BNC](#bncconnector) connectors.
 :::{figure}
 :label: fig:intro:connections
 :align: left
