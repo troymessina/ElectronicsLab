@@ -74,7 +74,7 @@ A very convenient way to design and troubleshoot a new circuit is to first desig
 thick for the board. Forcing oversized wire into the board may permanently bend the spring contacts: leading to poor connections, no connections, or even possible short circuits to other rows. We will discuss how to use the board in class.
 ```{figure} ../figures/ch1_introduction/Breadboard-Sizes.png
 :label: fig:intro:oscope
-:width: 80%
+:width: 100%
 :align: center
 :alt: Various breadboard sizes.
 Various breadboard sizes.
@@ -82,6 +82,19 @@ Various breadboard sizes.
 
 ### Electronics connectors
 We will use a variety of connections when building circuits and interfacing them with test and measurement equipment. In [](#fig:intro:connections) are shown [(a) banana](#bananaconnector), [(b) alligator](#alligatorconnector), [(c) test clip](#testclipconnector), [(d) test probe](#testprobeconnector) and [(e) BNC](#bncconnector) connectors.
+```
+../figures/ch1_introduction/banana.jpg
+../figures/ch1_introduction/alligator.jpg
+../figures/ch1_introduction/testclip.jpg
+../figures/ch1_introduction/probe.jpg
+../figures/ch1_introduction/BNC.jpg
+:label: fig:intro:oscope
+:width: 20%
+:align: center
+:alt: Various breadboard sizes.
+Various breadboard sizes.
+```
+
 :::{figure}
 :label: fig:intro:connections
 :width: 20%
