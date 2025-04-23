@@ -72,10 +72,10 @@ The Tektronix 1102BEDU oscilloscope.
 # Other equipment
 
 ## Breadboards
-A very convenient way to design and troubleshoot a new circuit is to first design it on a breadboard. Breadboards can be of the stand-alone variety, have built in power supplies, or may be bundled with additional stuff for easy access. All are handy because circuits can be wired up without the use of soldering irons, or wire wrapping tools. Be careful not to use wires that are too
+A very convenient way to design and troubleshoot a new circuit is to first design it on a breadboard. Breadboards can be of the stand-alone variety (see [](#fig:intro:breadboard), have built in power supplies, or may be bundled with additional stuff for easy access. All are handy because circuits can be wired up without the use of soldering irons, or wire wrapping tools. Be careful not to use wires that are too
 thick for the board. Forcing oversized wire into the board may permanently bend the spring contacts: leading to poor connections, no connections, or even possible short circuits to other rows. We will discuss how to use the board in class.
 ```{figure} ../figures/ch1_introduction/Breadboard-Sizes.png
-:label: fig:intro:oscope
+:label: fig:intro:breadboard
 :width: 100%
 :align: center
 :alt: Various breadboard sizes.
