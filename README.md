@@ -11,7 +11,7 @@ This is an **open-access** textbook for introductory electronics lab courses. An
 
 This book is a remix of various electronics lab manuals I have found online. Anyone is welcome to compile their own version including or excluding chapters.  
 
-This version of the textbook is also open-access and can be found at https://github.com/troymessina/PhysicsArtOfModeling. The following chapters are included in the textbook:
+This version of the textbook is also open-access and can be found at https://github.com/troymessina/ElectronicsLab. The following chapters are included in the textbook:
 
 0. [Preface](https://troymessina.curve.space/ElectronicsLab/preface)
 1. [Introduction](https://troymessina.github.io/ElectronicsLab/introduction)
@@ -22,7 +22,7 @@ This version of the textbook is also open-access and can be found at https://git
 
 ### 📱 Online Access
 
-Visit the textbook website at [https://troymessina.github.io/PhysicsArtOfModeling/](https://troymessina.github.io/PhysicsArtOfModeling/)
+Visit the textbook website at [https://troymessina.curve.space](https://troymessina.curve.space/)
 
 ## 🛠️ Building Locally
 

@@ -1,7 +1,7 @@
 # Electronics Lab
 
-```figure https://github.com/troymessina/ElectronicsLab/blob/e5d77c306c1a2ff755dc86a2608d9ba47b6a845e/figures/ch0_preface/ai_electronics_lab.png
-:label: fig:oscopes:signalgen
+```{figure} ../figures/ch0_preface/ai_electronics_lab.png
+:label: fig:preface:electronicslab
 :width: 60%
 :align: center
 :alt: Electronics lab experiment (generated with Google Gemini AI).
@@ -9,9 +9,9 @@
 
 This is an **open-access** textbook for introductory electronics lab courses. Anyone that complies with the license is welcome to modify and use this work for their own use, and we hope that you will choose to contribute.  We hope that you may find it useful, and we are interested to know if you are using it!
 
-This book is a remix of [Introductory Physics: Building Models to Describe Our World](https://github.com/OSTP/PhysicsArtofModelling/raw/master/tex/BuildingModelsToDescribeOurWorld.pdf). All licensing and copyrights are derived from this original text. Anyone is welcome to compile their own version including or excluding chapters. The original open-access files are found at https://github.com/OSTP/PhysicsArtofModelling/tex/. 
+This book is a remix of various electronics lab manuals I have found online. Anyone is welcome to compile their own version including or excluding chapters.  
 
-This version of the textbook is also open-access and can be found at https://github.com/troymessina/PhysicsArtOfModeling. The following chapters are included in the textbook by default:
+This version of the textbook is also open-access and can be found at https://github.com/troymessina/ElectronicsLab. The following chapters are included in the textbook:
 
 0. [Preface](#chap:preface)
 1. [Introduction](#chap:introduction)

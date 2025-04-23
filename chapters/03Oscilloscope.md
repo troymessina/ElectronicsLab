@@ -16,14 +16,14 @@ numbering:
 
 # Introduction
 Producing electronic signals for circuits and measuring input and output signals of electronics circuits is important for a wide variety of applications. Everything from power lines to cell phones to Fitbits use electronic signals and circuits. This lab will explore signals and their measurement. We will use a FeelTech FY3200S [](#fig:oscopes:signalgen) signal generator capable of producing alternating signals in sine, square, triangle, and arbitrary formats. We will use a Tektronix TBS 1072B-EDU [](#fig:oscopes:oscope) digital oscilloscope to measure the waveforms from the signal generator (input) and from simple circuits (output).
-```figure ../figures/ch2_oscopes/FeelTech.jpg
+```{figure} ../figures/ch3_oscopes/FeelTech.jpg
 :label: fig:oscopes:signalgen
 :width: 60%
 :align: center
 :alt: The FeelTech FS3200 signal generator.
 The FeelTech FS3200 signal generator.
 ```
-```figure ../figures/ch2_oscopes/Tektronix.jpg
+```{figure} ../figures/ch3_oscopes/Tektronix.jpg
 :label: fig:oscopes:oscope
 :width: 60%
 :align: center
