@@ -86,8 +86,6 @@ We will use a variety of connections when building circuits and interfacing them
 :label: fig:intro:connections
 :width: 20%
 :align: left
-
-(bananaconnector)=
 <img src="../figures/ch1_introduction/banana.jpg" alt="banana connector" width="200">
 <img src="../figures/ch1_introduction/alligator.jpg" alt="alligator connector" width="200">
 <img src="../figures/ch1_introduction/testclip.jpg" alt="test clip connector" width="200">
