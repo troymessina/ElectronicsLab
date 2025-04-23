@@ -106,7 +106,7 @@ $$I=I_{out}=I_L$$
 
 Deliverable 3: From these relationships show that
 
-$$V_L=V\left(\frac{R_L}{R_{out}+R_L}\right)
+$$V_L=V\left(\frac{R_L}{R_{out}+R_L}\right)$$
 
 :::{note} Deliverable 4
 Explain why a plot of $1/V_L$ vs. $1/R_L$ is a good way to obtain $R_{out}$.
