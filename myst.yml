@@ -20,6 +20,8 @@ project:
   requirements:
     - python >= 3.10
     - matplotlib >= 3.5
+    - numpy >= 2.2
+    - scipy >= 1.15
   description: Introductory Electronics Lab Manual
   keywords: [Introductory Physics, Basic Electronics]
   authors: [Troy Messina]
