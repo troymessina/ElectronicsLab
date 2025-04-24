@@ -5,6 +5,14 @@ numbering:
   heading_1:
     start: 3
 ---
+<script type="text/x-thebe-config">
+  {
+    useBinder: false,
+    useJupyterLite: true,
+    mountActivateWidget: true,
+    mountStatusWidget: true,
+  }
+</script>
 (chap:oscopes)=
 # Overview
 :::{hint} Learning Objectives

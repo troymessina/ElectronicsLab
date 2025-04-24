@@ -14,7 +14,7 @@ project:
   description: Introductory Electronics Lab Manual
   keywords: [Introductory Physics, Basic Electronics]
   authors: [Troy Messina]
-  github: https://github.com/executablebooks/thebe-binder-base
+#  github: https://github.com/troymessina/ElectronicsLab/
   numbering:
     headings: true
   exclude: 
