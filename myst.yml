@@ -6,6 +6,7 @@ project:
     - file: ./chapters/01Introduction.md
     - file: ./chapters/02DCResistors.md
     - file: ./chapters/03Oscilloscope.md
+    - file: ./chapters/04Matplotlib.ipynb
 
   id: 
   title: Electronics Lab
