@@ -10,7 +10,7 @@ project:
 
   id: 
   title: Electronics Lab
-  jupyter: true
+#  jupyter: true
   description: Introductory Electronics Lab Manual
   keywords: [Introductory Physics, Basic Electronics]
   authors: [Troy Messina]
