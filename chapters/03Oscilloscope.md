@@ -4,6 +4,9 @@ numbering:
   headings:
   heading_1:
     start: 3
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
 ---
 (chap:oscopes)=
 # Overview
