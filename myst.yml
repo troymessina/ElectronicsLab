@@ -10,11 +10,19 @@ project:
 
   id: 
   title: Electronics Lab
-#  jupyter: true
+  github: https://github.com/troymessina/ElectronicsLab
+  license:
+    content: CC-BY-NC-SA-4.0
+    code: GPL-3.0-or-later
+  jupyter:
+    binder: true
+    lite: true
+  requirements:
+    - python >= 3.10
+    - matplotlib >= 3.5
   description: Introductory Electronics Lab Manual
   keywords: [Introductory Physics, Basic Electronics]
   authors: [Troy Messina]
-#  github: https://github.com/troymessina/ElectronicsLab/
   numbering:
     headings: true
   exclude: 
