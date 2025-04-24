@@ -116,28 +116,25 @@ Explain why a plot of $1/V_L$ vs. $1/R_L$ is a good way to obtain $R_{out}$.
 :::
 
 # Results
-Create a Colab (https://colab.research.google.com/)account with Google and copy this Jupyter notebook to your account. https://colab.research.google.com/drive/1vzdpEgh7kat6cTAndPkRkRC-yOkTxA2C?usp=sharing
 
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-plt.plot([1, 2, 3], [1, 2, 3], 'go-', label='line 1', linewidth=2)
-```
-
+## Part 1
+Enter your data into the arrays and make a graph for part 1 using the Python code shown below.
 ```{code-cell} python
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
 
-m=2
-b=0.1
-x=np.linspace(0,10,11)
-y= m*x+be
-plt.plot(x, y)
-plt.xlabel('x')
-plt.ylabel('y')
+def line_fit (x, m, b):
+	return m*x + b
+
+#Define your data using the MeasurementArray function in qexpy
+Rload = np.array([10., 15., 27., 33., 47., 68., 100., 150., 330., 470., 680., 1000., 10000., 22000.])
+Vload=np.array([0.38, 0.52, 0.74, 1.08, 1.02, 1.20, 1.40, 1.56, 1.84, 1.88, 1.94, 1.98, 2.06, 2.08])
+
+plt.plot(1/Rload, 1/Vload, label='data')
+plt.xlabel(r'$1/R_{load}$')
+plt.ylabel(r'$1/V_{load}$')
 plt.show()
-print("Testing python interaction!")
 ```
 
-Enter your data into the arrays and make a graph for part 1 similar to what is shown below in Figure 5.
+
