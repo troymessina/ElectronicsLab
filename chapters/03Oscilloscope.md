@@ -124,14 +124,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
+#define a linear function
 def line_fit (x, m, b):
 	return m*x + b
 
-#Define your data using the MeasurementArray function in qexpy
+#Define your data
 Rload = np.array([10., 15., 27., 33., 47., 68., 100., 150., 330., 470., 680., 1000., 10000., 22000.])
+Rload_unc = np.array([])
 Vload=np.array([0.38, 0.52, 0.74, 1.08, 1.02, 1.20, 1.40, 1.56, 1.84, 1.88, 1.94, 1.98, 2.06, 2.08])
+Vload_unc = np.array([0.1,0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1])
 
-plt.plot(1/Rload, 1/Vload, label='data')
+#Do the linear fit
+parms, cov = curve_fit(line_fit, Rload, Vload)
+print(parms, np,sqrt(cov))
+
+plt.errobar(1/Rload, Vload, yerr=Vload_unc/Vload**2) #plot the data
+plt.plot(1/Rload, parms[0]*1/Rload+parms[1])
 plt.xlabel(r'$1/R_{load}$')
 plt.ylabel(r'$1/V_{load}$')
 plt.show()
