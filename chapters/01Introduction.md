@@ -1,9 +1,5 @@
 ---
 title: Chapter 1 - Introduction
-numbering:
-  headings:
-  heading_1:
-    start: 1
 ---
 (chap:introduction)=
 # Introduction

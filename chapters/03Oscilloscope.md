@@ -36,7 +36,8 @@ Part 2 of this lab is to measure the integrity of the signal generator. We will 
 
 # Procedure
 Explore the signal generator.
-:::{note} Deliverable 1
+```{exercise}
+:label: exercise:oscopes:deliverable1
 Explain the following.
 * What does the PARM button do?
 * What PARMs are available?
@@ -49,7 +50,7 @@ Explain the following.
 * What does the WAVE button do?
 * How do you turn on/off CH1 and CH2?
 * How do you select whether you are adjusting CH1 or CH2?
-:::
+```
 
 ## Part 1 - Signal Generator Output Impedance
 Set up a signal generator and oscilloscope like the following diagram (Fig. 3). The output of the signal generator CH1 should be a 2 Volt peak-to-peak sine wave with a frequency of 1000 Hz.  Connect a BNC to alligator clip cable to CH1 on the signal generator. Connect a BNC to alligator clip to the oscilloscope channel 1 (yellow). Use the alligator clips to connect a 100Ω load resistor.
@@ -69,7 +70,8 @@ Equivalent circuit showing a sine wave going through two resistors in series. Th
 ```
 Explore the oscilloscope
 When you have your circuit connected, try to find the signal on the oscilloscope.
-:::{note} Deliverable 2
+```{exercise}
+:label: exercise:oscopes:deliverable2
 Explain how to
 * Select channel 1 (yellow).
 * Move the signal left/right.
@@ -77,7 +79,7 @@ Explain how to
 * Zoom the signal in/out horizontally (time) and vertically (voltage).
 * Measure the signal amplitude.
 * Measure the signal frequency.
-:::
+```
 
 ### Measurements
 Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V_L$.
@@ -103,13 +105,16 @@ $$V=V_{out}+V_L$$
 Finally, we know the current is the same throughout the circuit.
 $$I=I_{out}=I_L$$
 
-Deliverable 3: From these relationships show that
+```{exercise}
+:label: exercise:oscopes:deliverable3
+From these relationships show that
 
 $$V_L=V\left(\frac{R_L}{R_{out}+R_L}\right)$$
-
-:::{note} Deliverable 4
+```
+```{exercise}
+:label: exercise:oscopes:deliverable4
 Explain why a plot of $1/V_L$ vs. $1/R_L$ is a good way to obtain $R_{out}$.
-:::
+```
 
 # Results
 
