@@ -1,9 +1,5 @@
 ---
 title: Chapter 3 - Oscilloscopes and Signal Generators
-numbering:
-  headings:
-  heading_1:
-    start: 3
 kernelspec:
   name: python3
   display_name: 'Python 3'
@@ -136,7 +132,7 @@ Vload_unc = np.array([0.1,0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1,
 
 #Do the linear fit
 parms, cov = curve_fit(line_fit, Rload, Vload)
-print(parms, np,sqrt(cov))
+print(parms, np.sqrt(cov))
 
 plt.errobar(1/Rload, Vload, yerr=Vload_unc/Vload**2) #plot the data
 plt.plot(1/Rload, parms[0]*1/Rload+parms[1])
