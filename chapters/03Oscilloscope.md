@@ -53,7 +53,7 @@ Explain the following.
 ```
 
 ## Part 1 - Signal Generator Output Impedance
-Set up a signal generator and oscilloscope as shown in [](#fig:oscopes:expsetup). The output of the signal generator CH1 should be a 2 Volt peak-to-peak sine wave with a frequency of 1000 Hz.  Connect a BNC to alligator clip cable to CH1 on the signal generator. Connect a BNC to alligator clip to the oscilloscope channel 1 (yellow). Use the alligator clips to connect a 100Ω load resistor.
+Set up a signal generator and oscilloscope as shown in [](#fig:oscopes:expsetup). The equivalent circuit you are measuring is shown in [](#fig:ch3_oscopes/equivcircuit). The output of the signal generator CH1 should be a 2 Volt peak-to-peak sine wave with a frequency of 1000 Hz.  Connect a BNC to alligator clip cable to CH1 on the signal generator. Connect a BNC to alligator clip to the oscilloscope channel 1 (yellow). Use the alligator clips to connect a 100Ω load resistor.
 ```{figure} ../figures/ch3_oscopes/expsetup.jpg
 :label: fig:oscopes:expsetup
 :width: 100%
@@ -68,7 +68,7 @@ The setup of the experiment. A signal generator connected to a load. The oscillo
 :alt: Equivalent circuit showing a sine wave going through two resistors in series. The oscilloscope measures the voltage across the load, indicated by the circles.
 Equivalent circuit showing a sine wave going through two resistors in series. The oscilloscope measures the voltage across the load, indicated by the circles.
 ```
-Explore the oscilloscope
+### Explore the oscilloscope
 When you have your circuit connected, try to find the signal on the oscilloscope.
 ```{exercise}
 :label: exercise:oscopes:deliverable2
