@@ -35,4 +35,26 @@ Explain how an increase in the current (number of charges flowing per second, no
 The word circuit comes from the idea that electronics make loops. A circuit or electronic loop must conserve energy. This leads to two circuit rules.
 1.	The sum of voltages around a loop are zero, e.g., energy in from a battery equals energy out dissipated by a resistor.
 2.	The current through a circuit or electronic loop is constant.
-Below on the left is a circuit shown as we might see in the lab with a battery and a resistor. On the right is the equivalent circuit diagram. We assume wires are ideal, with zero resistance.
+In [](#fig:resistors:singleR), on the left is a circuit shown as we might see in the lab with a battery and a resistor. On the right is the equivalent circuit diagram. We assume wires are ideal, with zero resistance.
+```{figure} ../figures/ch2_resistors/singleR.png
+:label: fig:resistors:singleR
+:width: 60%
+:align: center
+:alt: Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
+Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
+```
+
+```{exercise}
+* In your lab notebook, make a note of what battery and resistor circuit diagrams look like. 
+* Which side of the battery is +, and which side is -? 
+* How is this polarity indicated in the circuit diagram on the right?
+```
+
+The resistors we will use have four or five colored bands on them. These bands quantify the resistance as shown in [](#fig:resistors:resistorBands).
+```{figure} ../figures/ch2_resistors/resistorBands.jpg
+:label: fig:resistors:resistorBands
+:width: 60%
+:align: center
+:alt: Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
+Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
+```

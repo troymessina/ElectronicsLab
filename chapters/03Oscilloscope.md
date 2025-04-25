@@ -196,8 +196,8 @@ print(parms, np.sqrt(cov))
 
 plt.plot(np.log(signal_f), np.log(oscope_f_sine), 'ob') #plot the data
 plt.plot(np.log(signal_f), np.log(parms[0]*signal_f+parms[1]))
-plt.xlabel(r'signal Hz')
-plt.ylabel(r'oscope Hz')
+plt.xlabel('Signal Generator Fequency (Hz)')
+plt.ylabel('Oscilloscope Frequency (Hz)')
 plt.show()
 ```
 
