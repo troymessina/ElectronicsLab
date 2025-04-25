@@ -24,8 +24,14 @@ All of the experiments will have a virtual component to accompany the work on th
 :placeholder: ../figures/ch2_resistors/PhETscreenshot.png
 A PhET simulation to explore simple circuits.
 :::
-#Background
-Ohm’s Law says $V = IR$, or voltage equals the current times the resistance. $V$ is in Volts (Volts are Joules/Coulomb). $I$ is in amperes (or Coulomb per second), and $R$ is in Ohms (units you could work out from the others). These are SI units. Voltage, also called electric potential, is the source of energy pushing electrons through a typical circuit. Flowing charges, or current, is a result of the voltage pushing charges against electrical resistance. As voltage increases, the current should increase linearly for a particular resistance.
+
+# Background
+Ohm’s Law says 
+```{math}
+:label: eq:resistors:ohms
+V = IR
+```
+or voltage equals the current times the resistance. $V$ is in Volts (Volts are Joules/Coulomb). $I$ is in amperes (or Coulomb per second), and $R$ is in Ohms (units you could work out from the others). These are SI units. Voltage, also called electric potential, is the source of energy pushing electrons through a typical circuit. Flowing charges, or current, is a result of the voltage pushing charges against electrical resistance. As voltage increases, the current should increase linearly for a particular resistance.
 ```{exercise}
 :label: exercise:resistors:deliverable1
 Explain how an increase in the current (number of charges flowing per second, not the speed of the charges) is a response to increasing voltage described by conservation of energy.
@@ -38,7 +44,7 @@ The word circuit comes from the idea that electronics make loops. A circuit or e
 In [](#fig:resistors:singleR), on the left is a circuit shown as we might see in the lab with a battery and a resistor. On the right is the equivalent circuit diagram. We assume wires are ideal, with zero resistance.
 ```{figure} ../figures/ch2_resistors/singleR.png
 :label: fig:resistors:singleR
-:width: 60%
+:width: 80%
 :align: center
 :alt: Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
 Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
@@ -53,7 +59,7 @@ Circuit showing a single resistor connected to a battery or power source. On the
 The resistors we will use have four or five colored bands on them. These bands quantify the resistance as shown in [](#fig:resistors:resistorBands).
 ```{figure} ../figures/ch2_resistors/resistorBands.jpg
 :label: fig:resistors:resistorBands
-:width: 60%
+:width: 100%
 :align: center
 :alt: Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
 Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
@@ -67,7 +73,7 @@ For example, a resistor with yellow, violet, red, and silver bands gives the num
 :alt: A resistor with green, blue, orange, and gold bands.
 ```
 * Calculate the resistance of the resistor shown in [](#fig:resistors:exampleBands) with green, blue, orange, and gold bands.
-* Suppose this resistor is connected to a 3 Volt battery like the image of a circuit above. What current will flow through the circuit?
+* Suppose this resistor is connected to a 3 Volt battery like the image of a circuit above. Using Ohm's Law in equation {eq}`eq:resistors:ohms`, what current will flow through the circuit?
 ```
 	
 	
