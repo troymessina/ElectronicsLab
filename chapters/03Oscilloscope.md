@@ -143,12 +143,12 @@ def line_fit (x, m, b):
 
 #Define your data
 Rload = np.array([10., 15., 27., 33., 47., 68., 100., 150., 330., 470., 680., 1000., 10000., 22000.])
-Rload_unc = np.array([])
+Rload_unc = 0.05*Rload #gold band resistors
 Vload=np.array([0.38, 0.52, 0.74, 1.08, 1.02, 1.20, 1.40, 1.56, 1.84, 1.88, 1.94, 1.98, 2.06, 2.08])
 Vload_unc = np.array([0.1,0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1])
 
 #Do the linear fit
-parms, cov = curve_fit(line_fit, Rload, Vload)
+parms, cov = curve_fit(line_fit, Rload, Vload,sigma=Vload_unc, absolute_sigma=True)
 print(parms, np.sqrt(cov))
 
 plt.errobar(1/Rload, Vload, yerr=Vload_unc/Vload**2) #plot the data
