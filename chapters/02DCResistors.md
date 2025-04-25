@@ -17,11 +17,11 @@ kernelspec:
 
 All of the experiments will have a virtual component to accompany the work on the lab bench. The virtual experiments are done using the PhET simulator below. Click on the "Lab" tab. 
 
-:::{iframe}https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc
+:::{iframe} https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_all.html
 :label: chap:resistors:PhET
 :width: 100%
 :align: center
-:placeholder: ../figures/ch2_resistors/phet.jpg
+:placeholder: ../figures/ch2_resistors/PhETscreenshot.png
 A PhET simulation to explore simple circuits.
 :::
 #Background
