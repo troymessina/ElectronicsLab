@@ -58,3 +58,16 @@ The resistors we will use have four or five colored bands on them. These bands q
 :alt: Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
 Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
 ```
+For example, a resistor with yellow, violet, red, and silver bands gives the numbers $4, 7, 2, \pm 10 \%$. This indicates the resistance is $47 \times 10^2=4700 \pm10 \%=4700 \pm470\Omega$.
+ ```{exercise}
+ ```{figure} ../figures/ch2_resistors/exampleBands.png
+ :label: fig:resistors:resistorBands
+:width: 60%
+:align: center
+:alt: A resistor with green, blue, orange, and gold bands.
+```
+* Calculate the resistance of the resistor shown in [](#fig:resistors:exampleBands) with green, blue, orange, and gold bands.
+* Suppose this resistor is connected to a 3 Volt battery like the image of a circuit above. What current will flow through the circuit?
+```
+	
+	
