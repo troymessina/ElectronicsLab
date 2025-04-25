@@ -55,6 +55,7 @@ Circuit showing a single resistor connected to a battery or power source. On the
 * Which side of the battery is +, and which side is -? 
 * How is this polarity indicated in the circuit diagram on the right?
 ```
+## Identifying Resistors
 
 The resistors we will use have four or five colored bands on them. These bands quantify the resistance as shown in [](#fig:resistors:resistorBands).
 ```{figure} ../figures/ch2_resistors/resistorBands.jpg
@@ -71,7 +72,12 @@ For example, a resistor with yellow, violet, red, and silver bands gives the num
 * Suppose this resistor is connected to a 3 Volt battery like the image of a circuit above. Using Ohm's Law in equation {eq}`eq:resistors:ohms`, what current will flow through the circuit?
 ```
 
+## Measuring Voltage and Current
+
+
+
 # Experiment
+
 ## Part 1 – Single Resistor
 
 Set up the circuit shown above with a single resistor in the simulator and on the lab bench. From the colored bands, determine the resistance and set the same resistance in the simulator. On the lab bench, you will use a power supply instead of a battery so that you can adjust the voltage. Apply the voltages as shown in the table below and measure the current flows for each applied voltage.
@@ -89,6 +95,21 @@ Set up the circuit shown above with a single resistor in the simulator and on th
 * How does your slope compare to the theoretical value of the resistor from its bands including uncertainty? Does the simulation give the same results as your experiment? Explain.
 ```
 
-## Part 2 – Series Resistor
+## Part 2 – Series Resistors
 Set up a "series" circuit with two resistors in series as shown below. From the colored bands, determine the resistances and set those same resistances and voltages in the simulator.  Apply the voltages as shown in the table and measure the currents at the locations indicated (1-4) in the simulation. Measure the current anywhere on the real circuit. Measure the voltage across each resistor (two voltage measurements).
+```{figure} ../figures/ch2_resistors/seriesR.svg
+:label: fig:resistors:seriesR
+:width: 50%
+:align: center
+:alt: Circuit showing a two resistors in series connected to a battery or power source.
+Circuit showing a two resistors in series connected to a battery or power source.
+```
 
+## Part 3 - Parallel Resistors
+```{figure} ../figures/ch2_resistors/parallelR.svg
+:label: fig:resistors:parallelR
+:width: 50%
+:align: center
+:alt: Circuit showing a two resistors in parallel connected to a battery or power source.
+Circuit showing a two resistors in parallel connected to a battery or power source.
+```
