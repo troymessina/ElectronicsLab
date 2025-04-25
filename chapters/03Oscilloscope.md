@@ -92,24 +92,38 @@ When measuring the square wave, use the cursor capabilities on the oscilloscope 
 # Part 1 Theory
 According to Ohm’s Law, we know
 
-$$V=IR$$
+```{math}
+:label: eq:oscopes:ohms
+V=IR
+```
 
 We know from the equivalent circuit that the series resistance is
 
-$$R=R_{out}+R_L$$
+```{math}
+:label: eq:ocsopes:seriesR
+R=R_{out}+R_L
+```
 
 We also know for series resistors, the voltages sum to the input voltage
 
-$$V=V_{out}+V_L$$
+```{math}
+:label: eq:oscopes:seriesV
+V=V_{out}+V_L
+```
 
 Finally, we know the current is the same throughout the circuit.
-$$I=I_{out}=I_L$$
+```{math}
+:label: eq:oscopes:constcurr
+I=I_{out}=I_L
+```
 
 ```{exercise}
 :label: exercise:oscopes:deliverable3
-From these relationships show that
+From {eq}`eq:oscopes:ohms` through {eq}`eq:oscopes:constcurr`, show that
 
-$$V_L=V\left(\frac{R_L}{R_{out}+R_L}\right)$$
+```{math}
+V_L=V\left(\frac{R_L}{R_{out}+R_L}\right)
+```
 ```
 ```{exercise}
 :label: exercise:oscopes:deliverable4
