@@ -46,8 +46,8 @@ In [](#fig:resistors:singleR), on the left is a circuit shown as we might see in
 :label: fig:resistors:singleR
 :width: 80%
 :align: center
-:alt: Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
-Circuit showing a single resistor connected to a battery or power source. On the right is the PhET cartoon with a battery and 10 Ohm resistor. On the left is the circuit diagram.
+:alt: Circuit showing a single resistor connected to a battery or power source. On the left is the PhET cartoon with a battery and 10 Ohm resistor. On the right is the circuit diagram.
+Circuit showing a single resistor connected to a battery or power source. On the left is the PhET cartoon with a battery and 10 Ohm resistor. On the right is the circuit diagram.
 ```
 
 ```{exercise}
@@ -73,6 +73,49 @@ For example, a resistor with yellow, violet, red, and silver bands gives the num
 ```
 
 ## Measuring Voltage and Current
+
+### 🔌 **Voltage: Measured in Parallel**
+
+#### Why in parallel?
+Voltage is the **potential difference between two points**. To measure that, you need to compare the electric potential at one point **relative to another**.
+
+#### How?
+- Place the **multimeter probes across** (in parallel with) the component.
+- This allows the meter to measure the drop in electric potential **through** that component.
+
+#### Example:
+To measure the voltage across a resistor, you touch:
+- One probe to the resistor's input side.
+- The other to the output side.
+
+💡 Think of it like checking the **pressure difference across a valve** in a water pipe.
+
+---
+
+### ⚡ **Current: Measured in Series**
+
+#### Why in series?
+Current is the **flow of electric charge** through a circuit. To measure it, the current must pass **through the multimeter** so it can count how much is flowing.
+
+#### How?
+- Break the circuit and insert the multimeter **in line** with the component (in series).
+- This forces all the current flowing through that component to also go through the meter.
+
+#### Example:
+To measure the current through an LED, you'd:
+- Disconnect one side of the LED.
+- Connect the multimeter between the disconnected lead and where it was attached.
+
+💡 This is like measuring **water flow by putting a meter in the pipe**—the water (or electrons) must pass through it.
+
+---
+
+### Quick Summary:
+
+| Measurement | Connection Type | Why? |
+|-------------|------------------|------|
+| **Voltage** | Parallel          | Measures potential *difference* between two points |
+| **Current** | Series            | Measures *flow* of charge through a path         |
 
 
 
