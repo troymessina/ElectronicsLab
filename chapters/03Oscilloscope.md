@@ -87,7 +87,7 @@ Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V
 ## Part 2 - Signal Integrity
 Determine the accuracy of the frequency of the signal generator as a function of frequency. For a sine wave and a square wave of 2 Volts peak-to-peak, adjust the frequency using a log-scale, i.e., 10 Hz, 20 Hz, 50 Hz, 100 Hz, 200 Hz, 500 Hz, etc. up to 10 MHz. Record the signal generator frequency as your x-value and the oscilloscope value as your y-value. You will have two datasets, one for sine and one for square. Keep in mind you will need to adjust the horizontal scaling on the oscilloscope so that you can see at least one period of the wave. The oscilloscope will measure the frequency and period for you. However, you should include in your report how you can use the screen and scaling adjustments to get an accurate measurement manually.
 
-When measuring the square wave, use the cursor capabilities on the oscilloscope to measure the time it takes the square wave to go from its highest to lowest point on the falling side of the square wave.
+When measuring the square wave, use the cursor capabilities on the oscilloscope to measure the time it takes the square wave to go from its highest to lowest point on the falling side of the square wave. We'll call this the "fall time".
 
 # Part 1 Theory
 According to Ohm’s Law, we know
@@ -131,7 +131,8 @@ Explain why a plot of $1/V_L$ vs. $1/R_L$ is a good way to obtain $R_{out}$.
 # Results
 
 ## Part 1
-Enter your data into the arrays and make a graph for part 1 using the Python code shown below.
+Enter your data into the arrays and make a graph for part 1 using the Python code shown below. You have a list of values for the load resistor `Rload`, the voltage on the load resistor `Vload`, and uncertainties for both of these lists `Rload_unc` and `Vload_unc`. The uncertainty for the load resistor can be from the silver (10%) or gold (5%) band on the resistors you used.
+
 ```{code-cell} python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -158,4 +159,17 @@ plt.ylabel(r'$1/V_{load}$')
 plt.show()
 ```
 
+```{exercise}
+:label: exercise:oscopes:conclusionpt1
+Explain the following
+* What are your slope and intercept, including uncertainty?
+* What do the slope and intercept tell us about the signal generator?
+* How confident are you in your results?
+* Is Ohm’s Law valid in this context?
+```
 
+## Part 2
+```{exercise}
+:label: exercise:oscopes:conclusionpt2
+For part 2, Describe your results of frequency dependence. Why does a log-log plot make sense to use in this case?
+```
