@@ -149,10 +149,10 @@ Vload=np.array([0.38, 0.52, 0.74, 1.08, 1.02, 1.20, 1.40, 1.56, 1.84, 1.88, 1.94
 Vload_unc = np.array([0.1,0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1])
 
 #Do the linear fit
-parms, cov = curve_fit(line_fit, Rload, Vload,sigma=Vload_unc, absolute_sigma=True)
+parms, cov = curve_fit(line_fit, 1/Rload, 1/Vload, sigma=Vload_unc, absolute_sigma=True)
 print(parms, np.sqrt(cov))
 
-plt.errobar(1/Rload, Vload, yerr=Vload_unc/Vload**2) #plot the data
+plt.errorbar(1/Rload, 1/Vload, yerr=Vload_unc/Vload**2, fmt='ob') #plot the data
 plt.plot(1/Rload, parms[0]*1/Rload+parms[1])
 plt.xlabel(r'$1/R_{load}$')
 plt.ylabel(r'$1/V_{load}$')
@@ -169,7 +169,42 @@ Explain the following
 ```
 
 ## Part 2
+Enter your data into the arrays of the code below and make three graphs for part 2. The first graph is done for you.
+
+**Graph 1 - Sine Wave**
+For the first graph of the sine function, you have a list of values for the signal generator frequency `signal_f`, the measured signal frequency on the oscilloscope `oscope_f`, and uncertainties for the oscilloscope measurement `oscope_f_unc`. These uncertainties will need to be estimated based on the oscilloscope settings. You will want to plot these values on a log-log scaled graph. To do this, use `plt.errorbar(np.log(oscope_f), np.log(signal_f), yerr=oscope_f_unc)`Add a linear trendline to this data.
+
+**Graph 2 - Square Wave**
+You have the same data for the square wave. Create a graph of measured frequency vs. signal frequency with a linear fit.
+
+**Graph 3 - Fall Time**
+For the fall time, you have `signal_f`, `fall_time`, and `fall_time_unc`. 
+
+```{code-cell} python
+signal_f = np.array([10, 100, 1000, 10000, 100000, 1000000, 10000000])
+oscope_f_sine = np.array([10.001, 100.002, 1000.01, 10000, 100000, 1000010, 10000000])
+oscope_f_sq = np.array([10.0000, 100.000, 1000.01, 10000, 100000, 1000000, 10000000])
+fall_time = np.array([41, 41, 37, 37, 40, 40, 51])
+
+#define a linear function
+def line_fit (x, m, b):
+	return m*x + b
+
+#Do the linear fit
+parms, cov = curve_fit(line_fit, signal_f, oscope_f_sine)
+print(parms, np.sqrt(cov))
+
+plt.plot(np.log(signal_f), np.log(oscope_f_sine), 'ob') #plot the data
+plt.plot(np.log(signal_f), np.log(parms[0]*signal_f+parms[1]))
+plt.xlabel(r'signal Hz')
+plt.ylabel(r'oscope Hz')
+plt.show()
+```
+
 ```{exercise}
 :label: exercise:oscopes:conclusionpt2
-For part 2, Describe your results of frequency dependence. Why does a log-log plot make sense to use in this case?
+For part 2, 
+* Describe your results of frequency dependence. 
+* Why does a log-log plot make sense to use in this case?
+* What can you say about the integrity of the signal generator over the frequency range measured?
 ```
