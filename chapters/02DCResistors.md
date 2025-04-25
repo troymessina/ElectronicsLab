@@ -74,7 +74,7 @@ For example, a resistor with yellow, violet, red, and silver bands gives the num
 
 ## Measuring Voltage and Current
 
-### 🔌 **Voltage: Measured in Parallel**
+### 🔌 Voltage is Measured in Parallel
 
 #### Why in parallel?
 Voltage is the **potential difference between two points**. To measure that, you need to compare the electric potential at one point **relative to another**.
@@ -85,14 +85,15 @@ Voltage is the **potential difference between two points**. To measure that, you
 
 #### Example:
 To measure the voltage across a resistor, you touch:
-- One probe to the resistor's input side.
-- The other to the output side.
+- One probe to the resistor's current input side.
+- The other to the current output side.
+- See [](#fig:resistors:elecmeasure)
 
 💡 Think of it like checking the **pressure difference across a valve** in a water pipe.
 
 ---
 
-### ⚡ **Current: Measured in Series**
+### ⚡ Current is Measured in Series
 
 #### Why in series?
 Current is the **flow of electric charge** through a circuit. To measure it, the current must pass **through the multimeter** so it can count how much is flowing.
@@ -109,6 +110,12 @@ To measure the current through an LED, you'd:
 💡 This is like measuring **water flow by putting a meter in the pipe**—the water (or electrons) must pass through it.
 
 ---
+```{figure} ../figures/ch2_resistors/volt_current_measure.jpg
+:width: 80%
+:align: center
+:alt: A visual for how to measure voltage and current.
+A visual for how to measure voltage and current.
+```
 
 ### Quick Summary:
 
