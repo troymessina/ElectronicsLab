@@ -68,12 +68,32 @@ For example, a resistor with yellow, violet, red, and silver bands gives the num
  ```{exercise}
  ```{figure} ../figures/ch2_resistors/exampleBands.png
  :label: fig:resistors:resistorBands
-:width: 60%
+:width: 75%
 :align: center
 :alt: A resistor with green, blue, orange, and gold bands.
 ```
 * Calculate the resistance of the resistor shown in [](#fig:resistors:exampleBands) with green, blue, orange, and gold bands.
 * Suppose this resistor is connected to a 3 Volt battery like the image of a circuit above. Using Ohm's Law in equation {eq}`eq:resistors:ohms`, what current will flow through the circuit?
 ```
-	
-	
+
+# Experiment
+## Part 1 – Single Resistor
+
+Set up the circuit shown above with a single resistor in the simulator and on the lab bench. From the colored bands, determine the resistance and set the same resistance in the simulator. On the lab bench, you will use a power supply instead of a battery so that you can adjust the voltage. Apply the voltages as shown in the table below and measure the current flows for each applied voltage.
+| Voltage (V) | Current (A) |
+|:-----------:|:-----------:|
+|      0.5    |             |
+|      1.0    |             |
+|      1.5    |             |
+|      2.0    |             |
+|      2.5    |             |
+|      3.0    |             |
+```{exercise}
+:label: exercise:resistor:singleR
+* Plot V vs I. What is the slope of your graph including uncertainty (We will go over graphing and fitting in Python.)? 
+* How does your slope compare to the theoretical value of the resistor from its bands including uncertainty? Does the simulation give the same results as your experiment? Explain.
+```
+
+## Part 2 – Series Resistor
+Set up a "series" circuit with two resistors in series as shown below. From the colored bands, determine the resistances and set those same resistances and voltages in the simulator.  Apply the voltages as shown in the table and measure the currents at the locations indicated (1-4) in the simulation. Measure the current anywhere on the real circuit. Measure the voltage across each resistor (two voltage measurements).
+
