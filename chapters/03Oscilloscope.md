@@ -119,11 +119,9 @@ I=I_{out}=I_L
 
 ```{exercise}
 :label: exercise:oscopes:deliverable3
-From {eq}`eq:oscopes:ohms` through {eq}`eq:oscopes:constcurr`, show that
+From equations {eq}`eq:oscopes:ohms` through {eq}`eq:oscopes:constcurr`, show that
 
-```{math}
-V_L=V\left(\frac{R_L}{R_{out}+R_L}\right)
-```
+$$V_L=V\left(\frac{R_L}{R_{out}+R_L}\right)$$
 ```
 ```{exercise}
 :label: exercise:oscopes:deliverable4
