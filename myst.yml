@@ -26,7 +26,7 @@ project:
   keywords: [Introductory Physics, Basic Electronics]
   authors: [Troy Messina]
   numbering:
-    headings: true
+    headings: false
   exclude: 
 #    - figures/**
  #   - trinket/**
