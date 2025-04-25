@@ -4,7 +4,7 @@ kernelspec:
   name: python3
   display_name: 'Python 3'
 ---
-(chap:resistors)=
+(chap:rc)=
 # Overview
 :::{hint} Learning Objectives
 * Students will demonstrate proficiency in the observation, analysis, and interpretation of experimental data, including the role that uncertainty plays in interpreting experimental results.

@@ -7,7 +7,11 @@ project:
     - file: ./chapters/02DCResistors.md
     - file: ./chapters/03Oscilloscope.md
     - file: ./chapters/04RCCircuits.md
-
+    - file: ./chapters/05RLCCircuits.md
+    - file: ./chapters/06Diodes.md
+    - file: ./chapters/07Transistors.md
+    #FETs
+    #Op-amps
   id: 
   title: Electronics Lab
   github: https://github.com/troymessina/ElectronicsLab
