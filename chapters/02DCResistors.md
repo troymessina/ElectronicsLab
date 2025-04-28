@@ -156,6 +156,7 @@ Circuit showing a two resistors in series connected to a battery or power source
 ```
 
 ## Part 3 - Parallel Resistors
+
 ```{figure} ../figures/ch2_resistors/parallelR.svg
 :label: fig:resistors:parallelR
 :width: 50%
@@ -163,3 +164,41 @@ Circuit showing a two resistors in series connected to a battery or power source
 :alt: Circuit showing a two resistors in parallel connected to a battery or power source.
 Circuit showing a two resistors in parallel connected to a battery or power source.
 ```
+
+## Part 3 - Application: Voltage Divider to Measure Temperature
+
+###Voltage Divider Overview
+
+A voltage divider has two essential parts: the circuit and the equation.
+
+###The Circuit
+A voltage divider is created by connecting two resistors in series across a voltage source. You might see this circuit drawn in slightly different ways, but the basic setup is always the same.
+```{figure} ../figures/ch2_resistors/Vdivider.svg
+:label: fig:resistors:parallelR
+:width: 50%
+:align: center
+:alt: A voltage divider circuit with an unknown resistor $R_T$.
+A voltage divider circuit with an unknown resistor $R_T$.
+```
+We will label the resistor connected closest to the input voltage ($V_o$) as $R_T$, and the resistor connected closer to ground as $R_1$, where we know the input voltage and the resistance of $R_1$. $R_T$ is a variable resistance that changes with temperature. The voltage measured across $R_1$ is called $V_1$.
+
+That's really all there is!
+$V_1$ is the "divided" voltage — a specific fraction of the input voltage.
+
+### The Equation
+To use a voltage divider, you need to know three values. In this case, we know the input voltage ($V_o$), the resistor values $R_1$, and we measure the voltage across the known resistor $R_1$. With these, you can calculate the unknown resistance ($R_T$) using resistor circuit formulas.
+
+Voltages sum:
+```{math}
+:label: eq:resistors:sumV
+V_o = V_1 + V_T
+```
+Ohm's Law of equation {eq}`eq:resistors:ohms` for a series circuit is a constant current flowing through both resistors. We are free to substitute any $V$ with $IR$, where $I=V_o/R$ and $R=R_1+R_T$. Together, we can write
+```{math}
+:label: eq:resistors:vdivider
+V_1 &= IR_1
+V_1 &= \frac{V_o}{R_1+R_T}}\cdot R_1 
+\frac{R_1+R_T}{R_1} &= \frac{V_o}{V_1}
+R_T = \left(\frac{V_o}{V_1}-1\right)R_1
+```
+The last equation in {eq}`eq:resistors:vdivider` shows that the unknown resistance can be calculated by measuring the voltage of the known resistor.
