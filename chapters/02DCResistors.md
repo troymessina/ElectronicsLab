@@ -199,6 +199,6 @@ Ohm's Law of equation {eq}`eq:resistors:ohms` for a series circuit is a constant
 V_1 &= IR_1\\
 V_1 &= \frac{V_o}{R_1+R_T}}\cdot R_1\\
 \frac{R_1+R_T}{R_1} &= \frac{V_o}{V_1}\\
-R_T = \left(\frac{V_o}{V_1}-1\right)R_1
+R_T &= \left(\frac{V_o}{V_1}-1\right)R_1
 ```
 The last equation in {eq}`eq:resistors:vdivider` shows that the unknown resistance can be calculated by measuring the voltage of the known resistor.
