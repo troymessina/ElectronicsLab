@@ -141,10 +141,36 @@ Set up the circuit shown above with a single resistor in the simulator and on th
 |      2.0    |             |
 |      2.5    |             |
 |      3.0    |             |
+```
 ```{exercise}
 :label: exercise:resistor:singleR
 * Plot V vs I. What is the slope of your graph including uncertainty (We will go over graphing and fitting in Python.)? 
 * How does your slope compare to the theoretical value of the resistor from its bands including uncertainty? Does the simulation give the same results as your experiment? Explain.
+```
+```{code-cell} python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+#define a linear function
+def line_fit (x, m, b):
+	return m*x + b
+
+#Define your data
+V = np.array([0.5, 1.0, 1.5, 2.0, 2.5, 3.0])
+V_unc = np.ones(6)*0.05 #adjust this to the appropriate uncertainty
+I = np.array([1,2,3,4,5,6]) #enter your current values
+I_unc = np.ones(6)*0.1 #adjust this to the appropriate uncertainty
+
+#Do the linear fit
+parms, cov = curve_fit(line_fit, I, V, sigma=V_unc, absolute_sigma=True)
+print(parms, np.sqrt(cov))
+
+plt.errorbar(I, V, yerr=V_unc, fmt='ob') #plot the data
+plt.plot(I, parms[0]*I+parms[1])
+plt.xlabel('Voltage (V)')
+plt.ylabel('Current (A)')
+plt.show()
 ```
 
 ## Part 2 – Series Resistors
