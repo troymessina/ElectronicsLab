@@ -15,7 +15,7 @@ kernelspec:
 
 # Introduction
 
-All of the experiments will have a virtual component to accompany the work on the lab bench. The virtual experiments are done using the PhET simulator below. Click on the "Lab" tab. 
+These experiments will be carried out with breadboards, multimeters, and DC power supplie. However, a useful virtual component to accompany the work on the lab bench is to use the PhET simulator below. Click on the "Lab" tab. 
 
 :::{iframe} https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_all.html
 :label: chap:resistors:PhET
@@ -34,14 +34,17 @@ V = IR
 or voltage equals the current times the resistance. $V$ is in Volts (Volts are Joules/Coulomb). $I$ is in amperes (or Coulomb per second), and $R$ is in Ohms (units you could work out from the others). These are SI units. Voltage, also called electric potential, is the source of energy pushing electrons through a typical circuit. Flowing charges, or current, is a result of the voltage pushing charges against electrical resistance. As voltage increases, the current should increase linearly for a particular resistance.
 ```{exercise}
 :label: exercise:resistors:deliverable1
-Explain how an increase in the current (number of charges flowing per second, not the speed of the charges) is a response to increasing voltage described by conservation of energy.
+Set up the circuit in [](#fig:resistors:singleR) in the PhET simulation. Adjust the voltage of the battery from 0.5 V to 3 V. Explain what you observe is the response to increasing voltage in the circuit. Points to address are:
+* What happens to the number of electrons flowing through the circuit per unit of time as voltage increases?
+* Do electrons "pile up" at the resistor because the resistor has more resistance to flow than the wires? 
 ```
 
 ## Circuit Loop Rules
-The word circuit comes from the idea that electronics make loops. A circuit or electronic loop must conserve energy. This leads to two circuit rules.
-1.	The sum of voltages around a loop are zero, e.g., energy in from a battery equals energy out dissipated by a resistor.
-2.	The current through a circuit or electronic loop is constant.
-In [](#fig:resistors:singleR), on the left is a circuit shown as we might see in the lab with a battery and a resistor. On the right is the equivalent circuit diagram. We assume wires are ideal, with zero resistance.
+The word circuit comes from the idea that electronic circuits make loops. A circuit or electronic loop must conserve energy. This leads to two circuit rules.
+1.	The sum of voltages around a loop are zero, e.g., energy per charge input from a battery equals energy per charge dissipated by a resistor.
+2.	The current through a circuit or electronic loop is constant throughout the loop.
+
+In [](#fig:resistors:singleR), on the left is a circuit shown as we might see in the lab with a battery and a resistor. On the right is the equivalent circuit diagram. We assume wires are ideal, with zero resistance. The circles with dashed lines are points where the circuit can be broken to add more elements such as a current meter.
 ```{figure} ../figures/ch2_resistors/singleR.png
 :label: fig:resistors:singleR
 :width: 80%
@@ -51,8 +54,8 @@ Circuit showing a single resistor connected to a battery or power source. On the
 ```
 
 ```{exercise}
-* In your lab notebook, make a note of what battery and resistor circuit diagrams look like. 
-* Which side of the battery is +, and which side is -? 
+* Record what battery and resistor circuit diagrams look like. 
+* Which side of the battery is +, and which side is -? You can determine this by the electron current flow.
 * How is this polarity indicated in the circuit diagram on the right?
 ```
 ## Identifying Resistors
@@ -144,8 +147,8 @@ Set up the circuit shown above with a single resistor in the simulator and on th
 ```
 ```{exercise}
 :label: exercise:resistor:singleR
-* Plot V vs I. What is the slope of your graph including uncertainty (We will go over graphing and fitting in Python.)? 
-* How does your slope compare to the theoretical value of the resistor from its bands including uncertainty? Does the simulation give the same results as your experiment? Explain.
+* Plot V vs I (y vs. x). Use the Python code below to add a linear fit to your data. What is the slope of your graph including uncertainty (We will go over graphing and fitting in Python.)? 
+* How does your slope compare to the theoretical value of the resistor from its bands including uncertainty? Does the PhET simulation give the same results as your experiment? Explain.
 ```
 ```{code-cell} python
 import numpy as np
@@ -164,17 +167,31 @@ I_unc = np.ones(6)*0.1 #adjust this to the appropriate uncertainty
 
 #Do the linear fit
 parms, cov = curve_fit(line_fit, I, V, sigma=V_unc, absolute_sigma=True)
-print(parms, np.sqrt(cov))
+print("slope =", parms[0], "+/-", np.sqrt(cov[0][0]))
+print("intercept =", parms[1], "+/-", np.sqrt(cov[1][1]))
 
 plt.errorbar(I, V, yerr=V_unc, fmt='ob') #plot the data
 plt.plot(I, parms[0]*I+parms[1])
-plt.xlabel('Voltage (V)')
-plt.ylabel('Current (A)')
+plt.xlabel('Current (A)')
+plt.ylabel('Voltage (V)')
 plt.show()
 ```
 
 ## Part 2 – Series Resistors
-Set up a "series" circuit with two resistors in series as shown below. From the colored bands, determine the resistances and set those same resistances and voltages in the simulator.  Apply the voltages as shown in the table and measure the currents at the locations indicated (1-4) in the simulation. Measure the current anywhere on the real circuit. Measure the voltage across each resistor (two voltage measurements).
+Set up a "series" circuit with two resistors in series as shown below. From the colored bands, determine the resistances and set those same resistances and voltages in the simulator.  Apply the voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:singleRImeas). Measure the voltage across each resistor (two voltage measurements).
+:::{figure}
+:label: fig:resistors:singleR
+:align: center
+
+(fig:resistors:singleRa)=
+![Circuit showing a two resistors in series connected to a battery or power source.](../figures/ch2_resistors/seriesR.svg)
+
+![Three locations identified for measuring current in the series circuit](../figures/ch2_resistors/seriesRImeas.svg)
+
+Circuit showing a two resistors in series connected to a battery or power source and three locations for measuring current.
+Circuit showing a two resistors in series connected to a battery or power source and three locations for measuring current.
+:::
+
 ```{figure} ../figures/ch2_resistors/seriesR.svg
 :label: fig:resistors:seriesR
 :width: 50%
