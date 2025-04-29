@@ -179,25 +179,19 @@ plt.show()
 
 ## Part 2 – Series Resistors
 Set up a "series" circuit with two resistors in series as shown below. From the colored bands, determine the resistances and set those same resistances and voltages in the simulator.  Apply the voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:singleRImeas). Measure the voltage across each resistor (two voltage measurements).
-:::{figure}
-:label: fig:resistors:singleR
-:align: center
-
-(fig:resistors:singleRa)=
-![Circuit showing a two resistors in series connected to a battery or power source.](../figures/ch2_resistors/seriesR.svg)
-
-![Three locations identified for measuring current in the series circuit](../figures/ch2_resistors/seriesRImeas.svg)
-
-Circuit showing a two resistors in series connected to a battery or power source and three locations for measuring current.
-Circuit showing a two resistors in series connected to a battery or power source and three locations for measuring current.
-:::
-
 ```{figure} ../figures/ch2_resistors/seriesR.svg
 :label: fig:resistors:seriesR
 :width: 50%
 :align: center
 :alt: Circuit showing a two resistors in series connected to a battery or power source.
 Circuit showing a two resistors in series connected to a battery or power source.
+```
+```{figure} ../figures/ch2_resistors/seriesR_Imeas.svg
+:label: fig:resistors:seriesRImeas
+:width: 50%
+:align: center
+:alt: Three locations identified for measuring current in the series circuit.
+Three locations identified for measuring current in the series circuit.
 ```
 
 ## Part 3 - Parallel Resistors
