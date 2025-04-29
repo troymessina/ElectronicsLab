@@ -176,9 +176,9 @@ plt.xlabel('Current (A)')
 plt.ylabel('Voltage (V)')
 plt.show()
 ```
-
+(sec:resistors:part2)=
 ## Part 2 – Series Resistors
-Set up a "series" circuit with two resistors in series as shown in [](#fig:resistors:singleR). From the colored bands, determine the resistances and set those same resistances and voltages in the PhET simulator.  Apply the input voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:seriesRImeas). Measure the voltage across each resistor (two voltage measurements).
+Set up a "series" circuit with two resistors in series as shown in [](#fig:resistors:seriesR). From the colored bands, determine the resistances and set those same resistances and voltages in the PhET simulator.  Apply the input voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:seriesRImeas). Measure the voltage across each resistor (two voltage measurements).
 ```{figure} ../figures/ch2_resistors/seriesR.svg
 :label: fig:resistors:seriesR
 :width: 50%
@@ -198,7 +198,7 @@ Three locations identified for measuring current in the series circuit.
 Using your results, show that $V=IR$ for each resistor within the uncertainty of the experiment.
 ```
 ## Part 3 - Parallel Resistors
-Set up a "parallel" circuit with two resistors in parallel as shown in [](#fig:resistors:parallelR). From the colored bands, determine the resistances and set those same resistances and voltages in the PhET simulator.  Apply the input voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:parallelRImeas). Measure the voltage across each resistor (two voltage measurements).
+Set up a "parallel" circuit with two resistors in parallel as shown in [](#fig:resistors:parallelR). From the colored bands, determine the resistances and set those same resistances and voltages in the PhET simulator.  Apply the input voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:parallelRImeas). These three currents should be different from one another. If you have any trouble, use the PhET simulation to help troubleshoot. Measure the voltage across each resistor (two voltage measurements).
 ```{figure} ../figures/ch2_resistors/parallelR.svg
 :label: fig:resistors:parallelR
 :width: 50%
@@ -219,7 +219,7 @@ Using your results, show that $V=IR$ for each resistor within the uncertainty of
 ```
 ## Part 3 - Application: Voltage Divider to Measure Temperature
 
-A voltage divider is a series resistor circuit. A voltage divider is shown in [](#fig:resistors:vdivider) and is the same circuit as [](#fig:resistors:seriesR).
+A voltage divider is a series resistor circuit. As you saw in [%s](#sec:resistors:part2), the voltage across resistors in series varies according to the values of resistance, i.e., a large resistor will have a proportionally larger voltage drop than a smaller resistor in a series connection. A voltage divider is shown in [](#fig:resistors:vdivider) and is the same circuit as [](#fig:resistors:seriesR).
 ### Voltage Divider Overview
 
 A voltage divider has two essential parts: the circuit and the equation.
@@ -252,3 +252,10 @@ Ohm's Law of equation {eq}`eq:resistors:ohms` for a series circuit is a constant
 R_T = \left(\frac{V_o}{V_1}-1\right)R_1
 ```
 The last equation in {eq}`eq:resistors:vdivider` shows that the unknown resistance can be calculated by measuring the voltage of the known resistor.
+
+### The experiment
+
+Measure the room temperature resistance of the thermal resistor with your multimeter. Choose a resistor for $R_1$ that is similar in resistance. Set up a voltage divider circuit with two resistors in series as shown in [](#fig:resistors:vdivider). Set $V_o=3 V$, and measure the voltage drop across $R_1$. Calculate the resistance of the thermal resistor $R_T$. Place the thermal resistor in three different environments, one hotter, one colder, and one equal to room temperature. Calculate the resistances of the thermal resistor. Repeat these measurements two more times.
+```{exercise}
+Describe the reproducibility of the thermal resistor to measure the same temperature.
+```
