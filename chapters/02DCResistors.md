@@ -178,7 +178,7 @@ plt.show()
 ```
 
 ## Part 2 – Series Resistors
-Set up a "series" circuit with two resistors in series as shown below. From the colored bands, determine the resistances and set those same resistances and voltages in the simulator.  Apply the voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:singleRImeas). Measure the voltage across each resistor (two voltage measurements).
+Set up a "series" circuit with two resistors in series as shown in [](#fig:resistors:singleR). From the colored bands, determine the resistances and set those same resistances and voltages in the PhET simulator.  Apply the input voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:seriesRImeas). Measure the voltage across each resistor (two voltage measurements).
 ```{figure} ../figures/ch2_resistors/seriesR.svg
 :label: fig:resistors:seriesR
 :width: 50%
@@ -193,9 +193,12 @@ Circuit showing a two resistors in series connected to a battery or power source
 :alt: Three locations identified for measuring current in the series circuit.
 Three locations identified for measuring current in the series circuit.
 ```
-
+```{exercise}
+:label: exercise:resistor:seriesR
+Using your results, show that $V=IR$ for each resistor within the uncertainty of the experiment.
+```
 ## Part 3 - Parallel Resistors
-
+Set up a "parallel" circuit with two resistors in parallel as shown in [](#fig:resistors:parallelR). From the colored bands, determine the resistances and set those same resistances and voltages in the PhET simulator.  Apply the input voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:parallelRImeas). Measure the voltage across each resistor (two voltage measurements).
 ```{figure} ../figures/ch2_resistors/parallelR.svg
 :label: fig:resistors:parallelR
 :width: 50%
@@ -203,7 +206,17 @@ Three locations identified for measuring current in the series circuit.
 :alt: Circuit showing a two resistors in parallel connected to a battery or power source.
 Circuit showing a two resistors in parallel connected to a battery or power source.
 ```
-
+```{figure} ../figures/ch2_resistors/parallelR_Imeas.svg
+:label: fig:resistors:parallelRImeas
+:width: 50%
+:align: center
+:alt: Three locations identified for measuring current in the parallel circuit.
+Three locations identified for measuring current in the parallel circuit.
+```
+```{exercise}
+:label: exercise:resistor:parallelR
+Using your results, show that $V=IR$ for each resistor within the uncertainty of the experiment.
+```
 ## Part 3 - Application: Voltage Divider to Measure Temperature
 
 ### Voltage Divider Overview
