@@ -130,7 +130,9 @@ A visual for how to measure voltage and current.
 
 ## Part 1 – Single Resistor
 
-Set up the circuit shown above with a single resistor in the simulator and on the lab bench. From the colored bands, determine the resistance and set the same resistance in the simulator. On the lab bench, you will use a power supply instead of a battery so that you can adjust the voltage. Apply the voltages as shown in the table below and measure the current flows for each applied voltage.
+Set up the circuit shown above with a single resistor in the simulator and on the lab bench. From the colored bands, determine the resistance and set the same resistance in the simulator. On the lab bench, you will use a power supply instead of a battery so that you can adjust the voltage. Apply the voltages as shown in the [](#tab:resistors:singleR) and measure the current flows for each applied voltage.
+```{table}
+:label: tab:resistors:singleR
 | Voltage (V) | Current (A) |
 |:-----------:|:-----------:|
 |      0.5    |             |
