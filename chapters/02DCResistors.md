@@ -219,6 +219,7 @@ Using your results, show that $V=IR$ for each resistor within the uncertainty of
 ```
 ## Part 3 - Application: Voltage Divider to Measure Temperature
 
+A voltage divider is a series resistor circuit. A voltage divider is shown in [](#fig:resistors:vdivider) and is the same circuit as [](#fig:resistors:seriesR).
 ### Voltage Divider Overview
 
 A voltage divider has two essential parts: the circuit and the equation.
@@ -226,7 +227,7 @@ A voltage divider has two essential parts: the circuit and the equation.
 ### The Circuit
 A voltage divider is created by connecting two resistors in series across a voltage source. You might see this circuit drawn in slightly different ways, but the basic setup is always the same.
 ```{figure} ../figures/ch2_resistors/VDivider.svg
-:label: fig:resistors:parallelR
+:label: fig:resistors:vdivider
 :width: 50%
 :align: center
 :alt: A voltage divider circuit with an unknown resistor $R_T$.
