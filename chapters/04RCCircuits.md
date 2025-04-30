@@ -25,9 +25,9 @@ Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The 
 :::{figure}
 :label: fig:rc:waves
 :align: center
-![A sine wave](../figures/ch2_rc/sine.png))
-![A square wave.](../figures/ch2_rc/square.png)
-![A triangle wave.](../figures/ch2_rc/triangle.png)
+![A sine wave](../figures/ch4_rc/sine.png))
+![A square wave.](../figures/ch4_rc/square.png)
+![A triangle wave.](../figures/ch4_rc/triangle.png)
 A sine wave, square wave, and triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
 :::
 
