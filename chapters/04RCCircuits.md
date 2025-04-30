@@ -17,17 +17,19 @@ kernelspec:
 
 We will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to series resistor and capacitor circuits.
 
-
-Figure 1. On the left is the FeelTech signal generator. On the right is the Tektronix oscilloscope.
-
-
 Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The peak-to-peak voltage is the actual amplitude of an alternating signal between the highest peak to the lowest peak. Diagrams of three waveforms (sine, square, and triangle) are shown in Figure 2. The period and peak-to-peak voltage are labeled.
 
 
 
 
-
-Figure 2. A sine wave, square wave, and triangle wave form. The rms voltages are Vrms=V2=Vpp22for the sine waveform, Vrms=V=Vpp2for the square waveform, and Vrms=V3=Vpp23for the triangle waveform
+:::{figure}
+:label: fig:rc:waves
+:align: center
+![A sine wave](../figures/ch2_rc/sine.png))
+![A square wave.](../figures/ch2_rc/square.png)
+![A triangle wave.](../figures/ch2_rc/triangle.png)
+A sine wave, square wave, and triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
+:::
 
 Part 2 of this lab is to measure the response or output of resistor and capacitor circuits when given AC input.
 Procedure
