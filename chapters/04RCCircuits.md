@@ -65,7 +65,7 @@ V_o=V_C+V_R=QC+IR
 The current is the amount of charge flowing through the circuit per unit time, $I=dQ/dt$. Replace the current in the above equation to obtain a differential equation of $Q$. This leads to a linear, non-homogeneous differential equation of first order:
 ```{math}
 :label: eq:rc:RCVsum2
-V_o=QC+\left(\frac{dQ}{dt}\right)\cdotR
+V_o= QC +\left(\frac{dQ}{dt}\right)\cdot R
 ```
 Solve this to obtain the time-dependent charging on the capacitor that can be converted to voltage on the capacitor
 ```{math}
