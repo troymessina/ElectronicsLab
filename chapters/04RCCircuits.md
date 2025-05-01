@@ -17,14 +17,11 @@ kernelspec:
 
 We will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to series resistor and capacitor circuits.
 
-Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The peak-to-peak voltage is the actual amplitude of an alternating signal between the highest peak to the lowest peak. Diagrams of three waveforms (sine, square, and triangle) are shown in Figure 2. The period and peak-to-peak voltage are labeled.
-
-
-
-
+Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The peak-to-peak voltage is the actual amplitude of an alternating signal between the highest peak to the lowest peak. Diagrams of three waveforms (sine, square, and triangle) are shown in [](#fig:rc:waves). The period and peak-to-peak voltage are labeled.
 :::{figure}
 :label: fig:rc:waves
 :align: center
+
 (sine)=
 ![A sine wave](../figures/ch4_rc/sine.png))
 (square)=
@@ -35,68 +32,33 @@ Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The 
 A sine wave, square wave, and triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
 :::
 
-Part 2 of this lab is to measure the response or output of resistor and capacitor circuits when given AC input.
-Procedure
-Part 1 Theory of RMS Voltage
+Part 2 of this lab is to measure the response or output of series resistor and capacitor (RC) circuits when given DC or AC input.
+
+# Procedure
+## Part 1 Theory of RMS Voltage
 Periodic voltages without DC voltage contribution such as sine-, square- or triangular- wave voltages, see Fig. 2, are characterized by the period T, frequency f = 1/T, amplitude V, peak-to-peak value Vpp = 2V, and rms value Vrms. The rms value corresponds to the value of a DC voltage which – at a given electrical resistance – leads to the same dissipated power as the AC voltage. The rms voltage can be calculated by averaging the square of the AC voltage, V(t):
+```{math}
+:label: eq:rc:rms
+V_{rms} = \sqrt{\langle V^2\rangle}=\sqrt{\frac{1}{T}\int_0^T \left(V(t)\right)^2 dt}
+```
+where $\langle V^2\rangle$ is the average of the voltage squared. Evaluation of this integral leads to different effective values for the voltage-time characteristics as shown in [](#fig:rc:waves).
 
+## Part 1 Measurements
+Create each of these signals as with the signal generator such that they are $V_{pp}=5$ Volts for a frequency of $f=1000$ Hz. Connect a BNC to alligator clips cable to the signal generator. Measure the rms voltage using a multimeter set to AC Volts. Connect a BNC to BNC cable so that you can measure the signal on the oscilloscope. Adjust your oscilloscope such that you see approximately 2 periods of the wave. Repeat these activities for 100 Hz. You should include estimated uncertainties.
+```{exercise}
+Create a table like [](#tab:rc:rmsV) and comment on any apparent discrepancies (out of uncertainty range for example) or frequency dependence.
+```
+```{table} Comparison of peak-to-peak and rms voltages at 1 kHz and 100 Hz.
+:label: tab:rc:rmsV
+:align: center
+| Signal Wave | RMS Voltage | Peak-to-peak Voltage |
+|:------------|:------------|:---------------------|
+|     Sine    |             |                      |
+|    Square   |             |                      |
+|   Triangle  |             |                      |
+```
 
-
-
-Evaluation of this integral leads to different effective values for the voltage-time characteristics as shown in Fig. 1.
-Part 1 Measurements
-Create each of these signals as with the signal generator such that they are 5 Volts for Vpp and a frequency of 1 kHz. Connect a BNC to alligator clips cable to the signal generator. Measure the rms voltage using a multimeter set to AC Volts. Connect a BNC to BNC cable so that you can measure the signal on the oscilloscope. Adjust your oscilloscope such that you see approximately 2 periods of the wave. Repeat these activities for 100 Hz. You should include estimated uncertainties.
-Deliverable 1: Show that the integral above evaluates to the values shown in the Figure 2 caption.
-Deliverable 2: Fill in the tables below and comment on any apparent discrepancies (out of uncertainty range for example) or frequency dependence.
-
-
-Signal Wave
-
-RMS Voltage
-
-Peak-to-peak Voltage
-Sine
-
-
-
-
-Square
-
-
-
-
-Triangle
-
-
-
-
-
-Table 1. Comparison of peak-to-peak and rms voltages at 1 kHz.
-
-
-Signal Wave
-
-RMS Voltage
-
-Peak-to-peak Voltage
-Sine
-
-
-
-
-Square
-
-
-
-
-Triangle
-
-
-
-
-
-Table 2. Comparison of peak-to-peak and rms voltages at 100 Hz.
-Part 2a Theory of RC Circuits
+## Part 2a Theory of RC Circuits
 A series circuit consists of a resistance, R, and a capacitor, C. Draw the circuit in your lab notebook including the AC input square wave. At t = 0 seconds a square voltage is applied to this circuit, such that a current I(t) flows. This current charges the capacitor. The voltage across the capacitor VC(t) is measured over time and shows an increasing voltage with time from a value of zero approaching the applied voltage, Vo, of the square wave. According to Kirchhoff’s loop rules, the sum of the voltages across the capacitor and resistor must add to the applied voltage. The voltage on the capacitor has the form VC=Q/C, and the resistor voltage is VR=IR. Summing them gives
 
 Vo=VC+VR=QC+IR
