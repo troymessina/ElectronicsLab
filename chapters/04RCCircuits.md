@@ -22,7 +22,7 @@ Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The 
 :label: fig:rc:waves
 :align: center
 
-![A sine wave](../figures/ch4_rc/sine.png))
+![A sine wave.](../figures/ch4_rc/sine.png))
 ![A square wave.](../figures/ch4_rc/square.png)
 ![A triangle wave.](../figures/ch4_rc/triangle.png)
 
@@ -57,22 +57,26 @@ Create a table like [](#tab:rc:rmsV) and comment on any apparent discrepancies o
 ```
 
 ## Part 2a Theory of RC Circuits
-A series circuit consists of a resistance, R, and a capacitor, C. Draw the circuit in your lab notebook including the AC input square wave. At t = 0 seconds a square voltage is applied to this circuit, such that a current I(t) flows. This current charges the capacitor. The voltage across the capacitor VC(t) is measured over time and shows an increasing voltage with time from a value of zero approaching the applied voltage, Vo, of the square wave. According to Kirchhoff’s loop rules, the sum of the voltages across the capacitor and resistor must add to the applied voltage. The voltage on the capacitor has the form VC=Q/C, and the resistor voltage is VR=IR. Summing them gives
-
-Vo=VC+VR=QC+IR
-
-The current is the amount of charge flowing through the circuit per unit time, I=dQ/dt. Replace the current in the above equation to obtain a differential equation of Q. This leads to a linear, non-homogeneous differential equation of first order:
-
-Vo=QC+dQdtR
-
+A series circuit consists of a resistance, $R$, and a capacitor, $C$. Draw the circuit in your lab notebook including the AC input square wave. At $t = 0$ seconds a square voltage is applied to this circuit, such that a current $I(t)$ flows. This current charges the capacitor. The voltage across the capacitor $V_C(t)$ is measured over time and shows an increasing voltage with time from a value of zero approaching the applied voltage, $V_o$, of the square wave. According to Kirchhoff’s loop rules, the sum of the voltages across the capacitor and resistor must add to the applied voltage. The voltage on the capacitor has the form $V_C=Q/C$, and the resistor voltage is $V_R=IR$. Summing them gives
+```{math}
+:label: eq:rc:RCVsum
+V_o=V_C+V_R=QC+IR
+```
+The current is the amount of charge flowing through the circuit per unit time, $I=dQ/dt$. Replace the current in the above equation to obtain a differential equation of $Q$. This leads to a linear, non-homogeneous differential equation of first order:
+```{math}
+:label: eq:rc:RCVsum2
+V_o=QC+\left(\frac{dQ}{dt}\right)\cdotR
+```
 Solve this to obtain the time-dependent charging on the capacitor that can be converted to voltage on the capacitor
-
-VC(t)=Vo(1-e-t/RC).
-
-Follow similar logic for discharging when the square wave goes to zero (Vo = 0) to obtain
-
-VC(t)=Voe-t/RC=Voe-t/RC.
-
+```{math}
+:label: eq:rc:RCVcharge
+V_C(t)=V_o\left(1-e^{-t/RC}\right)
+```
+Follow similar logic for discharging when the square wave goes to zero ($V_o = 0$) to obtain
+```{math}
+:label: eq:rc:RCVdicharge
+V_C(t)=V_o e^{-t/RC}=Voe^{-t/\tau}.
+```
 This result implies that there is a characteristic time for charging and discharging. This characteristic time is defined as the time when t = τRC = RC. (Show that RC has units of time.) This simplifies the equation for capacitor voltage to
 VC(t)=Voe-1=Voe.
 
