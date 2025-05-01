@@ -22,12 +22,10 @@ Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The 
 :label: fig:rc:waves
 :align: center
 
-(sine)=
 ![A sine wave](../figures/ch4_rc/sine.png))
-(square)=
 ![A square wave.](../figures/ch4_rc/square.png)
-(triangle)=
 ![A triangle wave.](../figures/ch4_rc/triangle.png)
+
 
 A sine wave, square wave, and triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
 :::
@@ -46,7 +44,7 @@ where $\langle V^2\rangle$ is the average of the voltage squared. Evaluation of 
 ## Part 1 Measurements
 Create each of these signals as with the signal generator such that they are $V_{pp}=5$ Volts for a frequency of $f=1000$ Hz. Connect a BNC to alligator clips cable to the signal generator. Measure the rms voltage using a multimeter set to AC Volts. Connect a BNC to BNC cable so that you can measure the signal on the oscilloscope. Adjust your oscilloscope such that you see approximately 2 periods of the wave. Repeat these activities for 100 Hz. You should include estimated uncertainties.
 ```{exercise}
-Create a table like [](#tab:rc:rmsV) and comment on any apparent discrepancies (out of uncertainty range for example) or frequency dependence.
+Create a table like [](#tab:rc:rmsV) and comment on any apparent discrepancies or frequency dependence.
 ```
 ```{table} Comparison of peak-to-peak and rms voltages at 1 kHz and 100 Hz.
 :label: tab:rc:rmsV
