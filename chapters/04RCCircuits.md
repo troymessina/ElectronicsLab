@@ -88,7 +88,7 @@ Let’s set up the circuit and oscilloscope to observe this. Once you have seen 
 ```{figure} ../figures/ch4_rc/RC.svg
 :label: fig:rc:rc
 :width: 100%
-:aligh: center
+:align: center
 :alt: (a) A square wave input $V(t)$ (blue) and (b) output $V_C(t)$ (red) measured across a capacitor in an RC circuit.
 (a) A square wave input $V(t)$ (blue) and (b) output $V_C(t)$ (red) measured across a capacitor in an RC circuit.
 ```
@@ -96,7 +96,7 @@ In order to get an accurate value of τRC, we should zoom in on the charging and
 ```{figure} ../figures/ch4_rc/RCzoom.svg
 :label: fig:rc:rczoom
 :width: 100%
-:aligh: center
+:align: center
 :alt: A close-up image of the charging and discharging capacitor circuit with a series resistor.
 A close-up image of the charging and discharging capacitor circuit with a series resistor.
 ```
@@ -121,7 +121,7 @@ Capacitive reactance is a resistance to voltage changes rather than current chan
 ```{figure} ../figures/ch4_rc/ImpedancePhase.svg
 :label: fig:rc:phasor
 :width: 100%
-:aligh: center
+:align: center
 :alt: A diagram of impedance phasors.
 A diagram of impedance phasors.
 ```
@@ -137,7 +137,7 @@ The magnitude of each impedance determines the phase angle between input voltage
 
 
 From this, we can define a crossover frequency when ω = 1/RC, θ = 45o. This is where the resistor voltage equals the capacitor voltage (see Fig. 6). The phase will be between 0 and 90o depending on ω, R, and C, and you will see something like Fig. 5 on your oscilloscope.
-```{figure} ../figures/ch4_rc/PhaseShift.svg
+```{figure} ../figures/ch4_rc/RCPhaseShift.svg
 :label: fig:rc:phaseshift
 :width: 80%
 :aligh: center
