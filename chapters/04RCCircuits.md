@@ -79,10 +79,11 @@ This result implies that there is a characteristic time for charging and dischar
 V_C(\tau)=V_oe^{-1}=V_o e
 ```
 
-In principle the capacitor needs infinitely long to charge or discharge, since the exponential function reaches zero only for infinitely long time spans. In the measurement, however, one obtains sufficiently good accuracy, when choosing the period of the square wave voltage such that it is large compared to the relaxation time. If this condition is not fulfilled, the charging starts with a voltage Vmin > 0 and reaches only a voltage Vmax < Vo , i.e. the image on the oscilloscope shows only a section of the voltage-time curve.
-Part 2a - Measurements
+In principle the capacitor needs infinitely long to charge or discharge, since the exponential function reaches zero only for infinitely long time spans. In the measurement, however, one obtains sufficiently good accuracy, when choosing the period of the square wave voltage such that it is large compared to the relaxation time, $\tau=RC$. If this condition is not fulfilled, the charging starts with a voltage $V_{min} > 0$ and reaches a voltage $V_{max} < V_o$ , i.e. the oscilloscope shows only a fraction of the charging and discharging of the capacitor's voltage-time curve.
 
-Let’s set up the circuit and oscilloscope to observe this. Once you have seen the effect, change the frequency of your input square wave so that the period is longer (~5-10 times) than the RC time constant. You can estimate this by calculating RC in your lab notebook. The capacitor you have is 0.1 μF. We will start with R=10 kΩ. Then, adjust the frequency such that (T = 1/f ~ 10 RC). What frequency is this? You should be able to adjust the oscilloscope to look like Figure 3. What X and Y settings are you using on your oscilloscope? Do these make sense?
+## Part 2a - Measurements
+
+Let’s set up the circuit and oscilloscope to observe this. You will need to add an offset such that the square wave has its minimum at zero. Once you have observed the effect, change the frequency of your input square wave so that the period is longer (~5-10 times) than the RC time constant. You can estimate this by calculating $\tau=RC$. The capacitor you have is $0.1 \mu F$. We will start with $R=10 k\Omega$. Then, adjust the frequency such that ($T = 1/f ~ 10RC$). What frequency is this? You should be able to adjust the oscilloscope to look like [](#fig:rc:rc). What X and Y settings are you using on your oscilloscope? Do these make sense? Explain.
 
 
 ```{figure} ../figures/ch4_rc/RC.svg
@@ -92,7 +93,7 @@ Let’s set up the circuit and oscilloscope to observe this. Once you have seen 
 :alt: (a) A square wave input $V(t)$ (blue) and (b) output $V_C(t)$ (red) measured across a capacitor in an RC circuit.
 (a) A square wave input $V(t)$ (blue) and (b) output $V_C(t)$ (red) measured across a capacitor in an RC circuit.
 ```
-In order to get an accurate value of τRC, we should zoom in on the charging and discharging as shown in Fig. 4.
+In order to get an accurate value of $\tau=RC$, we should zoom in on the charging and discharging as shown in [](#fig:rc:rczoom).
 ```{figure} ../figures/ch4_rc/RCzoom.svg
 :label: fig:rc:rczoom
 :width: 100%
@@ -101,9 +102,11 @@ In order to get an accurate value of τRC, we should zoom in on the charging and
 A close-up image of the charging and discharging capacitor circuit with a series resistor.
 ```
 
-
-Deliverable 3: Explain your process for finding τRC and its value with uncertainty.
-Part 2b - Theory of AC Impedances
+```{exercise}
+* Explain your process for finding $\tau=RC$ and its uncertainty.
+* What are your oscilloscope settings. Explain how your oscillosope settings make sense.
+```
+## Part 2b - Theory of AC Impedances
 A single capacitor circuit with a sinusoidal input voltage will have a time-dependent voltage across the capacitor that is ideally
 VC=Vocos(t)
 The current can be calculated by using the capacitor charge Q =VC and I=dQ/dt to obtain
