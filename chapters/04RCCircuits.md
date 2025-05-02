@@ -20,7 +20,7 @@ We will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1
 Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The peak-to-peak voltage is the actual amplitude of an alternating signal between the highest peak to the lowest peak. Diagrams of three waveforms (sine, square, and triangle) are shown in [](#fig:rc:waves). The period and peak-to-peak voltage are labeled.
 ```{figure} ../figures/ch4_rc/waves.svg
 :label: fig:rc:waves
-:width: 80%
+:width: 100%
 :align: center
 :alt:A (a) sine wave, (b) square wave, and (c) triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
 A (a) sine wave, (b) square wave, and (c) triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
@@ -73,8 +73,11 @@ Follow similar logic for discharging when the square wave goes to zero ($V_o = 0
 :label: eq:rc:RCVdicharge
 \boxed{V_C(t)=V_o e^{-t/RC}=Voe^{-t/\tau}}
 ```
-This result implies that there is a characteristic time for charging and discharging. This characteristic time is defined as the time when t = τRC = RC. (Show that RC has units of time.) This simplifies the equation for capacitor voltage to
-VC(t)=Voe-1=Voe.
+This result implies that there is a characteristic time for charging and discharging. This characteristic time is defined as the time when $t = \tau = 1/RC$. This simplifies the equation for capacitor voltage to
+```{math}
+:label: eq:rc:Vtau
+V_C(\tau)=V_oe^{-1}=V_o e
+```
 
 In principle the capacitor needs infinitely long to charge or discharge, since the exponential function reaches zero only for infinitely long time spans. In the measurement, however, one obtains sufficiently good accuracy, when choosing the period of the square wave voltage such that it is large compared to the relaxation time. If this condition is not fulfilled, the charging starts with a voltage Vmin > 0 and reaches only a voltage Vmax < Vo , i.e. the image on the oscilloscope shows only a section of the voltage-time curve.
 Part 2a - Measurements
@@ -84,15 +87,15 @@ Let’s set up the circuit and oscilloscope to observe this. Once you have seen 
 
 ```{figure} ../figures/ch4_rc/RC.svg
 :label: fig:rc:rc
-:width: 80%
+:width: 100%
 :aligh: center
-:alt: A square wave input (red) and output (blue) measured across a capacitor in an RC circuit.
-A square wave input (red) and output (blue) measured across a capacitor in an RC circuit.
+:alt: (a) A square wave input $V(t)$ (blue) and (b) output $V_C(t)$ (red) measured across a capacitor in an RC circuit.
+(a) A square wave input $V(t)$ (blue) and (b) output $V_C(t)$ (red) measured across a capacitor in an RC circuit.
 ```
 In order to get an accurate value of τRC, we should zoom in on the charging and discharging as shown in Fig. 4.
-```{figure} ../figures/ch4_rc/RCZoom.svg
+```{figure} ../figures/ch4_rc/RCzoom.svg
 :label: fig:rc:rczoom
-:width: 80%
+:width: 100%
 :aligh: center
 :alt: A close-up image of the charging and discharging capacitor circuit with a series resistor.
 A close-up image of the charging and discharging capacitor circuit with a series resistor.
@@ -117,7 +120,7 @@ Capacitive reactance is a resistance to voltage changes rather than current chan
 
 ```{figure} ../figures/ch4_rc/ImpedancePhase.svg
 :label: fig:rc:phasor
-:width: 80%
+:width: 100%
 :aligh: center
 :alt: A diagram of impedance phasors.
 A diagram of impedance phasors.
