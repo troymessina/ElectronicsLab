@@ -212,4 +212,4 @@ plt.show()
 
 # Fun with RC Circuits
 Write these up for extra fun stuff to do
-![fun RC circuits](../figures/ch4_rc/FunRCcircuits.jpg
+![fun RC circuits](../figures/ch4_rc/FunRCcircuits.jpg)
