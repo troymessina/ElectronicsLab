@@ -18,17 +18,13 @@ kernelspec:
 We will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to series resistor and capacitor circuits.
 
 Part 1 of this lab is to measure and compare peak-to-peak and rms voltages. The peak-to-peak voltage is the actual amplitude of an alternating signal between the highest peak to the lowest peak. Diagrams of three waveforms (sine, square, and triangle) are shown in [](#fig:rc:waves). The period and peak-to-peak voltage are labeled.
-:::{figure}
+```{figure} ../figures/ch4_rc/waves.svg
 :label: fig:rc:waves
+:width: 80%
 :align: center
-
-![A sine wave.](../figures/ch4_rc/sine.png))
-![A square wave.](../figures/ch4_rc/square.png)
-![A triangle wave.](../figures/ch4_rc/triangle.png)
-
-
-A sine wave, square wave, and triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
-:::
+:alt:A (a) sine wave, (b) square wave, and (c) triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
+A (a) sine wave, (b) square wave, and (c) triangle wave form. The rms voltages are $V_{rms}=V/\sqrt{2}=V_{pp}/2\sqrt{2}$ for the sine waveform, $V_{rms}=V=V_{pp}/2$ for the square waveform, and $V_{rms}=V/\sqrt{3}=V_{pp}/2\sqrt{3}$ for the triangle waveform.
+```
 
 Part 2 of this lab is to measure the response or output of series resistor and capacitor (RC) circuits when given DC or AC input.
 
@@ -70,12 +66,12 @@ V_o= QC +\left(\frac{dQ}{dt}\right)\cdot R
 Solve this to obtain the time-dependent charging on the capacitor that can be converted to voltage on the capacitor
 ```{math}
 :label: eq:rc:RCVcharge
-V_C(t)=V_o\left(1-e^{-t/RC}\right)
+\boxed{V_C(t)=V_o\left(1-e^{-t/RC}\right)}
 ```
 Follow similar logic for discharging when the square wave goes to zero ($V_o = 0$) to obtain
 ```{math}
 :label: eq:rc:RCVdicharge
-V_C(t)=V_o e^{-t/RC}=Voe^{-t/\tau}.
+\boxed{V_C(t)=V_o e^{-t/RC}=Voe^{-t/\tau}}
 ```
 This result implies that there is a characteristic time for charging and discharging. This characteristic time is defined as the time when t = τRC = RC. (Show that RC has units of time.) This simplifies the equation for capacitor voltage to
 VC(t)=Voe-1=Voe.
@@ -86,14 +82,21 @@ Part 2a - Measurements
 Let’s set up the circuit and oscilloscope to observe this. Once you have seen the effect, change the frequency of your input square wave so that the period is longer (~5-10 times) than the RC time constant. You can estimate this by calculating RC in your lab notebook. The capacitor you have is 0.1 μF. We will start with R=10 kΩ. Then, adjust the frequency such that (T = 1/f ~ 10 RC). What frequency is this? You should be able to adjust the oscilloscope to look like Figure 3. What X and Y settings are you using on your oscilloscope? Do these make sense?
 
 
-
-Figure 3. A square wave input (red) and output (blue) measured across a capacitor in an RC circuit.
-
+```{figure} ../figures/ch4_rc/RC.svg
+:label: fig:rc:rc
+:width: 80%
+:aligh: center
+:alt: A square wave input (red) and output (blue) measured across a capacitor in an RC circuit.
+A square wave input (red) and output (blue) measured across a capacitor in an RC circuit.
+```
 In order to get an accurate value of τRC, we should zoom in on the charging and discharging as shown in Fig. 4.
-
-
-
-Figure 4. A close-up image of the charging and discharging capacitor circuit with a series resistor.
+```{figure} ../figures/ch4_rc/RCZoom.svg
+:label: fig:rc:rczoom
+:width: 80%
+:aligh: center
+:alt: A close-up image of the charging and discharging capacitor circuit with a series resistor.
+A close-up image of the charging and discharging capacitor circuit with a series resistor.
+```
 
 
 Deliverable 3: Explain your process for finding τRC and its value with uncertainty.
@@ -112,8 +115,13 @@ XC=VoImax=1C.
 Capacitive reactance is a resistance to voltage changes rather than current changes as in a resistor. Because it is a type of resistance, it can be added to resistor resistance as a total impedance,Z, of an RC circuit. The equation above is only a relationship for the maximum values of voltage and current due to the phase difference between the time-dependent values. Using the idea that the two impedance values are 90o out of phase are like orthogonal vectors (phasors), we can compute the total impedance using something like the Pythagorean Theorem.
 
 
-
-Figure 4. A diagram of impedance phasors.
+```{figure} ../figures/ch4_rc/ImpedancePhase.svg
+:label: fig:rc:phasor
+:width: 80%
+:aligh: center
+:alt: A diagram of impedance phasors.
+A diagram of impedance phasors.
+```
 
 The voltage is a sum of the voltages on the resistor and capacitor. In a simple resistor circuit the voltage and current would follow one another as Vocos t. As noted above the voltage and current for a capacitor are 90o out of phase. 
 
@@ -126,10 +134,13 @@ The magnitude of each impedance determines the phase angle between input voltage
 
 
 From this, we can define a crossover frequency when ω = 1/RC, θ = 45o. This is where the resistor voltage equals the capacitor voltage (see Fig. 6). The phase will be between 0 and 90o depending on ω, R, and C, and you will see something like Fig. 5 on your oscilloscope.
-
-
-
-Figure 5. A plot showing the phase shift in a series RC circuit. The phase shift is  t.
+```{figure} ../figures/ch4_rc/PhaseShift.svg
+:label: fig:rc:phaseshift
+:width: 80%
+:aligh: center
+:alt: A plot showing the phase shift in a series RC circuit. The phase shift is  $\Delta t$.
+A plot showing the phase shift in a series RC circuit. The phase shift is  $\Delta t$.
+```
 
 We can make substitutions to derive the maximum current in the circuit
 
