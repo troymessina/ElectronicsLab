@@ -152,20 +152,27 @@ A plot showing the phase shift in a series RC circuit. The phase shift is  $\Del
 ```
 
 We can make substitutions to derive the maximum current in the circuit
-
+```{math}
+I = \frac{V_o}{\sqrt{R^2+\left(\frac{1}{\omega C}\right)^2}}
+```
 and the maximum voltage on the resistor
-
+```{math}
+\boxed{V_R = \frac{V_o R}{\sqrt{R^2+\left(\frac{1}{\omega C}\right)^2}}}
+```
 and capacitor
+```{math}
+\boxed{V_C = \frac{\frac{V_o}{\omega C}}{\sqrt{R^2+\left(\frac{1}{\omega C}\right)^2}}}
+```
 
-
-Part 2b - Measurements
+## Part 2b - Measurements
 Use the oscilloscope to verify these relationships by setting Vo=5 V and measuring VR and VC at 100 Hz and 500 Hz using C = 0.1 μF and R = 10 kᘯ. Draw waveforms in your lab notebook. Next, use your oscilloscope to measure VR and VC as a function of ω. Plot on the same graph VR vs. ω and VC  vs. ω. They should look like the graph below. Plot the functions above on top of your data and comment on the accuracy of the theoretical model.
-
-
-
-
-Figure 6. The voltages across a resistor (blue) and capacitor (orange) in a series circuit as a function of input sinusoidal frequency, ω.
-
+```{figure} ../figures/ch4_rc/RCfilter.svg
+:label: fig:rc:rcfilter
+:width: 100%
+:aligh: center
+:alt: The voltages across a resistor (blue) and capacitor (orange) in a series circuit as a function of input sinusoidal frequency, $\omega$.
+The voltages across a resistor (blue) and capacitor (orange) in a series circuit as a function of input sinusoidal frequency, $\omega$.
+```
 Because the resistor voltage increases with frequency, it can be used as a high-pass filter, passing only voltages of high frequency. Contrary to the resistor, the capacitor passes only low frequency voltages. It can therefore be used as a low-pass filter.
 
 Deliverable 4: Show the mathematical work to obtain the resistor and capacitor voltage equations above.
