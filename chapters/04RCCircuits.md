@@ -132,7 +132,7 @@ A diagram of impedance phasors.
 
 The voltage is a sum of the voltages on the resistor and capacitor (circuit loop rule 1). In a simple resistor circuit the voltage and current would follow one another as $V_o \cos(t)$. As noted above the voltage and current for a capacitor are 90$^\circ}$ out of phase. 
 ```{math}
-V(t)=V_o\laft(\cos(\omega t) + i \sin(\omega t)\right) = V_o e^{-i\omega t}
+V(t)=V_o\left(\cos(\omega t) + i \sin(\omega t)\right) = V_o e^{-i\omega t}
 ```
 where the imaginary $i$ indicates an independent vector (phasor) direction that is due to the frequency dependence of the capacitor impedance. For a series circuit, we can describe the total impedance by
 ```{math}
@@ -157,15 +157,17 @@ I = \frac{V_o}{\sqrt{R^2+\left(\frac{1}{\omega C}\right)^2}}
 ```
 and the maximum voltage on the resistor
 ```{math}
+:label: eq:rc:VR
 \boxed{V_R = \frac{V_o R}{\sqrt{R^2+\left(\frac{1}{\omega C}\right)^2}}}
 ```
 and capacitor
 ```{math}
+:label: eq:rc:VC
 \boxed{V_C = \frac{\frac{V_o}{\omega C}}{\sqrt{R^2+\left(\frac{1}{\omega C}\right)^2}}}
 ```
 
 ## Part 2b - Measurements
-Use the oscilloscope to verify these relationships by setting Vo=5 V and measuring VR and VC at 100 Hz and 500 Hz using C = 0.1 μF and R = 10 kᘯ. Draw waveforms in your lab notebook. Next, use your oscilloscope to measure VR and VC as a function of ω. Plot on the same graph VR vs. ω and VC  vs. ω. They should look like the graph below. Plot the functions above on top of your data and comment on the accuracy of the theoretical model.
+Use the oscilloscope to verify these relationships by setting $V_o=5$ V for sine wave input and measuring $V_R$ and $V_C$ using $C = 0.1 \mu F$ and $R = 2 k\Omega$. Use your oscilloscope to measure $V_R$ and $V_C$ as a function of $\omega$. You will need at least 10 points over the range $0\le\omega\le 30000$. Plot on the same graph $V_R$ vs. $\omeg$ and $V_C$  vs. $\omega$. They should look like [](#fig:rc:rcfilter). Plot {eq}`eq:rc:VR` and {eq}`eq:rc:VC` on top of your data and comment on the accuracy of the theoretical model.
 ```{figure} ../figures/ch4_rc/RCfilter.svg
 :label: fig:rc:rcfilter
 :width: 100%
@@ -174,11 +176,13 @@ Use the oscilloscope to verify these relationships by setting Vo=5 V and measuri
 The voltages across a resistor (blue) and capacitor (orange) in a series circuit as a function of input sinusoidal frequency, $\omega$.
 ```
 Because the resistor voltage increases with frequency, it can be used as a high-pass filter, passing only voltages of high frequency. Contrary to the resistor, the capacitor passes only low frequency voltages. It can therefore be used as a low-pass filter.
+```{exercise}
+* Sketch the sinusoidal waveforms for $V_R$ and $V_C$ in your lab notebook at a low, mid, and high frequency.
+* Show that {eq}`eq:rc:VR` and {eq}`eq:rc:VC` agree with your measurements within experimental uncertainty for a couple of points.
+* Include the graph of voltages vs. frequency in your notebook.
+* Connect a speaker across the resistor and set up a signal generator to sweep from 1 to 5000 Hz. Describe what you hear and relate it to [](#fig:rc:rcfilter).
+* Connect a speaker across the capacitor and set up a signal generator to sweep from 1 to 5000 Hz. Describe what you hear and relate it to [](#fig:rc:rcfilter).
+```
 
-Deliverable 4: Show the mathematical work to obtain the resistor and capacitor voltage equations above.
-Deliverable 5: Make the measurements to make a graph like Figure 6. Use Colab and qexpy to produce all graphs in this lab.
-Challenge #1
-Create a circuit that might turn on a lamp to mimic the sunrise. It should slowly charge a capacitor over approximately 30 minutes. Explain how you designed, built, and tested this circuit.
-Challenge #2
-Create a circuit that could be used for tone adjustment on a guitar. Using variable resistors and regular capacitors, make a high pass and a low pass filter for a single AC input.
+# Fun with RC Circuits
 
