@@ -120,7 +120,7 @@ indicating a phase shift $\theta = \pi/2$ rad between the voltage and current on
 X_C=\frac{V_o}{I_{max}}=\frac{1}{\omega C}
 ```
 
-Capacitive reactance is a resistance to voltage changes rather than resistance to current changes as observed in a resistor. Because it is a type of resistance, it can be added to resistor resistance as a **total impedance**, $Z$, of an RC circuit. The equation above is only a relationship for the maximum values of voltage and current due to the phase difference between the time-dependent values. Using the idea that the two impedance values are 90$^$\circ}$ out of phase means they can be treated like orthogonal vectors (phasors) - see [](#fig:rc:phasor). We can compute the total impedance using something analogous to the Pythagorean Theorem.
+Capacitive reactance is a resistance to voltage changes rather than resistance to current changes as observed in a resistor. Because it is a type of resistance, it can be added to resistor resistance as a **total impedance**, $Z$, of an RC circuit. The equation above is only a relationship for the maximum values of voltage and current due to the phase difference between the time-dependent values. Using the idea that the two impedance values are 90$^\circ}$ out of phase means they can be treated like orthogonal vectors (phasors) - see [](#fig:rc:phasor). We can compute the total impedance using something analogous to the Pythagorean Theorem.
 
 ```{figure} ../figures/ch4_rc/ImpedancePhase.svg
 :label: fig:rc:phasor
@@ -130,10 +130,11 @@ Capacitive reactance is a resistance to voltage changes rather than resistance t
 A diagram of impedance phasors.
 ```
 
-The voltage is a sum of the voltages on the resistor and capacitor (circuit loop rule 1). In a simple resistor circuit the voltage and current would follow one another as $V_o \cos(t)$. As noted above the voltage and current for a capacitor are 90$^$\circ}$ out of phase. 
-
-
-Where the imaginary $i$ indicates an independent vector (phasor) direction that is due to the frequency dependence of the capacitor impedance. For a series circuit, we can describe the total impedance by
+The voltage is a sum of the voltages on the resistor and capacitor (circuit loop rule 1). In a simple resistor circuit the voltage and current would follow one another as $V_o \cos(t)$. As noted above the voltage and current for a capacitor are 90$^\circ}$ out of phase. 
+```{math}
+V(t)=V_o\laft(\cos(\omega t) + i \sin(\omega t)\right) = V_o e^{-i\omega t}
+```
+where the imaginary $i$ indicates an independent vector (phasor) direction that is due to the frequency dependence of the capacitor impedance. For a series circuit, we can describe the total impedance by
 ```{math}
 Z^2_{total}= X^2_R + X^2_C
 ```
