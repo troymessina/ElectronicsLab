@@ -108,18 +108,19 @@ A close-up image of the charging and discharging capacitor circuit with a series
 ```
 ## Part 2b - Theory of AC Impedances
 A single capacitor circuit with a sinusoidal input voltage will have a time-dependent voltage across the capacitor that is ideally
-VC=Vocos(t)
-The current can be calculated by using the capacitor charge Q =VC and I=dQ/dt to obtain
+```{math}
+V_C(t) =V_o \cos(t)
+```
+The current can be calculated by using the capacitor charge $Q =V/C$ and $I=dQ/dt$ to obtain
+```{math}
+I_C(t)=CV_o \sin(t)=CV_o \cos(t+\pi/2),
+```
+indicating a phase shift $\theta = \pi/2$ rad between the voltage and current on the capacitor. The maximum current is $I_{max}=\omega CV_o$, which comes from the amplitude of the derivative to find the time-dependent current. Similar to resistance in Ohm’s Law, there is a **capacitive reactance**, $X_C$, for the maximum current and voltage
+```{math}
+X_C=\frac{V_o}{I_{max}}=\frac{1}{\omega C}
+```
 
-IC=CVosin(t)=CVocos(t+/2),
-
-indicating a phase shift θ = π/2 rad between the voltage and current on the capacitor. The maximum current is Imax=ωCVo. Similar to Ohm’s Law, there is a capacitive reactance, XC, for the maximum current and voltage
-
-XC=VoImax=1C.
-
-
-Capacitive reactance is a resistance to voltage changes rather than current changes as in a resistor. Because it is a type of resistance, it can be added to resistor resistance as a total impedance,Z, of an RC circuit. The equation above is only a relationship for the maximum values of voltage and current due to the phase difference between the time-dependent values. Using the idea that the two impedance values are 90o out of phase are like orthogonal vectors (phasors), we can compute the total impedance using something like the Pythagorean Theorem.
-
+Capacitive reactance is a resistance to voltage changes rather than resistance to current changes as observed in a resistor. Because it is a type of resistance, it can be added to resistor resistance as a **total impedance**, $Z$, of an RC circuit. The equation above is only a relationship for the maximum values of voltage and current due to the phase difference between the time-dependent values. Using the idea that the two impedance values are 90$^$\circ}$ out of phase means they can be treated like orthogonal vectors (phasors) - see [](#fig:rc:phasor). We can compute the total impedance using something analogous to the Pythagorean Theorem.
 
 ```{figure} ../figures/ch4_rc/ImpedancePhase.svg
 :label: fig:rc:phasor
@@ -129,14 +130,15 @@ Capacitive reactance is a resistance to voltage changes rather than current chan
 A diagram of impedance phasors.
 ```
 
-The voltage is a sum of the voltages on the resistor and capacitor. In a simple resistor circuit the voltage and current would follow one another as Vocos t. As noted above the voltage and current for a capacitor are 90o out of phase. 
+The voltage is a sum of the voltages on the resistor and capacitor (circuit loop rule 1). In a simple resistor circuit the voltage and current would follow one another as $V_o \cos(t)$. As noted above the voltage and current for a capacitor are 90$^$\circ}$ out of phase. 
 
 
-Where the imaginary i indicates an independent vector (phasor) direction that is due to the frequency dependence of the capacitor impedance. For a series circuit, we can describe the total impedance by
+Where the imaginary $i$ indicates an independent vector (phasor) direction that is due to the frequency dependence of the capacitor impedance. For a series circuit, we can describe the total impedance by
+```{math}
+Z^2_{total}= X^2_R + X^2_C
+```
 
-Z2total= XR2 + XC2
-
-The magnitude of each impedance determines the phase angle between input voltage and the voltage across the resistor in the circuit. The current in the circuit can be measured by the voltage drop in the resistor because there is no phase added by the resistor. Using Fig. 4 one can find a relationship between the impedances
+The magnitude of each impedance determines the phase angle between input voltage and the voltage across the resistor in the circuit. The current in the circuit can be measured by the voltage drop in the resistor because there is no phase added by the resistor. Using [](#fig:rc:phasor) one can find a relationship between the impedances
 
 
 From this, we can define a crossover frequency when ω = 1/RC, θ = 45o. This is where the resistor voltage equals the capacitor voltage (see Fig. 6). The phase will be between 0 and 90o depending on ω, R, and C, and you will see something like Fig. 5 on your oscilloscope.
