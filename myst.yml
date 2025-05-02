@@ -10,6 +10,7 @@ project:
     - file: ./chapters/05RLCCircuits.md
     - file: ./chapters/06Diodes.md
     - file: ./chapters/07Transistors.md
+    - file: ./chapters/08OpAmps.md
     #FETs
     #Op-amps
   id: 
