@@ -167,7 +167,7 @@ and capacitor
 ```
 
 ## Part 2b - Measurements
-Use the oscilloscope to verify these relationships by setting $V_o=5$ V for sine wave input and measuring $V_R$ and $V_C$ using $C = 0.1 \mu F$ and $R = 2 k\Omega$. Use your oscilloscope to measure $V_R$ and $V_C$ as a function of $\omega$. You will need at least 10 points over the range $0\le\omega\le 30000$. Plot on the same graph $V_R$ vs. $\omeg$ and $V_C$  vs. $\omega$. They should look like [](#fig:rc:rcfilter). Plot {eq}`eq:rc:VR` and {eq}`eq:rc:VC` on top of your data and comment on the accuracy of the theoretical model.
+Use the oscilloscope to verify these relationships by setting $V_o=5$ V for sine wave input and measuring $V_R$ and $V_C$ using $C = 0.1 \mu F$ and $R = 2 k\Omega$. Use your oscilloscope to measure $V_R$ and $V_C$ as a function of $\omega$. You will need at least 10 points over the range $0\le\omega\le 30000$. Plot on the same graph $V_R$ vs. $\omeg$ and $V_C$  vs. $\omega$. They should look like [](#fig:rc:rcfilter). Plot {eq}`eq:rc:VR` and {eq}`eq:rc:VC` on top of your data and comment on the accuracy of the theoretical model. Code to assist you is shown below.
 ```{figure} ../figures/ch4_rc/RCfilter.svg
 :label: fig:rc:rcfilter
 :width: 100%
@@ -184,5 +184,32 @@ Because the resistor voltage increases with frequency, it can be used as a high-
 * Connect a speaker across the capacitor and set up a signal generator to sweep from 1 to 5000 Hz. Describe what you hear and relate it to [](#fig:rc:rcfilter).
 ```
 
-# Fun with RC Circuits
+```{code-cell} python
+Vo = #peak-to-peak voltage
+R =  #resistor value
+C = #capacitor value
+f = np.linspace(0, 5000, 5001)#range of frequencies
+omega = 2*np.pi*f #range of omegas
+VR = #Use values above for R,C,omega to plot theoretical curves
+VC = 
+#Enter your data below for f, VR, VC
+f_meas = np.array([10, 100, 200, 300, 400, 500, 600, 800, 1000, 2000, 5000])
+w_meas = f_meas * 2 * np.pi
+VR_meas = np.array([0.5, 1.96, 3.16, 3.76, 4.2, 4.64, 4.6, 4.78, 5, 5.16, 5.1])
+VC_meas = np.array([5, 4.72 ,4, 3.36, 2.8, 2.36, 2, 1.6, 1.28, 0.656, 0.27])
+V_unc = np.ones(11)*0.15
 
+plt.plot(omega, VR, '-.c', label=r'$V_R$')
+plt.plot(omega, VC, '-m', label=r'$V_C$')
+plt.errorbar(w_meas, VR_meas, yerr=V_unc, fmt='oc', label=r'$V_C$ measured')
+plt.errorbar(w_meas, VC_meas, yerr=V_unc, fmt='*m', label=r'$V_C$ measured')
+plt.xlabel(r'$\omega$ (rad/s)')
+plt.ylabel('Voltage')
+plt.legend()
+plt.savefig('RCfilter.svg')
+plt.show()
+```
+
+# Fun with RC Circuits
+Write these up for extra fun stuff to do
+![fun RC circuits](../figures/ch4_rc/FunRCcircuits.jpg
