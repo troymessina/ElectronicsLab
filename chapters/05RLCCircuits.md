@@ -14,3 +14,189 @@ kernelspec:
 :::
 
 # Introduction
+
+We will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to resistor, incductor, and capacitor circuits.
+
+Part 1 of this lab is to measure and compare to a theoretical model the gain and phase of multistage RC circuits. 
+
+Figure 1. A multistage RC circuit.
+
+Part 2 of this lab is to measure and compare to a theoretical model the gain and phase of RLC circuits.
+
+Figure 2. A RLC oscillator circuit..
+
+
+
+Procedure
+Part 1 Theory of Multistage RC Circuits
+We saw in the RC lab that the impedance of an RC circuit is
+Z=ZR+ZC
+Z = R +1iC
+In this lab we will use two different resistor/capacitor values for each stage, but we want the cross-over frequency (=1/RC) to be the same for each stage to keep our analysis simple. We also want the first stage to define the current. To do this we choose R1R2or R2/R1>10 . Since 1/R1C1 = 1/R2C2, we will need to choose capacitors accordingly. More details are in the Measurements section.
+
+In general, each loop’s current can be written
+I=VZ=V1R+1iC
+I=iC1+iRCV
+
+For simplicity, let’s assume we can separate each stage for analysis. See Figure 3. This shows that the voltage across R1is the input voltage to the second stage.
+
+
+Figure 3. A separated multistage RC circuit.
+
+According to Ohm’s Law, the voltage across the resistor is
+
+VR1=I1R1=iC11+iR1C1VoR1
+Similarly, for R2
+
+VR2=I2R2=iC21+iR2C2VR1R2
+
+We are interested in how the output relates to the input of the circuit. We can define a ratio of the output voltage to the input voltage.
+VR2Vo=VR2VR1VR1Vo
+
+VR2Vo=iR2C21+iR2C2iR1C11+iR1C1
+
+This is a complex function, and in the real world we can only measure real values. Therefore, we need to calculate the gain of the circuit by calculating the magnitude of this complex function.
+
+Gain = VR2Vo
+When calculating the magnitude of a complex function, we complex square it and take the square root. First, the two terms need to be written in the form
+aib
+Then, the magnitude is
+a+iba-ib
+
+After some algebra, you should find
+
+Gain =VR2Vo=R2C21+2R22C22R1C11+2R12C12
+Deliverable 1: Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
+The phase for this circuit can be expressed as
+
+=-11R1C1+-11R2C2
+Deliverable 1: Work out the mathematics to show this is the phase of the circuit.
+Part 1 Measurements
+The function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
+
+=1R1C1=1R2C2=210 kHz
+
+1 M R2R150 
+Deliverable 2: Show calculations of expected resistor and capacitor cross-over frequencies based on your choices. Write down actual values for each component as measured by a digital multimeter.
+Set up your circuit and measure the gain and phase as a function of frequency
+Deliverable 3: Graph the gain vs. log(ω) and the phase vs. log(ω). Include a plot of the theoretical functions on your graph and comment on the accuracy of the theoretical models.
+Part 2 Theory of RLC Circuits
+Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See Figure 4.
+
+
+
+Figure 4. The makeup of an inductor includes a wire coil wrapped around a core material. A voltage applied across an inductor creates a magnetic field along the inductor. The strength of the field or magnetic flux is related to the voltage, cross-sectional area, length, and number of turns.
+
+We define inductance, L, as
+L=I =N2lR2
+Where  is the magnetic flux and I is the current through the coil. The relationship for an inductor that is similar to Ohm’s Law comes from Faraday’s Law of Induction
+
+V= -ddt
+
+V= -LdIdt
+
+This equation says that changes in current through an inductor cause a counter emf (V). It should be immediately obvious that the voltage and current will be phase-shifted for an AC signal in an inductor circuit. The impedance of an inductor can be found similarly to what we did with capacitors. Assume we have a sinusoidal current.
+
+V(t) = -LddtIot= -L Io t
+
+Thus, the inductor equivalent of Ohm’s Law gives a maximum  impedance of
+
+ZL= -L
+
+In this lab, we will look at an RLC circuit that acts like an electronic damped oscillator. To analyze this circuit (Figure 2), we consider Kirchoff’s voltage law
+
+Vin=VR+VL+VC
+Vot=IR+LdIdt+QC
+
+To put this in terms of a common variable (I) we differentiate with respect to time to obtain
+
+-Vot=RdIdt+Ld2Idt2+IC.
+
+This is a second order differential equation that applies to any driven harmonic oscillator, where the left hand side is the driving “force” and the right hand side is the dissipative (R), accelerative (L), and restoring (C) “force” terms. I use quotes because this is not a force equation, but there is an analogous force equation for a spring mass system. We can guess a solution of the form
+
+I(t) =Iot-
+Where  is a phase that may be caused by differences in voltage and current like we saw with capacitors. Plugging this solution into the differential equation and doing some algebra, we obtain
+
+
+IoL - 1C-Rt+IoL - 1C+IoR-Vot= 0
+The time dependent functions are orthogonal to one another, i.e., the integral of their product over all space is zero. This means the only way for the above equation to be true is if the coefficients are equal to zero. We will assume Iois not zero
+
+L - 1C-R=0
+IoL - 1C+IoR-Vo=0
+
+From the first equation, we obtain the phase
+=L - 1CR 
+L, R, and C are fixed from the components used. The frequency will always be greater than 1. As increases, the dominant term changes as shown in Figure 5. This cross-over point changes the phase from negative to positive, i.e., a lead to a lag in the current.
+
+
+
+Figure 5. A log-plot of the two terms on the right hand side of the RLC phase equation with L=100 μH, C=1 μF, R=1000 Ω.
+
+
+
+Figure 6. A semilog plot of the phase vs. log(ω). The crossing point of the argument creates a plateau in the phase as the phase goes from current leading the input voltage to the current lagging the input voltage.
+
+From the second equation, we obtain the amplitude of the current.
+
+Io=VoL-1C+R 
+
+Deliverable 4: Work out all of the above mathematics for phase and current filling in algebra steps.
+Consider the impedance triangle shown in Figure 7.
+
+Figure 7. Impedance triangle for RLC circuit.
+
+Based on the triangle we can rewrite the current using the magnitude of the impedance.
+
+Io=VoR2+L-1C2
+
+The denominator happens to be the magnitude of the complex impedance
+
+Z=R+iL+1iC
+
+and therefore, the current is simply voltage divided by impedance, very similar to Ohm’s Law for a series circuit. A graph of the current vs. log() is shown in Figure 8.
+
+
+
+Figure 8. Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. A broad resonance is observed from about 104-106 rad/s
+
+All driven oscillators will display resonance when driven at the resonant frequency. The resonant frequency for an RLC circuit is 
+o=1LC
+The resistor dissipates energy in the circuit making the circuit a damped oscillator. The damping coefficient is
+=R2L
+A final parameter describing an oscillator is its quality factor. The quality factor is ratio of energy stored to energy dissipated over one cycle of the AC input. The higher the quality factor the sharper the resonance. For an RLC series circuit, the quality factor is described as
+
+Q=o LR
+
+As an example, the quality factor for figure 8 is
+
+Q=o LR=LRC=0.000110000.000001=0.01
+
+Figure 9 shows how changing the resistor by a factor of 100 affects the quality factor. 
+
+
+
+Figure 9. Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
+
+A graphical way to think about the quality factor is the frequency of the resonance divided by the width of the resonance.
+
+Q=o
+
+An example of estimating this from a graph would be to observe that the center resonance of the 1000 Ω circuit is at o=105 rad/s. The width of the resonance, which is calculated at Imax/2=0.70710-5Amps. Therefore, =0.65107-1.5105=6.35106 rad/s. See Figure 10 where I have estimated the width by drawing a horizontal line at the appropriate height on the graph.
+
+Q=o=1056.35106=0.016
+
+
+Figure 10. Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. The width of the resonance is shown as a horizontal black line.
+Part 2 - Measurements
+
+Set up the circuit shown in Figure 2. Use values of R, L, and C such that the resonant frequency is 10 kHz < o/2 < 100 kHz. You will be using a 230 μH inductor because that’s what we have. Using a signal generator with a 10 Volt peak-to-peak sine wave and oscilloscope measure the phase and current as a function of frequency. You will need to split the input signal so that you can connect a BNC to BNC for phase measurements. Note: You will measure current on the oscilloscope as I = VR/R.
+Deliverable 5: Make graphs like those in Figs. 6 and 8. Be sure to create a theoretical function to graph over your data.
+Deliverable 6: Calculate theoretical values for ωo,α, and Q. Compare ωo and Q to what you would get from graphical analysis.
+Put a smaller resistor of approximately 10 Ω. Change the input to a square wave and see if you can find the damped oscillations on the oscilloscope. It is interesting that a square wave which is a +/- DC signal would create a sinusoidal response. That is the resonant oscillator in action. Damped oscillations look like the signal in Figure 11.
+
+
+
+Figure 11. A plot of the damped oscillating output signal.
+Deliverable 7: Show the instructor your damped oscillations on the oscilloscope.
+Challenge #1
+The RLC circuit is sometimes called a “notch filter” because it only allows a specific frequency range to transmit with efficiency. Create a circuit that would transmit a frequency of 10 kHz with the highest Q you can achieve.
