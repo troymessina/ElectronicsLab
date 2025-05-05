@@ -15,7 +15,7 @@ kernelspec:
 
 # Introduction
 
-We will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to resistor, incductor, and capacitor circuits.
+These experiments will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to resistor, incductor, and capacitor circuits.
 
 Part 1 of this lab is to measure and compare to a theoretical model the gain and phase of multistage RC circuits. 
 
@@ -30,22 +30,27 @@ Figure 2. A RLC oscillator circuit..
 Procedure
 Part 1 Theory of Multistage RC Circuits
 We saw in the RC lab that the impedance of an RC circuit is
-Z=ZR+ZC
-Z = R +1iC
-In this lab we will use two different resistor/capacitor values for each stage, but we want the cross-over frequency (=1/RC) to be the same for each stage to keep our analysis simple. We also want the first stage to define the current. To do this we choose R1R2or R2/R1>10 . Since 1/R1C1 = 1/R2C2, we will need to choose capacitors accordingly. More details are in the Measurements section.
+```{math}
+Z&=X_R+X_C\\
+Z = R - \frac{1}{i\omega C}
+```
+
+In this lab we will use two different resistor/capacitor values for each stage, and we want the cross-over frequency ($f=1/RC$) to be the same for each stage to keep our analysis simple. We also want the first stage to define the current. To do this we choose $R_1\ll R_2$ or $R_2/R_1>10$. Since $1/R_1C_1 = 1/R_2C_2, we will need to choose capacitors accordingly. More details are in the Measurements section.
 
 In general, each loop’s current can be written
-I=VZ=V1R+1iC
-I=iC1+iRCV
-
-For simplicity, let’s assume we can separate each stage for analysis. See Figure 3. This shows that the voltage across R1is the input voltage to the second stage.
+```{math}
+I&=\frac{V}{Z}=V\frac{1}{R+\frac{1}{i\omega C}\\
+I&=\frac{i\omega C}{1+i\omega RC}V
+```
+For simplicity, let’s assume we can separate each stage for analysis. See Figure 3. This shows that the voltage across $R_1$ is the input voltage to the second stage.
 
 
 Figure 3. A separated multistage RC circuit.
 
 According to Ohm’s Law, the voltage across the resistor is
-
-VR1=I1R1=iC11+iR1C1VoR1
+```{math}
+V_{R1}=I_1R_1=\frac{i\omega C_1}}{1+iR1C1V_oR_1}
+```
 Similarly, for R2
 
 VR2=I2R2=iC21+iR2C2VR1R2
