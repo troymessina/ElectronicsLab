@@ -32,15 +32,15 @@ Part 1 Theory of Multistage RC Circuits
 We saw in the RC lab that the impedance of an RC circuit is
 ```{math}
 Z&=X_R+X_C\\
-Z = R - \frac{1}{i\omega C}
+Z &= R + \frac{1}{i\omega C}
 ```
 
 In this lab we will use two different resistor/capacitor values for each stage, and we want the cross-over frequency ($f=1/RC$) to be the same for each stage to keep our analysis simple. We also want the first stage to define the current. To do this we choose $R_1\ll R_2$ or $R_2/R_1>10$. Since $1/R_1C_1 = 1/R_2C_2, we will need to choose capacitors accordingly. More details are in the Measurements section.
 
 In general, each loop’s current can be written
 ```{math}
-I&=\frac{V}{Z}=V\frac{1}{R+\frac{1}{i\omega C}\\
-I&=\frac{i\omega C}{1+i\omega RC}V
+I &= \frac{V}{Z}=V\frac{1}{R+\frac{1}{i\omega C}\\
+I &= \frac{i\omega C}{1+i\omega RC}V
 ```
 For simplicity, let’s assume we can separate each stage for analysis. See Figure 3. This shows that the voltage across $R_1$ is the input voltage to the second stage.
 
@@ -49,11 +49,12 @@ Figure 3. A separated multistage RC circuit.
 
 According to Ohm’s Law, the voltage across the resistor is
 ```{math}
-V_{R1}=I_1R_1=\frac{i\omega C_1}}{1+iR1C1V_oR_1}
+V_{R1}=I_1R_1=\frac{i\omega C_1}{1+iR_1C_1}V_oR_1
 ```
 Similarly, for R2
-
-VR2=I2R2=iC21+iR2C2VR1R2
+```{math}
+V_{R_2}=I_2R_2=\frac{iC_2}{1+iR_2C_2}V_{R_1}R_2
+```
 
 We are interested in how the output relates to the input of the circuit. We can define a ratio of the output voltage to the input voltage.
 VR2Vo=VR2VR1VR1Vo
