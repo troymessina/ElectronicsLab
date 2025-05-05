@@ -31,7 +31,7 @@ Procedure
 Part 1 Theory of Multistage RC Circuits
 We saw in the RC lab that the impedance of an RC circuit is
 ```{math}
-Z&=X_R+X_C\\
+Z &= X_R+X_C\\
 Z &= R + \frac{1}{i\omega C}
 ```
 
@@ -39,7 +39,7 @@ In this lab we will use two different resistor/capacitor values for each stage, 
 
 In general, each loop’s current can be written
 ```{math}
-I &= \frac{V}{Z}=V\frac{1}{R+\frac{1}{i\omega C}\\
+I &= \frac{V}{Z}=V\frac{1}{R+\frac{1}{i\omega C}}\\
 I &= \frac{i\omega C}{1+i\omega RC}V
 ```
 For simplicity, let’s assume we can separate each stage for analysis. See Figure 3. This shows that the voltage across $R_1$ is the input voltage to the second stage.
