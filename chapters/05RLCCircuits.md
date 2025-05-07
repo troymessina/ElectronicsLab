@@ -20,7 +20,7 @@ These experiments will continue using a FeelTech FY3200S signal generator and a 
 Part 1 of this lab is to measure and compare to a theoretical model the gain and phase of multistage RC circuits as shown in [](#fig:rlc:multirc). 
 ```{figure} ../figures/ch5_rlc/multistageRC.svg
 :label: fig:rlc:multirc
-:width: 100%
+:width: 80%
 :align: center
 :alt: A multistage RC circuit.
 A multistage RC circuit.
@@ -30,7 +30,7 @@ Part 2 of this lab is to measure and compare to a theoretical model the gain, ph
 
 ```{figure} ../figures/ch5_rlc/RLC.svg
 :label: fig:rlc:rlc
-:width: 100%
+:width: 30%
 :align: center
 :alt: A RLC oscillator circuit.
 A RLC oscillator circuit.
@@ -102,7 +102,7 @@ Deliverable 3: Graph the gain vs. log(ω) and the phase vs. log(ω). Include a p
 Part 2 Theory of RLC Circuits
 Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See [](#fig:rlc:inductor.svg).
 
-```{figure} ../figures/ch4_rlc/inductors.svg
+```{figure} ../figures/ch5_rlc/inductors.svg
 :label: fig:rlc:inductor
 :width: 100%
 :align: center
