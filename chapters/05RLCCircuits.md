@@ -18,7 +18,7 @@ kernelspec:
 These experiments will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to resistor, incductor, and capacitor circuits.
 
 Part 1 of this lab is to measure and compare to a theoretical model the gain and phase of multistage RC circuits as shown in [](#fig:rlc:multirc). 
-```{figure} ../figures/ch4_rlc/multistageRC.svg
+```{figure} ../figures/ch5_rlc/multistageRC.svg
 :label: fig:rlc:multirc
 :width: 100%
 :align: center
@@ -28,7 +28,7 @@ A multistage RC circuit.
 
 Part 2 of this lab is to measure and compare to a theoretical model the gain, phase, and resonance of RLC circuits like the one shown in [](#fig:rlc:rlc).
 
-```{figure} ../figures/ch4_rlc/RLC.svg
+```{figure} ../figures/ch5_rlc/RLC.svg
 :label: fig:rlc:rlc
 :width: 100%
 :align: center
@@ -52,7 +52,7 @@ I &= \frac{V}{Z}=V\frac{1}{R+\frac{1}{i\omega C}}\\
 I &= \frac{i\omega C}{1+i\omega RC}V
 ```
 For simplicity, let’s assume we can separate each stage for analysis. See [](#fig:rlc:sepmultirc). This shows that the voltage across $R_1$ is the input voltage to the second stage.
-```{figure} ../figures/ch4_rlc/separatedmultistageRC.svg
+```{figure} ../figures/ch5_rlc/separatedmultistageRC.svg
 :label: fig:rlc:sepmultirc
 :width: 100%
 :align: center
