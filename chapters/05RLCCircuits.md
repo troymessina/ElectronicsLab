@@ -17,17 +17,26 @@ kernelspec:
 
 These experiments will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to resistor, incductor, and capacitor circuits.
 
-Part 1 of this lab is to measure and compare to a theoretical model the gain and phase of multistage RC circuits. 
+Part 1 of this lab is to measure and compare to a theoretical model the gain and phase of multistage RC circuits as shown in [](#fig:rlc:multirc). 
+```{figure} ../figures/ch4_rlc/multistageRC.svg
+:label: fig:rlc:multirc
+:width: 100%
+:align: center
+:alt: A multistage RC circuit.
+A multistage RC circuit.
+```
 
-Figure 1. A multistage RC circuit.
+Part 2 of this lab is to measure and compare to a theoretical model the gain, phase, and resonance of RLC circuits like the one shown in [](#fig:rlc:rlc).
 
-Part 2 of this lab is to measure and compare to a theoretical model the gain and phase of RLC circuits.
+```{figure} ../figures/ch4_rlc/RLC.svg
+:label: fig:rlc:rlc
+:width: 100%
+:align: center
+:alt: A RLC oscillator circuit.
+A RLC oscillator circuit.
+```
 
-Figure 2. A RLC oscillator circuit..
-
-
-
-Procedure
+# Procedure
 Part 1 Theory of Multistage RC Circuits
 We saw in the RC lab that the impedance of an RC circuit is
 ```{math}
@@ -42,14 +51,18 @@ In general, each loop’s current can be written
 I &= \frac{V}{Z}=V\frac{1}{R+\frac{1}{i\omega C}}\\
 I &= \frac{i\omega C}{1+i\omega RC}V
 ```
-For simplicity, let’s assume we can separate each stage for analysis. See Figure 3. This shows that the voltage across $R_1$ is the input voltage to the second stage.
-
-
-Figure 3. A separated multistage RC circuit.
+For simplicity, let’s assume we can separate each stage for analysis. See [](#fig:rlc:sepmultirc). This shows that the voltage across $R_1$ is the input voltage to the second stage.
+```{figure} ../figures/ch4_rlc/separatedmultistageRC.svg
+:label: fig:rlc:sepmultirc
+:width: 100%
+:align: center
+:alt: A separated multistage RC circuit.
+A separated multistage RC circuit.
+```
 
 According to Ohm’s Law, the voltage across the resistor is
 ```{math}
-V_{R1}=I_1R_1=\frac{i\omega C_1}{1+iR_1C_1}V_oR_1
+V_{R_1}=I_1R_1=\frac{i\omega C_1}{1+iR_1C_1}V_oR_1
 ```
 Similarly, for R2
 ```{math}
@@ -87,11 +100,17 @@ Deliverable 2: Show calculations of expected resistor and capacitor cross-over f
 Set up your circuit and measure the gain and phase as a function of frequency
 Deliverable 3: Graph the gain vs. log(ω) and the phase vs. log(ω). Include a plot of the theoretical functions on your graph and comment on the accuracy of the theoretical models.
 Part 2 Theory of RLC Circuits
-Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See Figure 4.
+Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See [](#fig:rlc:inductor.svg).
 
+```{figure} ../figures/ch4_rlc/inductors.svg
+:label: fig:rlc:inductor
+:width: 100%
+:align: center
+:alt: The makeup of an inductor includes a wire coil wrapped around a core material. (a) A solenoidal type inductor. (b) A toroidal type inductor.
+The makeup of an inductor includes a wire coil wrapped around a core material. (a) A solenoidal type inductor. (b) A toroidal type inductor. 
+```
 
-
-Figure 4. The makeup of an inductor includes a wire coil wrapped around a core material. A voltage applied across an inductor creates a magnetic field along the inductor. The strength of the field or magnetic flux is related to the voltage, cross-sectional area, length, and number of turns.
+A voltage applied across an inductor creates a magnetic field along the inductor. The strength of the field or magnetic flux is related to the voltage, cross-sectional area, length, and number of turns.
 
 We define inductance, L, as
 L=I =N2lR2
