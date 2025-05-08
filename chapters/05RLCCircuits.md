@@ -200,13 +200,15 @@ I(t) =I_o\cos\left(\omega t- \phi\right)
 ```
 where $\phi$ is a phase that may be caused by differences in voltage and current like we saw with capacitors. Plugging this solution into the differential equation and doing some algebra, we obtain
 ```{math}
-I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\cos\left(\phi\right)-R\sin\left(\phi\right)\right]\cos\left(\omega t\right) + I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\sin\left(\phi\right) + I_oR\cos\left(\phi\right)-V_o\right] \sin\left(\omega t\right) = 0
+\begin{align}
+& I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\cos\left(\phi\right)-R\sin\left(\phi\right)\right]\cos\left(\omega t\right) +\\\\ & I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\sin\left(\phi\right) + I_oR\cos\left(\phi\right)-V_o\right] \sin\left(\omega t\right) = 0
+\end{align}
 ```
-The time dependent functions are orthogonal to one another, i.e., the integral of their product over all space is zero. This means the only way for the above equation to be true is if the coefficients are equal to zero. We will assume Iois not zero
-
-L - 1C-R=0
-IoL - 1C+IoR-Vo=0
-
+The time dependent functions are orthogonal to one another, i.e., the integral of their product over all space is zero. This means the only way for the above equation to be true is if the coefficients are equal to zero. We will assume $I_o\neq 0$.
+```{math}
+\left(\omega L - \frac{1}{\omega C}\right)\cos\left(\phi\right)-R\sin\left(\phi\right) &= 0\\
+\left(\omega L - \frac{1}{\omega C}\right)\sin\left(\phi\right) + I_oR\cos\left(\phi\right)-V_o &= 0
+```
 From the first equation, we obtain the phase
 =L - 1CR 
 L, R, and C are fixed from the components used. The frequency will always be greater than 1. As increases, the dominant term changes as shown in Figure 5. This cross-over point changes the phase from negative to positive, i.e., a lead to a lag in the current.
