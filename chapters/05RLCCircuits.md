@@ -44,7 +44,7 @@ Z &= X_R+X_C\\
 Z &= R + \frac{1}{i\omega C}
 ```
 
-In this lab we will use two different resistor/capacitor values for each stage, and we want the cross-over frequency ($f=1/RC$) to be the same for each stage to keep our analysis simple. We also want the first stage to define the current. To do this we choose $R_1\ll R_2$ or $R_2/R_1>10$. Since $1/R_1C_1 = 1/R_2C_2, we will need to choose capacitors accordingly. More details are in the Measurements section.
+In this lab we will use two different resistor/capacitor values for each stage, and we want the cross-over frequency ($f=1/RC$) to be the same for each stage to keep our analysis simple. We also want the first stage to define the current. To do this we choose $R_1\ll R_2$ or $R_2/R_1>10$. Since $1/R_1C_1 = 1/R_2C_2$, we will need to choose capacitors accordingly. More details are in the Measurements section.
 
 In general, each loop’s current can be written
 ```{math}
@@ -93,30 +93,8 @@ After some algebra, you should find
 ```{exercise}
 * Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
 * Work out the mathematics to show this is the phase of the circuit.
-* Plot the gain and phase as functions of frequency, $\omega$, using the resistor and capacitor values you choose in [](#sec:rlc:part1meas). Code to assist you is shown below.
 ```
-```{code-cell} Python
-import matplotlib.pyplot as plt
-import numpy as np
 
-omega = np.linspace(0,100000, 100001)
-R1 = 1000
-R2 = 10000
-C1 = 1e-7 #100 nF
-C2 = 1e-8 #1nF
-print(1/R1/C1, 1/R2/C2)
-gain = omega*R1*C1/np.sqrt(1+(omega*R1*C1)**2) * omega*R2*C2/np.sqrt(1+(omega*R2*C2)**2)
-phase = np.atan(1/(omega*R1*C1)) + np.atan(1/(omega*R2*C2))
-
-fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True)
-
-ax1.plot(omega, gain)
-ax1.set_ylabel('Gain')
-ax2.plot(omega, phase)
-ax2.set_ylabel(r'Phase, $\phi$ (rad)')
-plt.xlabel('Frequency (rad/s)')
-plt.show()
-```
 The phase for this circuit can be expressed as
 ```{math}
 \phi = \tan^-1\left(\frac{1}{\omega R_1C_1}\right)+\tan^-1\left(\frac{1}{\omega R_2C_2}\right)
@@ -126,7 +104,7 @@ The phase for this circuit can be expressed as
 ## Part 1 Measurements
 As observed in [](#sec:oscopes:sigintegrity), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
 ```{math}
-\omega = \frac{1}{R_1C_1}=\frac{1}{R_2C_2} \approx \cdot 10 {\text krad/s}
+\omega = \frac{1}{R_1C_1}=\frac{1}{R_2C_2} \approx 10 {\text krad/s}
 ```
 and
 ```{math}
@@ -137,8 +115,43 @@ Show calculations of expected resistor and capacitor cross-over frequencies base
 ```
 Set up your circuit and measure the gain and phase as a function of frequency
 ```{exercise}
-Deliverable 3: Graph the gain vs. log(ω) and the phase vs. log(ω). Include a plot of the theoretical functions on your graph and comment on the accuracy of the theoretical models.
+* Plot the gain and phase as functions of log($\omega$) using the resistor and capacitor values you choose in [](#sec:rlc:part1meas). Code to assist you is shown below.
+* Comment on the accuracy of the theoretical models.
 ```
+
+```{code-cell} Python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# theoretical data
+omega = np.linspace(0,100000, 100001)
+R1 = 1000
+R2 = 10000
+C1 = 1e-7 #100 nF
+C2 = 1e-8 #1nF
+print(1/R1/C1, 1/R2/C2)
+gain_theory = omega*R1*C1/np.sqrt(1+(omega*R1*C1)**2) * omega*R2*C2/np.sqrt(1+(omega*R2*C2)**2)
+phase_theory = np.atan(1/(omega*R1*C1)) + np.atan(1/(omega*R2*C2))
+
+# experimental data
+omega_exp = np.array([])
+gain_exp = np.array([])
+phase_exp = np.array([])
+
+fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True)
+
+ax1.plot(omega, gain_theory, '-k', label='Theoretical Gain')
+ax1.plot(omega_exp, gain_exp, 'ob', label='Experimental Gain')
+ax1.set_ylabel('Theoretical Gain')
+ax1.legend()
+ax2.plot(omega, phase_theory, '-k', label='Theoretical Phase')
+ax2.plot(omega_exp, phase_exp, 'ob', label='Experimental Phase')
+ax2.set_ylabel(r'Phase, $\phi$ (rad)')
+ax2.legend()
+plt.xlabel('Frequency (rad/s)')
+plt.show()
+```
+
 ## Part 2 Theory of RLC Circuits
 
 Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See [](#fig:rlc:inductor.svg).
