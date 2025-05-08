@@ -263,17 +263,21 @@ and therefore, the current is simply voltage divided by impedance, very similar 
 Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:phaseterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
 ```
 All driven oscillators will display resonance when driven at the resonant frequency. The resonant frequency for an RLC circuit is 
-o=1LC
+```{math}
+\omega_o=\frac{1}{\sqrt{LC}}
+```
 The resistor dissipates energy in the circuit making the circuit a damped oscillator. The damping coefficient is
-=R2L
+```{math}
+\alpha =\frac{R}{2L}
+```
 A final parameter describing an oscillator is its quality factor. The quality factor is ratio of energy stored to energy dissipated over one cycle of the AC input. The higher the quality factor the sharper the resonance. For an RLC series circuit, the quality factor is described as
-
-Q=o LR
-
-As an example, the quality factor for figure 8 is
-
-Q=o LR=LRC=0.000110000.000001=0.01
-
+```{math}
+Q=\frac{\omega_o L}{R}
+```
+As an example, the quality factor for [](#fig:rlc:rlccurrent) is
+```{math}
+Q=\frac{\omega_o L}{R}=LRC=0.000110000.000001=0.01
+```
 [](#fig:rlc:rlccurrentcompare) shows how changing the resistor by a factor of 100 affects the quality factor. 
 ```{figure} ../figures/ch5_rlc/currentcompare.svg
 :label: fig:rlc:rlccurrentcompare
@@ -284,16 +288,19 @@ Plot of the current flowing through the RLC circuit as a function of input frequ
 ```
 
 A graphical way to think about the quality factor is the frequency of the resonance divided by the width of the resonance.
-
-Q=o
-
-An example of estimating this from a graph would be to observe that the center resonance of the 1000 Ω circuit is at o=105 rad/s. The width of the resonance, which is calculated at Imax/2=0.70710-5Amps. Therefore, =0.65107-1.5105=6.35106 rad/s. See Figure 10 where I have estimated the width by drawing a horizontal line at the appropriate height on the graph.
-
-Q=o=1056.35106=0.016
-
-
-Figure 10. Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. The width of the resonance is shown as a horizontal black line.
-
+```{math}
+Q=\frac{\omega_o}{\Delta\omega}
+```
+An example of estimating this from a graph would be to observe that the center resonance of the $R=1000~\Omega$ circuit is at $\omega_o=10^5~{\rm rad/s}$. The width of the resonance, which is calculated at $I_{max}/2=0.707\times 10^{-5}~{\rm A}$. Therefore, =0.65107-1.5105=6.35106 rad/s. See [](#fig:rlc:reswidth) where the width $\Delta\omega$ is shown by a horizontal arrow at the appropriate height on the graph.
+```{math}
+Q=\frac{\omega_o}{\Delta\omega}=\frac{10^5}{6.35\times 10^6}=0.016
+```
+```{figure} ../figures/ch5_rlc/rlcresonancewidth.svg
+:label: fig:rlc:reswidth
+:width: 80%
+:align: center
+:alt: Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. The width of the resonance is shown as a horizontal black line.
+```
 ## Part 2 - Measurements
 
 Set up the circuit shown in [](#fig:rlc:rlc). Use values of $R$, $L$, and $C$ such that the resonant frequency is $10 < f < 100~{\rm  kHz}$. You will be using a 230 μH inductor because that’s what we have. Using a signal generator with a 10 Volt peak-to-peak sine wave and oscilloscope measure the phase and current as a function of frequency. You will need to split the input signal so that you can connect a BNC to BNC for phase measurements. Note: You will measure current on the oscilloscope as $I = V_R/R$.
