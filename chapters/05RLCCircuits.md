@@ -276,7 +276,7 @@ Q=\frac{\omega_o L}{R}
 ```
 As an example, the quality factor for [](#fig:rlc:rlccurrent) is
 ```{math}
-Q=\frac{\omega_o L}{R}=LRC=0.000110000.000001=0.01
+Q=\frac{\omega_o L}{R}=\frac{\sqrt{L}}{R\sqrt{C}}=\frac{\sqrt{0.0001}}{1000\sqrt{0.000001}}=0.01
 ```
 [](#fig:rlc:rlccurrentcompare) shows how changing the resistor by a factor of 100 affects the quality factor. 
 ```{figure} ../figures/ch5_rlc/currentcompare.svg
