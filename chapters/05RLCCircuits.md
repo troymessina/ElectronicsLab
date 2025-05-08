@@ -37,7 +37,8 @@ A RLC oscillator circuit.
 ```
 
 # Procedure
-## Part 1 Theory of Multistage RC Circuits
+
+## Part 1 - Theory of Multistage RC Circuits
 We saw in the RC lab that the impedance of an RC circuit is
 ```{math}
 Z &= X_R+X_C\\
@@ -101,7 +102,7 @@ The phase for this circuit can be expressed as
 ```
 
 (sec:rlc:part1meas)=
-## Part 1 Measurements
+## Part 1 - Measurements
 As observed in [](#sec:oscopes:sigintegrity), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
 ```{math}
 \omega = \frac{1}{R_1C_1}=\frac{1}{R_2C_2} \approx 10 {~\rm krad/s}
@@ -152,7 +153,7 @@ plt.xlabel(r'log($\omega$)')
 plt.show()
 ```
 
-## Part 2 Theory of RLC Circuits
+## Part 2 - Theory of RLC Circuits
 
 Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See [](#fig:rlc:inductor.svg).
 
@@ -219,7 +220,7 @@ $L$, $R$, and $C$ are fixed from the components used. The frequency will always 
 :width: 80%
 :align: center
 :alt: A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}H, C=1 \mu{\rm F}, R=1000 \Omega$.
-A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rmH}H, C=1 \mu{\rm F}, R=1000 \Omega$.
+A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}H, C=1 \mu{\rm F}, R=1000 \Omega$.
 ```
 
 ```{figure} ../figures/ch5_rlc/rlcphase.svg
@@ -283,7 +284,8 @@ Q=o=1056.35106=0.016
 
 
 Figure 10. Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. The width of the resonance is shown as a horizontal black line.
-Part 2 - Measurements
+
+## Part 2 - Measurements
 
 Set up the circuit shown in Figure 2. Use values of R, L, and C such that the resonant frequency is 10 kHz < o/2 < 100 kHz. You will be using a 230 μH inductor because that’s what we have. Using a signal generator with a 10 Volt peak-to-peak sine wave and oscilloscope measure the phase and current as a function of frequency. You will need to split the input signal so that you can connect a BNC to BNC for phase measurements. Note: You will measure current on the oscilloscope as I = VR/R.
 Deliverable 5: Make graphs like those in Figs. 6 and 8. Be sure to create a theoretical function to graph over your data.
