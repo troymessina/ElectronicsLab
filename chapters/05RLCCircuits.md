@@ -248,7 +248,7 @@ Impedance triangle for RLC circuit.
 ```
 Based on the triangle we can rewrite the current using the magnitude of the impedance.
 ```{math}
-I_o=\frac{V_o}{\sqrt{R^2+\left(\omega L-\frac{1}{\omega C}\right)^2}}
+\boxed{I_o=\frac{V_o}{\sqrt{R^2+\left(\omega L-\frac{1}{\omega C}\right)^2}}}
 ```
 The denominator happens to be the magnitude of the complex impedance
 ```{math}
