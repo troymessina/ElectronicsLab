@@ -159,7 +159,7 @@ Inductors are a  circuit component you likely have not encountered. It is essent
 
 ```{figure} ../figures/ch5_rlc/inductors.svg
 :label: fig:rlc:inductor
-:width: 80%
+:width: 75%
 :align: center
 :alt: The makeup of an inductor includes a wire coil wrapped around a core material. (a) A solenoidal type inductor. (b) A toroidal type inductor.
 The makeup of an inductor includes a wire coil wrapped around a core material. (a) A solenoidal type inductor. (b) A toroidal type inductor. 
@@ -217,7 +217,7 @@ From the first equation, we obtain the phase
 $L$, $R$, and $C$ are fixed from the components used. The frequency will always be greater than 1. As $\omega$ increases, the dominant term changes as shown in [](#fig:rlc:rlctwoterms). This cross-over point changes the phase from negative to positive, i.e., a lead to a lag in the current.
 ```{figure} ../figures/ch5_rlc/phaseterms.svg
 :label: fig:rlc:rlctwoterms
-:width: 80%
+:width: 100%
 :align: center
 :alt: A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}, C=1 \mu{\rm F}, R=1000 \Omega$.
 A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}, C=1 \mu{\rm F}, R=1000 \Omega$.
@@ -225,7 +225,7 @@ A log-plot of the two terms on the right hand side of the RLC phase equation wit
 
 ```{figure} ../figures/ch5_rlc/rlcphase.svg
 :label: fig:rlc:rlcphase
-:width: 80%
+:width: 100%
 :align: center
 :alt: A semilog plot of the phase vs. log(ω). The crossing point of the argument creates a plateau in the phase as the phase goes from current leading the input voltage to the current lagging the input voltage.
 A semilog plot of the phase vs. log(ω). The crossing point of the argument creates a plateau in the phase as the phase goes from current leading the input voltage to the current lagging the input voltage.
@@ -257,7 +257,7 @@ Z = R + i\omega L + \frac{1}{i\omega C}
 and therefore, the current is simply voltage divided by impedance, very similar to Ohm’s Law for a series circuit. A graph of the current vs. log() is shown in [](#fig:rlc:rlccurrent).
 ```{figure} ../figures/ch5_rlc/rlccurrent.svg
 :label: fig:rlc:rlccurrent
-:width: 80%
+:width: 100%
 :align: center
 :alt: Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:phaseterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
 Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:phaseterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
@@ -281,7 +281,7 @@ Q=\frac{\omega_o L}{R}=\frac{\sqrt{L}}{R\sqrt{C}}=\frac{\sqrt{0.0001}}{1000\sqrt
 [](#fig:rlc:rlccurrentcompare) shows how changing the resistor by a factor of 100 affects the quality factor. 
 ```{figure} ../figures/ch5_rlc/currentcompare.svg
 :label: fig:rlc:rlccurrentcompare
-:width: 80%
+:width: 100%
 :align: center
 :alt: Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:phaseterms) and $V_o= 10$ V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
 Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:phaseterms) and $V_o= 10$ V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
@@ -297,7 +297,7 @@ Q=\frac{\omega_o}{\Delta\omega}=\frac{10^5}{6.35\times 10^6}=0.016
 ```
 ```{figure} ../figures/ch5_rlc/rlcresonancewidth.svg
 :label: fig:rlc:reswidth
-:width: 80%
+:width: 100%
 :align: center
 :alt: Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:rlctwoterms) and $V_o = 10~{\rm V}$. The width of the resonance is shown as a horizontal black arrow.
 Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:rlctwoterms) and $V_o = 10~{\rm V}$. The width of the resonance is shown as a horizontal black arrow.
@@ -312,7 +312,7 @@ Set up the circuit shown in [](#fig:rlc:rlc). Use values of $R$, $L$, and $C$ su
 Put a smaller resistor of approximately 10 Ω. Change the input to a square wave and see if you can find the damped oscillations on the oscilloscope. It is interesting that a square wave which is a +/- DC signal would create a sinusoidal response. That is the resonant oscillator in action. Damped oscillations look like the signal in [](#fig:rlc:dampedosc).
 ```{figure} ../figures/ch5_rlc/dampedosc.svg
 :label: fig:rlc:dampedosc
-:width: 80%
+:width: 100%
 :align: center
 :alt: A plot of the damped oscillating output signal.
 A plot of the damped oscillating output signal.
@@ -320,7 +320,12 @@ A plot of the damped oscillating output signal.
 ```{exercise}
 Show the instructor your damped oscillations on the oscilloscope.
 ```
+```{code-cell} Python
+#code for exercise 5
+```
+
+
 ```{exercise}
-**Challenge**
+**Challenge:**
 The RLC circuit is sometimes called a “notch filter” because it only allows a specific frequency range to transmit with efficiency. Create a circuit that would transmit a frequency of 10 kHz with the highest $Q$ you can achieve. Consult the instructor before you power your circuit.
 ```
