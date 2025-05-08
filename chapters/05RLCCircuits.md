@@ -250,12 +250,14 @@ The denominator happens to be the magnitude of the complex impedance
 
 Z=R+iL+1iC
 
-and therefore, the current is simply voltage divided by impedance, very similar to Ohm’s Law for a series circuit. A graph of the current vs. log() is shown in Figure 8.
-
-
-
-Figure 8. Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. A broad resonance is observed from about 104-106 rad/s
-
+and therefore, the current is simply voltage divided by impedance, very similar to Ohm’s Law for a series circuit. A graph of the current vs. log() is shown in [](#fig:rlc:rlccurrent).
+```{figure} ../figures/ch5_rlc/rlccurrent.svg
+:label: fig:rlc:rlccurrent
+:width: 80%
+:align: center
+:alt: Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:phaseterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
+Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:phaseterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
+```
 All driven oscillators will display resonance when driven at the resonant frequency. The resonant frequency for an RLC circuit is 
 o=1LC
 The resistor dissipates energy in the circuit making the circuit a damped oscillator. The damping coefficient is
@@ -268,11 +270,14 @@ As an example, the quality factor for figure 8 is
 
 Q=o LR=LRC=0.000110000.000001=0.01
 
-Figure 9 shows how changing the resistor by a factor of 100 affects the quality factor. 
-
-
-
-Figure 9. Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
+[](#fig:rlc:rlccurrentcompare) shows how changing the resistor by a factor of 100 affects the quality factor. 
+```{figure} ../figures/ch5_rlc/currentcompare.svg
+:label: fig:rlc:rlccurrentcompare
+:width: 80%
+:align: center
+:alt: Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:phaseterms) and $V_o= 10$ V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
+Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:phaseterms) and $V_o= 10$ V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
+```
 
 A graphical way to think about the quality factor is the frequency of the resonance divided by the width of the resonance.
 
