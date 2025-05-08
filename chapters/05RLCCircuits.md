@@ -76,7 +76,7 @@ We are interested in how the output relates to the input of the circuit. We can 
 ```
 This is a complex function, and in the real world we can only measure real values. Therefore, we need to calculate the gain of the circuit by calculating the magnitude of this complex function.
 ```{math}
-{\text Gain} = \left|frac{V_{R_2}}{V_o}\right|
+{\text Gain} = \left|\frac{V_{R_2}}{V_o}\right|
 ```
 When calculating the magnitude of a complex function, we complex square it and take the square root. First, the two terms need to be written in the form
 ```{math}
@@ -88,7 +88,7 @@ Then, the magnitude is
 ```
 After some algebra, you should find
 ```{math}
-{\text Gain} = \vert\frac{V_{R_2}{V_o}\vert = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2_C^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
+{\text Gain} = \left|\frac{V_{R_2}}{V_o}\right| = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2_C^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
 ```
 ```{exercise}
 Deliverable 1: Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
