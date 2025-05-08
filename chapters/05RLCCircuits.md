@@ -233,7 +233,7 @@ A semilog plot of the phase vs. log(ω). The crossing point of the argument crea
 
 From the second equation, we obtain the amplitude of the current.
 ```{math}
-I_o=\frac{V_o}{\omega L-\frac{1}{\omega C}\sin\left(\phi\right)} + R\cos\left(\phi\right)
+I_o=\frac{V_o}{\left(\omega L-\frac{1}{\omega C}\right)\sin\left(\phi\right) + R\cos\left(\phi\right)}
 ```
 ```{exercise}
 Work out all of the above mathematics for phase and current filling in algebra steps.
@@ -251,9 +251,9 @@ Based on the triangle we can rewrite the current using the magnitude of the impe
 I_o=\frac{V_o}{\sqrt{R^2+\left(\omega L-\frac{1}{\omega C}\right)^2}}
 ```
 The denominator happens to be the magnitude of the complex impedance
-
-Z=R+iL+1iC
-
+```{math}
+Z = R + i\omega L + \frac{1}{i\omega C}
+```
 and therefore, the current is simply voltage divided by impedance, very similar to Ohm’s Law for a series circuit. A graph of the current vs. log() is shown in [](#fig:rlc:rlccurrent).
 ```{figure} ../figures/ch5_rlc/rlccurrent.svg
 :label: fig:rlc:rlccurrent
