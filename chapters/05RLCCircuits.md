@@ -178,23 +178,26 @@ V &= -L\frac{dI}{dt}
 This equation says that changes in current through an inductor cause a counter emf ($V$). It should be immediately obvious that the voltage and current will be phase-shifted for an AC signal in an inductor circuit. The impedance of an inductor can be found similarly to what we did with capacitors. Assume we have a sinusoidal current.
 ```{math}
 V(t) = -L\frac{d}{dt} I_o\sin\left(\omega t\right) = -\omega L I_o \cos\left(\omega t\right)
-
+```
 Thus, the inductor equivalent of Ohm’s Law gives a maximum  impedance of
+```{math}
+Z_L= -\omega L
+```
 
-ZL= -L
+In this lab, we will look at an RLC circuit that acts like an electronic damped oscillator. To analyze this circuit [](#fig:rlc:rlc), we consider Kirchoff’s voltage law
+```{math}
+V_o &= V_R + V_L + V_C\\
+V_o\cos\left(\omega t\right) &= IR + L\frac{dI}{dt} + QC
+```
+To put this in terms of a common variable ($I$) we differentiate with respect to time to obtain
+```{math}
+-\omega V_o \sin\left(\omega t\right) = R\frac{dI}{dt} + L\frac{d^2I}{dt^2} + IC
+```
 
-In this lab, we will look at an RLC circuit that acts like an electronic damped oscillator. To analyze this circuit (Figure 2), we consider Kirchoff’s voltage law
-
-Vin=VR+VL+VC
-Vot=IR+LdIdt+QC
-
-To put this in terms of a common variable (I) we differentiate with respect to time to obtain
-
--Vot=RdIdt+Ld2Idt2+IC.
-
-This is a second order differential equation that applies to any driven harmonic oscillator, where the left hand side is the driving “force” and the right hand side is the dissipative (R), accelerative (L), and restoring (C) “force” terms. I use quotes because this is not a force equation, but there is an analogous force equation for a spring mass system. We can guess a solution of the form
-
-I(t) =Iot-
+This is a second order differential equation that applies to any driven harmonic oscillator, where the left hand side is the driving “force” and the right hand side is the dissipative ($R$), accelerative ($L$), and restoring ($C$) “force” terms. I use quotes because this is not a force equation, but there is an analogous force equation for a spring mass system. We can guess a solution of the form
+```{math}
+I(t) =I_o\cos\left(\omega t- \phi\right)
+```
 Where  is a phase that may be caused by differences in voltage and current like we saw with capacitors. Plugging this solution into the differential equation and doing some algebra, we obtain
 
 
