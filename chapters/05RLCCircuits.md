@@ -239,7 +239,7 @@ I_o=\frac{V_o}{\left(\omega L-\frac{1}{\omega C}\right)\sin\left(\phi\right) + R
 Work out all of the above mathematics for phase and current filling in algebra steps.
 ```
 Consider the impedance triangle shown in [](#fig:rlc:rlcphasetriangle).
-```{figure} 
+```{figure} ../figures/ch5_rlc/rlcimpedancetriangle.svg
 :label: fig:rlc:rlcphasetriangle
 :width: 80%
 :align: center
