@@ -214,16 +214,16 @@ From the first equation, we obtain the phase
 \tan\left(\phi\right) = \frac{\omega L-\frac{1}{\omega C}}{R}
 ``` 
 $L$, $R$, and $C$ are fixed from the components used. The frequency will always be greater than 1. As $\omega$ increases, the dominant term changes as shown in [](#fig:rlc:rlctwoterms). This cross-over point changes the phase from negative to positive, i.e., a lead to a lag in the current.
-```{figure}
+```{figure} ../figures/ch5_rlc/phaseterms.svg
 :label: fig:rlc:rlctwoterms
 :width: 80%
 :align: center
-:alt: A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rmH}H, C=1 \mu{\rm F}, R=1000 \Omega$.
+:alt: A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}H, C=1 \mu{\rm F}, R=1000 \Omega$.
 A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rmH}H, C=1 \mu{\rm F}, R=1000 \Omega$.
 ```
 
-```{figure}
-:label: fig:rlc:rlcphasecross
+```{figure} ../figures/ch5_rlc/rlcphase.svg
+:label: fig:rlc:rlcphase
 :width: 80%
 :align: center
 :alt: A semilog plot of the phase vs. log(ω). The crossing point of the argument creates a plateau in the phase as the phase goes from current leading the input voltage to the current lagging the input voltage.
