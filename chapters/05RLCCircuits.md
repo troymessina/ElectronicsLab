@@ -18,7 +18,7 @@ kernelspec:
 These experiments will continue using a FeelTech FY3200S signal generator and a Tektronix TBS 1072B-EDU digital oscilloscope to measure the waveforms connected to resistor, incductor, and capacitor circuits.
 
 Part 1 of this lab is to measure and compare to a theoretical model the gain and phase of multistage RC circuits as shown in [](#fig:rlc:multirc). 
-```{figure} ../figures/ch5_rlc/multistageRC.svg
+```{figure} ../figures/ch5_rlc/MultistageRC.svg
 :label: fig:rlc:multirc
 :width: 80%
 :align: center
