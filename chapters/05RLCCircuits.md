@@ -104,7 +104,7 @@ The phase for this circuit can be expressed as
 ## Part 1 Measurements
 As observed in [](#sec:oscopes:sigintegrity), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
 ```{math}
-\omega = \frac{1}{R_1C_1}=\frac{1}{R_2C_2} \approx 10 {\rm krad/s}
+\omega = \frac{1}{R_1C_1}=\frac{1}{R_2C_2} \approx 10 {~\rm krad/s}
 ```
 and
 ```{math}
@@ -168,7 +168,7 @@ A voltage applied across an inductor creates a magnetic field along the inductor
 
 We define inductance, $L$, as
 ```{math}
-L=frac{\Phi}{I} = \frac{\mu N^2 \pi R^2}{\ell}
+L=\frac{\Phi}{I} = \frac{\mu N^2 \pi R^2}{\ell}
 ```
 Where $\Phi$ is the magnetic flux and $I$ is the current through the coil. The relationship for an inductor that is similar to Ohm’s Law comes from Faraday’s Law of Induction
 ```{math}
@@ -198,10 +198,10 @@ This is a second order differential equation that applies to any driven harmonic
 ```{math}
 I(t) =I_o\cos\left(\omega t- \phi\right)
 ```
-Where  is a phase that may be caused by differences in voltage and current like we saw with capacitors. Plugging this solution into the differential equation and doing some algebra, we obtain
-
-
-IoL - 1C-Rt+IoL - 1C+IoR-Vot= 0
+where $\phi$ is a phase that may be caused by differences in voltage and current like we saw with capacitors. Plugging this solution into the differential equation and doing some algebra, we obtain
+```{math}
+I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\cos\left(\phi\right)-R\sin\left(\phi\right)\right]\cos\left(\omega t\right) + I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\sin\left(\phi\right) + I_oR\cos\left(\phi\right)-V_o\right] \sin\left(\omega t\right) = 0
+```
 The time dependent functions are orthogonal to one another, i.e., the integral of their product over all space is zero. This means the only way for the above equation to be true is if the coefficients are equal to zero. We will assume Iois not zero
 
 L - 1C-R=0
