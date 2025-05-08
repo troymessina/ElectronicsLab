@@ -272,7 +272,7 @@ The resistor dissipates energy in the circuit making the circuit a damped oscill
 ```
 A final parameter describing an oscillator is its quality factor. The quality factor is ratio of energy stored to energy dissipated over one cycle of the AC input. The higher the quality factor the sharper the resonance. For an RLC series circuit, the quality factor is described as
 ```{math}
-Q=\frac{\omega_o L}{R}
+\boxed{Q=\frac{\omega_o L}{R}}
 ```
 As an example, the quality factor for [](#fig:rlc:rlccurrent) is
 ```{math}
@@ -289,9 +289,9 @@ Plot of the current flowing through the RLC circuit as a function of input frequ
 
 A graphical way to think about the quality factor is the frequency of the resonance divided by the width of the resonance.
 ```{math}
-Q=\frac{\omega_o}{\Delta\omega}
+\boxed{Q=\frac{\omega_o}{\Delta\omega}}
 ```
-An example of estimating this from a graph would be to observe that the center resonance of the $R=1000~\Omega$ circuit is at $\omega_o=10^5~{\rm rad/s}$. The width of the resonance, which is calculated at $I_{max}/2=0.707\times 10^{-5}~{\rm A}$. Therefore, =0.65107-1.5105=6.35106 rad/s. See [](#fig:rlc:reswidth) where the width $\Delta\omega$ is shown by a horizontal arrow at the appropriate height on the graph.
+An example of estimating this from a graph would be to observe that the center resonance of the $R=1000~\Omega$ circuit is at $\omega_o=10^5~{\rm rad/s}$. The width of the resonance, which is calculated at $I_{max}/2=0.707\times 10^{-5}~{\rm A}$. Therefore, $\Delta\omega=0.65\times 10^7-1.5\times 10^5 = 6.35\times 10^6~{\rm rad/s}$. See [](#fig:rlc:reswidth) where the width $\Delta\omega$ is shown by a horizontal arrow at the appropriate height on the graph.
 ```{math}
 Q=\frac{\omega_o}{\Delta\omega}=\frac{10^5}{6.35\times 10^6}=0.016
 ```
