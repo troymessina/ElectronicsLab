@@ -238,14 +238,18 @@ I_o=\frac{V_o}{\omega L-\frac{1}{\omega C}\sin\left(\phi\right)} + R\cos\left(\p
 ```{exercise}
 Work out all of the above mathematics for phase and current filling in algebra steps.
 ```
-Consider the impedance triangle shown in Figure 7.
-
-Figure 7. Impedance triangle for RLC circuit.
-
+Consider the impedance triangle shown in [](#fig:rlc:rlcphasetriangle).
+```{figure} 
+:label: fig:rlc:rlcphasetriangle
+:width: 80%
+:align: center
+:alt: Impedance triangle for RLC circuit.
+Impedance triangle for RLC circuit.
+```
 Based on the triangle we can rewrite the current using the magnitude of the impedance.
-
-Io=VoR2+L-1C2
-
+```{math}
+I_o=\frac{V_o}{\sqrt{R^2+\left(\omega L-\frac{1}{\omega C}\right)^2}}
+```
 The denominator happens to be the magnitude of the complex impedance
 
 Z=R+iL+1iC
