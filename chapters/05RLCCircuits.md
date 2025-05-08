@@ -71,7 +71,7 @@ V_{R_2}=I_2R_2=\frac{iC_2}{1+iR_2C_2}V_{R_1}R_2
 
 We are interested in how the output relates to the input of the circuit. We can define a ratio of the output voltage to the input voltage.
 ```{math}
-\frac{V_{R_2}}{V_o} &= \frac{V_{R_2}}{V_{R_1}}\cdot\frac{V{R_1}}{V_o}\\
+\frac{V_{R_2}}{V_o} &= \frac{V_{R_2}}{V_{R_1}}\cdot\frac{V_{R_1}}{V_o}\\
 \frac{V_{R_2}}{V_o} &= \frac{i\omega R_2C_2}{1+i\omega R_2C_2}\cdot\frac{i\omega R_1C_1}{1+i\omega R_1C_1}
 ```
 This is a complex function, and in the real world we can only measure real values. Therefore, we need to calculate the gain of the circuit by calculating the magnitude of this complex function.
@@ -88,18 +88,19 @@ Then, the magnitude is
 ```
 After some algebra, you should find
 ```{math}
-{\text Gain} = \left|\frac{V_{R_2}}{V_o}\right| = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2_C^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
+{\text Gain} = \left|\frac{V_{R_2}}{V_o}\right| = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2C_2^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
 ```
 ```{exercise}
-Deliverable 1: Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
+* Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
+* Work out the mathematics to show this is the phase of the circuit.
+* Plot the gain and phase as functions of frequency, $\omega$, using the resistor and capacitor values you choose in [](#sec:rlc:par1meas).
 ```
 The phase for this circuit can be expressed as
 ```{math}
 \phi = \tan^-1\left(\frac{1}{\omega R_1C_1}\right)+\tan^-1\left(\frac{1}{\omega R_2C_2}\right)
 ```
-```{exercise}
-Deliverable 1: Work out the mathematics to show this is the phase of the circuit.
-```
+
+(sec:rlc:part1meas)=
 ## Part 1 Measurements
 As observed in [](#chap:oscopes), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
 ```{math}
