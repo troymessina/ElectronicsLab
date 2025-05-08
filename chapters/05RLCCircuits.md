@@ -30,14 +30,14 @@ Part 2 of this lab is to measure and compare to a theoretical model the gain, ph
 
 ```{figure} ../figures/ch5_rlc/RLC.svg
 :label: fig:rlc:rlc
-:width: 30%
+:width: 40%
 :align: center
 :alt: A RLC oscillator circuit.
 A RLC oscillator circuit.
 ```
 
 # Procedure
-Part 1 Theory of Multistage RC Circuits
+## Part 1 Theory of Multistage RC Circuits
 We saw in the RC lab that the impedance of an RC circuit is
 ```{math}
 Z &= X_R+X_C\\
@@ -70,41 +70,59 @@ V_{R_2}=I_2R_2=\frac{iC_2}{1+iR_2C_2}V_{R_1}R_2
 ```
 
 We are interested in how the output relates to the input of the circuit. We can define a ratio of the output voltage to the input voltage.
-VR2Vo=VR2VR1VR1Vo
-
-VR2Vo=iR2C21+iR2C2iR1C11+iR1C1
-
+```{math}
+\frac{V_{R_2}}{V_o} &= \frac{V_{R_2}}{V_{R_1}}\cdot\frac{V{R_1}}{V_o}\\
+\frac{V_{R_2}}{V_o} &= \frac{i\omega R_2C_2}{1+i\omega R_2C_2}\cdot\frac{i\omega R_1C_1}{1+i\omega R_1C_1}
+```
 This is a complex function, and in the real world we can only measure real values. Therefore, we need to calculate the gain of the circuit by calculating the magnitude of this complex function.
-
-Gain = VR2Vo
+```{math}
+Gain = \vert\frac{V_{R_2}}{V_o}\vert
+```
 When calculating the magnitude of a complex function, we complex square it and take the square root. First, the two terms need to be written in the form
-aib
+```{math}
+z = a\pm ib
+```
 Then, the magnitude is
-a+iba-ib
-
+```{math}
+\vert z\vert = \srqt{\left(a+ib\right)\left(a-ib\right)}
+```
 After some algebra, you should find
-
-Gain =VR2Vo=R2C21+2R22C22R1C11+2R12C12
+```{math}
+Gain = \vert\frac{V_{R_2}{V_o}\vert = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2_C^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
+```
+```{exercise}
 Deliverable 1: Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
+```
 The phase for this circuit can be expressed as
-
-=-11R1C1+-11R2C2
+```{math}
+\phi = \tan^-1\left(\frac{1}{\omega R_1C_1}\right)+\tan^-1\left(\frac{1}{\omega R_2C_2}\right)
+```
+```{exercise}
 Deliverable 1: Work out the mathematics to show this is the phase of the circuit.
-Part 1 Measurements
-The function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
-
-=1R1C1=1R2C2=210 kHz
-
-1 M R2R150 
+```
+## Part 1 Measurements
+As observed in [](#chap:oscopes), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
+```{math}
+\omega = \frac{1}{R_1C__1}=\frac{1}{R_2C_2} = 2\pi \cdot 10 {\text kHz}
+```
+and
+```{math}
+50\Omega\ll R_1 \ll R_2 \ll 1 M\Omega
+``` 
+```{exercise}
 Deliverable 2: Show calculations of expected resistor and capacitor cross-over frequencies based on your choices. Write down actual values for each component as measured by a digital multimeter.
+```
 Set up your circuit and measure the gain and phase as a function of frequency
+```{exercise}
 Deliverable 3: Graph the gain vs. log(ω) and the phase vs. log(ω). Include a plot of the theoretical functions on your graph and comment on the accuracy of the theoretical models.
-Part 2 Theory of RLC Circuits
+```
+## Part 2 Theory of RLC Circuits
+
 Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See [](#fig:rlc:inductor.svg).
 
 ```{figure} ../figures/ch5_rlc/inductors.svg
 :label: fig:rlc:inductor
-:width: 100%
+:width: 80%
 :align: center
 :alt: The makeup of an inductor includes a wire coil wrapped around a core material. (a) A solenoidal type inductor. (b) A toroidal type inductor.
 The makeup of an inductor includes a wire coil wrapped around a core material. (a) A solenoidal type inductor. (b) A toroidal type inductor. 
