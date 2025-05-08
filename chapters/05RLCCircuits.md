@@ -93,7 +93,29 @@ After some algebra, you should find
 ```{exercise}
 * Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
 * Work out the mathematics to show this is the phase of the circuit.
-* Plot the gain and phase as functions of frequency, $\omega$, using the resistor and capacitor values you choose in [](#sec:rlc:par1meas).
+* Plot the gain and phase as functions of frequency, $\omega$, using the resistor and capacitor values you choose in [](#sec:rlc:part1meas). Code to assist you is shown below.
+```
+```{code-cell} Python
+import matplotlib.pyplot as plt
+import numpy as np
+
+omega = np.linspace(0,100000, 100001)
+R1 = 1000
+R2 = 10000
+C1 = 1e-7 #100 nF
+C2 = 1e-8 #1nF
+print(1/R1/C1, 1/R2/C2)
+gain = omega*R1*C1/np.sqrt(1+(omega*R1*C1)**2) * omega*R2*C2/np.sqrt(1+(omega*R2*C2)**2)
+phase = np.atan(1/(omega*R1*C1)) + np.atan(1/(omega*R2*C2))
+
+fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True)
+
+ax1.plot(omega, gain)
+ax1.set_ylabel('Gain')
+ax2.plot(omega, phase)
+ax2.set_ylabel(r'Phase, $\phi$ (rad)')
+plt.xlabel('Frequency (rad/s)')
+plt.show()
 ```
 The phase for this circuit can be expressed as
 ```{math}
@@ -104,7 +126,7 @@ The phase for this circuit can be expressed as
 ## Part 1 Measurements
 As observed in [](#chap:oscopes), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
 ```{math}
-\omega = \frac{1}{R_1C__1}=\frac{1}{R_2C_2} = 2\pi \cdot 10 {\text kHz}
+\omega = \frac{1}{R_1C__1}=\frac{1}{R_2C_2} \approx \cdot 10 {\text krad/s}
 ```
 and
 ```{math}
