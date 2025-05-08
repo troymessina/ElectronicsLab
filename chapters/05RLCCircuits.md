@@ -299,20 +299,22 @@ Q=\frac{\omega_o}{\Delta\omega}=\frac{10^5}{6.35\times 10^6}=0.016
 :label: fig:rlc:reswidth
 :width: 80%
 :align: center
-:alt: Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in Figure 5 and Vo= 10 V. The width of the resonance is shown as a horizontal black line.
+:alt: Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:rlctwoterms) and $V_o = 10~{\rm V}$. The width of the resonance is shown as a horizontal black arrow.
+Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:rlctwoterms) and $V_o = 10~{\rm V}$. The width of the resonance is shown as a horizontal black arrow.
 ```
 ## Part 2 - Measurements
 
-Set up the circuit shown in [](#fig:rlc:rlc). Use values of $R$, $L$, and $C$ such that the resonant frequency is $10 < f < 100~{\rm  kHz}$. You will be using a 230 μH inductor because that’s what we have. Using a signal generator with a 10 Volt peak-to-peak sine wave and oscilloscope measure the phase and current as a function of frequency. You will need to split the input signal so that you can connect a BNC to BNC for phase measurements. Note: You will measure current on the oscilloscope as $I = V_R/R$.
+Set up the circuit shown in [](#fig:rlc:rlc). Use values of $R$, $L$, and $C$ such that the resonant frequency is $10 < f < 100~{\rm  kHz}$. You will be using a $L= 230~{\rm \mu H}$ inductor because that’s what we have. Using a signal generator with a 10 Volt peak-to-peak sine wave and oscilloscope measure the phase and current as a function of frequency. You will need to split the input signal so that you can connect a BNC to BNC for phase measurements. Note: You will measure current on the oscilloscope as $I = V_R/R$.
 ```{exercise}
-* Make graphs like those in Figs. 6 and 8. Be sure to create a theoretical function to graph over your data.
-* Calculate theoretical values for ωo,α, and Q. Compare ωo and Q to what you would get from graphical analysis.
+* Make graphs like those in [](#fig:rlc:rlcphase) and [](#fig:rlc:rlccurrent). Be sure to create a theoretical function to graph over your data.
+* Calculate theoretical values for $\omega_o, \alpha,$ and $Q$. Compare $\omega_o$ and $Q$ to what you would get from graphical analysis.
 ```
-Put a smaller resistor of approximately 10 Ω. Change the input to a square wave and see if you can find the damped oscillations on the oscilloscope. It is interesting that a square wave which is a +/- DC signal would create a sinusoidal response. That is the resonant oscillator in action. Damped oscillations look like the signal in Figure 11.
-
-
-
-Figure 11. A plot of the damped oscillating output signal.
+Put a smaller resistor of approximately 10 Ω. Change the input to a square wave and see if you can find the damped oscillations on the oscilloscope. It is interesting that a square wave which is a +/- DC signal would create a sinusoidal response. That is the resonant oscillator in action. Damped oscillations look like the signal in [](#fig:rlc:dampedosc).
+```{figure} ../figures/ch5_rlc/dampedosc.svg
+:label: fig:rlc:dampedosc
+:width: 80%
+:align: center
+:alt: A plot of the damped oscillating output signal.
 Deliverable 7: Show the instructor your damped oscillations on the oscilloscope.
 Challenge #1
 The RLC circuit is sometimes called a “notch filter” because it only allows a specific frequency range to transmit with efficiency. Create a circuit that would transmit a frequency of 10 kHz with the highest Q you can achieve.
