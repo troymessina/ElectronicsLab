@@ -212,15 +212,15 @@ The time dependent functions are orthogonal to one another, i.e., the integral o
 ```
 From the first equation, we obtain the phase
 ```{math}
-\tan\left(\phi\right) = \frac{\omega L-\frac{1}{\omega C}}{R}
+\boxed{\tan\left(\phi\right) = \frac{\omega L-\frac{1}{\omega C}}{R}}
 ``` 
 $L$, $R$, and $C$ are fixed from the components used. The frequency will always be greater than 1. As $\omega$ increases, the dominant term changes as shown in [](#fig:rlc:rlctwoterms). This cross-over point changes the phase from negative to positive, i.e., a lead to a lag in the current.
 ```{figure} ../figures/ch5_rlc/phaseterms.svg
 :label: fig:rlc:rlctwoterms
 :width: 80%
 :align: center
-:alt: A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}H, C=1 \mu{\rm F}, R=1000 \Omega$.
-A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}H, C=1 \mu{\rm F}, R=1000 \Omega$.
+:alt: A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}, C=1 \mu{\rm F}, R=1000 \Omega$.
+A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rm H}, C=1 \mu{\rm F}, R=1000 \Omega$.
 ```
 
 ```{figure} ../figures/ch5_rlc/rlcphase.svg
@@ -287,9 +287,11 @@ Figure 10. Plot of the current flowing through the RLC circuit as a function of 
 
 ## Part 2 - Measurements
 
-Set up the circuit shown in Figure 2. Use values of R, L, and C such that the resonant frequency is 10 kHz < o/2 < 100 kHz. You will be using a 230 μH inductor because that’s what we have. Using a signal generator with a 10 Volt peak-to-peak sine wave and oscilloscope measure the phase and current as a function of frequency. You will need to split the input signal so that you can connect a BNC to BNC for phase measurements. Note: You will measure current on the oscilloscope as I = VR/R.
-Deliverable 5: Make graphs like those in Figs. 6 and 8. Be sure to create a theoretical function to graph over your data.
-Deliverable 6: Calculate theoretical values for ωo,α, and Q. Compare ωo and Q to what you would get from graphical analysis.
+Set up the circuit shown in [](#fig:rlc:rlc). Use values of $R$, $L$, and $C$ such that the resonant frequency is $10 < f < 100~{\rm  kHz}$. You will be using a 230 μH inductor because that’s what we have. Using a signal generator with a 10 Volt peak-to-peak sine wave and oscilloscope measure the phase and current as a function of frequency. You will need to split the input signal so that you can connect a BNC to BNC for phase measurements. Note: You will measure current on the oscilloscope as $I = V_R/R$.
+```{exercise}
+* Make graphs like those in Figs. 6 and 8. Be sure to create a theoretical function to graph over your data.
+* Calculate theoretical values for ωo,α, and Q. Compare ωo and Q to what you would get from graphical analysis.
+```
 Put a smaller resistor of approximately 10 Ω. Change the input to a square wave and see if you can find the damped oscillations on the oscilloscope. It is interesting that a square wave which is a +/- DC signal would create a sinusoidal response. That is the resonant oscillator in action. Damped oscillations look like the signal in Figure 11.
 
 
