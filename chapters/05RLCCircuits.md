@@ -124,16 +124,16 @@ The phase for this circuit can be expressed as
 
 (sec:rlc:part1meas)=
 ## Part 1 Measurements
-As observed in [](#chap:oscopes), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
+As observed in [](#sec:oscopes:sigintegrity), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
 ```{math}
-\omega = \frac{1}{R_1C__1}=\frac{1}{R_2C_2} \approx \cdot 10 {\text krad/s}
+\omega = \frac{1}{R_1C_1}=\frac{1}{R_2C_2} \approx \cdot 10 {\text krad/s}
 ```
 and
 ```{math}
 50\Omega\ll R_1 \ll R_2 \ll 1 M\Omega
 ``` 
 ```{exercise}
-Deliverable 2: Show calculations of expected resistor and capacitor cross-over frequencies based on your choices. Write down actual values for each component as measured by a digital multimeter.
+Show calculations of expected resistor and capacitor cross-over frequencies based on your choices. Write down actual values for each component as measured by a digital multimeter.
 ```
 Set up your circuit and measure the gain and phase as a function of frequency
 ```{exercise}

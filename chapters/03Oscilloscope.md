@@ -84,6 +84,7 @@ Explain how to
 ### Measurements
 Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V_L$.
 
+(sec:oscopes:sigintegrity)=
 ## Part 2 - Signal Integrity
 Determine the accuracy of the frequency of the signal generator as a function of frequency. For a sine wave and a square wave of 2 Volts peak-to-peak, adjust the frequency using a log-scale, i.e., 10 Hz, 20 Hz, 50 Hz, 100 Hz, 200 Hz, 500 Hz, etc. up to 10 MHz. Record the signal generator frequency as your x-value and the oscilloscope value as your y-value. You will have two datasets, one for sine and one for square. Keep in mind you will need to adjust the horizontal scaling on the oscilloscope so that you can see at least one period of the wave. The oscilloscope will measure the frequency and period for you. However, you should include in your report how you can use the screen and scaling adjustments to get an accurate measurement manually.
 
