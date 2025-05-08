@@ -315,6 +315,12 @@ Put a smaller resistor of approximately 10 Ω. Change the input to a square wave
 :width: 80%
 :align: center
 :alt: A plot of the damped oscillating output signal.
-Deliverable 7: Show the instructor your damped oscillations on the oscilloscope.
-Challenge #1
-The RLC circuit is sometimes called a “notch filter” because it only allows a specific frequency range to transmit with efficiency. Create a circuit that would transmit a frequency of 10 kHz with the highest Q you can achieve.
+A plot of the damped oscillating output signal.
+```
+```{exercise}
+Show the instructor your damped oscillations on the oscilloscope.
+```
+```{exercise}
+**Challenge**
+The RLC circuit is sometimes called a “notch filter” because it only allows a specific frequency range to transmit with efficiency. Create a circuit that would transmit a frequency of 10 kHz with the highest $Q$ you can achieve. Consult the instructor before you power your circuit.
+```
