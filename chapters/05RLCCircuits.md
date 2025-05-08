@@ -76,7 +76,7 @@ We are interested in how the output relates to the input of the circuit. We can 
 ```
 This is a complex function, and in the real world we can only measure real values. Therefore, we need to calculate the gain of the circuit by calculating the magnitude of this complex function.
 ```{math}
-{\text Gain} = \left|\frac{V_{R_2}}{V_o}\right|
+{\rm Gain} = \left|\frac{V_{R_2}}{V_o}\right|
 ```
 When calculating the magnitude of a complex function, we complex square it and take the square root. First, the two terms need to be written in the form
 ```{math}
@@ -88,7 +88,7 @@ Then, the magnitude is
 ```
 After some algebra, you should find
 ```{math}
-{\text Gain} = \left|\frac{V_{R_2}}{V_o}\right| = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2C_2^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
+{\rm Gain} = \left|\frac{V_{R_2}}{V_o}\right| = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2C_2^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
 ```
 ```{exercise}
 * Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
@@ -104,7 +104,7 @@ The phase for this circuit can be expressed as
 ## Part 1 Measurements
 As observed in [](#sec:oscopes:sigintegrity), the function generators work well from 1 Hz to 10 MHz. Choose the cross-over frequency such that it will be in the middle of this range on a log-scale. That is, choose components such that 
 ```{math}
-\omega = \frac{1}{R_1C_1}=\frac{1}{R_2C_2} \approx 10 {\text krad/s}
+\omega = \frac{1}{R_1C_1}=\frac{1}{R_2C_2} \approx 10 {\rm krad/s}
 ```
 and
 ```{math}
@@ -166,17 +166,18 @@ The makeup of an inductor includes a wire coil wrapped around a core material. (
 
 A voltage applied across an inductor creates a magnetic field along the inductor. The strength of the field or magnetic flux is related to the voltage, cross-sectional area, length, and number of turns.
 
-We define inductance, L, as
-L=I =N2lR2
-Where  is the magnetic flux and I is the current through the coil. The relationship for an inductor that is similar to Ohm’s Law comes from Faraday’s Law of Induction
-
-V= -ddt
-
-V= -LdIdt
-
-This equation says that changes in current through an inductor cause a counter emf (V). It should be immediately obvious that the voltage and current will be phase-shifted for an AC signal in an inductor circuit. The impedance of an inductor can be found similarly to what we did with capacitors. Assume we have a sinusoidal current.
-
-V(t) = -LddtIot= -L Io t
+We define inductance, $L$, as
+```{math}
+L=frac{\Phi}{I} = \frac{\mu N^2 \pi R^2}{\ell}
+```
+Where $\Phi$ is the magnetic flux and $I$ is the current through the coil. The relationship for an inductor that is similar to Ohm’s Law comes from Faraday’s Law of Induction
+```{math}
+V &= -\frac{d\Phi}{dt}\\
+V &= -L\frac{dI}{dt}
+```
+This equation says that changes in current through an inductor cause a counter emf ($V$). It should be immediately obvious that the voltage and current will be phase-shifted for an AC signal in an inductor circuit. The impedance of an inductor can be found similarly to what we did with capacitors. Assume we have a sinusoidal current.
+```{math}
+V(t) = -L\frac{d}{dt} I_o\sin\left(\omega t\right) = -\omega L I_o \cos\left(\omega t\right)
 
 Thus, the inductor equivalent of Ohm’s Law gives a maximum  impedance of
 
