@@ -75,8 +75,7 @@ We are interested in how the output relates to the input of the circuit. We can 
 \frac{V_{R_2}}{V_o} &= \frac{i\omega R_2C_2}{1+i\omega R_2C_2}\cdot\frac{i\omega R_1C_1}{1+i\omega R_1C_1}
 ```
 This is a complex function, and in the real world we can only measure real values. Therefore, we need to calculate the gain of the circuit by calculating the magnitude of this complex function.
-```{math}
-Gain = \vert\frac{V_{R_2}}{V_o}\vert
+{\text Gain} = \left|frac{V_{R_2}}{V_o}\right|
 ```
 When calculating the magnitude of a complex function, we complex square it and take the square root. First, the two terms need to be written in the form
 ```{math}
@@ -84,11 +83,11 @@ z = a\pm ib
 ```
 Then, the magnitude is
 ```{math}
-\vert z\vert = \srqt{\left(a+ib\right)\left(a-ib\right)}
+\left| z\right| = \srqt{\left(a+ib\right)\left(a-ib\right)}
 ```
 After some algebra, you should find
 ```{math}
-Gain = \vert\frac{V_{R_2}{V_o}\vert = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2_C^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
+{\text Gain} = \vert\frac{V_{R_2}{V_o}\vert = \frac{\omega R_2C_2}{\sqrt{1+\omega^2R_2^2_C^2}}\cdot\frac{\omega R_1C_1}{\sqrt{1+\omega^2R_1^2C_1^2}}
 ```
 ```{exercise}
 Deliverable 1: Work out the mathematics starting from the voltage across each resistor to show this is the gain of the circuit.
