@@ -140,15 +140,15 @@ phase_exp = np.array([])
 
 fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True)
 
-ax1.plot(omega, gain_theory, '-k', label='Theoretical Gain')
-ax1.plot(omega_exp, gain_exp, 'ob', label='Experimental Gain')
+ax1.semilogx(omega, gain_theory, '-k', label='Theoretical Gain')
+ax1.semilogx(omega_exp, gain_exp, 'ob', label='Experimental Gain')
 ax1.set_ylabel('Theoretical Gain')
 ax1.legend()
-ax2.plot(omega, phase_theory, '-k', label='Theoretical Phase')
-ax2.plot(omega_exp, phase_exp, 'ob', label='Experimental Phase')
+ax2.semilogx(omega, phase_theory, '-k', label='Theoretical Phase')
+ax2.semilogx(omega_exp, phase_exp, 'ob', label='Experimental Phase')
 ax2.set_ylabel(r'Phase, $\phi$ (rad)')
 ax2.legend()
-plt.xlabel('Frequency (rad/s)')
+plt.xlabel(r'log($\omega$)')
 plt.show()
 ```
 
@@ -201,7 +201,7 @@ I(t) =I_o\cos\left(\omega t- \phi\right)
 where $\phi$ is a phase that may be caused by differences in voltage and current like we saw with capacitors. Plugging this solution into the differential equation and doing some algebra, we obtain
 ```{math}
 \begin{align}
-& I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\cos\left(\phi\right)-R\sin\left(\phi\right)\right]\cos\left(\omega t\right) +\\\\ & I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\sin\left(\phi\right) + I_oR\cos\left(\phi\right)-V_o\right] \sin\left(\omega t\right) = 0
+& I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\cos\left(\phi\right)-R\sin\left(\phi\right)\right]\cos\left(\omega t\right) + \cdots\\\\ & I_o\left[\left(\omega L - \frac{1}{\omega C}\right)\sin\left(\phi\right) + I_oR\cos\left(\phi\right)-V_o\right] \sin\left(\omega t\right) = 0
 \end{align}
 ```
 The time dependent functions are orthogonal to one another, i.e., the integral of their product over all space is zero. This means the only way for the above equation to be true is if the coefficients are equal to zero. We will assume $I_o\neq 0$.
@@ -210,22 +210,33 @@ The time dependent functions are orthogonal to one another, i.e., the integral o
 \left(\omega L - \frac{1}{\omega C}\right)\sin\left(\phi\right) + I_oR\cos\left(\phi\right)-V_o &= 0
 ```
 From the first equation, we obtain the phase
-=L - 1CR 
-L, R, and C are fixed from the components used. The frequency will always be greater than 1. As increases, the dominant term changes as shown in Figure 5. This cross-over point changes the phase from negative to positive, i.e., a lead to a lag in the current.
+```{math}
+\tan\left(\phi\right) = \frac{\omega L-\frac{1}{\omega C}}{R}
+``` 
+$L$, $R$, and $C$ are fixed from the components used. The frequency will always be greater than 1. As $\omega$ increases, the dominant term changes as shown in [](#fig:rlc:rlctwoterms). This cross-over point changes the phase from negative to positive, i.e., a lead to a lag in the current.
+```{figure}
+:label: fig:rlc:rlctwoterms
+:width: 80%
+:align: center
+:alt: A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rmH}H, C=1 \mu{\rm F}, R=1000 \Omega$.
+A log-plot of the two terms on the right hand side of the RLC phase equation with $L=100~\mu{\rmH}H, C=1 \mu{\rm F}, R=1000 \Omega$.
+```
 
-
-
-Figure 5. A log-plot of the two terms on the right hand side of the RLC phase equation with L=100 μH, C=1 μF, R=1000 Ω.
-
-
-
-Figure 6. A semilog plot of the phase vs. log(ω). The crossing point of the argument creates a plateau in the phase as the phase goes from current leading the input voltage to the current lagging the input voltage.
+```{figure}
+:label: fig:rlc:rlcphasecross
+:width: 80%
+:align: center
+:alt: A semilog plot of the phase vs. log(ω). The crossing point of the argument creates a plateau in the phase as the phase goes from current leading the input voltage to the current lagging the input voltage.
+A semilog plot of the phase vs. log(ω). The crossing point of the argument creates a plateau in the phase as the phase goes from current leading the input voltage to the current lagging the input voltage.
+```
 
 From the second equation, we obtain the amplitude of the current.
-
-Io=VoL-1C+R 
-
-Deliverable 4: Work out all of the above mathematics for phase and current filling in algebra steps.
+```{math}
+I_o=\frac{V_o}{\omega L-\frac{1}{\omega C}\sin\left(\phi\right)} + R\cos\left(\phi\right)
+```
+```{exercise}
+Work out all of the above mathematics for phase and current filling in algebra steps.
+```
 Consider the impedance triangle shown in Figure 7.
 
 Figure 7. Impedance triangle for RLC circuit.
