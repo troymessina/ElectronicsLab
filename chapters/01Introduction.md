@@ -12,7 +12,7 @@ Electronics play a crucial role in modern laboratories across all sciences — p
 ```
 There is also a portion of this book dedicated to using LabVIEW. LabVIEW is a program designed for electronic interfacing, experiment control, data acquisition, simulation and modeling. It is ubiquitous in science and engineering laboratories, both academic and commercial.
 
-I've intentionally limited the amount of theory in this manual. I want this manual to serve as a modern-day tutorial, similar to the Radio Shack Workbooks of times past. The goal is to help you become more independent and confident in your learning and to make you proficient at the practice of electronics.
+This manual may have more theory than you care to know. I've tried to box the equations that are the ones being modeled by the experiments. These will be the ones to pay attention to. I want this manual to serve as a modern-day tutorial, similar to the Radio Shack Workbooks of times past. The goal is to help students become more independent and confident in learning and to make students proficient at the practice of electronics.
 
 The experiments are written to take one or two 3-hour lab periods.
 

@@ -21,7 +21,7 @@ Part 1 of this lab is to measure and compare different types of diodes using a D
 
 ```{figure} ../figures/ch6_diodes/diodeVdivider.svg
 :label: fig:diodes:diodeVdivider
-:width: 75%
+:width: 50%
 :align: center
 :alt: A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) Diode schematic. (b)Forward biased diode. (b) Reverse biased diode.
 A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) Diode schematic. (b)Forward biased diode. (b) Reverse biased diode.
