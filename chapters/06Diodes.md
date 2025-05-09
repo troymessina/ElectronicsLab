@@ -44,7 +44,7 @@ Metals have no energy gap between filled and unfilled energy bands and conduct r
 P=e^{-E_g/k_BT}
 ```
 This gives about $10^{-17}$ at room temperature, and the density of silicon is about $10^{26}~{\rm atoms/cm^3}$. Therefore, there are about $10^9$ conduction electrons per cm<sup>3</sup>. However, if we dope the silicon with a small number of impurities, we can produce more conduction electrons. Suppose we add an element that has 5 outer shell electrons instead of silicon’s 4 electrons. The fifth electron will not participate in covalent bonding and is somewhat free to move around. Because the valence band is full, the fifth electrons must sit at a higher energy, closer to the conduction band. This shifts the Fermi Energy closer to the conduction band because the extra electrons are at an energy that is in the gap as shown in [](#fig:diodes:ndopedbands).
-```{figure} ../figures/ch6_diodes/ndopedbands.gif
+```{figure} ../figures/ch6_diodes/pdopedbands.svg
 :label: fig:diodes:ndopedbands
 :width: 100%
 :align: center
@@ -54,7 +54,7 @@ A band diagram of an electron-doped semiconductor. The Fermi Energy is defined t
 The result is a density of conduction electrons equal to the density of doping, typically around $10^{16}~{\rm cm^3}$. The thermal energy easily promotes some of these electrons into the conduction band. The majority carrier is the electron. We call this an n-type material.
 
 Alternatively, we could dope with electron deficient atoms such as boron with only 3 outermost electrons. This makes the covalent bonding short an electron, leaving a hole. See [](#fig:diodes:pdopedbands).
-```{figure} ../figures/ch6_diodes/pdopedbands.gif
+```{figure} ../figures/ch6_diodes/pdopedbands.svg
 :label: fig:diodes:pdopedbands
 :width: 100%
 :align: center
