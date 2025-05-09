@@ -21,7 +21,7 @@ Part 1 of this lab is to measure and compare different types of diodes using a D
 
 ```{figure} ../figures/ch6_diodes/diodeVdivider.svg
 :label: fig:diodes:diodeVdivider
-:width: 100%
+:width: 75%
 :align: center
 :alt: A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) Diode schematic. (b)Forward biased diode. (b) Reverse biased diode.
 A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) Diode schematic. (b)Forward biased diode. (b) Reverse biased diode.
@@ -31,8 +31,8 @@ Part 2 of this lab is to use LabVIEW, a DAQ, function generator, and oscilloscop
 Procedure
 
 # Part 1 - Theory of P-N Junctions
-For a semiconductor like silicon, the electrons fill the valence energy levels (band). There is a small energy gap $(E_g~1~{\rm eV})$  to the next levels, the conduction band. A 1D diagram of energy is shown in [](#fig:diodes:bandgaps).
-```{figure} ../figures/ch6_diodes/Bandgaps.png
+For a semiconductor like silicon, the electrons fill the valence energy levels (band). There is a small energy gap $(E_g\approx1~{\rm eV})$  to the next levels, the conduction band. A 1D diagram of energy is shown in [](#fig:diodes:bandgaps).
+```{figure} ../figures/ch6_diodes/bandgaps.svg
 :label: fig:diodes:bandgaps
 :width: 100%
 :align: center
