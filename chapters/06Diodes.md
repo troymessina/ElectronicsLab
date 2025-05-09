@@ -19,7 +19,7 @@ We will switch to DC measurements for most of this lab. Toward the end, we will 
 
 Part 1 of this lab is to measure and compare different types of diodes using a DC power supply and a digital multimeter. Diodes behave differently when forward biased or reversed biased. We will use a voltage divider circuit as shown in [](#fig:diodes:diodeVdivider).
 
-```{figure} ../figures/ch6_diodes/diodeVdivider.png
+```{figure} ../figures/ch6_diodes/diodeVdivider.svg
 :label: fig:diodes:diodeVdivider
 :width: 100%
 :align: center
