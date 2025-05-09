@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
-   sodipodi:docname="pdopedbands.svg"
+   sodipodi:docname="ndopedbands.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,8 +24,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.5"
-     inkscape:cx="1037"
-     inkscape:cy="773"
+     inkscape:cx="948"
+     inkscape:cy="677"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -646,7 +646,7 @@
      rx="31.428629"
      ry="30.397903" />
   <ellipse
-     style="fill:#ca399d;fill-opacity:1;stroke:#06060b;stroke-width:1.01711;paint-order:stroke markers fill"
+     style="fill:#109312;fill-opacity:1;stroke:#06060b;stroke-width:1.01711;paint-order:stroke markers fill"
      id="path104"
      cx="388.59244"
      cy="149.72151"
@@ -680,67 +680,73 @@
        y="53.273483" />
     <path
        style="opacity:1;fill:#f04612;fill-opacity:1;stroke:#06060b;stroke-width:0.726394;stroke-dasharray:1.45278, 0.726394;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-       d="m 27.560957,170.20774 144.711173,0.78925 v 0 0"
+       d="m 27.560957,140.04505 144.711173,0.78925 v 0 0"
        id="path15" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1"
        cx="65.570831"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-4"
        cx="74.858063"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-1"
        cx="84.145294"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-4-2"
        cx="92.961693"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-8"
        cx="102.24892"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-4-8"
        cx="111.53615"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-1-5"
        cx="120.82339"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-4-2-7"
        cx="130.1106"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-4-2-7-9"
        cx="138.92696"
-       cy="165.40369"
+       cy="146.8831"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fb;fill-opacity:1;stroke:#0202fc;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="path1-4-2-7-9-4"
        cx="147.74332"
-       cy="165.40369"
+       cy="146.8831"
+       r="3.349864" />
+    <circle
+       style="fill:#2d22db;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
+       id="path1-4-2-7-9-4-9"
+       cx="411.5376"
+       cy="24.366249"
        r="3.349864" />
     <circle
        style="fill:#07060d;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
@@ -755,7 +761,7 @@
        cy="139.83926"
        r="3.349864" />
     <circle
-       style="fill:#f8f8fa;fill-opacity:1;stroke:#0909fb;stroke-width:2;paint-order:stroke markers fill;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#07060d;fill-opacity:1;stroke:#06060b;stroke-width:1;paint-order:stroke markers fill"
        id="circle149"
        cx="378.78995"
        cy="103.8812"
@@ -866,24 +872,31 @@
        style="fill:none;fill-opacity:1;stroke:#0f0cf0;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker157);paint-order:stroke markers fill"
        d="m 387.37545,86.002452 c -4.73556,-9.121369 -6.66612,-19.67509 -5.46627,-29.882208 1.19547,-10.169832 5.55855,-20.046278 12.75461,-27.331286 0.12072,-0.122216 0.2422,-0.243692 0.36441,-0.364419"
        id="path156"
-       transform="matrix(0.57529236,0.43096051,0.61814139,-0.65767242,135.20681,-79.277432)"
+       inkscape:path-effect="#path-effect157"
        inkscape:original-d="m 387.37545,86.002452 c -1.82208,-10.20368 -3.64416,-20.042944 -5.46627,-29.882208 -1.82208,-9.839264 8.50308,-18.220859 12.75461,-27.331286 4.25154,-9.110431 0.24294,-0.242946 0.36441,-0.364419"
-       inkscape:path-effect="#path-effect157" />
+       transform="matrix(0.59565448,0,0,0.76274628,158.9961,23.677256)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.64732px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#07060c;fill-opacity:1;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-       x="442.25955"
-       y="25.341469"
+       x="455.87827"
+       y="13.004737"
        id="text216"
        transform="scale(0.93254032,1.0723397)"><tspan
          sodipodi:role="line"
-         id="tspan6"
-         x="442.25955"
-         y="25.341469">Acceptor impurity</tspan><tspan
+         id="tspan216"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.64732px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;fill:#07060c;fill-opacity:1"
+         x="455.87827"
+         y="13.004737">Donor impurity</tspan><tspan
          sodipodi:role="line"
-         id="tspan7"
-         x="442.25955"
-         y="37.40062">creates a hole</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.64732px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;fill:#07060c;fill-opacity:1"
+         x="455.87827"
+         y="25.06389"
+         id="tspan217">contributes a </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.64732px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;fill:#07060c;fill-opacity:1"
+         x="455.87827"
+         y="37.123043"
+         id="tspan218">free electron</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#07060c;fill-opacity:1;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
@@ -917,13 +930,13 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#07060c;fill-opacity:1;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
        x="191.65538"
-       y="163.17592"
+       y="135.04817"
        id="text221-7-3-9"
        transform="scale(0.93254032,1.0723397)"><tspan
          sodipodi:role="line"
          id="tspan224"
          x="191.65538"
-         y="163.17592">Fermi Energy</tspan></text>
+         y="135.04817">Fermi Energy</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#07060c;fill-opacity:1;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
@@ -960,25 +973,25 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#07060c;fill-opacity:1;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-       x="411.87143"
+       x="407.89932"
        y="144.93117"
        id="text221-7-3-9-7-8-8"
        transform="scale(0.93254032,1.0723397)"><tspan
          sodipodi:role="line"
-         id="tspan1"
-         x="411.87143"
-         y="144.93117">B</tspan></text>
+         id="tspan230"
+         x="407.89932"
+         y="144.93117">Sb</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#07060c;fill-opacity:1;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-       x="62.988968"
-       y="145.41103"
+       x="58.449387"
+       y="154.29347"
        id="text221-7-3-9-3"
        transform="scale(0.93254032,1.0723397)"><tspan
          sodipodi:role="line"
-         id="tspan5"
-         x="62.988968"
-         y="145.41103">acceptor holes</tspan></text>
+         id="tspan225"
+         x="58.449387"
+         y="154.29347">donor electrons</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#07060c;fill-opacity:1;stroke:#08080e;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
