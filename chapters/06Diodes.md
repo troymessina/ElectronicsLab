@@ -146,11 +146,13 @@ Collect data for the forward bias condition from 0 V to high enough voltage to s
 Deliverable 2: Plot data for I vs. Vd
 Repeat the experiment with a silicon diode.
 Deliverable 3: Calculate the band gap by fitting the asymptotic positive diode current vs. voltage to a line. This will give the “turn-on” voltage, which is when the bias is equal to the band gap.
-
-
-
-Figure 9. IV-curve of a zener diode.
-
+```{figure} ../figures/ch6_diodes/zener.svg
+:label: fig:diodes:zenerIV
+:width: 100%
+:align: center
+:alt: IV-curve of a zener diode.
+IV-curve of a zener diode.
+```
 
 Figure 10. Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode must have been mislabeled. How can you tell?
 Other diode measurements (Choose 1)
