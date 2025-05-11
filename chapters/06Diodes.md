@@ -92,7 +92,7 @@ To make the junction behave like a metal, we need to push the p-type bands down 
 :alt: Biasing conditions of a pn-junction.
 Biasing conditions of a pn-junction.
 ```
-``````{admonition} Testing a grid (a), (b), and (c).
+``````{figure}
 `````{grid}
 :gutter: 3
 ````{grid-item}
@@ -117,6 +117,7 @@ Biasing conditions of a pn-junction.
 ```
 ````
 `````
+ Testing a grid (a), (b), and (c).
 ``````
 Reverse biasing (Fig. 7(c)) pushes the bands in the opposite direction as forward biasing, causing an increasingly insulating device. At high enough reverse bias, material will break down.
 
