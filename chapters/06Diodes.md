@@ -129,7 +129,7 @@ IV-curve of a zener diode.
 Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “turn-on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode used to create this data must have been mislabeled. How can you tell?
 ```
 
-# Other diode measurements (Choose 1)
+# Part 2 - Other diode measurements (Choose 1)
 
 ## LED
 
@@ -147,7 +147,7 @@ Rectifier circuits can be constructed with diodes. These circuits convert AC sig
 
 | input voltage | frequency | diode | load resistor |
 | ------------- | --------- | ----------- | ------------- |
-|     5 V       |    60 Hz  |    1N4007    |  100 $\Omega  |
+|     10 V sine |    60 Hz  |    1N4007   | 100 $\Omega$  |
 :::
 ```{figure} ../figures/ch6_diodes/rectifiers.svg
 :label: fig:diodes:rectifiers
@@ -158,6 +158,6 @@ Half, full, and filtered full wave rectifier circuit diagrams.
 ```
 
 ```{exercise}
-* Try various capacitors for the filtering and describe and sketch how the capacitor value affects the output signal shape.
+* Try 5 and 50 $\mu$F capacitors for the filtering and describe and sketch how the capacitor value affects the output signal shape.
 * How does the output voltage compare to the input voltage?
 ```
