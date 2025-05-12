@@ -24,15 +24,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.4992344"
-     inkscape:cx="478.73303"
-     inkscape:cy="531.81431"
+     inkscape:zoom="0.35301203"
+     inkscape:cx="1444.71"
+     inkscape:cy="788.92496"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="1912"
-     inkscape:window-y="1"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g36" />
+     inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <marker
@@ -552,83 +552,6 @@
          style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          d="m 225,160 h 15.5 l 2,3 3,-6 3,6 3,-6 3,6 3,-6 2,3 H 275"
          id="path36" />
-    </g>
-  </g>
-  <g
-     inkscape:label="diode"
-     id="g50"
-     transform="matrix(3,0,0,3,-41.199852,-420.68775)">
-    <g
-       id="g47">
-      <path
-         inkscape:label="none"
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m 256,160 h 19"
-         id="path44" />
-      <path
-         inkscape:label="none"
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="M 244,160 H 225"
-         id="path45" />
-      <path
-         inkscape:label="none"
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m 256,160 -12,6 v -12 l 12,6"
-         id="path46" />
-      <path
-         inkscape:label="none"
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m 256,154 v 12"
-         id="path47" />
-    </g>
-    <g
-       inkscape:label="name"
-       id="g48">
-      <path
-         inkscape:label="arc"
-         style="fill:none;fill-opacity:1;stroke:#217b21;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#arrowVoltageEnd)"
-         sodipodi:type="arc"
-         sodipodi:rx="30"
-         sodipodi:ry="30"
-         sodipodi:cx="250"
-         sodipodi:cy="138.71573"
-         sodipodi:start="1.2309594"
-         sodipodi:end="1.9106332"
-         d="m 260,167 a 30,30 0 0 1 -20,0"
-         sodipodi:arc-type="arc"
-         id="path48"
-         sodipodi:open="true" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:6.57895px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#217b21;fill-opacity:1;stroke:none"
-         x="0"
-         y="0"
-         transform="translate(250,176.71573)"
-         id="text48"><tspan
-           sodipodi:role="line"
-           x="4.5634806e-08"
-           y="0"
-           id="tspan48">v</tspan></text>
-    </g>
-    <g
-       inkscape:label="name"
-       id="g49">
-      <path
-         inkscape:label="none"
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#arrowCurrentEnd)"
-         d="m 265,155 h 10"
-         id="path49" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:6.57895px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none"
-         x="0"
-         y="0"
-         transform="translate(270,152.33333)"
-         id="text49"><tspan
-           sodipodi:role="line"
-           x="2.3981556e-08"
-           y="0"
-           id="tspan49">i</tspan></text>
     </g>
   </g>
   <g

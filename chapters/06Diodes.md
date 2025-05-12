@@ -118,9 +118,17 @@ Reverse biasing (Fig. 7(c)) pushes the bands in the opposite direction as forwar
 
 The current in a forward biased pn-junction can be modeled by the equation
 ```{math}
+:label: eq:diodes:idealdiode
 I = I_s \left(e^{V_d/nV_T}-1\right)
 ```
-Where $I_s$ is the the magnitude of the current that flows for negative $V_d$ in excess of a few $V_T$, typically $10^{−12}~{\rm  A}$. The voltage across the diode is $V_d$. The value $n$ is the ideality of the diode, usually $1\le n\le3$. The value $V_T=k_BT/q$ is the thermal energy per charge carrier, around 26 mV at room temperature.
+Where $I_s$ is the the magnitude of the current that flows for negative $V_d$ in excess of a few $V_T$, typically $10^{−12}~{\rm  A}$. The voltage across the diode is $V_d$. The value $n$ is the ideality of the diode, usually $1\le n\le3$. The value $V_T=k_BT/q$ is the thermal energy per charge carrier, around 26 mV at room temperature. [](#fig:diodes:idealdiode) shows this equation modeling zener diode data.
+```{figure} ../figures/ch6_diodes/diodemodel.svg
+:label: fig:diodes:idealdiode
+:width: 100%
+:align: center
+:alt: Equation {eq}`eq:diodes:idealdiode modeling zener diode data.
+Equation {eq}`eq:diodes:idealdiode modeling zener diode data.
+```
 
 # Part 1 - Measurements
 
@@ -129,10 +137,12 @@ This is a DC measurement. Set up the circuit as shown in Figure 1 for forward bi
 Figure 8. A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) Diode schematic. (b)Forward biased diode. (b) Reverse biased diode.
 
 You will adjust Vin and measure VR for a known resistor. Choose a resistor of about 100-1000 Ω.
-Deliverable 1: Remind yourself starting from Ohm’s Law Vin=Vd+ VR = IRdiode+IR that the voltage divider circuit of Figure 1 allows you to calculate 
-Vd=Vin-VR 
-
-I=Vin-VdR 
+```{exercise}
+Remind yourself starting from Ohm’s Law $V_o = V_d + V_R = IR_d + IR$ that the voltage divider circuit of [](#fig:diodes:diodeVdivider) allows you to calculate 
+```{math}
+I=\frac{V_o - V_d}{R}
+```
+``` 
 Collect data for the forward bias condition from 0 V to high enough voltage to see the exponential rise in current and with small enough steps to see the curvature. Set up the circuit for reverse bias and try to measure the point at which the reverse current is allowed to flow. A special design feature of zener diodes is to allow reverse current without breakdown. See Figure 9.
 Deliverable 2: Plot data for I vs. Vd
 Repeat the experiment with a silicon diode.
