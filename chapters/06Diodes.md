@@ -128,38 +128,31 @@ IV-curve of a zener diode.
 :alt: Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “turn-on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode used to create this data must have been mislabeled. How can you tell?
 Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “turn-on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode used to create this data must have been mislabeled. How can you tell?
 ```
+
 # Other diode measurements (Choose 1)
-LED
+
+## LED
+
 You can measure LEDs. The color is an indication of the band gap, and using
+```{math}
+E_g=\frac{hc}{\lambda}
+```
+one can find the wavelength of emitted light using the linear fitting mentioned above. See [](#fig:diodes:diodeIVfit). In this equation, $h = 4.136\times10^{-15}~{\rm eV\cdot s}$ is Planck's constant. The speed of light is $c=3\times 10^8~{\rm m/s}$. Compare your wavelength to the portion of the visible spectrum for that color.
 
-Egap=hc
+## Rectifier Circuits
+Rectifier circuits can be constructed with diodes. These circuits convert AC signals to *nearly* DC. A half wave rectifier converts only the positive portion of an AC input signal. A full wave rectifier converts both the positive and negative portions of an AC input signal. RC filtering can be added to smooth the diode rectification. In the case of RC filtering, one wants a low-pass filter. This is related to the value of RC. [](#fig:diodes:rectifiers) shows half, full, and filtered full wave rectifier circuits. Build each one using the following values and components.
+:::{table} Rectifier circuit values and components
+:label: table:diodes:rectifiers
+:align: center
 
-one can find the wavelength of emitted light using the linear fitting mentioned above. See Figure 11.
-
-
-
-Figure 11. Color dependence of LEDs. Red, yellow, green, and blue LEDs were measured to see how the band gap is tailored to create different emission wavelengths.
-Photovoltaics
-A solar cell is also a diode. When light shines on the cell, the donor (n-type) will have electrons excited into the conduction band. This leaves holes in the donor energy level. Near the junction, the holes will float upward to the p-type and electrons move deeper into the n-type due to the electric field in the depletion region. This results in a reverse current under illumination as shown in figure 12.
-
-Figure 12. A PV cell IV curve in dark and under illumination.
-
-Often, these IV curves are flipped over and the power vs. diode voltage are plotted to determine relevant parameters such as open circuit voltage and maximum power. See Figure 13. You are welcome to do an experiment to measure these values on a PV cell if you wish.
-
-
-
-Figure 13. An IV and PV curve for a photovoltaic cell showing the various parameters of interest for these cells.
-Diode Applications
-Diodes are often used as protective elements. Silicon and germanium diodes, for example, offer one-way conductors such that a low forward bias voltage turns them on with low resistance. However, no current can flow backward for a reverse bias up to hundreds of volts.
-
-Figure 11. Protective diode will not allow reverse current to flow.
-
-Zener diodes are designed to have a low reverse bias turn-on. Zener diodes are often used in charging circuits because under a reverse bias, no current will flow through the diode as long as the load is not charged to the zener reverse turn-on voltage, i.e., the parallel load receives most of the current because the load is lower resistance. Once the load is charged, the voltage drop across the load and and zener will exceed the zener reverse turn-on voltage. At this point the load no longer receives current because the zener is a lower resistance path.
-
-FIgure 12. A zener diode in reverse bias. Rload represents a rechargeable battery. The load resistance will be small while the battery charges from a low voltage to a charged voltage. Once the battery charges, the load resistance is large and the zener diode will become a low resistance path, cutting off charging current to the battery.
-Rectifier circuits can also be constructed with diodes. Below are half and full wave rectifier circuits. See if you can explain why they produce the output they do.
-
-
-
-
-A full wave rectifier can be smoothed by RC filtering.
+| input voltage | frequency | zener diode | load resistor |
+| ------------- | --------- | ----------- | ------------- |
+|     5 V       |    60 Hz  |    3.3 V    |  100 $\Omega  |
+:::
+```{figure} ../figures/ch6_diodes/rectifiers.svg
+:label: fig:diodes:rectifiers
+:width: 100%
+:align: center
+:alt: Half, full, and filtered full wave rectifier circuit diagrams.
+Half, full, and filtered full wave rectifier circuit diagrams.
+```
