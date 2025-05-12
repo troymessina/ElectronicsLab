@@ -145,9 +145,9 @@ Rectifier circuits can be constructed with diodes. These circuits convert AC sig
 :label: table:diodes:rectifiers
 :align: center
 
-| input voltage | frequency | zener diode | load resistor |
+| input voltage | frequency | diode | load resistor |
 | ------------- | --------- | ----------- | ------------- |
-|     5 V       |    60 Hz  |    3.3 V    |  100 $\Omega  |
+|     5 V       |    60 Hz  |    1N4007    |  100 $\Omega  |
 :::
 ```{figure} ../figures/ch6_diodes/rectifiers.svg
 :label: fig:diodes:rectifiers
@@ -155,4 +155,9 @@ Rectifier circuits can be constructed with diodes. These circuits convert AC sig
 :align: center
 :alt: Half, full, and filtered full wave rectifier circuit diagrams.
 Half, full, and filtered full wave rectifier circuit diagrams.
+```
+
+```{exercise}
+* Try various capacitors for the filtering and describe and sketch how the capacitor value affects the output signal shape.
+* How does the output voltage compare to the input voltage?
 ```
