@@ -70,7 +70,7 @@ When p- and n-type materials are in contact, the bands will bend to keep the Fer
 :label: fig:diodes:pnjunctionE
 :width: 75%
 :align: center
-:alt: A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow.
+:alt: A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow. 
 A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow.
 ```
 As you might imagine, the electrons and holes in the region near the interface can “recombine”. The electrons cannot move completely into the p-region because the conduction band is too high and similarly for the holes and the valence band. As electrons and holes recombine near the junction, they leave behind charged (ionized) atoms. The atoms are bound to the crystal lattice and cannot move freely. The result is a thin region at the junction where electrons and holes are no longer free. We call this the depletion zone because the region is depleted of free charge carriers. Furthermore, the ionized atoms create a potential difference across the depletion zone. This is shown in [](#fig:diodes:pnjunctionE).
@@ -80,8 +80,8 @@ To make the junction behave like a metal, we need to push the p-type bands down 
 :label: fig:diodes:pnjunctionbias
 :width: 100%
 :align: center
-:alt: Biasing conditions of a pn-junction.
-Biasing conditions of a pn-junction.
+:alt: Biasing conditions of a pn-junction and the resulting band shifting. (a) reverse-biased, (b) unbiased, and (c) forward-biased diode.
+Biasing conditions of a pn-junction and the resulting band shifting. (a) reverse-biased, (b) unbiased, and (c) forward-biased diode.
 ```
 Reverse biasing ([](#fig:diodes:pnjunctionbias)(a)) pushes the bands in the opposite direction as forward biasing ([](#fig:diodes:pnjunctionbias)(c)), causing an increasingly insulating device. At high enough reverse bias, material will break down, and the diode is destroyed.
 
@@ -101,21 +101,19 @@ Equation {eq}`eq:diodes:idealdiode modeling zener diode data.
 
 # Part 1 - Measurements
 
-This is a DC measurement. Set up the circuit as shown in [](#fig:diodes:diodeVdivider) for forward bias with a zener diode. Biasing is shown in [](#fig:diodes:.
+This is a DC measurement. Set up the circuit as shown in [](#fig:diodes:diodeVdivider) for forward bias with a zener diode. Biasing is shown in [](#fig:diodes:pnjunctionbias). A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) reverse-biased, (b) unbiased, and (c) forward-biased diode.
 
-Figure 8. A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) Diode schematic. (b)Forward biased diode. (b) Reverse biased diode.
-
-You will adjust Vin and measure VR for a known resistor. Choose a resistor of about 100-1000 Ω.
+Using a zener diode, you will adjust $V_o$ and measure $V_R$ for a known resistor. Choose a resistor of about 100 Ω.
 ```{exercise}
 Remind yourself starting from Ohm’s Law $V_o = V_d + V_R = IR_d + IR$ that the voltage divider circuit of [](#fig:diodes:diodeVdivider) allows you to calculate 
-```{math}
-I=\frac{V_o - V_d}{R}
+
+$$I=\frac{V_o - V_d}{R}$$
 ```
-``` 
-Collect data for the forward bias condition from 0 V to high enough voltage to see the exponential rise in current and with small enough steps to see the curvature. Set up the circuit for reverse bias and try to measure the point at which the reverse current is allowed to flow. A special design feature of zener diodes is to allow reverse current without breakdown. See Figure 9.
-Deliverable 2: Plot data for I vs. Vd
-Repeat the experiment with a silicon diode.
-Deliverable 3: Calculate the band gap by fitting the asymptotic positive diode current vs. voltage to a line. This will give the “turn-on” voltage, which is when the bias is equal to the band gap.
+Collect data for the forward bias condition from 0 V to high enough voltage to see the exponential rise in current and with small enough steps to see the curvature. Set up the circuit for reverse bias and try to measure the point at which the reverse current is allowed to flow. A special design feature of zener diodes is to allow reverse current without breakdown. See [](#fig:diodes:zenerIV).
+```{exercise}
+* Plot your data for $I$ vs. $V_d$. Repeat the experiment with a silicon diode.
+* Calculate the band gap by fitting the Ohmic region of positive diode current vs. voltage to a line. This will give the “turn-on” voltage, which is when the bias is equal to the band gap. Your result will look similar to [](#fig:diodes:diodefits). Example code is shown below to do this.
+```
 ```{figure} ../figures/ch6_diodes/zener.svg
 :label: fig:diodes:zenerIV
 :width: 100%
@@ -123,9 +121,14 @@ Deliverable 3: Calculate the band gap by fitting the asymptotic positive diode c
 :alt: IV-curve of a zener diode.
 IV-curve of a zener diode.
 ```
-
-Figure 10. Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode must have been mislabeled. How can you tell?
-Other diode measurements (Choose 1)
+```{figure} ../figures/ch6_diodes/diodeIVfit.svg
+:label: fig:diodes:diodefits
+:width: 100%
+:align: center
+:alt: Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “turn-on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode used to create this data must have been mislabeled. How can you tell?
+Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “turn-on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode used to create this data must have been mislabeled. How can you tell?
+```
+# Other diode measurements (Choose 1)
 LED
 You can measure LEDs. The color is an indication of the band gap, and using
 
