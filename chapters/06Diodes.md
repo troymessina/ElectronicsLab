@@ -68,7 +68,7 @@ Neither of these materials are particularly remarkable on its own. We essentiall
 When p- and n-type materials are in contact, the bands will bend to keep the Fermi Energy constant across the junction. The result is that donor electrons in the n-type material are at an energy just below the energy of the acceptor holes in the p-type as shown in [](#fig:diodes:pnjunctionE).
 ```{figure} ../figures/ch6_diodes/pn_junction_energy.svg
 :label: fig:diodes:pnjunctionE
-:width: 100%
+:width: 75%
 :align: center
 :alt: A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow.
 A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow.
@@ -84,37 +84,7 @@ To make the junction behave like a metal, we need to push the p-type bands down 
 :alt: Biasing conditions of a pn-junction.
 Biasing conditions of a pn-junction.
 ```
-``````{figure}
-:label: fig:diodes:pnjunctionbias
-:width: 100%
-:align: center
-`````{grid}
-:gutter: 3
-````{grid-item}
-```{image} ../figures/ch6_diodes/pnreversebias.svg
-:alt: A pn-junction with a reverse bias.
-:width: 80%
-:align: center
-```
-````
-````{grid-item}
-```{image} ../figures/ch6_diodes/pnnobias.svg
-:alt: A pn-junction with no bias.
-:width: 80%
-:align: center
-```
-````
-````{grid-item}
-```{image} ../figures/ch6_diodes/pnforwardbias.svg
-:alt: A pn-junction with a forward bias.
-:width: 80%
-:align: center
-```
-````
-`````
-Testing a grid (a), (b), and (c).
-``````
-Reverse biasing (Fig. 7(c)) pushes the bands in the opposite direction as forward biasing, causing an increasingly insulating device. At high enough reverse bias, material will break down.
+Reverse biasing ([](#fig:diodes:pnjunctionbias)(a)) pushes the bands in the opposite direction as forward biasing ([](#fig:diodes:pnjunctionbias)(c)), causing an increasingly insulating device. At high enough reverse bias, material will break down, and the diode is destroyed.
 
 The current in a forward biased pn-junction can be modeled by the equation
 ```{math}
@@ -132,7 +102,7 @@ Equation {eq}`eq:diodes:idealdiode modeling zener diode data.
 
 # Part 1 - Measurements
 
-This is a DC measurement. Set up the circuit as shown in Figure 1 for forward bias with a zener diode. The figure is shown again in Figure 8.
+This is a DC measurement. Set up the circuit as shown in [](#fig:diodes:diodeVdivider) for forward bias with a zener diode. Biasing is shown in [](#fig:diodes:.
 
 Figure 8. A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) Diode schematic. (b)Forward biased diode. (b) Reverse biased diode.
 
