@@ -128,7 +128,44 @@ IV-curve of a zener diode.
 :alt: Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “turn-on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode used to create this data must have been mislabeled. How can you tell?
 Graph of a silicon and 3.3 V zener diode. The forward voltage where current begins to pass can be found from fitting a line to the asymptotic end of the curve. The x-axis crossing is the “turn-on” voltage. The data in the graph results in 0.18 V for the silicon diode and 0.63 V for the zener diode. The silicon diode used to create this data must have been mislabeled. How can you tell?
 ```
+```{code-cell} python
+# curve_fit optization
+def f_line(x, a, b):
+    return a*x + b
 
+a = 0.01
+b = -1
+
+#Get zener fit
+xtemp = zener_df['Vd'].loc[zener_df['Vd'] > 0.63]
+ytemp = zener_df['I'].loc[zener_df['Vd'] > 0.63]
+zener_params, zener_pcov = curve_fit(f_line, xtemp, ytemp, (a,b))
+
+#Get silicon fit
+xtemp = silicon_df['Vd'].loc[silicon_df['Vd'] > 0.199]
+ytemp = silicon_df['I'].loc[silicon_df['Vd'] > 0.199]
+silicon_params, silicon_pcov = curve_fit(f_line, xtemp, ytemp, (a,b))
+
+#Print fit params
+print(zener_params, zener_pcov)
+print(silicon_params, silicon_pcov)
+
+#Plot the results
+xx = linspace(0,1, 200)
+plt.plot(zener_df['Vd'], zener_df['I'], 'bo', label='zener')
+plt.plot(xx, f_line(xx, *zener_params), '-b')
+plt.plot(silicon_df['Vd'], silicon_df['I'], 'rs', label='silicon')
+plt.plot(xx, f_line(xx, *silicon_params), '-r')
+plt.hlines(0, 1, 0, linestyle='solid', color='black')
+plt.legend(loc=0)
+plt.grid(True)
+plt.xlim(0, 1)
+plt.ylim(-0.0001,0.005)
+plt.xlabel('Diode Voltage (V)')
+plt.ylabel('Diode Current (A)')
+plt.savefig('diodeIVfit.svg')
+plt.show()
+```
 # Part 2 - Other diode measurements (Choose 1)
 
 ## LED
