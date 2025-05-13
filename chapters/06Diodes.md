@@ -68,7 +68,7 @@ Neither of these materials are particularly remarkable on its own. We essentiall
 When p- and n-type materials are in contact, the bands will bend to keep the Fermi Energy constant across the junction. The result is that donor electrons in the n-type material are at an energy just below the energy of the acceptor holes in the p-type as shown in [](#fig:diodes:pnjunctionE).
 ```{figure} ../figures/ch6_diodes/pn_junction_energy.svg
 :label: fig:diodes:pnjunctionE
-:width: 75%
+:width: 60%
 :align: center
 :alt: A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow. 
 A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow.
