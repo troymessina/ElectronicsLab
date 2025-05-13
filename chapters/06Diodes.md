@@ -73,7 +73,7 @@ When p- and n-type materials are in contact, the bands will bend to keep the Fer
 :alt: A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow. 
 A p-n junction has unique band behavior where the bands bend to keep the Fermi Energy constant across the junction. A pn-junction with depletion zone due to recombination of electrons and holes. The recombination and depletion leads to an electric field. The combination of no free charge carriers and the electric field makes the pn-junction have a very high resistance to current flow.
 ```
-As you might imagine, the electrons and holes in the region near the interface can “recombine”. The electrons cannot move completely into the p-region because the conduction band is too high and similarly for the holes and the valence band. As electrons and holes recombine near the junction, they leave behind charged (ionized) atoms. The atoms are bound to the crystal lattice and cannot move freely. The result is a thin region at the junction where electrons and holes are no longer free. We call this the depletion zone because the region is depleted of free charge carriers. Furthermore, the ionized atoms create a potential difference across the depletion zone. This is shown in [](#fig:diodes:pnjunctionE).
+As you might imagine, the electrons and holes in the region near the interface can “recombine”. The electrons cannot move completely into the p-region because the conduction band is too high and similarly for the holes and the valence band. As electrons and holes recombine near the junction, they leave behind charged (ionized) atoms. The atoms are bound to the crystal lattice and cannot move freely. The result is a thin region at the junction where electrons and holes are no longer free. We call this the depletion zone because the region is depleted of free charge carriers. Furthermore, the ionized atoms create a potential difference across the depletion zone. This is shown in [](#fig:diodes:pnjunctionE). This figure is not to scale. In reality, the depletion zone is about 1/1000 of the width of the entire diode pn-junction.
 
 To make the junction behave like a metal, we need to push the p-type bands down and push the n-type bands up. We can do this by applying a forward bias as shown in [](#fig:diodes:diodeVdivider) or [](#fig:diodes:pnjunctionbias). As the bias potential (voltage) increases, the bands become more and more aligned. Eventually, the bands align and the bias potential produces current flow that follows Ohm's Law (linear current vs. voltage).
 ```{figure} ../figures/ch6_diodes/pn_junction_bias.svg
@@ -107,7 +107,7 @@ Using a zener diode, you will adjust $V_o$ and measure $V_R$ for a known resisto
 ```{exercise}
 Remind yourself starting from Ohm’s Law $V_o = V_d + V_R = IR_d + IR$ that the voltage divider circuit of [](#fig:diodes:diodeVdivider) allows you to calculate 
 
-$$I=\frac{V_o - V_d}{R}$$
+$$I=\frac{V_o - V_d}{R}=\frac{V_R}{R}$$
 ```
 Collect data for the forward bias condition from 0 V to high enough voltage to see the exponential rise in current and with small enough steps to see the curvature. Set up the circuit for reverse bias and try to measure the point at which the reverse current is allowed to flow. A special design feature of zener diodes is to allow reverse current without breakdown. See [](#fig:diodes:zenerIV).
 ```{exercise}
@@ -166,6 +166,7 @@ plt.ylabel('Diode Current (A)')
 plt.savefig('diodeIVfit.svg')
 plt.show()
 ```
+
 # Part 2 - Other diode measurements (Choose 1)
 
 ## LED
@@ -175,6 +176,13 @@ You can measure LEDs. The color is an indication of the band gap, and using
 E_g=\frac{hc}{\lambda}
 ```
 one can find the wavelength of emitted light using the linear fitting mentioned above. See [](#fig:diodes:diodeIVfit). In this equation, $h = 4.136\times10^{-15}~{\rm eV\cdot s}$ is Planck's constant. The speed of light is $c=3\times 10^8~{\rm m/s}$. Compare your wavelength to the portion of the visible spectrum for that color.
+```{figure} ../figures/ch6_diodes/led_rainbow.svg
+:label: fig:diodes:ledrainbow
+:width: 100%
+:align: center
+:alt: LEDs can be obtained with gap energies across the infrared, visible, and ultraviolet electromagnetic spectrum.
+LEDs can be obtained with gap energies across the infrared, visible, and ultraviolet electromagnetic spectrum.
+```
 
 ## Rectifier Circuits
 Rectifier circuits can be constructed with diodes. These circuits convert AC signals to *nearly* DC. A half wave rectifier converts only the positive portion of an AC input signal. A full wave rectifier converts both the positive and negative portions of an AC input signal. RC filtering can be added to smooth the diode rectification. In the case of RC filtering, one wants a low-pass filter. This is related to the value of RC. [](#fig:diodes:rectifiers) shows half, full, and filtered full wave rectifier circuits. Build each one using the following values and components.
