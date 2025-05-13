@@ -178,7 +178,7 @@ E_g=\frac{hc}{\lambda}
 one can find the wavelength of emitted light using the linear fitting mentioned above. See [](#fig:diodes:diodeIVfit). In this equation, $h = 4.136\times10^{-15}~{\rm eV\cdot s}$ is Planck's constant. The speed of light is $c=3\times 10^8~{\rm m/s}$. Compare your wavelength to the portion of the visible spectrum for that color.
 ```{figure} ../figures/ch6_diodes/led_rainbow.svg
 :label: fig:diodes:ledrainbow
-:width: 100%
+:width: 50%
 :align: center
 :alt: LEDs can be obtained with gap energies across the infrared, visible, and ultraviolet electromagnetic spectrum.
 LEDs can be obtained with gap energies across the infrared, visible, and ultraviolet electromagnetic spectrum.
