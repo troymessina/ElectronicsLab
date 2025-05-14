@@ -11,6 +11,7 @@ project:
     - file: ./chapters/06Diodes.md
     - file: ./chapters/07Transistors.md
     - file: ./chapters/08OpAmps.md
+    - file: ./chapters/09Digital.md
     #FETs
     #Op-amps
   id: 
