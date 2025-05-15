@@ -185,7 +185,7 @@ LEDs can be obtained with gap energies across the infrared, visible, and ultravi
 ```
 
 ## Rectifier Circuits
-Rectifier circuits can be constructed with diodes. These circuits convert AC signals to *nearly* DC. A half wave rectifier converts only the positive portion of an AC input signal. A full wave rectifier converts both the positive and negative portions of an AC input signal. RC filtering can be added to smooth the diode rectification. In the case of RC filtering, one wants a low-pass filter. This is related to the value of RC. [](#fig:diodes:rectifiers) shows half, full, and filtered full wave rectifier circuits. Build each one using the following values and components.
+Rectifier circuits can be constructed with diodes. These circuits convert AC signals to *nearly* DC. A half wave rectifier converts only the positive portion of an AC input signal. The circuit diagram for a half wave rectifier is the same as the voltage divider except [](#fig:diodes:diodeVdivider) with an AC input voltage. A full wave rectifier converts both the positive and negative portions of an AC input signal. RC filtering can be added to smooth the diode rectification. In the case of RC filtering, one wants a low-pass filter. This is related to the value of RC. [](#fig:diodes:rectifiers) shows half, full, and filtered full wave rectifier circuits. Build each one using the following values and components.
 :::{table} Rectifier circuit values and components
 :label: table:diodes:rectifiers
 :align: center
@@ -196,10 +196,10 @@ Rectifier circuits can be constructed with diodes. These circuits convert AC sig
 :::
 ```{figure} ../figures/ch6_diodes/fullrectifier.svg
 :label: fig:diodes:rectifiers
-:width: 100%
+:width: 75%
 :align: center
-:alt: Half, full, and filtered full wave rectifier circuit diagrams.
-Half, full, and filtered full wave rectifier circuit diagrams.
+:alt: Filtered full wave rectifier circuit diagrams.
+Filtered full wave rectifier circuit diagrams.
 ```
 
 ```{exercise}
