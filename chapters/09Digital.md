@@ -146,7 +146,7 @@ A circuit diagram of the 555-timer in bistable mode.
 The output is connected to control an LED, but could easily be modified to control a motor, a lamp, or anything else by connecting a transistor. See []{#sec:digital:highloads) Driving Higher Loads below for examples.
 
 (sec:digital:higherloads)=
-# Part  - Driving Higher Loads
+# Part 4 - Driving Higher Loads
 
 If you want to control motors, LED strips, or other things that need more than 200 mA of current, you can connect a transistor to the output. If you want to use an npn transistor, you will need to connect a resistor between the output and the base to limit the base current. 1 kΩ will probably work fine as a starting point.
 ```{figure} ../figures/ch9_digital/555TimerBJTTransistorDriver.png

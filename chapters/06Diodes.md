@@ -194,7 +194,7 @@ Rectifier circuits can be constructed with diodes. These circuits convert AC sig
 | ------------- | --------- | ----------- | ------------- |
 |     10 V sine |    60 Hz  |    1N4007   | 100 $\Omega$  |
 :::
-```{figure} ../figures/ch6_diodes/rectifiers.svg
+```{figure} ../figures/ch6_diodes/fullrectifier.svg
 :label: fig:diodes:rectifiers
 :width: 100%
 :align: center
