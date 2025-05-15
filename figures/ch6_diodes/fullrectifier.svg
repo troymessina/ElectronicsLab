@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="1139.8561"
-     inkscape:cy="1692.8136"
+     inkscape:zoom="0.25"
+     inkscape:cx="1088"
+     inkscape:cy="1342"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -343,7 +343,7 @@
      d="m 79.55162,168.54868 v 65.13342 l 236.6955,0.2553"
      id="path61" />
   <g
-     transform="matrix(3.146571,0,0,3.203703,-217.02098,-84.0296)"
+     transform="matrix(3.146571,0,0,3.203703,-215.96265,-113.66293)"
      ns3:version="1.11.1"
      ns3:texconverter="typst"
      ns3:pdfconverter="inkscape"

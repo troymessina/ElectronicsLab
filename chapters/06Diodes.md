@@ -173,15 +173,20 @@ plt.show()
 
 You can measure LEDs. The color is an indication of the band gap, and using
 ```{math}
+:label: eq:diodes:ledgap
 E_g=\frac{hc}{\lambda}
 ```
-one can find the wavelength of emitted light using the linear fitting mentioned above. See [](#fig:diodes:diodeIVfit). In this equation, $h = 4.136\times10^{-15}~{\rm eV\cdot s}$ is Planck's constant. The speed of light is $c=3\times 10^8~{\rm m/s}$. Compare your wavelength to the portion of the visible spectrum for that color.
+one can find the wavelength of emitted light using the linear fitting mentioned above. See [](#fig:diodes:diodeIVfit). In this equation, $h = 4.136\times10^{-15}~{\rm eV\cdot s}$ is Planck's constant. The speed of light is $c=3\times 10^8~{\rm m/s}$. 
 ```{figure} ../figures/ch6_diodes/led_rainbow.svg
 :label: fig:diodes:ledrainbow
 :width: 50%
 :align: center
 :alt: LEDs can be obtained with gap energies across the infrared, visible, and ultraviolet electromagnetic spectrum.
 LEDs can be obtained with gap energies across the infrared, visible, and ultraviolet electromagnetic spectrum.
+```
+
+```{exercise}
+After fitting the Ohmic region of at least two LED colors, determine the wavelength of the light emitted from the x-axis crossing (turn-on voltage) and {eq}`eq:diodes:ledgap`. Compare your experimental wavelength to the portion of the visible spectrum for that LED color.
 ```
 
 ## Rectifier Circuits
