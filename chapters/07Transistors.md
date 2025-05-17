@@ -38,10 +38,10 @@ A bipolar junction transistor's (BJT) three distinct semiconductor regions have 
 
 The base is positioned between the emitter and the collector and is constructed from a lightly doped material with high electrical resistance. The collector is designed to surround the emitter region, which helps ensure that most charge carriers introduced into the base are collected rather than lost. This design feature results in a current gain factor, $\alpha$, that is nearly one, thereby yielding a high $\beta$ value for the transistor.These values are defined by ratios of currents and are dependent on one another due to both depending on the collector current.
 ```{math}
-\alpha_f = \frac{I_c}{I_e} = \frac{\beta_f}{1+\beta_f}
+\alpha_f = \frac{I_C}{I_E} = \frac{\beta_f}{1+\beta_f}
 ```
 ```{math}
-\beta_f = \frac{I_c}{I_b} = \frac{\alpha_f}{1\alpha_f}
+\beta_f = \frac{I_C}{I_B} = \frac{\alpha_f}{1-\alpha_f}
 ```
 Structurally, the collector–base junction typically has a greater area than the emitter–base junction, as seen in cross-sectional views of BJTs shown in [](#fig:transistors:npncrosssection).
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Cross-section.svg
@@ -52,7 +52,7 @@ Structurally, the collector–base junction typically has a greater area than th
 A cross-section of the npn type bipolar junction transistor (bjt) collector-emitter-base structure. [^3]
 ```
 
-Unlike many other types of transistors, BJTs are generally not symmetrical. If the emitter and collector are swapped, the device no longer operates in its intended forward active mode but instead enters a reverse mode. In this reversed configuration, the current gain is significantly reduced, with α often falling below 0.5. This asymmetry is mainly due to differences in doping: the emitter is heavily doped to maximize carrier injection efficiency, while the collector is lightly doped to handle higher reverse bias voltages without breaking down. In standard operation, the collector–base junction is reverse biased. The heavy doping of the emitter ensures that the majority of charge carriers in the emitter–base junction are injected from the emitter side, which is essential for achieving a high current gain.
+Unlike many other types of transistors, BJTs are generally not symmetrical. If the emitter and collector are swapped, the device no longer operates in its intended forward active mode but instead enters a reverse mode. In this reversed configuration, the current gain is significantly reduced, with $\alpha$ often falling below 0.5. This asymmetry is mainly due to differences in doping: the emitter is heavily doped to maximize carrier injection efficiency, while the collector is lightly doped to handle higher reverse bias voltages without breaking down. In standard operation, the collector–base junction is reverse biased. The heavy doping of the emitter ensures that the majority of charge carriers in the emitter–base junction are injected from the emitter side, which is essential for achieving a high current gain.
 
 
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Basic_Operation.svg
