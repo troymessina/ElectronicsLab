@@ -20,7 +20,7 @@ In this lab, you will explore transistor circuits. A very brief theory is given 
 
 The transistor is two pn-junctions. They can be npn or pnp. Arguably, the more common is the npn because of higher charge mobility, faster switching, and higher versatility. Because the transistor has three semiconductor regions, there are three electrical connections. A model of a typical transistor package, the TO-92, is shown in [](#fig:transistors:transistormodel).
 ```{figure} ../figures/ch7_transistors/BipolarTransistor3Dmodel.png
-:label: fig/transistors/transistormodel
+:label: fig:transistors:transistormodel
 :width: 50%
 :align: center
 :alt: Model of a TO-92 package, commonly used for small bipolar transistors.
@@ -28,7 +28,7 @@ The transistor is two pn-junctions. They can be npn or pnp. Arguably, the more c
 ```
 Circuits with transistors use the circuit diagram symbols shown in [](#fig:transistors:transistorsymbols). We will focus on the npn transistor, but the information presented for npn is similar for pnp transistors, which can to some extent be consider "opposite" to npn transistors. Transistors are considered directional as seen by the diode symbol in [](#fig:transistors:transistorsymbols) that connects the base to the emitter.
 ```{figure} ../figures/ch7_transistors/NPN_AND_PNP_BJT_SYMBOLS.png
-:label: fig/transistors/transistorsymbols
+:label: fig:transistors:transistorsymbols
 :width: 75%
 :align: center
 :alt: The circuit diagram symbol of pnp and npn type bipolar junction transistor (bjt).
@@ -38,7 +38,7 @@ A bipolar junction transistor (bjt) is made up of three layers of semiconductor 
 
 The base is a very thin and lightly doped layer placed between the emitter and collector. The emitter sends charge carriers (like electrons or holes) into the base, and most of those carriers get collected by the collector. Because of how the transistor is designed—especially the fact that the collector surrounds the emitter—very few of the charge carriers escape. This makes the transistor very efficient at amplifying current, giving it a high current gain. A cross-sectional of an npn bjt is shown in [](#fig:transistors:npncrosssection).
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Cross-section.svg
-:label: fig/transistors/npncrosssection
+:label: fig:transistors:npncrosssection
 :width: 75%
 :align: center
 :alt: A cross-section of the npn type bipolar junction transistor (bjt) collector-emitter-base structure.
@@ -72,7 +72,7 @@ h_{fe}  = \frac{\Delta I_C}{\Delta I_B}
 $\beta$ is used interchangably for both $h_{FE}$ and $h_{fe}$
 The emitter current is related to $V_{BE} exponentially. At room temperature, an increase in $V_{BE} by approximately 60 mV increases the emitter current by a factor of 10. Because the base current is approximately proportional to the collector and emitter currents, they vary in the same way.
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Basic_Operation.svg
-:label: fig/transistors/npnbasicoperation
+:label: fig:transistors:npnbasicoperation
 :width: 100%
 :align: center
 :alt: An npn bjt with forward biased b-e junction and reverse biased b-c junction.
@@ -81,7 +81,7 @@ An npn bjt with forward biased b-e junction and reverse biased b-c junction.
 npn bjt with forward-biased B–E junction and reverse-biased B–C junction. [^4]
 ```
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Structure_n_circuit.svg
-:label: fig/transistors/npncircuit
+:label: fig:transistors:npncircuit
 :width: 50%
 :align: center
 :alt: An alternative view of an npn bjt with forward biased b-e junction and reverse biased b-c junction.
@@ -96,14 +96,14 @@ BJTs can be thought of as two diodes (pn-junctions) sharing a common region that
 
 BJTs function by letting a small current input to the base control an amplified output from the collector. This current occurs from a voltage bias on the base that lowers the energy of the p-type base. The lower the base energy is the more current that can flow from collector to emitter in the active mode. The result is that the bjt makes a good switch that is controlled by its base input turning on or off the current from collector to emitter. The bjt also makes a good amplifier, since it can multiply a weak base input signal to about 100 times its original strength with the addition of the current-emitter current. BJTs can be networked to build powerful amplifiers for many applications. A band diagram of an npn transitor is shown in [](#fig:transistors/npnbasicoperation) and [](#fig:transistors:npncircuit).
 ```{figure} ../figures/ch7_transistors/NPN_Band_Diagram_Equilibrium.svg
-:label: fig/transistors/npnbandsequilibrium
+:label: fig:transistors:npnbandsequilibrium
 :width: 80%
 :align: center
 :alt: Band diagram of an npn transistor in equilibrium (no bias). 
 Band diagram of an npn transistor in equilibrium (no bias). [^6]
 ```
 ```{figure} ../figures/ch7_transistors/NPN_Band_Diagram_Active.svg
-:label: fig/transistors/npnbandsactive
+:label: fig:transistors:npnbandsactive
 :width: 80%
 :align: center
 :alt: Band diagram for npn transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. 
@@ -115,7 +115,7 @@ Band diagram for npn transistor in active mode, showing injection of electrons f
 
 Build the bjt switch circuit shown in [](#fig:transistors:bjtswitch).
 ```{figure}
-:label: fig/transistors/bjtswitch
+:label: fig:transistors:bjtswitch
 :width: 80%
 :align: center
 :alt: An npn bjt transistor circuit designed to operate as a switch.
@@ -130,7 +130,7 @@ Take note of the values of $I_C$ and $V_{CE}$ for the two cases (on/off). Do the
 
 In [](#sec:resistors:vdivider), we learned about voltage dividers. Consider a situation where the known resistor is some unwanted resistance that affects the unknown resistance of a load (device we want to operate). If the known resistor were large compared to the unknown load resistor, we would experience a drop in voltage being applied to our load we want to power. This will affect the performance and maybe the lifetime of our load device. Build a voltage divider with $R_1 = 1~{\rm k\Omega}$ and $R_2 = 10~{\rm k\Omega}$. Measure the output voltage on $R_2$. Now put a “load resistor” $R_L\sim 8~{\rm k\Omega}$ in parallel to $R_2$, and measure the output voltage. These circuits are shown in [](#fig:transistors:vdivider).
 ```{figure}
-:label: fig/transistors/vdivider
+:label: fig:transistors:vdivider
 :width: 80%
 :align: center
 :alt: (a) A typical voltage divider circuit. (b) A voltage divider circuit with a load in parallel to a comparably-sized resistor.
@@ -138,7 +138,7 @@ In [](#sec:resistors:vdivider), we learned about voltage dividers. Consider a si
 ```
 Now build the “buffer” circuit in [](#fig:transistors:buffer) with the base connection going to the output of the voltage divider. Measure the voltage across the load resistor. Does this voltage agree with theory? Note: such a circuit becomes very useful when interfacing with computers as the data boards generally have low output impedances compared to standalone power supplies.
 ```{figure}
-:label: fig/transistors/buffer
+:label: fig:transistors:buffer
 :width: 80%
 :align: center
 :alt: An npn bjt transistor circuit designed to buffer a low impedance load
@@ -149,7 +149,7 @@ An npn bjt transistor circuit designed to buffer a low impedance load.
 
 This circuit produces a nearly constant current through a load resistor connected to the collector. The collector current $I_C$ is controlled by the base current in this circuit. Measure the current as you vary the load resistance over the range $0 \le R_L \le 2.5~{\rmk\Omega}$. Use a variable resistor for $R_L$.
 ```{figure}
-:label: fig/transistors/constantcurrent
+:label: fig:transistors:constantcurrent
 :width: 80%
 :align: center
 :alt: An npn bjt transistor circuit designed to provide constant current to a load.
@@ -161,7 +161,7 @@ An npn bjt transistor circuit designed to provide constant current to a load.
 Build the following transistor amplifier; don’t worry too much about the actual design of the circuit – just note that with an ideal BJT it has a gain of 100 (in actuality, it will be closer to 50) without the feedback. Use the largest valued capacitors you can find
 ($C\ge 1~{\rm \mu F}). Measure the gain as a function of frequency with a sine-wave. Make sure the amplitude to the input signal is small enough that the output isn’t clipped due to the circuit’s high gain! Also observe the output when driven by a triangle-wave. Note the frequency when the output triangle is distorted.
 ```{figure}
-:label: fig/transistors/constantcurrent
+:label: fig:transistors:constantcurrent
 :width: 80%
 :align: center
 :alt: An npn bjt transistor circuit designed to provide constant current to a load.
