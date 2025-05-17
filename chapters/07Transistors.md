@@ -161,11 +161,11 @@ An npn bjt transistor circuit designed to provide constant current to a load.
 Build the following transistor amplifier; don’t worry too much about the actual design of the circuit – just note that with an ideal BJT it has a gain of 100 (in actuality, it will be closer to 50) without the feedback. Use the largest valued capacitors you can find
 ($C\ge 1~{\rm \mu F}). Measure the gain as a function of frequency with a sine-wave. Make sure the amplitude to the input signal is small enough that the output isn’t clipped due to the circuit’s high gain! Also observe the output when driven by a triangle-wave. Note the frequency when the output triangle is distorted.
 ```{figure}
-:label: fig:transistors:constantcurrent
+:label: fig:transistors:amplifier
 :width: 80%
 :align: center
-:alt: An npn bjt transistor circuit designed to provide constant current to a load.
-An npn bjt transistor circuit designed to provide constant current to a load.
+:alt: An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
+An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
 ```
 Add the feedback network ($R_F=1~{\rm k\Omega}$ resistor). Measure the gain as a function of frequency. Again observe the output when driven by a triangle-wave. At what frequency is the triangle wave distorted? Connect a speaker to the output to hear it.
 
