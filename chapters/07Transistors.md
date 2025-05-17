@@ -34,9 +34,9 @@ Circuits with transistors use the circuit diagram symbols shown in [](#fig:trans
 :alt: The circuit diagram symbol of pnp and npn type bipolar junction transistor (bjt).
 The circuit diagram symbol of pnp and npn type bipolar junction transistor (bjt). [^2]
 ```
-A bipolar junction transistor (BJT) is made up of three layers of semiconductor material, each with different electrical properties. These layers are called the emitter, base, and collector. In a PNP transistor, the order is p-type, n-type, then p-type. In an NPN transistor, it’s n-type, p-type, then n-type. Each layer is connected to a terminal with the same name: emitter (E), base (B), and collector (C).
+A bipolar junction transistor (bjt) is made up of three layers of semiconductor material, each with different electrical properties. These layers are called the emitter, base, and collector. In a pnp transistor, the order is p-type, n-type, then p-type. In an npn transistor, it’s n-type, p-type, then n-type. Each layer is connected to a terminal with the same name: emitter (E), base (B), and collector (C).
 
-The base is a very thin and lightly doped layer placed between the emitter and collector. The emitter sends charge carriers (like electrons or holes) into the base, and most of those carriers get collected by the collector. Because of how the transistor is designed—especially the fact that the collector surrounds the emitter—very few of the charge carriers escape. This makes the transistor very efficient at amplifying current, giving it a high current gain. A cross-sectional of an npn BJT is shown in [](#fig:transistors:npncrosssection).
+The base is a very thin and lightly doped layer placed between the emitter and collector. The emitter sends charge carriers (like electrons or holes) into the base, and most of those carriers get collected by the collector. Because of how the transistor is designed—especially the fact that the collector surrounds the emitter—very few of the charge carriers escape. This makes the transistor very efficient at amplifying current, giving it a high current gain. A cross-sectional of an npn bjt is shown in [](#fig:transistors:npncrosssection).
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Cross-section.svg
 :label: fig/transistors/npncrosssection
 :width: 75%
@@ -47,7 +47,7 @@ A cross-section of the npn type bipolar junction transistor (bjt) collector-emit
 
 One important thing to know about BJTs is that they are not symmetrical. This means you can't just flip the emitter and collector and expect it to work the same way. If you try to swap them, the transistor goes into what's called reverse mode, where it works much less effectively. This is because the emitter is heavily doped to push a lot of carriers into the base, while the collector is lightly doped to handle high voltages. The collector–base junction is normally reverse biased (it blocks current), and the emitter–base junction is forward biased (it allows current flow). The way the transistor is built makes sure that most of the current comes from the emitter, which is important for good performance. Performance is determined by a gain parameter, $\alpha$, and a figure of merit, $\beta$.
 
-Beta ($\beta$) is a useful number that helps describe how well a bipolar junction transistor (BJT) can amplify current. However, it's not a basic physical constant. It's more like a helpful shortcut for understanding how the transistor behaves. Technically, BJTs are controlled by voltage, not current. The current flowing from the collector is mainly determined by the voltage between the base and the emitter. The current going into the base happens because of how the base–emitter junction is built, and it can be thought of as an unwanted side effect.
+Beta ($\beta$) is a useful number that helps describe how well a bipolar junction transistor (bjt) can amplify current. However, it's not a basic physical constant. It's more like a helpful shortcut for understanding how the transistor behaves. Technically, BJTs are controlled by voltage, not current. The current flowing from the collector is mainly determined by the voltage between the base and the emitter. The current going into the base happens because of how the base–emitter junction is built, and it can be thought of as an unwanted side effect.
 
 In many circuit designs, engineers assume that beta is large enough that the base current doesn’t significantly affect the circuit’s performance. In other cases, especially in switching circuits (where the transistor is just turned fully on or off), the base current is made large enough to ensure the transistor works properly, even if the transistor has a lower-than-expected beta.
 ```{math}
@@ -76,25 +76,25 @@ The emitter current is related to $V_{BE} exponentially. At room temperature, an
 :width: 100%
 :align: center
 :alt: An npn bjt with forward biased b-e junction and reverse biased b-c junction.
-NPN BJT with forward-biased B–E junction and reverse-biased B–C junction.
+npn bjt with forward-biased B–E junction and reverse-biased B–C junction.
 An npn bjt with forward biased b-e junction and reverse biased b-c junction.
-NPN BJT with forward-biased B–E junction and reverse-biased B–C junction. [^4]
+npn bjt with forward-biased B–E junction and reverse-biased B–C junction. [^4]
 ```
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Structure_n_circuit.svg
 :label: fig/transistors/npncircuit
 :width: 50%
 :align: center
 :alt: An alternative view of an npn bjt with forward biased b-e junction and reverse biased b-c junction.
-NPN BJT with forward-biased B–E junction and reverse-biased B–C junction.
+npn bjt with forward-biased B–E junction and reverse-biased B–C junction.
 An alternative view of an npn bjt with forward biased b-e junction and reverse biased b-c junction.
-NPN BJT with forward-biased B–E junction and reverse-biased B–C junction. [^5]
+npn bjt with forward-biased B–E junction and reverse-biased B–C junction. [^5]
 ```
 
 ## Band Theory
 
-BJTs can be thought of as two diodes (pn-junctions) sharing a common region that minority carriers can move through. The npn transistor is as if two diodes were sharing a P-type anode region. Connecting two diodes with wires will not make a BJT, since minority carriers will not be able to get from one pn-junction to the other through the wire.
+BJTs can be thought of as two diodes (pn-junctions) sharing a common region that minority carriers can move through. The npn transistor is as if two diodes were sharing a P-type anode region. Connecting two diodes with wires will not make a bjt, since minority carriers will not be able to get from one pn-junction to the other through the wire.
 
-BJT function by letting a small current input to the base control an amplified output from the collector. This current occurs from a voltage bias on the base that lowers the energy of the p-type base. The lower the base energy is the more current that can flow from collector to emitter in the active mode. The result is that the BJT makes a good switch that is controlled by its base input turning on or off the current from collector to emitter. The BJT also makes a good amplifier, since it can multiply a weak base input signal to about 100 times its original strength with the addition of the current-emitter current. BJTs can be networked to build powerful amplifiers for many applications. A band diagram of an npn transitor is shown in [](#fig:transistors/npnbasicoperation) and [](#fig:transistors:npncircuit).
+bjt function by letting a small current input to the base control an amplified output from the collector. This current occurs from a voltage bias on the base that lowers the energy of the p-type base. The lower the base energy is the more current that can flow from collector to emitter in the active mode. The result is that the bjt makes a good switch that is controlled by its base input turning on or off the current from collector to emitter. The bjt also makes a good amplifier, since it can multiply a weak base input signal to about 100 times its original strength with the addition of the current-emitter current. BJTs can be networked to build powerful amplifiers for many applications. A band diagram of an npn transitor is shown in [](#fig:transistors/npnbasicoperation) and [](#fig:transistors:npncircuit).
 ```{figure} ../figures/ch7_transistors/NPN_Band_Diagram_Equilibrium.svg
 :label: fig/transistors/npnbandsequilibrium
 :width: 80%
@@ -106,13 +106,41 @@ Band diagram of an npn transistor in equilibrium (no bias). [^6]
 :label: fig/transistors/npnbandsactive
 :width: 80%
 :align: center
-:alt: Band diagram for NPN transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. 
-Band diagram for NPN transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. [^7]
+:alt: Band diagram for npn transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. 
+Band diagram for npn transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. [^7]
 ```
 # Experiments
 
 ## Part 1 - The Transistor Switch
 
+Build the bjt switch circuit shown in [](#fig:transistors:bjtswitch).
+```{figure}
+:label: fig/transistors/bjtswitch
+:width: 80%
+:align: center
+:alt: An npn bjt transistor circuit designed to operate as a switch.
+An npn bjt transistor circuit designed to operate as a switch.
+```
+The switch is simply a wire that you can insert or remove one end of to make or break the connection between the +5 V source and the 1 k$\Omega$ resistor. 
+```{exercise}
+Take note of the values of $I_C$ and $V_{CE}$ for the two cases (on/off). Do these values make sense given what we know about the switch circuit? Why?
+```
+
+## Part 2 - The Voltage Divider Output Impedance
+
+In [](#sec:resistors:vdivider), we learned about voltage dividers and the drop
+in the output voltage that occurs when a “low” impedance
+load is connected to it. Build a voltage divider with R1 =
+1 k and R2 = 10 k and measure the output voltage.
+Now put a “load resistor” RL (~ 8 k in parallel to R2
+and measure the output voltage.
+Now build the “buffer” circuit to the right with the base
+connection going to the output of the voltage divider.
+Measure the voltage across the load resistor. Does this
+voltage agree with theory?
+Note: such a circuit becomes very useful when interfacing
+with computers as the data boards generally have low
+output impedances compared to standalone power supplies.
 
 [^1]: Image by Bazylevnik0 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=130428568
 [^2]: Image by Osbert Joel for Electrical Classroom - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=106111550
