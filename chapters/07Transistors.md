@@ -14,3 +14,52 @@ kernelspec:
 :::
 
 # Introduction
+```{figure} ../figures/ch7_transistors/BipolarTransistor3Dmodel.png
+:label: fig/transistors/transistormodel
+:width: 50%
+:align: center
+:alt: Model of a TO-92 package, commonly used for small bipolar transistors.
+3D model of a TO-92 package, commonly used for small bipolar transistors. The pins from left to right when facing the flat side are specified by the manufacturer. [^1]
+```
+```{figure} ../figures/ch7_transistors/NPN_AND_PNP_BJT_SYMBOLS.png
+:label: fig/transistors/transistorsymbols
+:width: 50%
+:align: center
+:alt: The circuit diagram symbol of pnp and npn type bipolar junction transistor (bjt).
+The circuit diagram symbol of pnp and npn type bipolar junction transistor (bjt). [^1]
+```
+```{figure} ../figures/ch7_transistors/NPN_BJT_Basic_Operation.svg
+:label: fig/transistors/npnbasicoperation
+:width: 50%
+:align: center
+:alt: An npn bjt with forward biased b-e junction and reverse biased b-c junction.
+NPN BJT with forward-biased B–E junction and reverse-biased B–C junction.
+An npn bjt with forward biased b-e junction and reverse biased b-c junction.
+NPN BJT with forward-biased B–E junction and reverse-biased B–C junction. [^2]
+```
+```{figure} ../figures/ch7_transistors/NPN_BJT_Structure_n_circuit.svg
+:label: fig/transistors/npncircuit
+:width: 50%
+:align: center
+:alt: An alternative view of an npn bjt with forward biased b-e junction and reverse biased b-c junction.
+NPN BJT with forward-biased B–E junction and reverse-biased B–C junction.
+An alternative view of an npn bjt with forward biased b-e junction and reverse biased b-c junction.
+NPN BJT with forward-biased B–E junction and reverse-biased B–C junction. [^2]
+```
+```{figure} ../figures/ch7_transistors/NPN_Band_Diagram_Equilibrium.svg
+:label: fig/transistors/npnbandsequilibrium
+:width: 50%
+:align: center
+:alt: Band diagram of an npn transistor in equilibrium (no bias). 
+Band diagram of an npn transistor in equilibrium (no bias). [^2]
+```
+```{figure} ../figures/ch7_transistors/NPN_Band_Diagram_Active.svg
+:label: fig/transistors/npnbandsactive
+:width: 50%
+:align: center
+:alt: Band diagram for NPN transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. 
+Band diagram for NPN transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. [^2]
+```
+
+[^1]: Image by Osbert Joel for Electrical Classroom - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=106111550
+[^2]: Image by Inductiveload - Own drawing, done in Inkscape, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1696512

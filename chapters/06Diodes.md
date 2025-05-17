@@ -15,7 +15,7 @@ kernelspec:
 
 # Introduction
 
-We will switch to DC measurements for most of this lab. Toward the end, we will see how to automate our DC measurements using a function generator and oscilloscope. However, we will use a Data Acquisition (DAQ) system and LabVIEW software to do these measurements.
+We will switch to DC measurements for most of this lab. Toward the end, we will see diode circuits respond to AC signals.
 
 Part 1 of this lab is to measure and compare different types of diodes using a DC power supply and a digital multimeter. Diodes behave differently when forward biased or reversed biased. We will use a voltage divider circuit as shown in [](#fig:diodes:diodeVdivider).
 
@@ -27,8 +27,7 @@ Part 1 of this lab is to measure and compare different types of diodes using a D
 A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) Diode schematic. (b)Forward biased diode. (b) Reverse biased diode.
 ```
 
-Part 2 of this lab is to use LabVIEW, a DAQ, function generator, and oscilloscope to automate the experiment.
-Procedure
+Part 2 of this lab is to choose an application experiment with diodes.
 
 # Part 1 - Theory of P-N Junctions
 For a semiconductor like silicon, the electrons fill the valence energy levels (band). There is a small energy gap $(E_g\approx1~{\rm eV})$  to the next levels, the conduction band. A 1D diagram of energy is shown in [](#fig:diodes:bandgaps).
@@ -190,7 +189,7 @@ After fitting the Ohmic region of at least two LED colors, determine the wavelen
 ```
 
 ## Rectifier Circuits
-Rectifier circuits can be constructed with diodes. These circuits convert AC signals to *nearly* DC. A half wave rectifier converts only the positive portion of an AC input signal. The circuit diagram for a half wave rectifier is the same as the voltage divider except [](#fig:diodes:diodeVdivider) with an AC input voltage. A full wave rectifier converts both the positive and negative portions of an AC input signal. RC filtering can be added to smooth the diode rectification. In the case of RC filtering, one wants a low-pass filter. This is related to the value of RC. [](#fig:diodes:rectifiers) shows half, full, and filtered full wave rectifier circuits. Build each one using the following values and components.
+Rectifier circuits can be constructed with diodes. These circuits convert AC signals to *nearly* DC. A half wave rectifier converts only the positive portion of an AC input signal. The circuit diagram for a half wave rectifier is the same as the voltage divider in [](#fig:diodes:diodeVdivider) except with an AC input voltage. A full wave rectifier converts both the positive and negative portions of an AC input signal. RC filtering can be added to smooth the diode rectification. In the case of RC filtering, one wants a low-pass filter. This filtering is related to the value of RC. [](#fig:diodes:rectifiers) shows a filtered full wave rectifier circuit. Build half, full, and filtered full wave rectifiers using the following values and components and measure them with an oscilloscope.
 :::{table} Rectifier circuit values and components
 :label: table:diodes:rectifiers
 :align: center
@@ -208,6 +207,7 @@ Filtered full wave rectifier circuit diagrams.
 ```
 
 ```{exercise}
+* Describe and sketch the output of the half, full, and filtered full wave rectifiers.
 * Try 5 and 50 $\mu$F capacitors for the filtering and describe and sketch how the capacitor value affects the output signal shape.
 * How does the output voltage compare to the input voltage?
 ```
