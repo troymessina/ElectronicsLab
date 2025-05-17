@@ -94,7 +94,7 @@ npn bjt with forward-biased B–E junction and reverse-biased B–C junction. [^
 
 BJTs can be thought of as two diodes (pn-junctions) sharing a common region that minority carriers can move through. The npn transistor is as if two diodes were sharing a P-type anode region. Connecting two diodes with wires will not make a bjt, since minority carriers will not be able to get from one pn-junction to the other through the wire.
 
-BJTs function by letting a small current input to the base control an amplified output from the collector. This current occurs from a voltage bias on the base that lowers the energy of the p-type base. The lower the base energy is the more current that can flow from collector to emitter in the active mode. The result is that the bjt makes a good switch that is controlled by its base input turning on or off the current from collector to emitter. The bjt also makes a good amplifier, since it can multiply a weak base input signal to about 100 times its original strength with the addition of the current-emitter current. BJTs can be networked to build powerful amplifiers for many applications. A band diagram of an npn transitor is shown in [](#fig:transistors/npnbandsequilibrium) and [](#fig:transistors:npnbandsactive).
+BJTs function by letting a small current input to the base control an amplified output from the collector. This current occurs from a voltage bias on the base that lowers the energy of the p-type base. The lower the base energy is the more current that can flow from collector to emitter in the active mode. The result is that the bjt makes a good switch that is controlled by its base input turning on or off the current from collector to emitter. The bjt also makes a good amplifier, since it can multiply a weak base input signal to about 100 times its original strength with the addition of the current-emitter current. BJTs can be networked to build powerful amplifiers for many applications. A band diagram of an npn transitor is shown in [](#fig:transistors:npnbandsequilibrium) and [](#fig:transistors:npnbandsactive).
 ```{figure} ../figures/ch7_transistors/NPN_Band_Diagram_Equilibrium.svg
 :label: fig:transistors:npnbandsequilibrium
 :width: 80%
@@ -167,7 +167,7 @@ Build the following transistor amplifier; don’t worry too much about the actua
 :alt: An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
 An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
 ```
-Add the feedback network ($R_F=1~{\rm k\Omega}$ resistor). Measure the gain as a function of frequency. Again observe the output when driven by a triangle-wave. At what frequency is the triangle wave distorted? Connect a speaker to the output to hear it.
+Add the feedback network ($R_F=1~{\rm k\Omega}$). Measure the gain as a function of frequency. Again observe the output when driven by a triangle-wave. At what frequency is the triangle wave distorted? Connect a speaker to the output to hear it.
 
 [^1]: Image by Bazylevnik0 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=130428568
 [^2]: Image by Osbert Joel for Electrical Classroom - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=106111550
