@@ -14,6 +14,11 @@ kernelspec:
 :::
 
 # Introduction
+In this lab, you will explore transistor circuits. A very brief theory is given below. Much more detail can be found in the [Wikipedia article](#https://en.wikipedia.org/wiki/Bipolar_junction_transistor#NPN). You will build circuits to observe the transistor as a switch and as an amplifier.
+
+# Theoretical 
+
+The transistor is two pn-junctions. They can be npn or pnp. Arguably, the more common is the npn because of higher charge mobility, faster switching, and higher versatility. Because the transistor has three semiconductor regions, there are three electrical connections. A model of a typical transistor package, the TO-92, is shown in [](#fig:transistors:transistormodel).
 ```{figure} ../figures/ch7_transistors/BipolarTransistor3Dmodel.png
 :label: fig/transistors/transistormodel
 :width: 50%
