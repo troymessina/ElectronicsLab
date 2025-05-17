@@ -23,14 +23,14 @@ kernelspec:
 ```
 ```{figure} ../figures/ch7_transistors/NPN_AND_PNP_BJT_SYMBOLS.png
 :label: fig/transistors/transistorsymbols
-:width: 50%
+:width: 75%
 :align: center
 :alt: The circuit diagram symbol of pnp and npn type bipolar junction transistor (bjt).
 The circuit diagram symbol of pnp and npn type bipolar junction transistor (bjt). [^2]
 ```
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Basic_Operation.svg
 :label: fig/transistors/npnbasicoperation
-:width: 50%
+:width: 100%
 :align: center
 :alt: An npn bjt with forward biased b-e junction and reverse biased b-c junction.
 NPN BJT with forward-biased B–E junction and reverse-biased B–C junction.
@@ -48,14 +48,14 @@ NPN BJT with forward-biased B–E junction and reverse-biased B–C junction. [^
 ```
 ```{figure} ../figures/ch7_transistors/NPN_Band_Diagram_Equilibrium.svg
 :label: fig/transistors/npnbandsequilibrium
-:width: 50%
+:width: 80%
 :align: center
 :alt: Band diagram of an npn transistor in equilibrium (no bias). 
 Band diagram of an npn transistor in equilibrium (no bias). [^5]
 ```
 ```{figure} ../figures/ch7_transistors/NPN_Band_Diagram_Active.svg
 :label: fig/transistors/npnbandsactive
-:width: 50%
+:width: 80%
 :align: center
 :alt: Band diagram for NPN transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. 
 Band diagram for NPN transistor in active mode, showing injection of electrons from emitter to base, and their overshoot into the collector. [^6]
