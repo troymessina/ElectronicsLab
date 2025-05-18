@@ -167,7 +167,7 @@ Build the following transistor amplifier; don’t worry too much about the actua
 :alt: An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
 An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
 ```
-Add the feedback network ($R_F=1~{\rm k\Omega}$). Measure the gain as a function of frequency. Again observe the output when driven by a triangle-wave. At what frequency is the triangle wave distorted? Connect a speaker to the output to hear it.
+Add the feedback network ($R_F=1~{\rm k\Omega}$ indicated with the arrows). Measure the gain as a function of frequency. Again observe the output when driven by a triangle-wave. At what frequency is the triangle wave distorted? Connect a speaker to the output to hear it.
 
 [^1]: Image by Bazylevnik0 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=130428568
 [^2]: Image by Osbert Joel for Electrical Classroom - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=106111550
