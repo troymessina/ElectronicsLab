@@ -114,7 +114,7 @@ Band diagram for npn transistor in active mode, showing injection of electrons f
 ## Part 1 - The Transistor Switch
 
 Build the bjt switch circuit shown in [](#fig:transistors:bjtswitch).
-```{figure}
+```{figure} ../figures/ch7_transistors/npnbjtswitch.svg
 :label: fig:transistors:bjtswitch
 :width: 80%
 :align: center
