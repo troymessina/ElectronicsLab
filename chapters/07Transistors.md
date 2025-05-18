@@ -123,12 +123,15 @@ An npn bjt transistor circuit designed to operate as a switch.
 ```
 The switch is simply a wire that you can insert or remove one end of to make or break the connection between the +5 V source and the 1 k$\Omega$ resistor. 
 ```{exercise}
-Take note of the values of $I_C$ and $V_{CE}$ for the two cases (on/off). Do these values make sense given what we know about the switch circuit? Why?
+Measure the values of $I_C$ and $V_{CE}$ for the two cases (on/off). Do these values make sense given what we know about the switch circuit? Why?
 ```
 
 ## Part 2 - Buffering a Load with the Voltage Divider
 
-In [](#sec:resistors:vdivider), we learned about voltage dividers. Consider a situation where the known resistor is some unwanted resistance that affects the unknown resistance of a load (device we want to operate). If the known resistor were large compared to the unknown load resistor, we would experience a drop in voltage being applied to our load we want to power. This will affect the performance and maybe the lifetime of our load device. Build a voltage divider with $R_1 = 1~{\rm k\Omega}$ and $R_2 = 10~{\rm k\Omega}$. Measure the output voltage on $R_2$. Now put a “load resistor” $R_L\sim 8~{\rm k\Omega}$ in parallel to $R_2$, and measure the output voltage. These circuits are shown in [](#fig:transistors:vdivider).
+In [](#sec:resistors:vdivider), we learned about voltage dividers. Consider a situation where the known resistor is some unwanted resistance that affects the unknown resistance of a load (device we want to operate). If the known resistor were large compared to the unknown load resistor, we would experience a drop in voltage being applied to our load we want to power. This will affect the performance and maybe the lifetime of our load device. Build a voltage divider with $R_1 = 1~{\rm k\Omega}$ and $R_2 = 10~{\rm k\Omega}$. 
+```{exercise}
+Measure the output voltage on $R_2$. Now put a “load resistor” $R_L\sim 8~{\rm k\Omega}$ in parallel to $R_2$, and measure the output voltage. These circuits are shown in [](#fig:transistors:vdivider).
+```
 ```{figure} ../figures/ch7_transistors/npnbjtdivider.svg
 :label: fig:transistors:vdivider
 :width: 65%
@@ -136,7 +139,10 @@ In [](#sec:resistors:vdivider), we learned about voltage dividers. Consider a si
 :alt: (a) A typical voltage divider circuit. (b) A voltage divider circuit with a load in parallel to a comparably-sized resistor.
 (a) A typical voltage divider circuit. (b) A voltage divider circuit with a load in parallel to a comparably-sized resistor.
 ```
-Now build the “buffer” circuit in [](#fig:transistors:buffer) with the base connection going to the output of the voltage divider. Measure the voltage across the load resistor. Does this voltage agree with theory? Note: such a circuit becomes very useful when interfacing with computers as the data boards generally have low output impedances compared to standalone power supplies.
+Now build the “buffer” circuit in [](#fig:transistors:buffer) with the base connection going to the output of the voltage divider. 
+```{exercise}
+Measure the voltage across the load resistor. Does this voltage agree with your expectations? 
+```
 ```{figure} ../figures/ch7_transistors/npnbjtbuffer.svg
 :label: fig:transistors:buffer
 :width: 50%
@@ -144,10 +150,14 @@ Now build the “buffer” circuit in [](#fig:transistors:buffer) with the base 
 :alt: An npn bjt transistor circuit designed to buffer a low impedance load
 An npn bjt transistor circuit designed to buffer a low impedance load.
 ```
+Note: such a circuit becomes very useful when interfacing with computers as the data boards generally have low output impedances compared to standalone power supplies.
 
 ## Part 3 - Constant Current Source
 
-This circuit produces a nearly constant current through a load resistor connected to the collector. The collector current $I_C$ is controlled by the base current in this circuit. Measure the current as you vary the load resistance over the range $0 \le R_L \le 2.5~{\rm k\Omega}$. Use a variable resistor for $R_L$.
+This circuit produces a nearly constant current through a load resistor connected to the collector. The collector current $I_C$ is controlled by the base current in this circuit. 
+```{exercise}
+Measure the current as you vary the load resistance over the range $0 \le R_L \le 2.5~{\rm k\Omega}$. Use a variable resistor for $R_L$.
+```
 ```{figure} ../figures/ch7_transistors/npnbjtconstcurrent.svg
 :label: fig:transistors:constantcurrent
 :width: 75%
@@ -159,7 +169,10 @@ An npn bjt transistor circuit designed to provide constant current to a load.
 ## Part 4 - The Transistor Amplifier
 
 Build the following transistor amplifier; don’t worry too much about the actual design of the circuit – just note that with an ideal BJT it has a gain of 100 (in actuality, it will be closer to 50) without the feedback. Use the largest valued capacitors you can find
-($C\ge 1~{\rm \mu F}$). Measure the gain as a function of frequency with a sine-wave. Make sure the amplitude to the input signal is small enough that the output isn’t clipped due to the circuit’s high gain! Also observe the output when driven by a triangle-wave. Note the frequency when the output triangle is distorted.
+($C\ge 1~{\rm \mu F}$). 
+```{exercise}
+Measure the gain as a function of frequency with a sine-wave. Make sure the amplitude to the input signal is small enough that the output isn’t clipped due to the circuit’s high gain! Also observe the output when driven by a triangle-wave. Note the frequency when the output triangle is distorted.
+```
 ```{figure} ../figures/ch7_transistors/npnbjtamplifier.svg
 :label: fig:transistors:amplifier
 :width: 70%
@@ -167,7 +180,9 @@ Build the following transistor amplifier; don’t worry too much about the actua
 :alt: An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
 An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
 ```
+```{exercise}
 Add the feedback network ($R_F=1~{\rm k\Omega}$ indicated with the arrows). Measure the gain as a function of frequency. Again observe the output when driven by a triangle-wave. At what frequency is the triangle wave distorted? Connect a speaker to the output to hear it.
+```
 
 [^1]: Image by Bazylevnik0 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=130428568
 [^2]: Image by Osbert Joel for Electrical Classroom - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=106111550
