@@ -131,7 +131,7 @@ Take note of the values of $I_C$ and $V_{CE}$ for the two cases (on/off). Do the
 In [](#sec:resistors:vdivider), we learned about voltage dividers. Consider a situation where the known resistor is some unwanted resistance that affects the unknown resistance of a load (device we want to operate). If the known resistor were large compared to the unknown load resistor, we would experience a drop in voltage being applied to our load we want to power. This will affect the performance and maybe the lifetime of our load device. Build a voltage divider with $R_1 = 1~{\rm k\Omega}$ and $R_2 = 10~{\rm k\Omega}$. Measure the output voltage on $R_2$. Now put a “load resistor” $R_L\sim 8~{\rm k\Omega}$ in parallel to $R_2$, and measure the output voltage. These circuits are shown in [](#fig:transistors:vdivider).
 ```{figure} ../figures/ch7_transistors/npnbjtdivider.svg
 :label: fig:transistors:vdivider
-:width: 75%
+:width: 65%
 :align: center
 :alt: (a) A typical voltage divider circuit. (b) A voltage divider circuit with a load in parallel to a comparably-sized resistor.
 (a) A typical voltage divider circuit. (b) A voltage divider circuit with a load in parallel to a comparably-sized resistor.
@@ -150,7 +150,7 @@ An npn bjt transistor circuit designed to buffer a low impedance load.
 This circuit produces a nearly constant current through a load resistor connected to the collector. The collector current $I_C$ is controlled by the base current in this circuit. Measure the current as you vary the load resistance over the range $0 \le R_L \le 2.5~{\rm k\Omega}$. Use a variable resistor for $R_L$.
 ```{figure} ../figures/ch7_transistors/npnbjtconstcurrent.svg
 :label: fig:transistors:constantcurrent
-:width: 50%
+:width: 75%
 :align: center
 :alt: An npn bjt transistor circuit designed to provide constant current to a load.
 An npn bjt transistor circuit designed to provide constant current to a load.
@@ -162,7 +162,7 @@ Build the following transistor amplifier; don’t worry too much about the actua
 ($C\ge 1~{\rm \mu F}$). Measure the gain as a function of frequency with a sine-wave. Make sure the amplitude to the input signal is small enough that the output isn’t clipped due to the circuit’s high gain! Also observe the output when driven by a triangle-wave. Note the frequency when the output triangle is distorted.
 ```{figure} ../figures/ch7_transistors/npnbjtamplifier.svg
 :label: fig:transistors:amplifier
-:width: 80%
+:width: 70%
 :align: center
 :alt: An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
 An npn bjt transistor circuit designed to amplify and input (a) with and (b) without feedback.
