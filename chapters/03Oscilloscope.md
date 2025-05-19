@@ -34,7 +34,7 @@ Part 1 of this lab is to measure the output impedance of the FeelTech signal gen
 Part 2 of this lab is to measure the integrity of the signal generator. We will do this by looking at the accuracy of the frequency and the rise time of a square wave.
 
 
-# Procedure
+# Experiment
 Explore the signal generator.
 ```{exercise}
 :label: exercise:oscopes:deliverable1

@@ -36,7 +36,7 @@ Part 2 of this lab is to measure and compare to a theoretical model the gain, ph
 A RLC oscillator circuit.
 ```
 
-# Procedure
+# Experiment
 
 ## Part 1 - Theory of Multistage RC Circuits
 We saw in the RC lab that the impedance of an RC circuit is

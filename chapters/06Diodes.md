@@ -29,7 +29,7 @@ A voltage divider circuit built with a diode and resistor connected to a DC powe
 
 Part 2 of this lab is to choose an application experiment with diodes.
 
-# Part 1 - Theory of P-N Junctions
+# Theory of PN-Junctions
 For a semiconductor like silicon, the electrons fill the valence energy levels (band). There is a small energy gap $(E_g\approx1~{\rm eV})$  to the next levels, the conduction band. A 1D diagram of energy is shown in [](#fig:diodes:bandgaps).
 ```{figure} ../figures/ch6_diodes/bandgaps.svg
 :label: fig:diodes:bandgaps
@@ -98,7 +98,9 @@ Where $I_s$ is the the magnitude of the current that flows for negative $V_d$ in
 Equation {eq}`eq:diodes:idealdiode modeling zener diode data.
 ```
 
-# Part 1 - Measurements
+# Experiment
+
+## Part 1 - Diode IV Curves
 
 This is a DC measurement. Set up the circuit as shown in [](#fig:diodes:diodeVdivider) for forward bias with a zener diode. Biasing is shown in [](#fig:diodes:pnjunctionbias). A voltage divider circuit built with a diode and resistor connected to a DC power source. (a) reverse-biased, (b) unbiased, and (c) forward-biased diode.
 
@@ -166,9 +168,9 @@ plt.savefig('diodeIVfit.svg')
 plt.show()
 ```
 
-# Part 2 - Other diode measurements (Choose 1)
+## Part 2 - Other diode measurements (Choose 1)
 
-## LED
+### LED
 
 You can measure LEDs. The color is an indication of the band gap, and using
 ```{math}
@@ -188,7 +190,7 @@ LEDs can be obtained with gap energies across the infrared, visible, and ultravi
 After fitting the Ohmic region of at least two LED colors, determine the wavelength of the light emitted from the x-axis crossing (turn-on voltage) and {eq}`eq:diodes:ledgap`. Compare your experimental wavelength to the portion of the visible spectrum for that LED color.
 ```
 
-## Rectifier Circuits
+### Rectifier Circuits
 Rectifier circuits can be constructed with diodes. These circuits convert AC signals to *nearly* DC. A half wave rectifier converts only the positive portion of an AC input signal. The circuit diagram for a half wave rectifier is the same as the voltage divider in [](#fig:diodes:diodeVdivider) except with an AC input voltage. A full wave rectifier converts both the positive and negative portions of an AC input signal. RC filtering can be added to smooth the diode rectification. In the case of RC filtering, one wants a low-pass filter. This filtering is related to the value of RC. [](#fig:diodes:rectifiers) shows a filtered full wave rectifier circuit. Build half, full, and filtered full wave rectifiers using the following values and components and measure them with an oscilloscope.
 :::{table} Rectifier circuit values and components
 :label: table:diodes:rectifiers

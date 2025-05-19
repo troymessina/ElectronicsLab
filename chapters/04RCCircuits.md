@@ -28,7 +28,7 @@ A (a) sine wave, (b) square wave, and (c) triangle wave form. The rms voltages a
 
 Part 2 of this lab is to measure the response or output of series resistor and capacitor (RC) circuits when given DC or AC input.
 
-# Procedure
+# Experiment
 ## Part 1 Theory of RMS Voltage
 Periodic voltages without DC voltage contribution such as sine-, square- or triangular- wave voltages, see Fig. 2, are characterized by the period T, frequency f = 1/T, amplitude V, peak-to-peak value Vpp = 2V, and rms value Vrms. The rms value corresponds to the value of a DC voltage which – at a given electrical resistance – leads to the same dissipated power as the AC voltage. The rms voltage can be calculated by averaging the square of the AC voltage, V(t):
 ```{math}
