@@ -58,7 +58,7 @@ Explain the following.
 * How do you select whether you are adjusting CH1 or CH2?
 ```
 Set up a signal generator and oscilloscope as shown in [](#fig:oscopes:expsetup). The equivalent circuit you are measuring is shown in [](#fig:ch3_oscopes/equivcircuit). The output of the signal generator CH1 should be a 2 Volt peak-to-peak sine wave with a frequency of 1000 Hz.  Connect a BNC to alligator clip cable to CH1 on the signal generator. Connect a BNC to alligator clip to the oscilloscope channel 1 (yellow). Use the alligator clips to connect a 100Ω load resistor.
-```{figure} ../figures/ch3_oscopes/expsetup.jpg
+```{figure} ../figures/ch3_oscopes/expsetup.svg
 :label: fig:oscopes:expsetup
 :width: 100%
 :align: center
