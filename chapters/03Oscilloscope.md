@@ -29,13 +29,19 @@ The FeelTech FS3200 signal generator.
 :alt: The Tektronix 1102BEDU oscilloscope.
 The Tektronix 1102BEDU oscilloscope.
 ```
-Part 1 of this lab is to measure the output impedance of the FeelTech signal generator. The output impedance is a measure of the source's propensity to drop in voltage when the load draws current, the source being the portion of the circuit that transmits and the load being the portion of the circuit that consumes. Because of this the output impedance is sometimes referred to as the source impedance or internal impedance.
 
-Part 2 of this lab is to measure the integrity of the signal generator. We will do this by looking at the accuracy of the frequency and the rise time of a square wave.
+Part 1 of this lab is to familiarize yourself with the signal generator and the oscilloscope.
+
+Part 2 of this lab is to measure the output impedance of the FeelTech signal generator. The output impedance is a measure of the source's propensity to drop in voltage when the load draws current, the source being the portion of the circuit that transmits and the load being the portion of the circuit that consumes. Because of this the output impedance is sometimes referred to as the source impedance or internal impedance.
+
+Part 3 of this lab is to measure the integrity of the signal generator. We will do this by looking at the accuracy of the frequency and the rise time of a square wave.
 
 
 # Experiment
-Explore the signal generator.
+
+## Part 1 - Familiarizing with the Equipment
+
+### Explore the signal generator.
 ```{exercise}
 :label: exercise:oscopes:deliverable1
 Explain the following.
@@ -51,8 +57,6 @@ Explain the following.
 * How do you turn on/off CH1 and CH2?
 * How do you select whether you are adjusting CH1 or CH2?
 ```
-
-## Part 1 - Signal Generator Output Impedance
 Set up a signal generator and oscilloscope as shown in [](#fig:oscopes:expsetup). The equivalent circuit you are measuring is shown in [](#fig:ch3_oscopes/equivcircuit). The output of the signal generator CH1 should be a 2 Volt peak-to-peak sine wave with a frequency of 1000 Hz.  Connect a BNC to alligator clip cable to CH1 on the signal generator. Connect a BNC to alligator clip to the oscilloscope channel 1 (yellow). Use the alligator clips to connect a 100Ω load resistor.
 ```{figure} ../figures/ch3_oscopes/expsetup.jpg
 :label: fig:oscopes:expsetup
@@ -68,7 +72,9 @@ The setup of the experiment. A signal generator connected to a load. The oscillo
 :alt: Equivalent circuit showing a sine wave going through two resistors in series. The oscilloscope measures the voltage across the load, indicated by the circles.
 Equivalent circuit showing a sine wave going through two resistors in series. The oscilloscope measures the voltage across the load, indicated by the circles.
 ```
+
 ### Explore the oscilloscope
+
 When you have your circuit connected, try to find the signal on the oscilloscope.
 ```{exercise}
 :label: exercise:oscopes:deliverable2
@@ -81,8 +87,19 @@ Explain how to
 * Measure the signal frequency.
 ```
 
+## Part 2 - Signal Generator Output Impedance
+
 ### Measurements
-Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V_L$.
+Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V_L$. For such a large range, it is useful to use a logarithmic scaling like [](#table:oscopes:logRL). [](#fig:oscopes:expsetup) and [](#fig:ch3_oscopes/equivcircuit) show the circuit you will be analyzing. The output impedance (resistance) of the signal generator is fixed by the signal generator. All instruments have such an impedance, and it may be important to know its value depending on the electronics work you are doing. It is difficult to characterize a single resistance in a circuit, and therefore, we will rely on the voltage divider circuit discussed in [](#sec:resistors:vdivider).
+```{table}
+:label: tab:oscopes:logRL
+|  decade |    $R_L$ values      |
+|--------:|---------------------:|
+|    10   |    10, 20, 50        |
+|   100   |   100, 200, 500      |
+|   1000  |  1000, 2000, 5000    |
+| 10 000  |10 000, 20 000, 50 000|
+|100 000  |100 000               |
 
 (sec:oscopes:sigintegrity)=
 ## Part 2 - Signal Integrity
