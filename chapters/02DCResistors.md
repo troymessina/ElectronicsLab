@@ -220,7 +220,7 @@ Using your results, show that $V=IR$ for each resistor within the uncertainty of
 ```
 
 (sec:resistors:vdivider)=
-## Part 3 - Application: Voltage Divider to Measure Temperature
+## Part 4 - Application: Voltage Divider to Measure Temperature
 
 A voltage divider is a series resistor circuit. As you saw in [%s](#sec:resistors:part2), the voltage across resistors in series varies according to the values of resistance, i.e., a large resistor will have a proportionally larger voltage drop than a smaller resistor in a series connection. A voltage divider is shown in [](#fig:resistors:vdivider) and is the same circuit as [](#fig:resistors:seriesR).
 ### Voltage Divider Overview
