@@ -167,7 +167,7 @@ and capacitor
 ```
 
 ## Part 2b - Measurements
-Use the oscilloscope to verify these relationships by setting $V_o=5$ V for sine wave input and measuring $V_R$ and $V_C$ using $C = 0.1 \mu F$ and $R = 2 k\Omega$. Use your oscilloscope to measure $V_R$ and $V_C$ as a function of $\omega$. You will need at least 10 points over the range $0\le\omega\le 30000$. Plot on the same graph $V_R$ vs. $\omeg$ and $V_C$  vs. $\omega$. They should look like [](#fig:rc:rcfilter). Plot {eq}`eq:rc:VR` and {eq}`eq:rc:VC` on top of your data and comment on the accuracy of the theoretical model. Code to assist you is shown below.
+Use the oscilloscope to verify these relationships by setting $V_o=5$ V for sine wave input and measuring $V_R$ and $V_C$ using $C = 0.1 \mu F$ and $R = 2 k\Omega$. Use your oscilloscope to measure $V_R$ and $V_C$ as a function of $\omega$. You will need at least 10 points over the range $0\le\omega\le 30000$. Plot on the same graph $V_R$ vs. $\omega$ and $V_C$  vs. $\omega$. They should look like [](#fig:rc:rcfilter). Plot equation {eq}`eq:rc:VR` and {eq}`eq:rc:VC` on top of your data and comment on the accuracy of the theoretical model. Code to assist you is shown below.
 ```{figure} ../figures/ch4_rc/RCfilter.svg
 :label: fig:rc:rcfilter
 :width: 100%
