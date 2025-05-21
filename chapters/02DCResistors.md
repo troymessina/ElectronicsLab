@@ -133,7 +133,7 @@ A visual for how to measure voltage and current.
 
 ## Part 1 – Single Resistor
 
-Set up the circuit shown above with a single resistor in the simulator and on the lab bench. From the colored bands, determine the resistance and set the same resistance in the simulator. On the lab bench, you will use a power supply instead of a battery so that you can adjust the voltage. Apply the voltages as shown in the [](#tab:resistors:singleR) and measure the current flows for each applied voltage.
+Set up the circuit shown above with a single resistor in the simulator and on the lab bench. From the colored bands, determine the resistance and set the same resistance in the simulator. On the lab bench, you will use a power supply instead of a battery so that you can adjust the voltage. Apply the voltages as shown in [](#tab:resistors:singleR) and measure the current flows for each applied voltage.
 ```{table} Applied voltages and measured currents.
 :label: tab:resistors:singleR
 :align: center
@@ -177,7 +177,7 @@ plt.xlabel('Current (A)')
 plt.ylabel('Voltage (V)')
 plt.show()
 ```
-(sec:resistors:part2)=
+(sec:resistors:part2series)=
 ## Part 2 – Series Resistors
 Set up a "series" circuit with two resistors in series as shown in [](#fig:resistors:seriesR). From the colored bands, determine the resistances and set those same resistances and voltages in the PhET simulator.  Apply the input voltages as shown in [](#tab:resistors:singleR) and measure the currents at the locations indicated in [](#fig:resistors:seriesRImeas). Measure the voltage across each resistor (two voltage measurements).
 ```{figure} ../figures/ch2_resistors/seriesR.svg
@@ -222,7 +222,7 @@ Using your results, show that $V=IR$ for each resistor within the uncertainty of
 (sec:resistors:vdivider)=
 ## Part 4 - Application: Voltage Divider to Measure Temperature
 
-A voltage divider is a series resistor circuit. As you saw in [%s](#sec:resistors:part2), the voltage across resistors in series varies according to the values of resistance, i.e., a large resistor will have a proportionally larger voltage drop than a smaller resistor in a series connection. A voltage divider is shown in [](#fig:resistors:vdivider) and is the same circuit as [](#fig:resistors:seriesR).
+A voltage divider is a series resistor circuit. As you saw in [](#sec:resistors:part2series), the voltage across resistors in series varies according to the values of resistance, i.e., a large resistor will have a proportionally larger voltage drop than a smaller resistor in a series connection. A voltage divider is shown in [](#fig:resistors:vdivider) and is the same circuit as [](#fig:resistors:seriesR).
 ### Voltage Divider Overview
 
 A voltage divider has two essential parts: the circuit and the equation.
@@ -254,7 +254,7 @@ Ohm's Law of equation {eq}`eq:resistors:ohms` for a series circuit is a constant
 :label: eq:resistors:vdivider
 R_T = \left(\frac{V_o}{V_1}-1\right)R_1
 ```
-The last equation in {eq}`eq:resistors:vdivider` shows that the unknown resistance can be calculated by measuring the voltage of the known resistor.
+Equation {eq}`eq:resistors:vdivider` shows that the unknown resistance can be calculated by measuring the voltage of the known resistor.
 
 ### The experiment
 
