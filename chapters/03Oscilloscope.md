@@ -57,7 +57,7 @@ Explain the following.
 * How do you turn on/off CH1 and CH2?
 * How do you select whether you are adjusting CH1 or CH2?
 ```
-Set up a signal generator and oscilloscope as shown in [](#fig:oscopes:expsetup). The equivalent circuit you are measuring is shown in [](#fig:ch3_oscopes/equivcircuit). The output of the signal generator CH1 should be a 2 Volt peak-to-peak sine wave with a frequency of 1000 Hz.  Connect a BNC to alligator clip cable to CH1 on the signal generator. Connect a BNC to alligator clip to the oscilloscope channel 1 (yellow). Use the alligator clips to connect a 100Ω load resistor.
+Set up a signal generator and oscilloscope as shown in [](#fig:oscopes:expsetup). The equivalent circuit you are measuring is shown in [](#fig:oscopes/equivcircuit). The output of the signal generator CH1 should be a 2 Volt peak-to-peak sine wave with a frequency of 1000 Hz.  Connect a BNC to alligator clip cable to CH1 on the signal generator (yellow). Connect a BNC to alligator clip to the oscilloscope channel 1 (yellow). Use the alligator clips to connect a 100Ω load resistor.
 ```{figure} ../figures/ch3_oscopes/expsetup.svg
 :label: fig:oscopes:expsetup
 :width: 100%
@@ -90,9 +90,9 @@ Explain how to
 ## Part 2 - Signal Generator Output Impedance
 
 ### Measurements
-Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V_L$. For such a large range, it is useful to use a logarithmic scaling like [](#table:oscopes:logRL). [](#fig:oscopes:expsetup) and [](#fig:ch3_oscopes/equivcircuit) show the circuit you will be analyzing. The output impedance (resistance) of the signal generator is fixed by the signal generator. All instruments have such an impedance, and it may be important to know its value depending on the electronics work you are doing. It is difficult to characterize a single resistance in a circuit, and therefore, we will rely on the voltage divider circuit discussed in [](#sec:resistors:vdivider).
+Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V_L$. For such a large range, it is useful to use a logarithmic scaling like [](#table:oscopes:logRL). [](#fig:oscopes:expsetup) and [](#fig:oscopes/equivcircuit) show the circuit you will be analyzing. The output impedance (resistance) of the signal generator is fixed by the signal generator. All instruments have such an impedance, and it may be important to know its value depending on the electronics work you are doing. It is difficult to characterize a single resistance in a circuit, and therefore, we will rely on the voltage divider circuit discussed in [](#sec:resistors:vdivider).
 ```{table}
-:label: tab:oscopes:logRL
+:label: table:oscopes:logRL
 |  decade |    $R_L$ values      |
 |--------:|---------------------:|
 |    10   |    10, 20, 50        |
@@ -100,6 +100,7 @@ Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V
 |   1000  |  1000, 2000, 5000    |
 | 10 000  |10 000, 20 000, 50 000|
 |100 000  |100 000               |
+Resistor values separated logarithmically over five decades.
 ```
 
 ### Theory
