@@ -65,7 +65,7 @@ Set up a signal generator and oscilloscope as shown in [](#fig:oscopes:expsetup)
 :alt: The setup of the experiment. A signal generator connected to a load. The oscilloscope measures the voltage signal across the load. The load signal would be equal to the signal generator signal if there were no output impedance.
 The setup of the experiment. A signal generator connected to a load. The oscilloscope measures the voltage signal across the load. The load signal would be equal to the signal generator signal if there were no output impedance.
 ```
-```{figure} ../figures/ch3_oscopes/equivcircuit.jpg
+```{figure} ../figures/ch3_oscopes/equivcircuit.svg
 :label: fig:oscopes:equivcircuit
 :width: 60%
 :align: center
