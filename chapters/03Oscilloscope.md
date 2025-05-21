@@ -93,6 +93,8 @@ Explain how to
 Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V_L$. For such a large range, it is useful to use a logarithmic scaling like [](#table:oscopes:logRL). [](#fig:oscopes:expsetup) and [](#fig:oscopes/equivcircuit) show the circuit you will be analyzing. The output impedance (resistance) of the signal generator is fixed by the signal generator. All instruments have such an impedance, and it may be important to know its value depending on the electronics work you are doing. It is difficult to characterize a single resistance in a circuit, and therefore, we will rely on the voltage divider circuit discussed in [](#sec:resistors:vdivider).
 ```{table}
 :label: table:oscopes:logRL
+:align: center
+Resistor values separated logarithmically over five decades.
 |  decade |    $R_L$ values      |
 |--------:|---------------------:|
 |    10   |    10, 20, 50        |
@@ -100,7 +102,6 @@ Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V
 |   1000  |  1000, 2000, 5000    |
 | 10 000  |10 000, 20 000, 50 000|
 |100 000  |100 000               |
-Resistor values separated logarithmically over five decades.
 ```
 
 ### Theory
