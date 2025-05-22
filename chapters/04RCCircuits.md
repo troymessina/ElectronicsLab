@@ -31,7 +31,7 @@ Part 2 of this lab is to measure the response or output of series resistor and c
 # Experiment
 ## Part 1 Theory of RMS Voltage
 
-Periodic voltages without DC voltage contribution such as sine-, square- or triangular- wave voltages, see [](#fig:rc:waves), are characterized by the period $T$, frequency $f = 1/T$, amplitude $V$, peak-to-peak value $V_{pp} = 2~{\rm V}$, and rms value $V_{rms}. The rms value corresponds to the value of a DC voltage which – at a given electrical resistance – leads to the same dissipated power as the AC voltage. The rms voltage can be calculated by averaging the square of the AC voltage, $V(t)$:
+Periodic voltages without DC voltage contribution such as sine-, square- or triangular- wave voltages, see [](#fig:rc:waves), are characterized by the period $T$, frequency $f = 1/T$, amplitude $V$, peak-to-peak value $V_{pp} = 2~{\rm V}$, and rms value $V_{rms}$. The rms value corresponds to the value of a DC voltage which – at a given electrical resistance – leads to the same dissipated power as the AC voltage. The rms voltage can be calculated by averaging the square of the AC voltage, $V(t)$:
 ```{math}
 :label: eq:rc:rms
 V_{rms} = \sqrt{\langle V^2\rangle}=\sqrt{\frac{1}{T}\int_0^T \left(V(t)\right)^2 dt}
