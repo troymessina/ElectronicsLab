@@ -31,7 +31,7 @@ Part 2 of this lab is to measure the response or output of series resistor and c
 # Experiment
 ## Part 1 Theory of RMS Voltage
 
-Periodic voltages without DC voltage contribution such as sine-, square- or triangular- wave voltages, see [](#fig:), are characterized by the period $T$, frequency $f = 1/T$, amplitude $V$, peak-to-peak value $V_{pp} = 2~{\rm V}$, and rms value $V_{rms}. The rms value corresponds to the value of a DC voltage which – at a given electrical resistance – leads to the same dissipated power as the AC voltage. The rms voltage can be calculated by averaging the square of the AC voltage, $V(t)$:
+Periodic voltages without DC voltage contribution such as sine-, square- or triangular- wave voltages, see [](#fig:rc:waves), are characterized by the period $T$, frequency $f = 1/T$, amplitude $V$, peak-to-peak value $V_{pp} = 2~{\rm V}$, and rms value $V_{rms}. The rms value corresponds to the value of a DC voltage which – at a given electrical resistance – leads to the same dissipated power as the AC voltage. The rms voltage can be calculated by averaging the square of the AC voltage, $V(t)$:
 ```{math}
 :label: eq:rc:rms
 V_{rms} = \sqrt{\langle V^2\rangle}=\sqrt{\frac{1}{T}\int_0^T \left(V(t)\right)^2 dt}
@@ -105,7 +105,7 @@ A close-up image of the charging and discharging capacitor circuit with a series
 
 ```{exercise}
 * Explain your process for finding $\tau=RC$ and its uncertainty.
-* What are your oscilloscope settings. Explain how your oscillosope settings make sense.
+* What are your oscilloscope settings? Explain how your oscillosope settings make sense.
 ```
 ## Part 2b - Theory of AC Impedances
 A single capacitor circuit with a sinusoidal input voltage will have a time-dependent voltage across the capacitor that is ideally
@@ -121,7 +121,7 @@ indicating a phase shift $\theta = \pi/2$ rad between the voltage and current on
 X_C=\frac{V_o}{I_{max}}=\frac{1}{\omega C}
 ```
 
-Capacitive reactance is a resistance to voltage changes rather than resistance to current changes as observed in a resistor. Because it is a type of resistance, it can be added to resistor resistance as a **total impedance**, $Z$, of an RC circuit. The equation above is only a relationship for the maximum values of voltage and current due to the phase difference between the time-dependent values. Using the idea that the two impedance values are 90$^\circ}$ out of phase means they can be treated like orthogonal vectors (phasors) - see [](#fig:rc:phasor). We can compute the total impedance using something analogous to the Pythagorean Theorem.
+Capacitive reactance is a resistance to voltage changes rather than resistance to current changes as observed in a resistor. Because it is a type of resistance, it can be added to resistor resistance as a **total impedance**, $Z$, of an RC circuit. The equation above is only a relationship for the maximum values of voltage and current due to the phase difference between the time-dependent values. Using the idea that the two impedance values are 90$^{\circ}$ out of phase means they can be treated like orthogonal vectors (phasors) - see [](#fig:rc:phasor). We can compute the total impedance using something analogous to the Pythagorean Theorem.
 
 ```{figure} ../figures/ch4_rc/ImpedancePhase.svg
 :label: fig:rc:phasor
@@ -131,7 +131,7 @@ Capacitive reactance is a resistance to voltage changes rather than resistance t
 A diagram of impedance phasors.
 ```
 
-The voltage is a sum of the voltages on the resistor and capacitor (circuit loop rule 1). In a simple resistor circuit the voltage and current would follow one another as $V_o \cos(t)$. As noted above the voltage and current for a capacitor are 90$^\circ}$ out of phase. 
+The voltage is a sum of the voltages on the resistor and capacitor (circuit loop rule 1). In a simple resistor circuit the voltage and current would follow one another as $V_o \cos(t)$. As noted above the voltage and current for a capacitor are 90$^{\circ}$ out of phase. 
 ```{math}
 V(t)=V_o\left(\cos(\omega t) + i \sin(\omega t)\right) = V_o e^{-i\omega t}
 ```
@@ -143,7 +143,7 @@ Z^2_{total}= X^2_R + X^2_C
 The magnitude of each impedance determines the phase angle between input voltage and the voltage across the resistor in the circuit. The current in the circuit can be measured by the voltage drop in the resistor because there is no phase added by the resistor. Using [](#fig:rc:phasor) one can find a relationship between the impedances
 
 
-From this, we can define a crossover frequency when ω = 1/RC, θ = 45o. This is where the resistor voltage equals the capacitor voltage (see Fig. 6). The phase will be between 0 and 90o depending on ω, R, and C, and you will see something like Fig. 5 on your oscilloscope.
+From this, we can define a crossover frequency when $\omega = 1/RC, \theta = 45$^{\circ}$. This is where the resistor voltage equals the capacitor voltage (see [](#fig:rc:rcfilter)). The phase will be between 0 and 90$^{\circ}$ depending on $\omega, R,$ and $C$, and you will see something like [](#fig:rc:phaseshift) on your oscilloscope.
 ```{figure} ../figures/ch4_rc/RCPhaseShift.svg
 :label: fig:rc:phaseshift
 :width: 80%
