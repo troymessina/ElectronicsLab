@@ -143,7 +143,7 @@ Z^2_{total}= X^2_R + X^2_C
 The magnitude of each impedance determines the phase angle between input voltage and the voltage across the resistor in the circuit. The current in the circuit can be measured by the voltage drop in the resistor because there is no phase added by the resistor. Using [](#fig:rc:phasor) one can find a relationship between the impedances
 
 
-From this, we can define a crossover frequency when $\omega = 1/RC, \theta = 45$^{\circ}$. This is where the resistor voltage equals the capacitor voltage (see [](#fig:rc:rcfilter)). The phase will be between 0 and 90$^{\circ}$ depending on $\omega, R,$ and $C$, and you will see something like [](#fig:rc:phaseshift) on your oscilloscope.
+From this, we can define a crossover frequency when $\omega = 1/RC, \theta = 45^{\circ}$. This is where the resistor voltage equals the capacitor voltage (see [](#fig:rc:rcfilter)). The phase will be between 0 and 90$^{\circ}$ depending on $\omega, R,$ and $C$, and you will see something like [](#fig:rc:phaseshift) on your oscilloscope.
 ```{figure} ../figures/ch4_rc/RCPhaseShift.svg
 :label: fig:rc:phaseshift
 :width: 80%
