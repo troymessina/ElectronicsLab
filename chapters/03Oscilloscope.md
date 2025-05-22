@@ -90,7 +90,11 @@ Explain how to
 ## Part 2 - Signal Generator Output Impedance
 
 ### Measurements
-Use at least 10 different load resistors between 10 and 100 000 Ω to measure $V_L$. For such a large range, it is useful to use a logarithmic scaling like [](#table:oscopes:logRL). [](#fig:oscopes:expsetup) and [](#fig:oscopes/equivcircuit) show the circuit you will be analyzing. The output impedance (resistance) of the signal generator is fixed by the signal generator. All instruments have such an impedance, and it may be important to know its value depending on the electronics work you are doing. It is difficult to characterize a single resistance in a circuit, and therefore, we will rely on the voltage divider circuit discussed in [](#sec:resistors:vdivider).
+Use at least 10 different load resistors between 10 and 100 000 $\Omega$ to measure $V_L$. For such a large range, it is useful to use a logarithmic scaling such as the load resistor values in [](#table:oscopes:logRL). This logarithmic scaling uses three values per power of ten, or per decade, that are nearly evenly spaced on a log scale. 
+```{exercise}
+Show that the natural logs of the $R_L$ values in [](#tab:oscopes:logRL) are approximately evenly spaced points.
+```
+[](#fig:oscopes:expsetup) and [](#fig:oscopes/equivcircuit) show the circuit you will be analyzing. The output impedance (resistance) of the signal generator is fixed by the signal generator. All instruments have such an impedance, and it may be important to know its value depending on the electronics work you are doing. It is difficult to characterize a single resistance in a circuit, and therefore, we will rely on the voltage divider circuit discussed in [](#sec:resistors:vdivider).
 ```{table}
 :label: table:oscopes:logRL
 :align: center

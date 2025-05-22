@@ -114,6 +114,7 @@ To measure the current through an LED, you'd:
 
 ---
 ```{figure} ../figures/ch2_resistors/volt_current_measure.jpg
+:label: fig:resistors:elecmeasure
 :width: 80%
 :align: center
 :alt: A visual for how to measure voltage and current.
