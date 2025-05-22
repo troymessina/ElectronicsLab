@@ -155,7 +155,7 @@ plt.show()
 
 ## Part 2 - Theory of RLC Circuits
 
-Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See [](#fig:rlc:inductor.svg).
+Inductors are a  circuit component you likely have not encountered. It is essentially a coil of wire with a  magnetic core to enhance its strength. See [](#fig:rlc:inductor).
 
 ```{figure} ../figures/ch5_rlc/inductors.svg
 :label: fig:rlc:inductor
@@ -259,8 +259,8 @@ and therefore, the current is simply voltage divided by impedance, very similar 
 :label: fig:rlc:rlccurrent
 :width: 100%
 :align: center
-:alt: Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:phaseterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
-Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:phaseterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
+:alt: Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:rlctwoterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
+Plot of the current flowing through the RLC circuit as a function of input frequency. Parameters are defined in [](#fig:rlc:rlctwoterms) and $V_o = 10$ V. A broad resonance is observed from about $10^4-10^6$ rad/s.
 ```
 All driven oscillators will display resonance when driven at the resonant frequency. The resonant frequency for an RLC circuit is 
 ```{math}
@@ -283,8 +283,8 @@ Q=\frac{\omega_o L}{R}=\frac{\sqrt{L}}{R\sqrt{C}}=\frac{\sqrt{0.0001}}{1000\sqrt
 :label: fig:rlc:rlccurrentcompare
 :width: 100%
 :align: center
-:alt: Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:phaseterms) and $V_o= 10$ V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
-Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:phaseterms) and $V_o= 10$ V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
+:alt: Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:rlctwoterms) and $V_o= 10$ V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
+Plot of the current flowing through the RLC circuit as a function of input frequency Parameters are defined in [](#fig:rlc:rlctwoterms) and $V_o= 10$ V. The resistance is changed for comparison of quality factor from 1000 Ω to 10 Ω.
 ```
 
 A graphical way to think about the quality factor is the frequency of the resonance divided by the width of the resonance.
