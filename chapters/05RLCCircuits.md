@@ -320,10 +320,6 @@ A plot of the damped oscillating output signal.
 ```{exercise}
 Show the instructor your damped oscillations on the oscilloscope.
 ```
-```{code-cell} Python
-#code for exercise 5
-```
-
 
 ```{exercise}
 **Challenge:**

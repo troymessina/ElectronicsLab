@@ -3,17 +3,20 @@ version: 1
 project:
   toc:
     - file: ./chapters/00preface.md
-    - file: ./chapters/01Introduction.md
-    - file: ./chapters/02DCResistors.md
-    - file: ./chapters/03Oscilloscope.md
-    - file: ./chapters/04RCCircuits.md
-    - file: ./chapters/05RLCCircuits.md
-    - file: ./chapters/06Diodes.md
-    - file: ./chapters/07Transistors.md
-    - file: ./chapters/08OpAmps.md
-    - file: ./chapters/09Digital.md
-    #FETs
-    #Op-amps
+    - title: Experiments
+      children:
+        - file: ./chapters/01Introduction.md
+        - file: ./chapters/02DCResistors.md
+        - file: ./chapters/03Oscilloscope.md
+        - file: ./chapters/04RCCircuits.md
+        - file: ./chapters/05RLCCircuits.md
+        - file: ./chapters/06Diodes.md
+        - file: ./chapters/07Transistors.md
+        - file: ./chapters/08OpAmps.md
+        - file: ./chapters/09Digital.md
+    - title: Jupyter Notebook Examples
+      children:
+        - file: ./appendices/Ch2_Resistors.ipynb
   id: 
   title: Electronics Lab
   github: https://github.com/troymessina/ElectronicsLab
