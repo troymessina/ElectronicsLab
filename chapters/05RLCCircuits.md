@@ -291,7 +291,7 @@ A graphical way to think about the quality factor is the frequency of the resona
 ```{math}
 \boxed{Q=\frac{\omega_o}{\Delta\omega}}
 ```
-An example of estimating this from a graph would be to observe that the center resonance of the $R=1000~\Omega$ circuit is at $\omega_o=10^5~{\rm rad/s}$. The width of the resonance, which is calculated at $I_{max}/2=0.707\times 10^{-5}~{\rm A}$. Therefore, $\Delta\omega=0.65\times 10^7-1.5\times 10^5 = 6.35\times 10^6~{\rm rad/s}$. See [](#fig:rlc:reswidth) where the width $\Delta\omega$ is shown by a horizontal arrow at the appropriate height on the graph.
+An example of estimating this from a graph would be to observe that the center resonance of the $R=1000~\Omega$ circuit is at $\omega_o=10^5~{\rm rad/s}$. The width of the resonance, which is calculated at $I_{max}/2=0.707\times 10^{-5}~{\rm A}$, is therefore, $\Delta\omega=0.65\times 10^7-1.5\times 10^5 = 6.35\times 10^6~{\rm rad/s}$. See [](#fig:rlc:reswidth) where the width $\Delta\omega$ is shown by a horizontal arrow at the appropriate height on the graph.
 ```{math}
 Q=\frac{\omega_o}{\Delta\omega}=\frac{10^5}{6.35\times 10^6}=0.016
 ```
