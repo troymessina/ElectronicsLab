@@ -17,6 +17,7 @@ project:
     - title: Jupyter Notebook Examples
       children:
         - file: ./appendices/Ch2_Resistors.ipynb
+        - file: ./appendices/Ch2_Oscilloscopes.ipynb
   id: 
   title: Electronics Lab
   github: https://github.com/troymessina/ElectronicsLab
