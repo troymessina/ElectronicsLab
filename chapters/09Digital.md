@@ -143,7 +143,7 @@ A circuit diagram of the 555-timer in bistable mode.
 * LED: Red 5mm LED or similar
 * Capacitor (C1): 10 nF
 
-The output is connected to control an LED, but could easily be modified to control a motor, a lamp, or anything else by connecting a transistor. See [](#sec:digital:highloads) Driving Higher Loads below for examples.
+The output is connected to control an LED, but could easily be modified to control a motor, a lamp, or anything else by connecting a transistor. See [](#sec:digital:highloads) for examples.
 
 (sec:digital:highloads)=
 # Part 4 - Driving Higher Loads
