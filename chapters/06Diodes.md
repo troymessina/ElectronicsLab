@@ -94,8 +94,8 @@ Where $I_s$ is the the magnitude of the current that flows for negative $V_d$ in
 :label: fig:diodes:idealdiode
 :width: 100%
 :align: center
-:alt: Equation {eq}`eq:diodes:idealdiode modeling zener diode data.
-Equation {eq}`eq:diodes:idealdiode modeling zener diode data.
+:alt: Equation {eq}`eq:diodes:idealdiode` modeling zener diode data.
+Equation {eq}`eq:diodes:idealdiode` modeling zener diode data.
 ```
 
 # Experiment

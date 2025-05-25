@@ -14,7 +14,7 @@ kernelspec:
 :::
 
 # Introduction
-In this lab, you will explore transistor circuits. A very brief theory is given below. Much more detail can be found in this [Wikipedia article](#https://en.wikipedia.org/wiki/Bipolar_junction_transistor#NPN). You will build circuits to observe the transistor as a switch and as an amplifier.
+In this lab, you will explore transistor circuits. A very brief theory is given below. Much more detail can be found in this [Wikipedia article](https://en.wikipedia.org/wiki/Bipolar_junction_transistor#NPN). You will build circuits to observe the transistor as a switch and as an amplifier.
 
 # Theory of Bipolar Junction Transistors
 
@@ -36,7 +36,7 @@ The circuit diagram symbol of pnp and npn type bipolar junction transistor (bjt)
 ```
 A bipolar junction transistor (bjt) is made up of three layers of semiconductor material, each with different electrical properties. These layers are called the emitter, base, and collector. In a pnp transistor, the order is p-type, n-type, then p-type. In an npn transistor, it’s n-type, p-type, then n-type. Each layer is connected to a terminal with the same name: emitter (E), base (B), and collector (C).
 
-The base is a very thin and lightly doped layer placed between the emitter and collector. The emitter sends charge carriers (like electrons or holes) into the base, and most of those carriers get collected by the collector. Because of how the transistor is designed—especially the fact that the collector surrounds the emitter—very few of the charge carriers escape. This makes the transistor very efficient at amplifying current, giving it a high current gain. A cross-sectional of an npn bjt is shown in [](#fig:transistors:npncrosssection).
+The base is a very thin and lightly doped layer placed between the emitter and collector. The emitter sends charge carriers (like electrons or holes) into the base, and most of those carriers get collected by the collector. Because of how the transistor is designed—especially the fact that the collector surrounds the emitter—very few of the charge carriers escape. This makes the transistor very efficient at amplifying current, giving it a high current gain. Transistor current gain, often represented by beta ($\beta$) or $h_{FE}$, is the ratio of the collector current ($I_C$) to the base current ($I_B$) in a bipolar junction transistor. A cross-sectional of an npn bjt is shown in [](#fig:transistors:npncrosssection).
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Cross-section.svg
 :label: fig:transistors:npncrosssection
 :width: 75%
@@ -62,7 +62,7 @@ In forward-active or active mode, the base–emitter junction is forward biased 
 
 [](#fig:transistors:npnbasicoperation) and [](#fig:transistors:npncircuit) show a circuit diagram of an npn transistor connected to two power sources. The applied voltage at the base causes the base-emitter pn-junction to become forward biased, allowing a flow of electrons from the emitter into the base (current from base to emitter). The reverse bias between the collector and base, the electric field existing between base and collector (caused by $V_{CE}$) will cause the majority of these electrons to cross the upper pn-junction into the collector to form the collector current $I_C$. The remainder of the electrons recombine with holes, the majority carriers in the base, making a current through the base connection to form the base current, $I_B$. As shown in [](#fig:transistors:npnbasicoperation) and [](#fig:transistors:npncircuit), the emitter current, $I_E$, is the total transistor current, which is the sum of the other terminal currents, (i.e. $I_E = I_B + I_C$).
 
-[](#fig:transistors:npnbasicoperation) and [](#fig:transistors:npncircuit) indicate the traditional current with the arrows. The flow of electrons would be in the opposite direction of these arrows because electrons carry negative electric charge. In active mode, the ratio of the collector current to the base current is called the DC current gain $\beta_F$. This gain is usually 100 or more, but robust circuit designs do not depend on the exact value (for example see [Chapter 8](#chap:opamps). The value of this gain for DC signals is referred to as $h_{FE}$. When there are small changes in currents, the value of this gain is referred to as $h_{fe}$. In other words, under a steady state condition
+[](#fig:transistors:npnbasicoperation) and [](#fig:transistors:npncircuit) indicate the traditional current with the arrows. The flow of electrons would be in the opposite direction of these arrows because electrons carry negative electric charge. In active mode, the ratio of the collector current to the base current is called the DC current gain $\beta_F$. This gain is usually 100 or more, but robust circuit designs do not depend on the exact value (for example see [Chapter 8](#chap:opamps)). The value of this gain for DC signals is referred to as $h_{FE}$. When there are small changes in currents, the value of this gain is referred to as $h_{fe}$. In other words, under a steady state condition
 ```{math}
 h_{FE}  = \frac{I_C}{I_B}
 ```
@@ -75,10 +75,8 @@ The emitter current is related to $V_{BE}$ exponentially. At room temperature, a
 :label: fig:transistors:npnbasicoperation
 :width: 100%
 :align: center
-:alt: An npn bjt with forward biased b-e junction and reverse biased b-c junction.
-npn bjt with forward-biased B–E junction and reverse-biased B–C junction.
-An npn bjt with forward biased b-e junction and reverse biased b-c junction.
-npn bjt with forward-biased B–E junction and reverse-biased B–C junction. [^4]
+:alt: An npn bjt with forward biased B-R junction and reverse biased b-c junction.
+An npn bjt with forward-biased B–E junction and reverse-biased B–C junction. [^4]
 ```
 ```{figure} ../figures/ch7_transistors/NPN_BJT_Structure_n_circuit.svg
 :label: fig:transistors:npncircuit

@@ -85,7 +85,7 @@ You don’t need exact values for the resistors and capacitors. But if you use t
 :alt: A circuit diagram of the 555-timer in astable mode.
 A circuit diagram of the 555-timer in astable mode.
 ```
-Use the [555 Timer calculator](#https://www.build-electronic-circuits.com/circuit-calculator-conversion/555-timer-calculator/) to find the blinking frequency for other values. Try it out!
+Use the [555 Timer calculator](https://www.build-electronic-circuits.com/circuit-calculator-conversion/555-timer-calculator/) to find the blinking frequency for other values. Try it out!
 
 # Part 2 - Monostable Mode
 
@@ -145,7 +145,7 @@ A circuit diagram of the 555-timer in bistable mode.
 
 The output is connected to control an LED, but could easily be modified to control a motor, a lamp, or anything else by connecting a transistor. See []{#sec:digital:highloads) Driving Higher Loads below for examples.
 
-(sec:digital:higherloads)=
+(sec:digital:highloads)=
 # Part 4 - Driving Higher Loads
 
 If you want to control motors, LED strips, or other things that need more than 200 mA of current, you can connect a transistor to the output. If you want to use an npn transistor, you will need to connect a resistor between the output and the base to limit the base current. 1 kΩ will probably work fine as a starting point.
