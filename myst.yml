@@ -19,6 +19,7 @@ project:
         - file: ./appendices/Ch2_Resistors.ipynb
         - file: ./appendices/Ch3_Oscilloscopes.ipynb
         - file: ./appendices/Ch4_RC.ipynb
+        - file: ./appendices/Ch5_RLC.ipynb
   id: 
   title: Electronics Lab
   github: https://github.com/troymessina/ElectronicsLab
