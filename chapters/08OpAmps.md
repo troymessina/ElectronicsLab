@@ -34,9 +34,11 @@ Operational amplifiers, or op-amps, are versatile analog circuit building blocks
 ## Op-Amp Pinouts
 
 A typical op-amp has the following pin configuration.
-
+```{table} Numbering and function of pins on a DIP8 op amp.
+:label: table:opamps:pinout
+:align: center
 | Pin Number | Function |
-|---|---|
+|:---:|:---|
 | 1 | Offset Null (Optional) |
 | 2 | Inverting Input (-) |
 | 3 | Non-inverting Input (+) |
@@ -45,14 +47,15 @@ A typical op-amp has the following pin configuration.
 | 6 | Output |
 | 7 | Positive Power Supply (V+) |
 | 8 | Not connected |
+```
 
-A diagram of an op amp is shown in [](#fig:opamps:diagram). In [](#fig:opamps:diagram)(a), the DIP-8 packaging is shown including the pin numbers of the visible pins. In [](#fig:opamps:diagram)(b), the circuit symbol of an op amp is shown with the pin numbers identified. These three pins are the only pins relevant to the amplifier itself. The other pins are described in [](#sec:opamps:pinexplanation). In [](#fig:opamps:diagram)(c), the internal structure of the op amp is shown with all of the pin numbers and functions labeled.
+A diagram of an op amp is shown in [](#fig:opamps:diagram). In [](#fig:opamps:diagram)(a), the DIP8 packaging is shown including the pin numbers of the visible pins. In [](#fig:opamps:diagram)(b) the circuit symbol of an op amp is shown with the pin numbers identified. These three pins are the only pins relevant to the amplifier itself. The other pins are described in [](#sec:opamps:pinexplanation). In [](#fig:opamps:diagram)(c), the internal structure of the op amp is shown with all of the pin numbers and functions labeled.
 ```{figure} ../figures/ch8_opamps/OpAmpDiagram.svg
 :label: fig:opamps:diagram
 :width: 100%
 :align: center
-:alt: Diagram of an operational amplifier. (a) The DIP-8 packaging with some pin numbers identified. (b) The circuit symbol with pin numbers identified. (c) Schematic of the internal circuitry with pin numbers and functions identified.
-Diagram of an operational amplifier. (a) The DIP-8 packaging with some pin numbers identified. (b) The circuit symbol with pin numbers identified. (c) Schematic of the internal circuitry with pin numbers and functions identified.
+:alt: Diagram of an operational amplifier. (a) The DIP8 packaging with some pin numbers identified. (b) The circuit symbol with pin numbers identified. (c) Schematic of the internal circuitry with pin numbers and functions identified.
+Diagram of an operational amplifier. (a) The DIP8 packaging with some pin numbers identified. (b) The circuit symbol with pin numbers identified.[^1] (c) Schematic of the internal circuitry with pin numbers and functions identified.[^2]
 ```
 
 (sec:opamps:pinexplanation)=
@@ -96,3 +99,5 @@ These rules simplify the analysis of op-amp circuits with negative feedback:
 *   Op-amp circuits with negative feedback are analyzed using the "golden rules" that simplify calculations and predictions of circuit behavior.
 *   The virtual short concept is a powerful tool for analyzing circuits, enabling engineers to treat the input terminals as having the same voltage even though they are not physically connected.
 *   Negative feedback is crucial for controlling gain, improving stability, and achieving desired impedance characteristics in op-amp circuits.
+[^1]: By Inductiveload - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=8433629
+[^2]: By Inductiveload - Self-made, Inkscape, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3439390
