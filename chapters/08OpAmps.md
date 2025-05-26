@@ -107,13 +107,46 @@ usefulness and simplicity of using operational amplifiers.
 
 ## Inverting Amplifier
 
-```{figure} ../figures/opamps/invertingamplifier.svg
-:label: fig:digital:555bistable
+The circuit shown in [](#fig:opamps:invertingamp) is an inverting amplifier. The resistor $R_F$ provides negative feedback, which is the process of “feeding back” a fraction of the output signal back to the input. The feedback is negative because we must feed it back to the “inverting input” terminal of the op-amp. This feedback connection between the output and the inverting input terminal forces the differential input voltage towards zero due to the voltage rule of op-amps.
+```{figure} ../figures/ch8_opamps/invertingamplifier.svg
+:label: fig:opamps:invertingamp
 :width: 75%
 :align: center
-:alt: A circuit diagram of the 555-timer in bistable mode.
-A circuit diagram of the 555-timer in bistable mode.
+:alt: An inverting amplifier op-amp circuit.
+An inverting amplifier op-amp circuit.
 ```
+
+This is a closed loop amplifier circuit that produces gain referred to as closed-loop gain. A closed-loop inverting amplifier uses negative feedback to accurately control the overall gain of the amplifier, but at a cost in the reduction of the amplifiers gain.
+
+This negative feedback results in the inverting input terminal having a different signal on it than the actual input voltage as it will be the sum of the input voltage plus the negative feedback voltage giving it the label or term of a Summing Point. We must therefore separate the real input signal from the inverting input by using an input resistor, $R_{in}$.
+
+The positive, non-inverting input is connected to a common ground or zero voltage. The effect of this closed loop feedback circuit results in the voltage at the inverting input being equal to that at the non-inverting input producing a virtual ground summing point because it will be at the same potential as the grounded non-inverting input. The op-amp becomes a “differential amplifier”.
+
+Because of the op-amp rules, we can use an equivalent circuit shown in [](#fig:opamps:invertingampequiv) to analyze the expected measurements.
+```{figure} ../figures/ch8_opamps/invertingamplifierequiv.svg
+:label: fig:opamps:invertingampequiv
+:width: 75%
+:align: center
+:alt: An equivalent circuit diagram of the inverting amplifier.
+An equivalent circuit diagram of the inverting amplifier.
+```
+The current through the resistors must be constant and therefore is
+```{math}
+:label: eq:opamps:invampcurr
+I = \frac{V_{out}-V_{in}}{R_{in}+R_F}
+```
+We can also consider the current flowing through the individual resistors since we know $V_2=0$.
+```{math}
+I = \frac{V_2-V_{in}}{R_{in}}=\frac{V_{out}-V_2}{R_F}
+```
+Therefore,
+```{math}
+\frac{V_2-V_{in}}{R_{in}} &= \frac{V_{out}-V_2}{R_F}\\
+\frac{-V_{in}}{R_{in}} &= \frac{V_{out}}{R_F}\\
+\frac{V_{out}}{V_{in}} &= -\frac{R_F}{R_{in}}
+ ```
+
+Build the circuit in [](#fig:opamps:invertingamp) with resistors $R_{in}=1000~{\rm \Omega}$ and $R_F=1000~{\rm \Omega}$
 
 ### Application - Light Detection
 
