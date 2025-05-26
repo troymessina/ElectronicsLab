@@ -31,7 +31,7 @@
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1">
     <marker
@@ -182,7 +182,7 @@
     <g
        inkscape:label="OpAmp"
        id="g8"
-       transform="matrix(2,0,0,2,-72.868108,-190.31085)"
+       transform="matrix(2,0,0,-2,-72.868108,409.68915)"
        style="stroke:#b8afaf;stroke-opacity:1">
       <g
          inkscape:label="OpAmp"

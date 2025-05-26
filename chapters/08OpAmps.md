@@ -139,14 +139,16 @@ We can also consider the current flowing through the individual resistors since 
 ```{math}
 I = \frac{V_2-V_{in}}{R_{in}}=\frac{V_{out}-V_2}{R_F}
 ```
-Therefore,
+Plugging in $V_2=0$
 ```{math}
-\frac{V_2-V_{in}}{R_{in}} &= \frac{V_{out}-V_2}{R_F}\\
-\frac{-V_{in}}{R_{in}} &= \frac{V_{out}}{R_F}\\
-\frac{V_{out}}{V_{in}} &= -\frac{R_F}{R_{in}}
- ```
+\frac{-V_{in}}{R_{in}} = \frac{V_{out}}{R_F}
+```
+which simplifies to a gain equation
+```{math}
+\boxed{{\rm Gain} = \frac{V_{out}}{V_{in}} = -\frac{R_F}{R_{in}}}
+```
 
-Build the circuit in [](#fig:opamps:invertingamp) with resistors $R_{in}=1000~{\rm \Omega}$ and $R_F=1000~{\rm \Omega}$
+Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with resistors $R_{in}=1000~{\rm \Omega}$ and $R_F=1000~{\rm \Omega}$
 
 ### Application - Light Detection
 
