@@ -148,7 +148,10 @@ which simplifies to a gain equation
 \boxed{{\rm Gain} = \frac{V_{out}}{V_{in}} = -\frac{R_F}{R_{in}}}
 ```
 
-Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with resistors $R_{in}=1000~{\rm \Omega}$ and $R_F=1000~{\rm \Omega}$
+Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a DC $V_{in}=0.1~{\rm V}$ and resistors $R_{in}=10 000~{\rm \Omega}$ and $R_F=100 000~{\rm \Omega}$. Next, replace $R_F$ with a variable $1~{\rm M\Omega}$ resistor. Verify that the gain increases as you adjust the variable resistor.
+
+Measure the gain of these circuits using AC input. At what frequency does the gain begin to significantly deviate from theory?
+
 
 ### Application - Light Detection
 
