@@ -127,8 +127,8 @@ Because of the op-amp rules, we can use an equivalent circuit shown in [](#fig:o
 :label: fig:opamps:invertingampequiv
 :width: 75%
 :align: center
-:alt: An equivalent circuit diagram of the inverting amplifier.
-An equivalent circuit diagram of the inverting amplifier.
+:alt: An equivalent circuit diagram of the inverting where we ignore the presence of the op-amp and only consider the results of the op-amp rules.
+An equivalent circuit diagram of the inverting where we ignore the presence of the op-amp and only consider the results of the op-amp rules.
 ```
 The current through the resistors must be constant and therefore is
 ```{math}
@@ -149,9 +149,9 @@ which simplifies to a gain equation
 ```
 where the negative sign is indicating the inversion of the output relative to the input.
 
-Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a DC $V_{in}=0.1~{\rm V}$ and resistors $R_{in}=10 000~{\rm \Omega}$ and $R_F=100 000~{\rm \Omega}$. Next, replace $R_F$ with a variable $1~{\rm M\Omega}$ resistor. Verify that the gain increases as you adjust the variable resistor.
+Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a DC $V_{in}=0.01~{\rm V}$ and resistors $R_{in}=10 000~{\rm \Omega}$ and $R_F=100 000~{\rm \Omega}$. Next, replace $R_F$ with a variable $1~{\rm M\Omega}$ resistor. Verify that the gain increases as you adjust the variable resistor.
 ```{exercise}
-* Record the gain with a DC $V_{in}=0.1~{\rm V}$ and resistors $R_{in}=10 000~{\rm \Omega}$ and $R_F=100 000~{\rm \Omega}$
+* Record the gain with a DC $V_{in}=0.01~{\rm V}$ and resistors $R_{in}=10 000~{\rm \Omega}$ and $R_F=100 000~{\rm \Omega}$
 * Record the minimum and maximum gain with the variable $1~{\rm M\Omega}$ resistor.
 * Measure the gain of this circuit using AC sine input. Graph the gain vs. frequency. At what frequency does the gain begin to significantly deviate from theory?
 ```
@@ -164,7 +164,24 @@ Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a
 
 ### Adder
 
-### Difference
+Build a dual input voltage adder in [](#fig:opamps:adder) with the behavior
+```{math}
+V_{out} = – R_F\left(\frac{V_1}{R_1} + {V_2}{R_2}\right)
+```
+```{figure} ../figures/ch8_opamps/summingamplifier.svg
+:label: fig:opamps:adder
+:width: 75%
+:align: center
+:alt: Circuit diagram of a summing amplifier.
+Circuit diagram of a summing amplifier.
+```
+```{exercise}
+* Use two different DC voltages to verify the behavior of this circuit. 
+* Try adding an AC signal to a DC signal.
+* Try adding two sinusoidal AC signals with different frequencies. Use variable 10 kΩ resistors for $R_1$ and $R_2$. Use a speaker to listen to each frequency independently as input to the amplifier and when summed.
+```
+
+### Subtractor
 
 ### Differentiator
 
