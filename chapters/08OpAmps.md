@@ -183,6 +183,23 @@ Circuit diagram of a summing amplifier.
 
 ### Subtractor
 
+Build the difference amplifier in [](#fig:opamps:subtractor) with the behavior
+```{math}
+V_{out} = -\left(V_2 - V_1\right)\frac{R_F}{R_1}
+```
+```{figure} ../figures/ch8_opamps/subtractingamplifier.svg
+:label: fig:opamps:subtractor
+:width: 75%
+:align: center
+:alt: Circuit diagram of a difference amplifier.
+Circuit diagram of a difference amplifier.
+```
+```{exercise}
+* Use two different DC voltages to verify the behavior of this circuit. 
+* Try adding an AC signal to a DC signal.
+* Try adding two sinusoidal AC signals with different frequencies. Use variable 10 kΩ resistors for $R_1$ and $R_2$. Use a speaker to listen to each frequency independently as input to the amplifier and when summed.
+```
+
 ### Differentiator
 
 ### Integrator
