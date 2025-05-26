@@ -15,6 +15,57 @@ kernelspec:
 
 # Introduction
 
+Operational amplifiers, or op-amps, are versatile analog circuit building blocks used in a wide variety of applications. They are essentially high-gain voltage amplifiers with differential inputs and a single-ended output.  The "operational" part of their name comes from their ability to perform various mathematical operations like amplification, addition, subtraction, integration, and differentiation when combined with external components.
+
+**Key characteristics of an ideal op-amp include:**
+
+-   **Infinite open-loop gain:** This allows for a large amplification of the difference between the two input voltages.
+-   **Infinite input impedance:** No current flows into the inputs.
+-   **Zero output impedance:** The op-amp can drive any load without voltage drop.
+-   **Infinite bandwidth:**  The op-amp can amplify signals of any frequency.
+
+**In reality, op-amps deviate from these ideals:**
+
+-   **Finite gain and bandwidth:**  Practical op-amps have a limited gain and bandwidth.
+-   **Non-zero input and output impedance:**  Real op-amps have some input current and output impedance.
+-   **Offset voltage:**  A small voltage difference may exist between the inputs even when the output is zero.
+-   **Slew rate limitation:**  The output voltage cannot change instantaneously.
+
+## Op-Amp Pinouts
+
+A typical op-amp has the following pin configuration.
+
+| Pin Number | Function |
+|---|---|
+| 1 | Offset Null (Optional) |
+| 2 | Inverting Input (-) |
+| 3 | Non-inverting Input (+) |
+| 4 | Negative Power Supply (V-) |
+| 5 | Offset Null (Optional) |
+| 6 | Output |
+| 7 | Positive Power Supply (V+) |
+| 8 | Not connected |
+
+A diagram of an op amp is shown in [](#fig:opamps:diagram). In [](#fig:opamps:diagram)(a), the DIP-8 packaging is shown including the pin numbers of the visible pins. In [](#fig:opamps:diagram)(b), the circuit symbol of an op amp is shown with the pin numbers identified. These three pins are the only pins relevant to the amplifier itself. The other pins are described in [](#sec:opamps:pinexplanation). In [](#fig:opamps:diagram)(c), the internal structure of the op amp is shown with all of the pin numbers and functions labeled.
+```{figure} ../figures/ch8_opamps/OpAmpDiagram.svg
+:label: fig:opamps:diagram
+:width: 100%
+:align: center
+:alt: Diagram of an operational amplifier. (a) The DIP-8 packaging with some pin numbers identified. (b) The circuit symbol with pin numbers identified. (c) Schematic of the internal circuitry with pin numbers and functions identified.
+Diagram of an operational amplifier. (a) The DIP-8 packaging with some pin numbers identified. (b) The circuit symbol with pin numbers identified. (c) Schematic of the internal circuitry with pin numbers and functions identified.
+```
+
+(sec:opamps:pinexplanation)=
+### Explanation of pins
+
+-   **Inverting Input (-):** An input signal applied to this pin will be amplified and inverted at the output.
+-   **Non-inverting Input (+):specifies:** An input signal applied to this pin will be amplified without inversion at the output.
+-   **Output:**  The amplified signal is available at this pin.
+-   **Positive and Negative Power Supply (V+ and V-):** These pins supply power to the op-amp.
+-   **Offset Null (Optional):**  These pins can be used to adjust the output voltage to zero when no input signal is present, compensating for any inherent offset voltage.
+
+**Note:** The pin configuration and numbering can vary slightly depending on the specific op-amp package (e.g., DIP, SOIC) and manufacturer. Always refer to the datasheet for the specific op-amp you are using.
+
 # Theory
 
 ## Op Amp Current and Voltage Rules
