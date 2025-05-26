@@ -99,5 +99,27 @@ These rules simplify the analysis of op-amp circuits with negative feedback:
 *   Op-amp circuits with negative feedback are analyzed using the "golden rules" that simplify calculations and predictions of circuit behavior.
 *   The virtual short concept is a powerful tool for analyzing circuits, enabling engineers to treat the input terminals as having the same voltage even though they are not physically connected.
 *   Negative feedback is crucial for controlling gain, improving stability, and achieving desired impedance characteristics in op-amp circuits.
+
+In this experiment, we will be building different circuits that will demonstrate the
+usefulness and simplicity of using operational amplifiers.
+
+# Experiment
+
+## Inverting Amplifier
+
+```{figure} ../figures/opamps/invertingamplifier.svg
+:label: fig:digital:555bistable
+:width: 75%
+:align: center
+:alt: A circuit diagram of the 555-timer in bistable mode.
+A circuit diagram of the 555-timer in bistable mode.
+```
+
+### Application - Light Detection
+
+## Non-inverting Amplifier
+
+
+
 [^1]: By Inductiveload - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=8433629
 [^2]: By Inductiveload - Self-made, Inkscape, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3439390
