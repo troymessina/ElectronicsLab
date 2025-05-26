@@ -202,7 +202,7 @@ Verify the difference behavior in equation {eq}`eq:opamps:subtractor`.
 
 ### Differentiator
 
-Build the differentiator circuit in [](#fig:opamps:differentiator)
+Build the differentiator circuit in [](#fig:opamps:differentiator).
 ```{figure} ../figures/ch8_opamps/differentiatingamplifier.svg
 :label: fig:opamps:differentiator
 :width: 75%
@@ -215,6 +215,21 @@ Use an oscilloscope to observe the input and output with 1 kHz sine, triangle, a
 ```
 
 ### Integrator
+
+Build the integrator circuit in [](#fig:opamps:integrator).
+```{figure} ../figures/ch8_opamps/integratingamplifier.svg
+:label: fig:opamps:integrator
+:width: 75%
+:align: center
+:alt: Circuit diagram of a integrating amplifier.
+Circuit diagram of a integrating amplifier.
+```
+```{exercise}
+Use an oscilloscope to observe the input and output with 1 kHz sine, triangle, and square-waves. Do your measurements make sense given what you know about differentiation?
+```
+Observe the input and output with 1 kHz sine, triangle, and square-waves. Do
+your measured values make sense given what you know about the integrator
+circuit?
 
 ### Filters
 
