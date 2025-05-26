@@ -127,8 +127,8 @@ Because of the op-amp rules, we can use an equivalent circuit shown in [](#fig:o
 :label: fig:opamps:invertingampequiv
 :width: 75%
 :align: center
-:alt: An equivalent circuit diagram of the inverting where we ignore the presence of the op-amp and only consider the results of the op-amp rules.
-An equivalent circuit diagram of the inverting where we ignore the presence of the op-amp and only consider the results of the op-amp rules.
+:alt: An equivalent circuit diagram of the inverting amplifier where we ignore the presence of the op-amp and only consider the results of the op-amp rules.
+An equivalent circuit diagram of the inverting amplifier where we ignore the presence of the op-amp and only consider the results of the op-amp rules.
 ```
 The current through the resistors must be constant and therefore is
 ```{math}
@@ -166,7 +166,7 @@ Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a
 
 Build a dual input voltage adder in [](#fig:opamps:adder) with the behavior
 ```{math}
-V_{out} = – R_F\left(\frac{V_1}{R_1} + {V_2}{R_2}\right)
+V_{out} = – R_F\left(\frac{V_1}{R_1} + \frac{V_2}{R_2}\right)
 ```
 ```{figure} ../figures/ch8_opamps/summingamplifier.svg
 :label: fig:opamps:adder
