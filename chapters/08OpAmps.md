@@ -160,13 +160,14 @@ Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a
 
 ## Non-inverting Amplifier
 
-## Mathematical Functions
+## Mathematical Function Amplifiers
 
 ### Adder
 
 Build a dual input voltage adder in [](#fig:opamps:adder) with the behavior
 ```{math}
-V_{out} = – R_F\left(\frac{V_1}{R_1} + \frac{V_2}{R_2}\right)
+:label: eq:opamps:adder
+\boxed{V_{out} = – R_F\left(\frac{V_1}{R_1} + \frac{V_2}{R_2}\right)}
 ```
 ```{figure} ../figures/ch8_opamps/summingamplifier.svg
 :label: fig:opamps:adder
@@ -176,16 +177,17 @@ V_{out} = – R_F\left(\frac{V_1}{R_1} + \frac{V_2}{R_2}\right)
 Circuit diagram of a summing amplifier.
 ```
 ```{exercise}
-* Use two different DC voltages to verify the behavior of this circuit. 
+* Use two different DC voltages to verify the behavior in equation {eq}`eq:opamps:adder`. 
 * Try adding an AC signal to a DC signal.
 * Try adding two sinusoidal AC signals with different frequencies. Use variable 10 kΩ resistors for $R_1$ and $R_2$. Use a speaker to listen to each frequency independently as input to the amplifier and when summed.
 ```
 
 ### Subtractor
 
-Build the difference amplifier in [](#fig:opamps:subtractor) with the behavior
+Build the difference (subtracting) amplifier in [](#fig:opamps:subtractor) with the behavior
 ```{math}
-V_{out} = -\left(V_2 - V_1\right)\frac{R_F}{R_1}
+:label: eq:opamps:subtractor
+\boxed{V_{out} = -\left(V_2 - V_1\right)\frac{R_F}{R_1}}
 ```
 ```{figure} ../figures/ch8_opamps/subtractingamplifier.svg
 :label: fig:opamps:subtractor
@@ -195,12 +197,22 @@ V_{out} = -\left(V_2 - V_1\right)\frac{R_F}{R_1}
 Circuit diagram of a difference amplifier.
 ```
 ```{exercise}
-* Use two different DC voltages to verify the behavior of this circuit. 
-* Try adding an AC signal to a DC signal.
-* Try adding two sinusoidal AC signals with different frequencies. Use variable 10 kΩ resistors for $R_1$ and $R_2$. Use a speaker to listen to each frequency independently as input to the amplifier and when summed.
+Verify the difference behavior in equation {eq}`eq:opamps:subtractor`.
 ```
 
 ### Differentiator
+
+Build the differentiator circuit in [](#fig:opamps:differentiator)
+```{figure} ../figures/ch8_opamps/differentiatingamplifier.svg
+:label: fig:opamps:differentiator
+:width: 75%
+:align: center
+:alt: Circuit diagram of a differentiating amplifier.
+Circuit diagram of a differentiating amplifier.
+```
+```{exercise}
+Use an oscilloscope to observe the input and output with 1 kHz sine, triangle, and square-waves. Do your measurements make sense given what you know about differentiation?
+```
 
 ### Integrator
 
