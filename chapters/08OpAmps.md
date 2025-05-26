@@ -147,17 +147,32 @@ which simplifies to a gain equation
 ```{math}
 \boxed{{\rm Gain} = \frac{V_{out}}{V_{in}} = -\frac{R_F}{R_{in}}}
 ```
+where the negative sign is indicating the inversion of the output relative to the input.
 
 Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a DC $V_{in}=0.1~{\rm V}$ and resistors $R_{in}=10 000~{\rm \Omega}$ and $R_F=100 000~{\rm \Omega}$. Next, replace $R_F$ with a variable $1~{\rm M\Omega}$ resistor. Verify that the gain increases as you adjust the variable resistor.
-
-Measure the gain of these circuits using AC input. At what frequency does the gain begin to significantly deviate from theory?
-
+```{exercise}
+* Record the gain with a DC $V_{in}=0.1~{\rm V}$ and resistors $R_{in}=10 000~{\rm \Omega}$ and $R_F=100 000~{\rm \Omega}$
+* Record the minimum and maximum gain with the variable $1~{\rm M\Omega}$ resistor.
+* Measure the gain of this circuit using AC sine input. Graph the gain vs. frequency. At what frequency does the gain begin to significantly deviate from theory?
+```
 
 ### Application - Light Detection
 
 ## Non-inverting Amplifier
 
+## Mathematical Functions
 
+### Adder
+
+### Difference
+
+### Differentiator
+
+### Integrator
+
+### Filters
+
+### Peak Detector
 
 [^1]: By Inductiveload - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=8433629
 [^2]: By Inductiveload - Self-made, Inkscape, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3439390
