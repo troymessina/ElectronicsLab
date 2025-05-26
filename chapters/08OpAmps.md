@@ -9,7 +9,7 @@ kernelspec:
 :::{hint} Learning Objectives
 * Students will demonstrate proficiency in the observation, analysis, and interpretation of experimental data, including the role that uncertainty plays in interpreting experimental results.
 * Students operate signal generators and oscilloscopes to set up experiments with operational amplifiers.
-* Students analyze data related to op amp circuits.
+* Students analyze data related to op-amp circuits.
 * Students articulate results of these experiments including experimental uncertainty.
 :::
 
@@ -34,7 +34,7 @@ Operational amplifiers, or op-amps, are versatile analog circuit building blocks
 ## Op-Amp Pinouts
 
 A typical op-amp has the following pin configuration.
-```{table} Numbering and function of pins on a DIP8 op amp.
+```{table} Numbering and function of pins on a DIP8 op-amp.
 :label: table:opamps:pinout
 :align: center
 | Pin Number | Function |
@@ -49,10 +49,10 @@ A typical op-amp has the following pin configuration.
 | 8 | Not connected |
 ```
 
-A diagram of an op amp is shown in [](#fig:opamps:diagram). In [](#fig:opamps:diagram)(a), the DIP8 packaging is shown including the pin numbers of the visible pins. In [](#fig:opamps:diagram)(b) the circuit symbol of an op amp is shown with the pin numbers identified. These three pins are the only pins relevant to the amplifier itself. The other pins are described in [](#sec:opamps:pinexplanation). In [](#fig:opamps:diagram)(c), the internal structure of the op amp is shown with all of the pin numbers and functions labeled.
+A diagram of an op-amp is shown in [](#fig:opamps:diagram). In [](#fig:opamps:diagram) (a), the DIP8 packaging is shown including the pin numbers of the visible pins. In [](#fig:opamps:diagram) (b) the circuit symbol of an op-amp is shown with the pin numbers identified. These three pins are the only pins relevant to the amplifier itself. The other pins are described in [](#sec:opamps:pinexplanation). In [](#fig:opamps:diagram) (c), the internal structure of the op-amp is shown with all of the pin numbers and functions labeled.
 ```{figure} ../figures/ch8_opamps/OpAmpDiagram.svg
 :label: fig:opamps:diagram
-:width: 100%
+:width: 75%
 :align: center
 :alt: Diagram of an operational amplifier. (a) The DIP8 packaging with some pin numbers identified. (b) The circuit symbol with pin numbers identified. (c) Schematic of the internal circuitry with pin numbers and functions identified.
 Diagram of an operational amplifier. (a) The DIP8 packaging with some pin numbers identified. (b) The circuit symbol with pin numbers identified.[^1] (c) Schematic of the internal circuitry with pin numbers and functions identified.[^2]
