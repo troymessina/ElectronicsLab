@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="300mm"
-   height="200mm"
-   viewBox="0 0 300 200"
+   width="400mm"
+   height="250mm"
+   viewBox="0 0 400 250"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
-   sodipodi:docname="integratingamplifier.svg"
+   sodipodi:docname="bandpass.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.5007929"
-     inkscape:cx="624.01045"
-     inkscape:cy="550.12761"
+     inkscape:zoom="0.70822811"
+     inkscape:cx="721.51895"
+     inkscape:cy="501.95692"
      inkscape:window-width="1920"
      inkscape:window-height="1013"
      inkscape:window-x="-9"
@@ -102,7 +102,7 @@
     <g
        inkscape:label="OpAmp"
        id="g8"
-       transform="matrix(2,0,0,-2,-72.868108,409.68915)">
+       transform="matrix(2,0,0,-2,20.794439,451.49358)">
       <g
          inkscape:label="OpAmp"
          id="g7">
@@ -145,9 +145,24 @@
     </g>
   </g>
   <g
+     inkscape:label="Resistor"
+     id="g10"
+     transform="matrix(2,0,0,2,-42.554207,-168.50171)"
+     style="stroke:#000000;stroke-opacity:1">
+    <g
+       id="g9"
+       style="stroke:#000000;stroke-opacity:1">
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 85,150 h 15.5 l 2,3 3,-6 3,6 3,-6 3,6 3,-6 2,3 H 135"
+         id="path8" />
+    </g>
+  </g>
+  <g
      inkscape:label="GND"
      id="g14"
-     transform="matrix(2,0,0,2,-107.45094,-132.81648)">
+     transform="matrix(2,0,0,2,-13.788339,-91.012101)">
     <g
        inkscape:label="GND"
        id="g13">
@@ -175,12 +190,12 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="m 132.56829,129.69443 -20.30384,-0.29124 0.27705,37.68889"
+     d="m 226.23138,171.49886 -20.30384,-0.29124 0.27705,37.68889"
      id="path14" />
   <g
      inkscape:label="Resistor"
      id="g16"
-     transform="matrix(2,0,0,2,-125.38304,-210.30761)">
+     transform="matrix(2,0,0,2,49.160521,-264.94294)">
     <g
        id="g15">
       <path
@@ -192,70 +207,70 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="m 124.71132,34.957876 -0.0934,54.543396"
+     d="m 218.35538,34.976908 -0.0553,95.599672"
      id="path16" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="m 225.54388,35.035284 -0.0707,73.738676"
+     d="m 319.19473,35.047521 -0.0462,115.555709"
      id="path17" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;marker-end:url(#Dot)"
-     d="M 225.96888,109.66326 H 274.0273"
+     d="m 319.63197,151.46769 h 48.05842"
      id="path19" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;marker-end:url(#ColoredDot)"
-     d="M 47.128055,89.682472 H 34.21248"
+     d="M 54.536393,131.48684 H 41.620818"
      id="path26" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;marker-start:url(#marker28);marker-end:url(#ColoredDot)"
-     d="M 274.17412,165.57943 H 34.253847"
+     d="M 366.0752,207.38386 H 41.27952"
      id="path27" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="154.9606"
-     y="15.433226"
+     x="160.59062"
+     y="111.22906"
      id="text28"><tspan
        sodipodi:role="line"
        id="tspan28"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke-width:0.25;stroke-dasharray:none"
-       x="154.9606"
-       y="15.433226">50 nF</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.25;stroke-dasharray:none"
+       x="160.59062"
+       y="111.22906">1 kΩ</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="73.027634"
-     y="75.333481"
+     x="249.22353"
+     y="19.924419"
      id="text31"><tspan
        sodipodi:role="line"
        id="tspan31"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.25;stroke-dasharray:none"
-       x="73.027634"
-       y="75.333481">1 kΩ</tspan></text>
+       x="249.22353"
+       y="19.924419">50 kΩ</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="265.02267"
-     y="95.388573"
+     x="358.68661"
+     y="137.19261"
      id="text34"><tspan
        sodipodi:role="line"
        id="tspan34"
-       x="265.02267"
-       y="95.388573"
+       x="358.68661"
+       y="137.19261"
        style="font-style:italic;stroke-width:0.25;stroke-dasharray:none">V<tspan
    style="font-style:italic;font-size:65%;baseline-shift:sub;stroke-width:0.25;stroke-dasharray:none"
    id="tspan35">out</tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="18.581474"
-     y="71.852722"
+     x="25.989815"
+     y="113.65691"
      id="text37"><tspan
        sodipodi:role="line"
        id="tspan37"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.25;stroke-dasharray:none"
-       x="18.581474"
-       y="71.852722"><tspan
+       x="25.989815"
+       y="113.65691"><tspan
          id="tspan40"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:baseline;stroke-width:0.25;stroke-dasharray:none">V</tspan><tspan
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:sub;stroke-width:0.25;stroke-dasharray:none"
@@ -263,7 +278,7 @@
   <g
      inkscape:label="Capacitor"
      id="g24"
-     transform="matrix(2,0,0,2,-124.79427,-244.9944)">
+     transform="matrix(2,0,0,2,-30.933533,-210.70944)">
     <g
        id="g23">
       <path
@@ -288,4 +303,54 @@
          id="path23" />
     </g>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="248.22662"
+     y="99.834244"
+     id="text24"><tspan
+       sodipodi:role="line"
+       id="tspan24"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.25;stroke-dasharray:none"
+       x="248.22662"
+       y="99.834244">10 nF</tspan></text>
+  <g
+     inkscape:label="Capacitor"
+     id="g31"
+     transform="matrix(2,0,0,2,-203.21496,-148.50755)">
+    <g
+       id="g30">
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 152,140 h 23"
+         id="path24" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 152,147 V 133"
+         id="path25" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 148,140 H 125"
+         id="path29" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 148,147 V 133"
+         id="path30" />
+    </g>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="76.004601"
+     y="111.04179"
+     id="text32"><tspan
+       sodipodi:role="line"
+       id="tspan32"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.25;stroke-dasharray:none"
+       x="76.004601"
+       y="111.04179">0.1 μF</tspan></text>
 </svg>

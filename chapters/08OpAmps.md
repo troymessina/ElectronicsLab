@@ -100,8 +100,7 @@ These rules simplify the analysis of op-amp circuits with negative feedback:
 *   The virtual short concept is a powerful tool for analyzing circuits, enabling engineers to treat the input terminals as having the same voltage even though they are not physically connected.
 *   Negative feedback is crucial for controlling gain, improving stability, and achieving desired impedance characteristics in op-amp circuits.
 
-In this experiment, we will be building different circuits that will demonstrate the
-usefulness and simplicity of using operational amplifiers.
+In this experiment, we will be building different circuits that will demonstrate the usefulness and simplicity of using operational amplifiers. An excellent resource for more information about each circuit is [the Electronics Tutorials website](https://www.electronics-tutorials.ws/opamp).
 
 # Experiment
 
@@ -157,8 +156,6 @@ Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a
 ```
 
 ### Application - Light Detection
-
-## Non-inverting Amplifier
 
 ## Mathematical Function Amplifiers
 
@@ -233,7 +230,46 @@ circuit?
 
 ### Filters
 
+* Low-Pass Filter *
+Build the low-pass filter in [](#fig:opamps:lowpass) and measure the gain as a function of frequency.
+```{figure} ../figures/ch8_opamps/lowpass.svg
+:label: fig:opamps:lowpass
+:width: 75%
+:align: center
+:alt: Diagram of a low-pass filter op-amp circuit.
+Diagram of a low-pass filter op-amp circuit.
+```
+```{exercise}
+* What is the approximate cutoff frequency? 
+* Plot the gain vs. frequency.
+```
+
+* Band-Pass Filter *
+Build the band-pass filter in [](#fig:opamps:bandpass)and measure the gain as a function of frequency.
+```{figure} ../figures/ch8_opamps/bandpass.svg
+:label: fig:opamps:bandpass
+:width: 75%
+:align: center
+:alt: Diagram of a band-pass filter op-amp circuit.
+Diagram of a band-pass filter op-amp circuit.
+```
+```{exercise}
+Plot the gain vs. frequency.
+```
+
 ### Peak Detector
+
+Build the peak detector circuit shown on in [](#fig:opamps:peakdetect). The output of this circuit is held at the maximum value of the input. The output is reset by closing the switch to short the first feedback loop to ground through the 1 kΩ resistor. In this circuit, you may want to use the LM353 or LM358 amplifier because they contains two independent op-amps on a single chip. **NOTE: These amplifiers different pin-outs. Look up a datasheet for the op-amp you use.**
+```{figure} ../figures/ch8_opamps/peakdetector.svg
+:label: fig:opamps:peakdetect
+:width: 75%
+:align: center
+:alt: Diagram of a peak detector op-amp circuit.
+Diagram of a peak detector op-amp circuit.
+```
+```{exercise}
+Determine a way to test your circuit for the described operation.
+```
 
 [^1]: By Inductiveload - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=8433629
 [^2]: By Inductiveload - Self-made, Inkscape, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3439390
