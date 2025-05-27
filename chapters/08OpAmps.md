@@ -222,11 +222,8 @@ Build the integrator circuit in [](#fig:opamps:integrator).
 Circuit diagram of a integrating amplifier.
 ```
 ```{exercise}
-Use an oscilloscope to observe the input and output with 1 kHz sine, triangle, and square-waves. Do your measurements make sense given what you know about differentiation?
+Use an oscilloscope to observe the input and output with 1 kHz sine, triangle, and square-waves. Do your measurements make sense given what you know about integration?
 ```
-Observe the input and output with 1 kHz sine, triangle, and square-waves. Do
-your measured values make sense given what you know about the integrator
-circuit?
 
 ### Filters
 
