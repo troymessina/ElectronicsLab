@@ -230,7 +230,7 @@ circuit?
 
 ### Filters
 
-* Low-Pass Filter *
+*Low-Pass Filter*
 Build the low-pass filter in [](#fig:opamps:lowpass) and measure the gain as a function of frequency.
 ```{figure} ../figures/ch8_opamps/lowpass.svg
 :label: fig:opamps:lowpass
@@ -244,7 +244,7 @@ Diagram of a low-pass filter op-amp circuit.
 * Plot the gain vs. frequency.
 ```
 
-* Band-Pass Filter *
+*Band-Pass Filter*
 Build the band-pass filter in [](#fig:opamps:bandpass)and measure the gain as a function of frequency.
 ```{figure} ../figures/ch8_opamps/bandpass.svg
 :label: fig:opamps:bandpass
