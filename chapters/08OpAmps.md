@@ -225,6 +225,8 @@ Circuit diagram of a integrating amplifier.
 Use an oscilloscope to observe the input and output with 1 kHz sine, triangle, and square-waves. Do your measurements make sense given what you know about integration?
 ```
 
+## Other Useful Op-Amp Circuits
+
 ### Filters
 
 *Low-Pass Filter*
@@ -256,7 +258,7 @@ Plot the gain vs. frequency.
 
 ### Peak Detector
 
-Build the peak detector circuit shown on in [](#fig:opamps:peakdetect). The output of this circuit is held at the maximum value of the input. The output is reset by closing the switch to short the first feedback loop to ground through the 1 kΩ resistor. In this circuit, you may want to use the LM353 or LM358 amplifier because they contains two independent op-amps on a single chip. **NOTE: These amplifiers different pin-outs. Look up a datasheet for the op-amp you use.**
+Build the peak detector circuit shown in [](#fig:opamps:peakdetect). The output of this circuit is held at the maximum value of the input. The output is reset by closing the switch to short the first feedback loop to ground through the 1 kΩ resistor. In this circuit, you may want to use the LM353 or LM358 amplifier because they contains two independent op-amps on a single chip. **NOTE: These amplifiers  have different pin-outs. Look up a datasheet for the op-amp you use.**
 ```{figure} ../figures/ch8_opamps/peakdetector.svg
 :label: fig:opamps:peakdetect
 :width: 75%
