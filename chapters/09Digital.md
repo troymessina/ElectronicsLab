@@ -48,7 +48,7 @@ This pin is unconnected when output is high, and it’s connected to ground when
 
 **Pin 8 VCC Supply**
 This is the positive power supply pin and can take a voltage between 5 and 15 V.
-```{figure} ../figures/ch9_digital/555timerpinout.png
+```{figure} ../figures/ch9_digital/555timerpinout.svg
 :label: fig:digital:555pinout
 :width: 75%
 :align: center
