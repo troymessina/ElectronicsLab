@@ -78,7 +78,7 @@ Our first example is how to blink an LED with the 555 Timer. This is like the â€
 * C2: Capacitor, 10 nF (it may work without this)
 
 You donâ€™t need exact values for the resistors and capacitors. But if you use the values listed above, your LED should blink about once every other second. Your circuit should be set up as shown in [](#fig:digital:555astableblink)
-```{figure} ../figures/ch9_digital/555TimerAstableBlinkingLED.png
+```{figure} ../figures/ch9_digital/555TimerAstableBlinkingLED.svg
 :label: fig:digital:555astableblink
 :width: 75%
 :align: center
@@ -112,7 +112,7 @@ The circuit shown in [](#fig:digital:555monostableLED) turns on an LED when you 
 * S1: Pushbutton, normally open
 
 For longer delays, increase C1 and/or R1. If you want an adjustable delay, replace R1 with a potentiometer. Use the 555 Timer calculator to find the values you need.
-```{figure} ../figures/ch9_digital/555TimerMonostableLED.png
+```{figure} ../figures/ch9_digital/555TimerMonostableLED.svg
 :label: fig:digital:555monostableLED
 :width: 75%
 :align: center
