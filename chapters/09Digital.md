@@ -59,7 +59,7 @@ A pinout diagram of the 555-timer integrated circuit.
 # Part 1 - Astable Mode
 
 When the 555 Timer is in astable mode it means that the output will never be stable. The output will keep switching between `HIGH` and `LOW` forever. That means it works as an oscillator. You can use this to blink a light, create sound, control motors, and much more! A circuit diagram is shown in [](#fig:digital:555astable).
-```{figure} ../figures/ch9_digital/555TimerAstableMode.png
+```{figure} ../figures/ch9_digital/555TimerAstableMode.svg
 :label: fig:digital:555astable
 :width: 75%
 :align: center
