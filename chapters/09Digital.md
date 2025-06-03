@@ -128,7 +128,7 @@ Bistable, sometimes called "flip-flop", means the output is stable in both state
 ## 555 Timer Bistable Circuit Example
 
 [](#fig:digital:555bistable) shows the 555 Timer in bistable mode. Here you have separate ON and OFF buttons to control an LED.
-```{figure} ../figures/ch9_digital/555BistableExampleON-OFF.png
+```{figure} ../figures/ch9_digital/555BistableExampleON-OFF.svg
 :label: fig:digital:555bistable
 :width: 100%
 :align: center
