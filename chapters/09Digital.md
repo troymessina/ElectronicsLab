@@ -50,7 +50,7 @@ This pin is unconnected when output is high, and it’s connected to ground when
 This is the positive power supply pin and can take a voltage between 5 and 15 V.
 ```{figure} ../figures/ch9_digital/555timerpinout.svg
 :label: fig:digital:555pinout
-:width: 75%
+:width: 100%
 :align: center
 :alt: A pinout diagram of the 555-timer integrated circuit.
 A pinout diagram of the 555-timer integrated circuit.
@@ -61,7 +61,7 @@ A pinout diagram of the 555-timer integrated circuit.
 When the 555 Timer is in astable mode it means that the output will never be stable. The output will keep switching between `HIGH` and `LOW` forever. That means it works as an oscillator. You can use this to blink a light, create sound, control motors, and much more! A circuit diagram is shown in [](#fig:digital:555astable).
 ```{figure} ../figures/ch9_digital/555TimerAstableMode.svg
 :label: fig:digital:555astable
-:width: 75%
+:width: 100%
 :align: center
 :alt: A circuit diagram of the 555-timer in astable mode.
 A circuit diagram of the 555-timer in astable mode.
@@ -80,7 +80,7 @@ Our first example is how to blink an LED with the 555 Timer. This is like the �
 You don’t need exact values for the resistors and capacitors. But if you use the values listed above, your LED should blink about once every other second. Your circuit should be set up as shown in [](#fig:digital:555astableblink)
 ```{figure} ../figures/ch9_digital/555TimerAstableBlinkingLED.svg
 :label: fig:digital:555astableblink
-:width: 75%
+:width: 100%
 :align: center
 :alt: A circuit diagram of the 555-timer in astable mode.
 A circuit diagram of the 555-timer in astable mode.
@@ -90,12 +90,12 @@ Use the [555 Timer calculator](https://www.build-electronic-circuits.com/circuit
 # Part 2 - Monostable Mode
 
 Monostable means the output is stable in one state, and it will always come back to this state. You can push it out of that state, but it will always return back to its stable state after a certain time. The output from the 555 Timer in monostable mode is normally LOW. When you trigger the circuit, the output goes HIGH for a certain amount of time before it goes back to LOW again. This is sometimes called a one-shot circuit. The time it stays HIGH is decided by the size of a resistor $R_1$ and a capacitor $C_1$. The higher the values, the longer it stays HIGH. If you connect a buzzer to the output, you can create an alarm circuit that is triggered for example by a window being opened. The monostable circuit diagram is shown in [](#fig:digital:555timermonostable)
-```{figure} ../figures/ch9_digital/555TimerMonostableMode.png
+```{figure} ../figures/ch9_digital/555TimerMonostableMode.svg
 :label: fig:digital:555monostable
-:width: 75%
+:width: 100%
 :align: center
-:alt: A circuit diagram of the 555-timer in astable mode.
-A circuit diagram of the 555-timer in astable mode.
+:alt: A circuit diagram of the 555-timer in monostable mode.
+A circuit diagram of the 555-timer in monostable mode.
 ```
 
 ## 555 Timer Monostable Circuit Example
@@ -114,10 +114,10 @@ The circuit shown in [](#fig:digital:555monostableLED) turns on an LED when you 
 For longer delays, increase C1 and/or R1. If you want an adjustable delay, replace R1 with a potentiometer. Use the 555 Timer calculator to find the values you need.
 ```{figure} ../figures/ch9_digital/555TimerMonostableLED.svg
 :label: fig:digital:555monostableLED
-:width: 75%
+:width: 100%
 :align: center
-:alt: A circuit diagram of the 555-timer in monostable mode.
-A circuit diagram of the 555-timer in monostable mode.
+:alt: A circuit diagram of the 555-timer in monostable mode with an LED controlled by a switch.
+A circuit diagram of the 555-timer in monostable mode with an LED controlled by a switch.
 ```
 The output is connected to control an LED, but could easily be modified to control a motor, a lamp, a coffee maker, or anything else. Just replace R3 and the LED with a transistor. See how in the section Driving Higher Loads below.
 
@@ -130,7 +130,7 @@ Bistable, sometimes called "flip-flop", means the output is stable in both state
 [](#fig:digital:555bistable) shows the 555 Timer in bistable mode. Here you have separate ON and OFF buttons to control an LED.
 ```{figure} ../figures/ch9_digital/555BistableExampleON-OFF.png
 :label: fig:digital:555bistable
-:width: 75%
+:width: 100%
 :align: center
 :alt: A circuit diagram of the 555-timer in bistable mode.
 A circuit diagram of the 555-timer in bistable mode.
