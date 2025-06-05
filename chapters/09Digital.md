@@ -127,7 +127,7 @@ Bistable, sometimes called "flip-flop", means the output is stable in both state
 
 ## 555 Timer Bistable Circuit Example
 
-[](#fig:digital:555bistable) shows the 555 Timer in bistable mode. Here you have separate ON and OFF buttons to control an LED.
+[](#fig:digital:555bistable) shows the 555 Timer in bistable mode. Here you have separate ON and OFF to control an LED. We will use a single switch (pushbutton) to toggle between on and off.
 ```{figure} ../figures/ch9_digital/555BistableExampleON-OFF.svg
 :label: fig:digital:555bistable
 :width: 100%
@@ -149,7 +149,7 @@ The output is connected to control an LED, but could easily be modified to contr
 # Part 4 - Driving Higher Loads
 
 If you want to control motors, LED strips, or other things that need more than 200 mA of current, you can connect a transistor to the output. If you want to use an npn transistor, you will need to connect a resistor between the output and the base to limit the base current. 1 kΩ will probably work fine as a starting point.
-```{figure} ../figures/ch9_digital/555TimerBJTTransistorDriver.png
+```{figure} ../figures/ch9_digital/555BistableHighPower.svg
 :label: fig:digital:555timerhighloads
 :width: 75%
 :align: center
