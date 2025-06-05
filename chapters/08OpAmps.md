@@ -62,7 +62,7 @@ Diagram of an operational amplifier. (a) The DIP8 packaging with some pin number
 ### Explanation of pins
 
 -   **Inverting Input (-):** An input signal applied to this pin will be amplified and inverted at the output.
--   **Non-inverting Input (+):specifies:** An input signal applied to this pin will be amplified without inversion at the output.
+-   **Non-inverting Input (+):** An input signal applied to this pin will be amplified without inversion at the output.
 -   **Output:**  The amplified signal is available at this pin.
 -   **Positive and Negative Power Supply (V+ and V-):** These pins supply power to the op-amp.
 -   **Offset Null (Optional):**  These pins can be used to adjust the output voltage to zero when no input signal is present, compensating for any inherent offset voltage.
@@ -244,7 +244,7 @@ Diagram of a low-pass filter op-amp circuit.
 ```
 
 *Band-Pass Filter*
-Build the band-pass filter in [](#fig:opamps:bandpass)and measure the gain as a function of frequency.
+Build the band-pass filter in [](#fig:opamps:bandpass) and measure the gain as a function of frequency.
 ```{figure} ../figures/ch8_opamps/bandpass.svg
 :label: fig:opamps:bandpass
 :width: 75%
