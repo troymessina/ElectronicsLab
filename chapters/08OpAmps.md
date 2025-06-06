@@ -157,6 +157,8 @@ Let's verify this gain. Build the circuit in [](#fig:opamps:invertingamp) with a
 
 ### Application - Light Detection
 Op amps can be used to amplify small signals such as those that are produced by photodiodes. In the case of the photodiode, the signal is a small current. The transimpedance amplifier is a useful circuit for converting and amplifying this small current signal. The transimpedance circuit is shown in [](#fig:opamps:transimpedance). Build the circuit and verify that the output gives a measure of light intensity.
+
+The values for the capacitor and resistor are $C_F=10~{\rm pF}$ and $R_1=R_F=10~{\rm M\Omega}$.
 ```{figure} ../figures/ch8_opamps/photodiodeamplifier.svg
 :label: fig:opamps:transimpedance
 :width: 75%
