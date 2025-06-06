@@ -148,10 +148,10 @@ The output is connected to control an LED, but could easily be modified to contr
 (sec:digital:highloads)=
 # Part 4 - Driving Higher Loads
 
-If you want to control motors, LED strips, or other things that need more than 200 mA of current, you can connect a transistor to the output. If you want to use an npn transistor, you will need to connect a resistor between the output and the base to limit the base current. 1 kΩ will probably work fine as a starting point.
+If you want to control motors, LED strips, or other things that need more than 200 mA of current, you can connect a transistor to the output. If you want to use an npn transistor, you will need to connect a resistor between the output and the base to limit the base current. 1 kΩ will probably work fine as a starting point. We will use the bistable configuration for controlling a motor. You will notice there is a diode across the motor. This protects the transistor from inductively-created currents when the motor turns on and off.
 ```{figure} ../figures/ch9_digital/555BistableHighPower.svg
 :label: fig:digital:555timerhighloads
-:width: 75%
+:width: 100%
 :align: center
 :alt: A circuit diagram of the 555-timer set up for driving high loads in bistable mode.
 A circuit diagram of the 555-timer set up for driving high loads in bistable mode.
