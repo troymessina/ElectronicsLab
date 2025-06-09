@@ -1,6 +1,6 @@
 # Electronics Lab
 
-This is an **open-access** textbook for introductory electronics lab courses. Anyone that complies with the license is welcome to modify and use this work for their own use, and we hope that you will choose to contribute.  We hope that you may find it useful, and we are interested to know if you are using it!
+This is an **open-access** textbook for introductory electronics lab courses. Anyone who complies with the license is welcome to modify and use this work for their own use, and we hope that you will choose to contribute.  We hope that you may find it useful, and we are interested to know if you are using it!
 
 ![Build](https://img.shields.io/github/actions/workflow/status/troymessina/ElectronicsLab/deploy.yml?branch=main)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
@@ -11,18 +11,24 @@ This is an **open-access** textbook for introductory electronics lab courses. An
 
 This book is a remix of various electronics lab manuals I have found online. Anyone is welcome to compile their own version including or excluding chapters.  
 
-This version of the textbook is also open-access and can be found at https://github.com/troymessina/ElectronicsLab. The following chapters are included in the textbook:
+This textbook is open-access and can be found at https://github.com/troymessina/ElectronicsLab. The following chapters are included in the textbook:
 
-0. [Preface](https://troymessina.curve.space/ElectronicsLab/preface)
+0. [Preface](https://troymessina.github.io/ElectronicsLab/preface)
 1. [Introduction](https://troymessina.github.io/ElectronicsLab/introduction)
 2. [DC Resistor Circuits](https://troymessina.github.io/ElectronicsLab/resistors)
-3. [Oscilloscopes and Signal Generators](#
+3. [Oscilloscopes and Signal Generators](https://troymessina.github.io/oscilloscope)
+4. [RC Circuits](https://troymessina.github.io/rccircuits)
+5. [Multistage RC and Single RLC Circuits](https://troymessina.github.io/ElectronicsLab/rlccircuits)
+6. [Diodes](https://troymessina.github.io/ElectronicsLab/diodes)
+7. [Transistors](https://troymessina.github.io/ElectronicsLab/transistors)
+8. [Operational Amplifiers](https://troymessina.github.io/ElectronicsLab/opamps)
+9. [Digital Integrated Circuits](https://troymessina.github.io/ElectronicsLab/digital)
 
 ## 🚀 Getting Started
 
 ### 📱 Online Access
 
-Visit the textbook website at [https://troymessina.curve.space](https://troymessina.curve.space/)
+Visit the textbook website at [https://troymessina.github.io/ElectronicsLab](https://troymessina.github.io/ElectronicsLab/
 
 ## 🛠️ Building Locally
 
