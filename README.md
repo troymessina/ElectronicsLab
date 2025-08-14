@@ -24,6 +24,14 @@ This textbook is open-access and can be found at https://github.com/troymessina/
 8. [Operational Amplifiers](https://troymessina.github.io/ElectronicsLab/opamps)
 9. [Digital Integrated Circuits](https://troymessina.github.io/ElectronicsLab/digital)
 
+The book also includes a set of JuPyTer notebooks as appendices to guide students through the analysis for the lab exercises. The first notebook includes some introduction to JuPyTer notebooks.
+
+* [DC Resistor Circuits](https://troymessina.github.io/ElectronicsLab/ch2-resistors)
+* [Oscilloscopes and Signal Generators](https://troymessina.github.io/ElectronicsLab/ch3-oscilloscopes)
+* [RC Circuits](https://troymessina.github.io/ElectronicsLab/ch4-rc)
+* [Multistage RC and Single RLC Circuits](https://troymessina.github.io/ElectronicsLab/ch5-rlc)
+* [Diodes](https://troymessina.github.io/ElectronicsLab/ch6-diodes)
+
 ## 🚀 Getting Started
 
 ### 📱 Online Access

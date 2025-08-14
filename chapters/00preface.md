@@ -22,7 +22,20 @@ This version of the textbook is also open-access and can be found at https://git
 1. [Introduction](#chap:introduction)
 2. [DC Resistor Circuits](#chap:resistors)
 3. [Oscilloscopes and Signal Generators](#chap:oscopes)
+4. [RC Circuits](#chap:rc)
+5. [Multistage RC and Single RLC Circuits](#chap:rlc)
+6. [Diodes](#chap:diodes)
+7. [Transistors](#chap:transistors)
+8. [Operational Amplifiers](#chap:opamps)
+9. [Digital Integrated Circuits](#chap:digital)
 
+The book also includes a set of JuPyTer notebooks as appendices to guide students through the analysis for the lab exercises. The first notebook includes some introduction to JuPyTer notebooks.
+
+* [DC Resistor Circuits](app:resistors)
+* [Oscilloscopes and Signal Generators](#app:oscopes)
+* [RC Circuits](#app:rc)
+* [Multistage RC and Single RLC Circuits](#app:rlc)
+* [Diodes](#app:diodes)
 
 ![http://creativecommons.org/licenses/by-sa/4.0/](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
