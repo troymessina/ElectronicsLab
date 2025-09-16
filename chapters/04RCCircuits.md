@@ -203,7 +203,7 @@ V_unc = np.ones(11)*0.15
 
 plt.plot(omega, VR, '-.c', label=r'$V_R$')
 plt.plot(omega, VC, '-m', label=r'$V_C$')
-plt.errorbar(w_meas, VR_meas, yerr=V_unc, fmt='oc', label=r'$V_C$ measured')
+plt.errorbar(w_meas, VR_meas, yerr=V_unc, fmt='oc', label=r'$V_R$ measured')
 plt.errorbar(w_meas, VC_meas, yerr=V_unc, fmt='*m', label=r'$V_C$ measured')
 plt.xlabel(r'$\omega$ (rad/s)')
 plt.ylabel('Voltage')
@@ -213,5 +213,6 @@ plt.show()
 ```
 
 # Fun with RC Circuits
-Write these up for extra fun stuff to do
+%Write these up for extra fun stuff to do.
+You are not required to do this section, but if you want to, you can. 
 ![fun RC circuits](../figures/ch4_rc/FunRCcircuits.jpg)
