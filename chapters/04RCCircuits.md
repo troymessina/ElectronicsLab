@@ -182,7 +182,7 @@ The voltages across a resistor (blue) and capacitor (orange) in a series circuit
 Because the resistor voltage increases with frequency, it can be used as a high-pass filter, passing only voltages of high frequency. Contrary to the resistor, the capacitor passes only low frequency voltages. It can therefore be used as a low-pass filter.
 ```{exercise}
 * Sketch the sinusoidal waveforms for $V_R$ and $V_C$ in your lab notebook at a low, mid, and high frequency
-	* This should be three graphs, one for each frequency, with $V_R$ and $V_C$ on each graph Feel free to take a photo with your phone and paste into your notebook.
+	* This should be three graphs, one for each frequency, with $V_R$ and $V_C$ on each graph Feel free to take a photo of the oscilloscope with your phone and paste into your notebook.
 * Show that {eq}`eq:rc:VR` and {eq}`eq:rc:VC` agree with your measurements within experimental uncertainty for a couple of points.
 * Include a graph of voltages vs. frequency in your notebook like [](#fig:lab4:rcfilter) using the Python code below.
 * Connect a speaker across the resistor and set up a signal generator to sweep from 1 to 5000 Hz. Describe what you hear and relate it to [](#fig:rc:rcfilter). Ask your instructor or TA for help.
