@@ -106,6 +106,8 @@ A close-up image of the charging and discharging capacitor circuit with a series
 ```{exercise}
 * Explain your process for finding $\tau=RC$ and its uncertainty.
 * What are your oscilloscope settings? Explain how your oscillosope settings make sense.
+	* Time setting for the horizontal scale.
+	* Amplitude setting for the voltage scale.
 ```
 ## Part 2b - Theory of AC Impedances
 A single capacitor circuit with a sinusoidal input voltage will have a time-dependent voltage across the capacitor that is ideally
@@ -179,10 +181,11 @@ The voltages across a resistor (blue) and capacitor (orange) in a series circuit
 ```
 Because the resistor voltage increases with frequency, it can be used as a high-pass filter, passing only voltages of high frequency. Contrary to the resistor, the capacitor passes only low frequency voltages. It can therefore be used as a low-pass filter.
 ```{exercise}
-* Sketch the sinusoidal waveforms for $V_R$ and $V_C$ in your lab notebook at a low, mid, and high frequency.
+* Sketch the sinusoidal waveforms for $V_R$ and $V_C$ in your lab notebook at a low, mid, and high frequency
+	* This should be three graphs, one for each frequency, with $V_R$ and $V_C$ on each graph Feel free to take a photo with your phone and paste into your notebook.
 * Show that {eq}`eq:rc:VR` and {eq}`eq:rc:VC` agree with your measurements within experimental uncertainty for a couple of points.
-* Include the graph of voltages vs. frequency in your notebook.
-* Connect a speaker across the resistor and set up a signal generator to sweep from 1 to 5000 Hz. Describe what you hear and relate it to [](#fig:rc:rcfilter).
+* Include a graph of voltages vs. frequency in your notebook like [](#fig:lab4:rcfilter) using the Python code below.
+* Connect a speaker across the resistor and set up a signal generator to sweep from 1 to 5000 Hz. Describe what you hear and relate it to [](#fig:rc:rcfilter). Ask your instructor or TA for help.
 * Connect a speaker across the capacitor and set up a signal generator to sweep from 1 to 5000 Hz. Describe what you hear and relate it to [](#fig:rc:rcfilter).
 ```
 
