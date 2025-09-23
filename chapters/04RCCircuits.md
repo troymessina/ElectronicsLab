@@ -84,7 +84,7 @@ In principle the capacitor needs infinitely long to charge or discharge, since t
 
 ## Part 2a - Measurements
 
-Let’s set up the circuit and oscilloscope to observe this. You will need to add an offset such that the square wave has its minimum at zero. Once you have observed the effect, change the frequency of your input square wave so that the period is longer (~5-10 times) than the RC time constant. You can estimate this by calculating $\tau=1/RC$. The capacitor you have is $0.1 \mu F$. We will start with $R=10 k\Omega$. Then, adjust the frequency such that ($T = 1/f \sim 10RC$). What frequency is this? You should be able to adjust the oscilloscope to look like [](#fig:rc:rc). What X and Y settings are you using on your oscilloscope? Do these make sense? Explain.
+Let’s set up the circuit and oscilloscope to observe this. You will need to add an offset such that the square wave has its minimum at zero. Once you have observed the effect, change the frequency of your input square wave so that the period is longer (~5-10 times) than the RC time constant. You can estimate this by calculating $\tau=1/RC$. The capacitor you have is $0.1 \mu F$. We will start with $R=10 k\Omega$. Then, adjust the frequency such that ($T = 1/f \sim 10/RC$). What frequency is this? You should be able to adjust the oscilloscope to look like [](#fig:rc:rc). What X and Y settings are you using on your oscilloscope? Do these make sense? Explain.
 
 
 ```{figure} ../figures/ch4_rc/RC.svg
