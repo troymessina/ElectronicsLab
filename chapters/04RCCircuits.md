@@ -68,7 +68,7 @@ Solve this to obtain the time-dependent charging on the capacitor that can be co
 ```{math}
 :label: eq:rc:RCVcharge
 \boxed{V_C(t)=V_o\left(1-e^{-t/RC}\right)}
-```
+``` 
 Follow similar logic for discharging when the square wave goes to zero ($V_o = 0$) to obtain
 ```{math}
 :label: eq:rc:RCVdicharge
