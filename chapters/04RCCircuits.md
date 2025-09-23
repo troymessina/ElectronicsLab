@@ -57,12 +57,12 @@ Create a table like [](#tab:rc:rmsV) and comment on any apparent discrepancies o
 A series circuit consists of a resistance, $R$, and a capacitor, $C$. Draw the circuit in your lab notebook including the AC input square wave. At $t = 0$ seconds a square voltage is applied to this circuit, such that a current $I(t)$ flows. This current charges the capacitor. The voltage across the capacitor $V_C(t)$ is measured over time and shows an increasing voltage with time from a value of zero approaching the applied voltage, $V_o$, of the square wave. According to Kirchhoff’s loop rules, the sum of the voltages across the capacitor and resistor must add to the applied voltage. The voltage on the capacitor has the form $V_C=Q/C$, and the resistor voltage is $V_R=IR$. Summing them gives
 ```{math}
 :label: eq:rc:RCVsum
-V_o=V_C+V_R=QC+IR
+V_o=V_C+V_R=Q/C+IR
 ```
 The current is the amount of charge flowing through the circuit per unit time, $I=dQ/dt$. Replace the current in the above equation to obtain a differential equation of $Q$. This leads to a linear, non-homogeneous differential equation of first order:
 ```{math}
 :label: eq:rc:RCVsum2
-V_o= QC +\left(\frac{dQ}{dt}\right)\cdot R
+V_o= Q/C +\left(\frac{dQ}{dt}\right)\cdot R
 ```
 Solve this to obtain the time-dependent charging on the capacitor that can be converted to voltage on the capacitor
 ```{math}
