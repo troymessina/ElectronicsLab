@@ -183,6 +183,8 @@ plt.show()
 Explain the following
 * What are your slope and intercept, including uncertainty?
 * What do the slope and intercept tell us about the signal generator?
+	* What is $V$ and $R_{out}$ including uncertainty?
+	* Your signal generator voltage is $V = 2 V$. Does your result agree within the uncertainty?
 	* The manufacturer claims $R_{out} = 50 \Omega$. Does your result agree within the uncertainty?
 * How confident are you in your results?
 * Is Ohm’s Law valid in this context?
