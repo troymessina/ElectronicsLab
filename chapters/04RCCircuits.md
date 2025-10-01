@@ -215,7 +215,7 @@ plt.savefig('RCfilter.svg')
 plt.show()
 ```
 
-# Fun with RC Circuits
+%# Fun with RC Circuits
 %Write these up for extra fun stuff to do.
-You are not required to do this section, but if you want to, you can. 
-![fun RC circuits](../figures/ch4_rc/FunRCcircuits.jpg)
+%You are not required to do this section, but if you want to, you can. 
+%![fun RC circuits](../figures/ch4_rc/FunRCcircuits.jpg)
