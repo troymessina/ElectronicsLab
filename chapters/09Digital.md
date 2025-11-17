@@ -90,7 +90,7 @@ Use the [555 Timer calculator](https://www.build-electronic-circuits.com/circuit
 # Part 2 - Monostable Mode
 
 Monostable means the output is stable in one state, and it will always come back to this state. You can push it out of that state, but it will always return back to its stable state after a certain time. The output from the 555 Timer in monostable mode is normally LOW. When you trigger the circuit, the output goes HIGH for a certain amount of time before it goes back to LOW again. This is sometimes called a one-shot circuit. The time it stays HIGH is decided by the size of a resistor $R_1$ and a capacitor $C_1$. The higher the values, the longer it stays HIGH. If you connect a buzzer to the output, you can create an alarm circuit that is triggered for example by a window being opened. The monostable circuit diagram is shown in [](#fig:digital:555timermonostable)
-```{figure} ../figures/ch9_digital/555TimerMonostableMode.svg
+```{figure} ../figures/ch9_digital/555TimerMonostableMode.png
 :label: fig:digital:555monostable
 :width: 100%
 :align: center
