@@ -182,8 +182,6 @@ A circuit diagram of the 555-timer set up for driving high loads in bistable mod
 Take a video of your working circuit and put it in your OneNote notebook. Be sure to label the video with a circuit diagram and what resistance and capacitance values you used.
 ```
 
-# References
-
 [^1]:https://www.build-electronic-circuits.com/555-timer/
 [^2]:https://www.instructables.com/555-Timer/
 
