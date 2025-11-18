@@ -88,9 +88,14 @@ A circuit diagram of the 555-timer in astable mode.
 The blinking rate is determined by
 ```{math}
 :label: eq:digital:blinkrate
-f \approx \frac{1.44}{(R_1 + 2R_2) * C_1},
+f \approx \frac{1.44}{(R_1 + 2R_2) C_1},
 ```
 or you may use the [555 Timer calculator](https://www.build-electronic-circuits.com/circuit-calculator-conversion/555-timer-calculator/) to find the blinking frequency for other values. Try it out!
+
+```{exercise}
+:label: exercise:digital:astable
+Take a video of your working circuit and put it in your OneNote notebook. Be sure to label the video with a circuit diagram and what resistance and capacitance values you used.
+```
 
 # Part 2 - Monostable Mode
 
@@ -126,6 +131,11 @@ A circuit diagram of the 555-timer in monostable mode with an LED controlled by 
 ```
 The output is connected to control an LED, but could easily be modified to control a motor, a lamp, a coffee maker, or anything else. Just replace R3 and the LED with a transistor. See how in the section Driving Higher Loads below.
 
+```{exercise}
+:label: exercise:digital:monostable
+Take a video of your working circuit and put it in your OneNote notebook. Be sure to label the video with a circuit diagram and what resistance and capacitance values you used.
+```
+
 # Part 3 - Bistable Mode
 
 Bistable, sometimes called "flip-flop", means the output is stable in both states (HIGH and LOW). It will stay in one state until you push it over to the other state. Then it stays in the other state. You push it from one state to the other with the Trigger and Threshold pins. This mode isn’t a timer function at all, and it’s not a common way to use the 555 Timer. In this mode, the 555 Timer works as a flip-flop. You can for example use it to reverse the direction of a robot when it bumps into a wall.
@@ -150,6 +160,11 @@ A circuit diagram of the 555-timer in bistable mode.
 
 The output is connected to control an LED, but could easily be modified to control a motor, a lamp, or anything else by connecting a transistor. See [](#sec:digital:highloads) for examples.
 
+```{exercise}
+:label: exercise:digital:bistable
+Take a video of your working circuit and put it in your OneNote notebook. Be sure to label the video with a circuit diagram and what resistance and capacitance values you used.
+```
+
 (sec:digital:highloads)=
 # Part 4 - Driving Higher Loads
 
@@ -160,6 +175,11 @@ If you want to control motors, LED strips, or other things that need more than 2
 :align: center
 :alt: A circuit diagram of the 555-timer set up for driving high loads in bistable mode.
 A circuit diagram of the 555-timer set up for driving high loads in bistable mode.
+``` 
+
+```{exercise}
+:label: exercise:digital:highload
+Take a video of your working circuit and put it in your OneNote notebook. Be sure to label the video with a circuit diagram and what resistance and capacitance values you used.
 ```
 
 # References
