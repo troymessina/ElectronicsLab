@@ -85,7 +85,12 @@ You don’t need exact values for the resistors and capacitors. But if you use t
 :alt: A circuit diagram of the 555-timer in astable mode.
 A circuit diagram of the 555-timer in astable mode.
 ```
-Use the [555 Timer calculator](https://www.build-electronic-circuits.com/circuit-calculator-conversion/555-timer-calculator/) to find the blinking frequency for other values. Try it out!
+The blinking rate is determined by
+```{math}
+:label: eq:digital:blinkrate
+f \approx \frac{1.44}{(R_1 + 2R_2) * C_1},
+```
+or you may use the [555 Timer calculator](https://www.build-electronic-circuits.com/circuit-calculator-conversion/555-timer-calculator/) to find the blinking frequency for other values. Try it out!
 
 # Part 2 - Monostable Mode
 
