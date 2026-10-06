@@ -168,8 +168,8 @@ Vload_unc = np.array([0.1,0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1,
 
 #Do the linear fit
 parms, cov = curve_fit(line_fit, 1/Rload, 1/Vload, sigma=Vload_unc, absolute_sigma=True)
-print("slope=", parms[0], +/-", np.sqrt(cov[0,0])
-print("intercept=", parms[1], +/-", np.sqrt(cov[1,1])
+print("slope=", parms[0], "+/-", np.sqrt(cov[0,0]))
+print("intercept=", parms[1], "+/-", np.sqrt(cov[1,1]))
 
 plt.errorbar(1/Rload, 1/Vload, yerr=Vload_unc/Vload**2, fmt='ob') #plot the data
 plt.plot(1/Rload, parms[0]*1/Rload+parms[1])
