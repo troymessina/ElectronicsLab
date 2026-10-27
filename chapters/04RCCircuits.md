@@ -190,6 +190,9 @@ Because the resistor voltage increases with frequency, it can be used as a high-
 ```
 
 ```{code-cell} python
+import numpy as np
+import matplotlib.pyplot as plt
+
 Vo = #peak-to-peak voltage
 R =  #resistor value
 C = #capacitor value
