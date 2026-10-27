@@ -74,7 +74,7 @@ Follow similar logic for discharging when the square wave goes to zero ($V_o = 0
 :label: eq:rc:RCVdicharge
 \boxed{V_C(t)=V_o e^{-t/RC}=Voe^{-t/\tau}}
 ```
-This result implies that there is a characteristic time for charging and discharging. This characteristic time is defined as the time when $t = \tau = 1/RC$. This simplifies the equation for capacitor voltage to
+This result implies that there is a characteristic time for charging and discharging. This characteristic time is defined as the time when $t = \tau = RC$. This simplifies the equation for capacitor voltage to
 ```{math}
 :label: eq:rc:Vtau
 V_C(\tau)=V_oe^{-1}=V_o e
