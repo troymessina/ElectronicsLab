@@ -89,13 +89,13 @@ The current in a forward biased pn-junction can be modeled by the equation
 :label: eq:diodes:idealdiode
 I = I_s \left(e^{V_d/nV_T}-1\right)
 ```
-Where $I_s$ is the the magnitude of the current that flows for negative $V_d$ in excess of a few $V_T$, typically $10^{−12}~{\rm  A}$. The voltage across the diode is $V_d$. The value $n$ is the ideality of the diode, usually $1\le n\le3$. The value $V_T=k_BT/q$ is the thermal energy per charge carrier, around 26 mV at room temperature. [](#fig:diodes:idealdiode) shows this equation modeling zener diode data.
+Where $I_s$ is the the magnitude of the current that flows for negative $V_d$ in excess of a few $V_T$, typically $10^{−12}~{\rm  A}$. The voltage across the diode is $V_d$. The value $n$ is the ideality of the diode, usually $1\le n\le3$. The value $V_T=k_BT/q$ is the thermal energy per charge carrier, around 26 mV at room temperature. [](#fig:diodes:idealdiode) shows this equation modeling diode data.
 ```{figure} ../figures/ch6_diodes/diodemodel.svg
 :label: fig:diodes:idealdiode
 :width: 100%
 :align: center
-:alt: Equation {eq}`eq:diodes:idealdiode` modeling zener diode data.
-Equation {eq}`eq:diodes:idealdiode` modeling zener diode data.
+:alt: Equation {eq}`eq:diodes:idealdiode` modeling diode data.
+Equation {eq}`eq:diodes:idealdiode` modeling diode data.
 ```
 
 # Experiment
